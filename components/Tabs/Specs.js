@@ -1,5 +1,5 @@
-import ToggleButton from "../Buttons/Toggle";
-import specsJson from "../../Data/specs.json";
+import ToggleButton from "@/buttons/Toggle";
+import specsJson from "@/data/specs.json";
 
 export default function TabSpecs() {
 	//console.log(specsJson);

@@ -1,0 +1,292 @@
+[
+	{
+		"title": "Engine",
+		"blocks": [
+			{
+				"span": "Engine Brand",
+				"title": "Kohler®"
+			},
+			{
+				"span": "Engine Model",
+				"title": "7000 Series"
+			},
+			{
+				"span": "Engine Model Number",
+				"title": "KT735"
+			},
+			{
+				"span": "Engine Displacement",
+				"title": "725cc"
+			},
+			{
+				"span": "Engine Output",
+				"title": "24HP"
+			},
+			{
+				"span": "Starter Type",
+				"title": "Electric"
+			},
+			{
+				"span": "Fuel Tank Capacity",
+				"title": "3.5 gal. US (13.25 L)"
+			},
+			{
+				"span": "Cylinders",
+				"title": "Twin"
+			},
+			{
+				"span": "Engine Start",
+				"title": "Ignition Key"
+			},
+			{
+				"span": "Engine Oil Capacity",
+				"title": "2.0 qt. US (1.89 L)"
+			},
+			{
+				"span": "Lubrication",
+				"title": "Fully pressurized"
+			},
+			{
+				"span": "Charging System",
+				"title": "12 amp regulated"
+			},
+			{
+				"span": "Fuel Gauge",
+				"title": "No"
+			},
+			{
+				"span": "Governor",
+				"title": "Mechanical"
+			},
+			{
+				"span": "Choke",
+				"title": "Choke-a-matic"
+			},
+			{
+				"span": "Air Filter",
+				"title": "Dual element"
+			},
+			{
+				"span": "Oil Filter",
+				"title": "Yes"
+			},
+			{
+				"span": "Fuel Delivery",
+				"title": "Carburetor"
+			}
+		]
+	},
+	{
+		"title": "Battery",
+		"blocks": [
+			{
+				"span": "Battery",
+				"title": "210 CCA"
+			},
+			{
+				"span": "Battery Type",
+				"title": "AGM (Absorbent Glass Mat)"
+			},
+			{
+				"span": "Battery Voltage",
+				"title": "12V"
+			}
+		]
+	},
+	{
+		"title": "Drive System",
+		"blocks": [
+			{
+				"span": "Transmission",
+				"title": "Hydro-Gear EZT 2200"
+			},
+			{
+				"span": "Forward Speed",
+				"title": "7 MPH / 11.3 km/h"
+			},
+			{
+				"span": "Reverse Speed",
+				"title": "3.5 MPH / 5.6 km/h"
+			},
+			{
+				"span": "Drive System",
+				"title": "Hydrostatic"
+			}
+		]
+	},
+	{
+		"title": "Cutting Deck",
+		"blocks": [
+			{
+				"span": "Deck Cutting Width",
+				"title": "54 in"
+			},
+			{
+				"span": "Deck Wash",
+				"title": "No"
+			},
+			{
+				"span": "Deck Material",
+				"title": "11-gauge steel"
+			},
+			{
+				"span": "Deck Engagement (PTO)",
+				"title": "Electric"
+			},
+			{
+				"span": "Deck Construction",
+				"title": "Fabricated"
+			},
+			{
+				"span": "Blade(s)",
+				"title": "3"
+			},
+			{
+				"span": "Deck Lift",
+				"title": "Foot pedal with Dial Adjust"
+			},
+			{
+				"span": "Cutting Height Range",
+				"title": "1'' - 4.5''"
+			},
+			{
+				"span": "Anti-Scalping",
+				"title": "3 gauge wheels"
+			},
+			{
+				"span": "Deck Positions",
+				"title": "15"
+			}
+		]
+	},
+	{
+		"title": "Warranty",
+		"blocks": [
+			{
+				"span": "Warranty",
+				"title": "3-year unlimited hours"
+			},
+			{
+				"span": "Frame Warranty",
+				"title": "Lifetime Limited"
+			},
+			{
+				"span": "Deck Shell Warranty",
+				"title": "Lifetime limited"
+			},
+			{
+				"span": "Commercial Warranty",
+				"title": "No"
+			}
+		]
+	},
+	{
+		"title": "Chassis",
+		"blocks": [
+			{
+				"span": "Frame",
+				"title": "2'' x 2'' tubular steel"
+			},
+			{
+				"span": "Turning Radius",
+				"title": "0°"
+			},
+			{
+				"span": "ROPS",
+				"title": "No"
+			},
+			{
+				"span": "Rear Tow Hitch",
+				"title": "Yes"
+			},
+			{
+				"span": "Corrosion Protection",
+				"title": "Yes"
+			}
+		]
+	},
+	{
+		"title": "Controls",
+		"blocks": [
+			{
+				"span": "Cruise Control",
+				"title": "No"
+			},
+			{
+				"span": "Brakes",
+				"title": "Disc"
+			},
+			{
+				"span": "Steering Control",
+				"title": "Lap Bars"
+			}
+		]
+	},
+	{
+		"title": "Comfort",
+		"blocks": [
+			{
+				"span": "Seat Type",
+				"title": "20\" high back"
+			},
+			{
+				"span": "Armrests",
+				"title": "No"
+			},
+			{
+				"span": "Seat Adjustment",
+				"title": "Knob"
+			}
+		]
+	},
+	{
+		"title": "Wheels",
+		"blocks": [
+			{
+				"span": "Rear Tires",
+				"title": "20''x 10''- 8''"
+			},
+			{
+				"span": "Front Tires",
+				"title": "11\"x 6\"-5\""
+			},
+			{
+				"span": "Tire Tread",
+				"title": "Turf Master / Multi Trac"
+			}
+		]
+	},
+	{
+		"title": "Additional Specifications",
+		"blocks": [
+			{
+				"span": "Hour Meter",
+				"title": "No"
+			},
+			{
+				"span": "Mulch Kit",
+				"title": "Available separately"
+			},
+			{
+				"span": "Headlight(s)",
+				"title": "Dual-LED"
+			},
+			{
+				"span": "Cup Holder",
+				"title": "Yes"
+			},
+			{
+				"span": "Operator Presence System",
+				"title": "Yes"
+			},
+			{
+				"span": "Parking Brake",
+				"title": "Lap Bar Integrated"
+			},
+			{
+				"span": "Model Number",
+				"title": "17AREACM010"
+			}
+		]
+	}
+]

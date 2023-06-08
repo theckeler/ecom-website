@@ -1,0 +1,92 @@
+{
+	"categories": [
+		{
+			"h2": "Lawn Mowers",
+			"p": "Innovative zero-turn mowers, riding lawn mowers and push mowers, all designed to give you unmatched strength and durability.",
+			"href": "/lawn-mowers"
+		},
+		{
+			"h2": "Snow Blowers",
+			"p": "Three tiers of snow-clearing power engineered so winter never stands in your way.",
+			"href": "#top"
+		},
+		{
+			"h2": "Electric Mowers & Tools",
+			"p": "Introducing the all fully electric lineup from Cub Cadet. 100% electric. 0% Compromise. Explore Now.",
+			"href": "#top"
+		},
+		{
+			"h2": "Accessories",
+			"p": "Optimize your equipment with a full line of accessories and attachments such as baggers, snow blades and mulch kits.",
+			"href": "#top"
+		}
+	],
+	"recentlyViewed": [
+		{
+			"title": "Double Bagger for 50- and 54-inch Decks",
+			"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwd229f953/products/19A70063OEM_1.jpg?sw=400&sh=400&sm=fit",
+			"itemNum": "19B70055100",
+			"price": 599
+		},
+		{
+			"title": "Cub Cadet Hauler",
+			"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw1f426d26/products/Attachments_Accessories/19B40026100.jpg?sw=400&sh=400&sm=fit",
+			"itemNum": "19B70055100",
+			"price": 399
+		},
+		{
+			"title": "Fender Kit",
+			"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwf28c8118/products/Attachments_Accessories/19A70062100.jpg?sw=400&sh=400&sm=fit",
+			"itemNum": "19A70062100",
+			"price": 120
+		},
+		{
+			"title": "Ultima Hour Meter Kit",
+			"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw824b5f96/products/490-900-C075_1.jpg?sw=400&sh=400&sm=fit",
+			"itemNum": "490-900-C075",
+			"price": 50
+		},
+		{
+			"title": "Cub Cadet Hauler",
+			"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw1f426d26/products/Attachments_Accessories/19B40026100.jpg?sw=400&sh=400&sm=fit",
+			"itemNum": "19B40026100",
+			"price": 399
+		},
+		{
+			"title": "Lawn Striping Kit for 50-, 54- and 60-inch Decks",
+			"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwa140894d/products/Attachments_Accessories/19A70059OEM.jpg?sw=400&sh=400&sm=fit",
+			"itemNum": "19A70059OEM",
+			"price": 150
+		},
+		{
+			"title": "52-inch All-Season Plow Blade Attachment",
+			"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwd229f953/products/19A70063OEM_1.jpg?sw=400&sh=400&sm=fit",
+			"itemNum": "19A70063OEM",
+			"price": 900
+		}
+	],
+	"ctaHero": [
+		{
+			"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw65a0ad0d/images/product-line-browse/Main-Carousel/47RTCAB7010_ZTXS554_Env_01-1015x630.jpg",
+			"title": "Up to $300 off select Ultima Series™ Zero-Turns",
+			"copy": "Save up to $300 off on select Ultima Series Zero-Turns now through April 30th.",
+			"xsCopy": "*Restrictions apply. Click here to learn more for complete details.",
+			"buttonText": "Shop Ultima Series™ Zero-Turns",
+			"href": "/lawn-mowers/riding-lawn-mowers/zero-turn-mowers"
+		},
+		{
+			"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dwe197daa9/images/product-line-browse/Main-Carousel/13AQA2TMA10_XT1ST54_env-805x540.jpg",
+			"title": "Tackle Your Yard",
+			"copy": "The Cub Cadet® Enduro Series™ riding lawn mowers were engineered to deliver a premium cut.",
+			"buttonText": "Shop Cub Cadet® Enduro Series™ Mowers",
+			"href": "#top"
+		},
+		{
+			"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dwcc6644c0/images/product-line-landing/Main-Carousel/RidingMow_ProdLineLand_Hero_Attachment-Wood_03_desktop_1015x630_v1.jpg",
+			"title": "Lorem ipsum dolor sit amet",
+			"copy": "Quisque gravida elementum nibh a sodales. Fusce sed quam non orci cursus mollis vitae eget leo. Nulla in tortor erat. Maecenas mollis massa eget ultricies ultrices. Vivamus tempor tempor blandit. Nulla facilisi.",
+			"buttonText": "Shop Cub Cadet® Cras Dapibus Euismod",
+			"href": "#top"
+		}
+	]
+}

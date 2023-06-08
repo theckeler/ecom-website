@@ -1,7 +1,17 @@
 {
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./*"]
-    }
-  }
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/components/*": ["components/*"],
+			"@/buttons/*": ["components/Buttons/*"],
+			"@/tabs/*": ["components/Tabs/*"],
+			"@/cards/*": ["components/Cards/*"],
+			"@/icons/*": ["components/Icons/*"],
+			"@/data/*": ["data/*"],
+			"@/cta/*": ["components/CTA/*"],
+			"@/product/*": ["components/Product/*"],
+			"@/addtocart/*": ["components/AddCart/*"],
+			"@/header/*": ["components/Header/*"]
+		}
+	}
 }

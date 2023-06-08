@@ -88,22 +88,3 @@ const IndexID = ({ params }) => {
 	);
 };
 export default IndexID;
-
-// export async function getStaticProps({ params }) {
-// 	return {
-// 		props: params,
-// 	};
-// }
-
-// export async function getStaticPaths() {
-// 	return {
-// 		paths: productsJSON.products.map((product, i) => {
-// 			return {
-// 				params: {
-// 					slug: product.slug,
-// 				},
-// 			};
-// 		}),
-// 		fallback: false,
-// 	};
-// }

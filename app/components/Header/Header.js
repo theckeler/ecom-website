@@ -60,11 +60,7 @@ export default function Header({ className, menuItems }) {
 								onClick={() => {
 									document.querySelector("#nav").classList.toggle("hidden");
 								}}>
-								<Hamburger
-									className="w-12"
-									fillColor="#fff"
-									//style={{ minWidth: "3em", maxWidth: "3em" }}
-								/>
+								<Hamburger className="w-12" fillColor="#fff" />
 								<span className="text-white text-xs leading-none relative -top-2">
 									Menu
 								</span>

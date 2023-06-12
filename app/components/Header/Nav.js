@@ -36,7 +36,7 @@ export default function Nav({ menuItems }) {
 							}}>
 							<span>{menu.title}</span>
 							{menu.sub && (
-								<span className="ml-1">
+								<span className="ml-auto sm:ml-1">
 									<ExpandMore className="w-6 fill-black lg:fill-white" />
 								</span>
 							)}

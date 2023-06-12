@@ -1,7 +1,7 @@
 import ToggleButton from "../Buttons/Toggle";
-import Button from "@/buttons/Main";
+import Button from "app/components/Buttons/Main";
 import ScrollButton from "../Buttons/Scroll";
-import Article from "@/product/Article";
+import Article from "app/components/Product/Article";
 
 const articles = [
 	{

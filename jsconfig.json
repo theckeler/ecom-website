@@ -2,16 +2,16 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"@/components/*": ["components/*"],
-			"@/buttons/*": ["components/Buttons/*"],
-			"@/tabs/*": ["components/Tabs/*"],
-			"@/cards/*": ["components/Cards/*"],
-			"@/icons/*": ["components/Icons/*"],
-			"@/data/*": ["data/*"],
-			"@/cta/*": ["components/CTA/*"],
-			"@/product/*": ["components/Product/*"],
-			"@/addtocart/*": ["components/AddCart/*"],
-			"@/header/*": ["components/Header/*"]
+			"@/components/*": ["app/components/*"],
+			"@/buttons/*": ["app/components/Buttons/*"],
+			"@/tabs/*": ["app/components/Tabs/*"],
+			"@/cards/*": ["app/components/Cards/*"],
+			"@/icons/*": ["app/components/Icons/*"],
+			"@/data/*": ["app/data/*"],
+			"@/cta/*": ["app/components/CTA/*"],
+			"@/product/*": ["app/components/Product/*"],
+			"@/addtocart/*": ["app/components/AddCart/*"],
+			"@/header/*": ["app/components/Header/*"]
 		}
 	}
 }

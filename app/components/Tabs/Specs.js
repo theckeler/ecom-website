@@ -1,4 +1,4 @@
-import ToggleButton from "@/buttons/Toggle";
+import ToggleButton from "app/components/Buttons/Toggle";
 import specsJson from "@/data/specs.json";
 
 export default function TabSpecs() {

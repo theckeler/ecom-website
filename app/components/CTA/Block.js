@@ -1,4 +1,4 @@
-import ButtonMain from "@/buttons/Main";
+import ButtonMain from "app/components/Buttons/Main";
 import Image from "next/image";
 
 export default function CTABlock({

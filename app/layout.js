@@ -1,4 +1,5 @@
 import Header from "@/header/Header";
+import Nav from "@/header/Nav";
 import "./globals.css";
 
 export const metadata = {
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className="bg-white">
 				<Header className="" />
+				<Nav />
 				<main className="">{children}</main>
 				<div className="bg-gray-200" style={{ minHeight: "600px" }}></div>
 			</body>

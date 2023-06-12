@@ -33,6 +33,7 @@ module.exports = {
 			md: "23em",
 			lg: "28em",
 			xl: "35em",
+			screen: "100vh",
 		},
 
 		extend: {

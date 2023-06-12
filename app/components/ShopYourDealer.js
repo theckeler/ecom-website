@@ -1,5 +1,5 @@
-import DealerSelect from "@/addtocart/DealerSelect";
-import InputButton from "@/components/InputButton";
+import DealerSelect from "app/components/AddCart/DealerSelect";
+import InputButton from "app/components/InputButton";
 
 export default function ShopYourDealer() {
 	return (

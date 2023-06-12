@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Stars from "@/components/Stars";
+import Stars from "app/components/Stars";
 
 export default function DealerSelect({
 	dealer,

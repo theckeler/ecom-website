@@ -1,5 +1,5 @@
-import Card from "@/cards/ProductCard";
-import ScrollButton from "@/buttons/Scroll";
+import Card from "app/components/Cards/ProductCard";
+import ScrollButton from "app/components/Buttons/Scroll";
 
 export default function ProductBlock({ products }) {
 	return (

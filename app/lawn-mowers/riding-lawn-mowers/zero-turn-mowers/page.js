@@ -1,27 +1,22 @@
 "use client";
-import BreadCrumbs from "@/components/BreadCrumbs";
-import H1 from "@/components/H1";
-import ProductCard from "@/cards/ProductCard";
-import Sort from "@/buttons/Sort";
-import ProductFinder from "@/product/Finder";
-import Compare from "@/components/Compare";
-import ViewMore from "@/buttons/ViewMore";
-import IconCompare from "@/icons/Compare";
-import Filter from "@/buttons/Filter";
-import CTAHero from "@/cta/Hero";
-//import SEOGreek from "@/components/SEOGreek";
-import SEOLinks from "@/components/SEOLinks";
-import Article from "@/product/Article";
-//import DealerSelect from "@/addtocart/DealerSelect";
-//import ButtonEdit from "@/buttons/Edit";
-//import ButtonMap from "@/buttons/Map";
-import Faqs from "@/components/Faqs";
-import ShopYourDealer from "@/components/ShopYourDealer";
+import BreadCrumbs from "app/components/BreadCrumbs";
+import H1 from "app/components/H1";
+import ProductCard from "app/components/Cards/ProductCard";
+import Sort from "app/components/Buttons/Sort";
+import ProductFinder from "app/components/Product/Finder";
+import Compare from "app/components/Compare";
+import ViewMore from "app/components/Buttons/ViewMore";
+import IconCompare from "app/components/Icons/Compare";
+import Filter from "app/components/Buttons/Filter";
+import CTAHero from "app/components/CTA/Hero";
+import SEOLinks from "app/components/SEOLinks";
+import Article from "app/components/Product/Article";
+import Faqs from "app/components/Faqs";
+import ShopYourDealer from "app/components/ShopYourDealer";
 
 import pdpJSON from "@/data/pdp.json";
 import faqs from "@/data/faqs.json";
 import articles from "@/data/articles.json";
-//import InputButton from "@/components/InputButton";
 
 export default function Index() {
 	return (
@@ -60,7 +55,7 @@ export default function Index() {
 					<ShopYourDealer />
 				</div>
 			</li>
-			<li className="sticky top-0 z-50 bg-gray-200" id="products">
+			<li className="sticky top-0 z-40 bg-gray-200" id="products">
 				<ul className="flex items-center max-w-screen-2xl mx-auto px-3 py-2">
 					<li>
 						<Sort />
@@ -89,7 +84,7 @@ export default function Index() {
 							</li>
 						</ul>
 					</li>
-					<li className="ml-2 ml-auto flex">
+					<li className="ml-auto flex">
 						<Filter />
 
 						<button

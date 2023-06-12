@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import CTABlock from "@/cta/Block";
+import CTABlock from "app/components/CTA/Block";
 
 export default function CTAHero({
 	block,

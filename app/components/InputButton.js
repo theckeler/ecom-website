@@ -1,4 +1,4 @@
-import Button from "@/components/Buttons/Main";
+import Button from "app/components/Buttons/Main";
 
 export default function InputButton({
 	id,

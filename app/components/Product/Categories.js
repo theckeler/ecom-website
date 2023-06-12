@@ -1,4 +1,4 @@
-import CategoryCard from "@/cards/Category";
+import CategoryCard from "app/components/Cards/Category";
 
 export default function ProductCategories({ categories, className }) {
 	return (

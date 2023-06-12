@@ -1,8 +1,8 @@
-import Button from "@/buttons/Main";
-import ButtonEdit from "@/buttons/Edit";
+import Button from "app/components/Buttons/Main";
+import ButtonEdit from "app/components/Buttons/Edit";
 import DealerInfo from "./DealerInfo";
 import ShippingButton from "./ShippingButton";
-import InputButton from "@/components/InputButton";
+import InputButton from "app/components/InputButton";
 
 export default function AddCart({ shippingButtons }) {
 	const buyButtonsClick = (e) => {

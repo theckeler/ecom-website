@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import ButtonMain from "@/buttons/Main";
+import ButtonMain from "app/components/Buttons/Main";
 
 export default function Cards({
 	src,

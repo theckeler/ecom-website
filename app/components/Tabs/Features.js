@@ -1,5 +1,5 @@
 import ToggleButton from "../Buttons/Toggle";
-import Cards from "@/cards/Features";
+import Cards from "app/components/Cards/Features";
 
 export default function TabFeatures() {
 	const products = [

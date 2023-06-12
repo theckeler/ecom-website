@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ViewMore from "@/buttons/ViewMore";
+import ViewMore from "app/components/Buttons/ViewMore";
 
 export default function Gallery({ gallery = null }) {
 	{

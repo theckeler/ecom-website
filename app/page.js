@@ -1,15 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import H1 from "@/components/H1";
+import H1 from "app/components/H1";
 // import SEOGreek from "@/components/SEOGreek";
 // import SEOLinks from "@/components/SEOLinks";
-import CTABlock from "@/cta/Block";
-import CTAHero from "@/cta/Hero";
-import Large from "@/cta/Large";
-import ProductBlock from "@/product/Block";
-import ProductFinder from "@/product/Finder";
-import CategoryCard from "@/cards/Category";
+import CTABlock from "app/components/CTA/Block";
+import CTAHero from "app/components/CTA/Hero";
+import Large from "app/components/CTA/Large";
+import ProductBlock from "app/components/Product/Block";
+import ProductFinder from "app/components/Product/Finder";
+import CategoryCard from "app/components/Cards/Category";
 
 import homeJSON from "@/data/home.json";
 

@@ -1,4 +1,8 @@
-export default function Hamburger({ className = null, fillColor = "fill-black", style }) {
+export default function Hamburger({
+	className = null,
+	fillColor = "fill-black",
+	style,
+}) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

@@ -3,20 +3,22 @@ import Link from "next/link";
 
 import Screen from "@/components/Screen";
 
-export default function Nav() {
-	const menuItems = [
-		{ title: "Lawn Mowers", url: "/lawn-mowers" },
-		{ title: "Electric Mowers & Tools", url: "#top" },
-		{ title: "Snow Blowers", url: "#top" },
-		{ title: "Commercial Equipment", url: "#top" },
-		{ title: "Serives & Parts", url: "#top" },
-		{ title: "Attachments", url: "#top" },
-	];
+export default function Nav({ menuItems }) {
+	// const menuItems = [
+	// 	{ title: "Lawn Mowers", url: "/lawn-mowers" },
+	// 	{ title: "Electric Mowers & Tools", url: "#top" },
+	// 	{ title: "Snow Blowers", url: "#top" },
+	// 	{ title: "Commercial Equipment", url: "#top" },
+	// 	{ title: "Serives & Parts", url: "#top" },
+	// 	{ title: "Attachments", url: "#top" },
+	// ];
+
+	console.log(menuItems);
 
 	return (
-		<div id="nav" className="hidden">
-			<ul className="fixed z-50 left-0 top-0 min-h-screen w-full md:max-w-xl bg-white p-2">
-				<li className="h-12" style={{}}>
+		<div id="nav" className="hidden lg:block">
+			<ul className="lg:flex fixed lg:relative z-50 left-0 top-0 h-full w-full md:max-w-xl lg:w-auto bg-white lg:bg-transparent p-2">
+				<li className="lg:hidden h-12" style={{}}>
 					<button
 						onClick={() => {
 							document.querySelector("#nav").classList.toggle("hidden");
@@ -34,7 +36,7 @@ export default function Nav() {
 					<li className="" style={{}} key={i}>
 						<Link
 							href={menu.url}
-							className="block p-3 w-full"
+							className="block p-3 w-full text-black lg:text-white"
 							onClick={() => {
 								document.querySelector("#nav").classList.toggle("hidden");
 							}}>
@@ -43,7 +45,7 @@ export default function Nav() {
 					</li>
 				))}
 			</ul>
-			<Screen />
+			{/* <Screen /> */}
 		</div>
 	);
 }

@@ -19,7 +19,7 @@ export default function Filter({}) {
 			</button>
 
 			<div
-				className="hidden fixed top-0 right-0 z-40 w-full lg:w-6/12 xl:w-5/12 2xl:w-3/12 h-screen bg-white border-l-0 lg:border-l-4 border-amber-200"
+				className="hidden fixed top-0 right-0 z-20 w-full lg:w-6/12 xl:w-5/12 2xl:w-3/12 h-screen bg-white border-l-0 lg:border-l-4 border-amber-200"
 				id="all-filters">
 				<Filters />
 			</div>

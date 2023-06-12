@@ -4,6 +4,7 @@ import Link from "next/link";
 import ButtonHeader from "@/header/Button";
 import ButtonMain from "@/buttons/Main";
 import Hamburger from "@/icons/Hamburger";
+import Screen from "@/components/Screen";
 
 export default function Header({ className }) {
 	const buttonItems = [
@@ -24,10 +25,10 @@ export default function Header({ className }) {
 		<ul className="mb-3">
 			<li className="">
 				<div
-					className="max-w-screen-2xl mx-auto text-center text-sm p-2"
+					className="max-w-screen-2xl mx-auto text-center text-sm"
 					style={{ backgroundColor: "#ffc20f" }}>
 					<button
-						className="flex items-center justify-center w-full"
+						className="flex items-center justify-center w-full p-2"
 						onClick={() => {
 							document
 								.querySelector("#promo-content")
@@ -40,31 +41,52 @@ export default function Header({ className }) {
 							</svg>
 						</span>
 					</button>
-					<div
-						className="hidden container mx-auto mt-2 px-2 py-4 bg-white rounded-xl"
-						id="promo-content">
-						<h2 className="text-lg font-bold mb-2">
-							Lorem ipsum dolor sit amet
-						</h2>
-						<p className="mb-4 px-12 text-left">
-							Mauris ac arcu ipsum. Aliquam et augue at nisl tincidunt congue.
-							Fusce tincidunt, nisl vel vehicula dignissim, tortor nisl luctus
-							velit, eu aliquet elit ex maximus leo. Maecenas sodales ex arcu,
-							consectetur egestas lectus pharetra et. Sed tincidunt luctus augue
-							venenatis laoreet. Suspendisse ut consectetur metus. Curabitur
-							malesuada, eros sit amet fermentum porttitor, metus mi faucibus
-							risus, sed porttitor tellus urna ac mi. Morbi sed iaculis eros.
-							Fusce massa quam, gravida eu iaculis vel, blandit eget nulla.
-							Nulla eget posuere diam, ut rhoncus turpis. Donec sed felis ante.
-							Aliquam dolor arcu, mattis vitae arcu et, malesuada gravida nisl.
-							Vivamus in felis at felis ultrices vestibulum. Morbi fringilla
-							urna lectus, in porta massa aliquam non. Suspendisse ac vehicula
-							odio, sed commodo dolor.
-						</p>
-						<ButtonMain
-							title="CTA Button"
-							className="bg-black text-white font-uppercase inline-flex rounded justify-center px-8"
-						/>
+					<div className="hidden " id="promo-content">
+						<div
+							className="mx-auto px-2 py-4 fixed top-0 left-0 w-full z-50 h-full lg:h-auto"
+							style={{ backgroundColor: "#ffc20f" }}>
+							<button
+								onClick={() => {
+									document
+										.querySelector("#promo-content")
+										.classList.toggle("hidden");
+								}}
+								className="w-full">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 -960 960 960"
+									className="h-12 ml-auto">
+									<path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+								</svg>
+							</button>
+							<div className="container mx-auto mt-2 px-2 py-4 bg-white rounded-xl">
+								<h2 className="text-xl font-bold mb-2">
+									Lorem ipsum dolor sit amet
+								</h2>
+								<p className="mb-4 px-12 text-left">
+									Mauris ac arcu ipsum. Aliquam et augue at nisl tincidunt
+									congue. Fusce tincidunt, nisl vel vehicula dignissim, tortor
+									nisl luctus velit, eu aliquet elit ex maximus leo. Maecenas
+									sodales ex arcu, consectetur egestas lectus pharetra et. Sed
+									tincidunt luctus augue venenatis laoreet. Suspendisse ut
+									consectetur metus. Curabitur malesuada, eros sit amet
+									fermentum porttitor, metus mi faucibus risus, sed porttitor
+									tellus urna ac mi. Morbi sed iaculis eros. Fusce massa quam,
+									gravida eu iaculis vel, blandit eget nulla. Nulla eget posuere
+									diam, ut rhoncus turpis. Donec sed felis ante. Aliquam dolor
+									arcu, mattis vitae arcu et, malesuada gravida nisl. Vivamus in
+									felis at felis ultrices vestibulum. Morbi fringilla urna
+									lectus, in porta massa aliquam non. Suspendisse ac vehicula
+									odio, sed commodo dolor.
+								</p>
+								<ButtonMain
+									title="CTA Button"
+									className="bg-black text-white font-uppercase inline-flex rounded justify-center px-8"
+								/>
+							</div>
+						</div>
+
+						<Screen />
 					</div>
 				</div>
 			</li>

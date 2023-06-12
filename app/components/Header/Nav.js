@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
 
+import Screen from "@/components/Screen";
+
 export default function Nav() {
 	const menuItems = [
 		{ title: "Lawn Mowers", url: "/lawn-mowers" },
@@ -41,11 +43,7 @@ export default function Nav() {
 					</li>
 				))}
 			</ul>
-			<div
-				className="fixed left-0 top-0 z-40 bg-black flex w-screen h-screen opacity-70"
-				onClick={() => {
-					document.querySelector("#nav").classList.toggle("hidden");
-				}}></div>
+			<Screen />
 		</div>
 	);
 }

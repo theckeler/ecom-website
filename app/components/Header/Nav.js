@@ -42,29 +42,22 @@ export default function Nav({ menuItems }) {
 							)}
 						</Link>
 						{menu.sub && (
-							<>
-								<div
-									className="hidden lg:absolute top-full lg:bg-amber-400 min-w-[26em] p-2"
-									id="sub-nav">
+							<div
+								className="hidden lg:absolute top-full left-0 lg:bg-amber-400"
+								id="sub-nav"
+								style={{ padding: "0.2em 1000em", margin: "0 -1000em" }}>
+								<div className="w-screen p-2">
 									<ul className="text-sm">
-										<li>
-											<a href="">Lorem ipsum dolor sit amet</a>
-										</li>
-										<li>
-											<a href="">Mauris ac arcu ipsum</a>
-										</li>
-										<li>
-											<a href="">Vestibulum molestie neque ac tellus pretium</a>
-										</li>
-										<li>
-											<a href="">Phasellus dolor tortor</a>
-										</li>
-										<li>
-											<a href="">Nulla non erat vitae enim bibendum</a>
-										</li>
+										{menu.sub.map((sub, i) => (
+											<li key={i}>
+												<a href={sub.url} className="p-2 block underline">
+													{sub.title}
+												</a>
+											</li>
+										))}
 									</ul>
 								</div>
-							</>
+							</div>
 						)}
 					</li>
 				))}

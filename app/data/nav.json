@@ -1,0 +1,50 @@
+[
+	{
+		"title": "Lawn Mowers",
+		"url": "/lawn-mowers",
+		"slug": "lawn-mowers",
+		"sub": [
+			{
+				"title": "Zero-Turn Mowers",
+				"url": "/lawn-mowers/riding-lawn-mowers/zero-turn-mowers"
+			},
+			{
+				"title": "Lawn & Garden Tractors",
+				"url": "#top"
+			},
+			{
+				"title": "Electric Riding Mowers",
+				"url": "#top"
+			},
+			{
+				"title": "Mower Accessories",
+				"url": "#top"
+			},
+			{
+				"title": "Zero-Turn Mower Accessories",
+				"url": "#top"
+			},
+			{
+				"title": "Push Mowers",
+				"url": "#top"
+			},
+			{
+				"title": "Self-Propelled Mowers",
+				"url": "#top"
+			},
+			{
+				"title": "Wide Area Mowers",
+				"url": "#top"
+			},
+			{
+				"title": "Push Mower Accessories",
+				"url": "#top"
+			}
+		]
+	},
+	{ "title": "Electric Mowers & Tools", "url": "#top" },
+	{ "title": "Snow Blowers", "url": "#top" },
+	{ "title": "Commercial Equipment", "url": "#top" },
+	{ "title": "Services & Parts", "url": "#top" },
+	{ "title": "Attachments", "url": "#top" }
+]

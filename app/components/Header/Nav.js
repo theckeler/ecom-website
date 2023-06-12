@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 
-import Screen from "@/components/Screen";
+import Close from "@/icons/Close";
 
 export default function Nav({ menuItems }) {
 	// const menuItems = [
@@ -13,27 +13,20 @@ export default function Nav({ menuItems }) {
 	// 	{ title: "Attachments", url: "#top" },
 	// ];
 
-	console.log(menuItems);
-
 	return (
-		<div id="nav" className="hidden lg:block">
-			<ul className="lg:flex fixed lg:relative z-50 left-0 top-0 h-full w-full md:max-w-xl lg:w-auto bg-white lg:bg-transparent p-2">
+		<div id="nav" className="hidden lg:block w-full">
+			<ul className="lg:flex fixed lg:relative z-50 left-0 top-0 h-full w-full md:max-w-xl lg:w-full bg-white lg:bg-transparent p-2">
 				<li className="lg:hidden h-12" style={{}}>
 					<button
 						onClick={() => {
 							document.querySelector("#nav").classList.toggle("hidden");
 						}}
 						className="w-full">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 -960 960 960"
-							className="h-12 ml-auto">
-							<path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-						</svg>
+						<Close className="h-12 ml-auto" />
 					</button>
 				</li>
 				{menuItems.map((menu, i) => (
-					<li className="" style={{}} key={i}>
+					<li className="whitespace-nowrap" style={{}} key={i}>
 						<Link
 							href={menu.url}
 							className="block p-3 w-full text-black lg:text-white"

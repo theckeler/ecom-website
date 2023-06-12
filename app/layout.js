@@ -1,5 +1,5 @@
 import Header from "@/header/Header";
-import Nav from "@/header/Nav";
+import Screen from "@/components/Screen";
 import "./globals.css";
 
 export const metadata = {
@@ -9,8 +9,10 @@ export const metadata = {
 
 const menuItems = [
 	{ title: "Lawn Mowers", url: "/lawn-mowers" },
-	{ title: "Commerical", url: "#top" },
-	{ title: "Service & Parts", url: "#top" },
+	{ title: "Electric Mowers & Tools", url: "#top" },
+	{ title: "Snow Blowers", url: "#top" },
+	{ title: "Commercial Equipment", url: "#top" },
+	{ title: "Serives & Parts", url: "#top" },
 	{ title: "Attachments", url: "#top" },
 ];
 
@@ -19,7 +21,6 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className="bg-white">
 				<Header className="" menuItems={menuItems} />
-				{/* <Nav menuItems={menuItems} /> */}
 				<main className="">{children}</main>
 				<div className="bg-gray-200" style={{ minHeight: "600px" }}></div>
 			</body>

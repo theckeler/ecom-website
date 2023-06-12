@@ -1,6 +1,6 @@
-import Screen from "@/components/Screen";
 import ButtonMain from "@/buttons/Main";
-
+import ExpandMore from "@/icons/ExpandMore";
+import Close from "./Icons/Close";
 export default function Promo() {
 	return (
 		<div className="text-sm" style={{ backgroundColor: "#ffc20f" }}>
@@ -11,14 +11,10 @@ export default function Promo() {
 						document.querySelector("#promo-content").classList.toggle("hidden");
 					}}>
 					Promo
-					<span className="ml-1 w-6">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-							<path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z" />
-						</svg>
-					</span>
+					<ExpandMore className="ml-1 w-6" />
 				</button>
 			</div>
-			<div className="hidden " id="promo-content">
+			<div className="hidden" id="promo-content">
 				<div
 					className="mx-auto px-2 py-4 fixed top-0 left-0 w-full z-50 h-full lg:h-auto"
 					style={{ backgroundColor: "#ffc20f" }}>
@@ -29,12 +25,7 @@ export default function Promo() {
 								.classList.toggle("hidden");
 						}}
 						className="w-full">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 -960 960 960"
-							className="h-12 ml-auto">
-							<path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-						</svg>
+						<Close className="h-12 ml-auto" />
 					</button>
 					<div className="container mx-auto mt-2 px-2 py-4 bg-white rounded-xl">
 						<h2 className="text-xl font-bold mb-2 text-center">
@@ -63,8 +54,6 @@ export default function Promo() {
 						</div>
 					</div>
 				</div>
-
-				<Screen />
 			</div>
 		</div>
 	);

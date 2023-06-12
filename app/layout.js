@@ -8,11 +8,16 @@ export const metadata = {
 };
 
 const menuItems = [
-	{ title: "Lawn Mowers", url: "/lawn-mowers" },
+	{
+		title: "Lawn Mowers",
+		url: "/lawn-mowers",
+		slug: "lawn-mowers",
+		sub: [{ title: "Lawn Mowers", url: "/lawn-mowers" }],
+	},
 	{ title: "Electric Mowers & Tools", url: "#top" },
 	{ title: "Snow Blowers", url: "#top" },
 	{ title: "Commercial Equipment", url: "#top" },
-	{ title: "Serives & Parts", url: "#top" },
+	{ title: "Services & Parts", url: "#top" },
 	{ title: "Attachments", url: "#top" },
 ];
 

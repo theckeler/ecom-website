@@ -53,7 +53,7 @@ export default function Header({ className, menuItems }) {
 
 			<li className="bg-black">
 				<div className="max-w-screen-2xl mx-auto">
-					<ul className="flex items-center">
+					<ul className="flex items-center w-full">
 						<li className="lg:hidden flex flex-col items-center">
 							<button
 								className="lg:w-12 leading-none"
@@ -71,8 +71,9 @@ export default function Header({ className, menuItems }) {
 								<Logo />
 							</Link>
 						</li>
-
-						<Nav menuItems={menuItems} />
+						<li className="">
+							<Nav menuItems={menuItems} />
+						</li>
 					</ul>
 				</div>
 			</li>

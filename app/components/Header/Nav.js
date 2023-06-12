@@ -2,12 +2,13 @@
 import Link from "next/link";
 
 import Close from "@/icons/Close";
+import ExpandMore from "@/icons/ExpandMore";
 
 export default function Nav({ menuItems }) {
 	return (
 		<div id="nav" className="hidden lg:block w-full">
-			<ul className="lg:flex fixed lg:relative z-50 left-0 top-0 h-full w-full md:max-w-xl lg:w-full bg-white lg:bg-transparent p-2">
-				<li className="lg:hidden h-12" style={{}}>
+			<ul className="lg:flex fixed lg:relative z-50 left-0 top-0 h-full w-full md:max-w-xl lg:max-w-fit bg-white lg:bg-transparent">
+				<li className="lg:hidden h-12">
 					<button
 						onClick={() => {
 							document.querySelector("#nav").classList.toggle("hidden");
@@ -17,22 +18,54 @@ export default function Nav({ menuItems }) {
 					</button>
 				</li>
 				{menuItems.map((menu, i) => (
-					<li className="whitespace-nowrap" style={{}} key={i}>
+					<li
+						className="relative group p-2"
+						key={i}
+						id={menu.slug}
+						onClick={() => {
+							document
+								.querySelector(`#${menu.slug}`)
+								.querySelector(`#sub-nav`)
+								.classList.toggle("hidden");
+						}}>
 						<Link
 							href={menu.url}
-							className="block py-3 px-2 w-full text-black lg:text-white"
+							className="py-3 px-2 w-full font-bold text-black lg:text-white lg:text-sm  flex"
 							onClick={() => {
-								document.querySelector("#nav").classList.toggle("hidden");
+								//document.querySelector("#nav").classList.toggle("hidden");
 							}}>
-							{menu.title}
+							<span>{menu.title}</span>
 							{menu.sub && (
-								<div>
-									<ul>
-										<li>asdasd</li>
-									</ul>
-								</div>
+								<span className="ml-1">
+									<ExpandMore className="w-6 fill-black lg:fill-white" />
+								</span>
 							)}
 						</Link>
+						{menu.sub && (
+							<>
+								<div
+									className="hidden lg:absolute top-full lg:bg-amber-400 min-w-[26em] p-2"
+									id="sub-nav">
+									<ul className="text-sm">
+										<li>
+											<a href="">Lorem ipsum dolor sit amet</a>
+										</li>
+										<li>
+											<a href="">Mauris ac arcu ipsum</a>
+										</li>
+										<li>
+											<a href="">Vestibulum molestie neque ac tellus pretium</a>
+										</li>
+										<li>
+											<a href="">Phasellus dolor tortor</a>
+										</li>
+										<li>
+											<a href="">Nulla non erat vitae enim bibendum</a>
+										</li>
+									</ul>
+								</div>
+							</>
+						)}
 					</li>
 				))}
 			</ul>

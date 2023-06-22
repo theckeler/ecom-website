@@ -1,16 +1,17 @@
 import ButtonMain from "@/buttons/Main";
 import ExpandMore from "@/icons/ExpandMore";
-import Close from "./Icons/Close";
+import Close from "../Icons/Close";
+
 export default function Promo() {
 	return (
 		<div className="text-sm" style={{ backgroundColor: "#ffc20f" }}>
 			<div className="container mx-auto">
 				<button
-					className="flex items-center justify-center w-full p-2"
+					className="flex items-center justify-center w-full p-2 font-bold"
 					onClick={() => {
 						document.querySelector("#promo-content").classList.toggle("hidden");
 					}}>
-					Promo
+					Promo: Aliquam dolor arcu, mattis vitae arcu et
 					<ExpandMore className="ml-1 w-6" />
 				</button>
 			</div>

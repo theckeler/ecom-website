@@ -12,13 +12,13 @@ export default function DealerSelect({
 	id,
 	reviewNum,
 	className = null,
-	shopYourDealer = false,
 	activeColor = "bg-amber-100",
 	inactiveColor = "bg-white",
+	showAdress = true,
 }) {
 	return (
 		<div
-			className={`dealer-select group flex relative p-2 ${
+			className={`dealer-select group flex relative p-2 text-black ${
 				!!selected ? activeColor : inactiveColor
 			} ${className}`}
 			onChange={(e) => {
@@ -27,14 +27,12 @@ export default function DealerSelect({
 				});
 				e.currentTarget.classList.add("active");
 
-				//if (!shopYourDealer) {
 				document.querySelectorAll(".dealer-select-address").forEach((e) => {
 					e.classList.add("hidden");
 				});
 				e.currentTarget
 					.querySelector(".dealer-select-address")
 					.classList.remove("hidden");
-				//}
 
 				document.querySelectorAll(".dealer-select").forEach((e) => {
 					e.classList.remove(activeColor);
@@ -56,42 +54,20 @@ export default function DealerSelect({
 					/>
 				</li>
 				<li className="w-full">
-					{/* <ul
-						className={`flex flex-col ${
-							!!shopYourDealer && "xl:items-center xl:flex-row"
-						}`}> */}
-					<ul className={`flex flex-col`}>
-						<li className="font-bold">{dealer}</li>
-						{/* <li
-							className={`flex items-center text-xs mt-1 ${
-								!!shopYourDealer && "xl:mt-0 xl:ml-2"
-							}`}> */}
-						<li className={`flex items-center text-xs mt-1 xl:mt-0 xl:ml-2"`}>
-							<span className="md:hidden">Dealer Review:</span>{" "}
-							<Stars className="" starSize={12} /> ({reviewNum})
-						</li>
-					</ul>
-
-					{/* <div className="flex items-center text-xs pl-4">
-						Dealer Review: <Stars className="" starSize={12} /> ({reviewNum})
-					</div> */}
-
-					{/* <div
-						className={`dealer-select-address text-xs mt-1 ${
-							!selected && !shopYourDealer && "hidden"
-						}`}> */}
-					<div
-						className={`dealer-select-address text-xs mt-1 ${
-							!selected && "hidden"
-						}`}>
-						{street}
-						<br />
-						{cityState}
-						<br />
-						{phone}
-					</div>
+					<div className="font-bold">{dealer}</div>
+					{showAdress && (
+						<ul className="text-xs mt-1">
+							<li className="flex">
+								Dealer Review:
+								<Stars className="ml-1" starSize={12} /> ({reviewNum})
+							</li>
+							<li>{street}</li>
+							<li>{cityState}</li>
+							<li>{phone}</li>
+						</ul>
+					)}
 				</li>
-				<li className="ml-auto">{miles}mi</li>
+				{showAdress && <li className="ml-auto">{miles}mi</li>}
 			</ul>
 			<label
 				htmlFor={id}

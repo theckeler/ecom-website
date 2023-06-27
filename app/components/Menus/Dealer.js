@@ -1,5 +1,6 @@
 "use client";
 import Close from "@/icons/Close";
+import ShopYourDealer from "@/dealer/ShopYourDealer";
 
 export default function Dealer({ className }) {
 	return (
@@ -16,6 +17,9 @@ export default function Dealer({ className }) {
 						className="w-full">
 						<Close className="h-12 " />
 					</button>
+				</li>
+				<li>
+					<ShopYourDealer />
 				</li>
 			</ul>
 		</div>

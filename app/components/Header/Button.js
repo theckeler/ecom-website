@@ -13,6 +13,7 @@ export default function Buttons({
 	onClick = null,
 	mobile,
 	style,
+	fillColor = "fill-white",
 }) {
 	const Icons = {
 		account: Account,
@@ -32,11 +33,10 @@ export default function Buttons({
 			style={style}
 			onClick={onClick}>
 			<Icon
-				className="h-8 lg:mr-1"
-				fillColor="fill-white"
+				className={`h-8 lg:mr-1 ${fillColor}`}
 				style={{ minWidth: "2em", maxWidth: "2em" }}
 			/>
-			<span className={mobile && "hidden xl:block whitespace-nowrap"}>
+			<span className={mobile && "hidden lg:block whitespace-nowrap"}>
 				{title}
 			</span>
 		</LinkType>

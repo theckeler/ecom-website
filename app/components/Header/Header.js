@@ -4,9 +4,10 @@ import Link from "next/link";
 import HeaderButton from "@/header/Button";
 import Hamburger from "@/icons/Hamburger";
 import Logo from "@/components/Logo";
-import Nav from "@/header/Nav";
+import Nav from "@/components/Menus/Nav";
 import Promo from "@/components/Header/Promo";
-import Store from "../Icons/Store";
+import ShopYourDealer from "@/dealer/ShopYourDealer";
+//import ShopYourDealer from "@/dealer/Options";
 
 export default function Header({ className, menuItems }) {
 	const toggleMenu = (toggleMe) => {
@@ -40,18 +41,13 @@ export default function Header({ className, menuItems }) {
 			</li>
 
 			<li className="bg-gray-800">
-				<div className="max-w-screen-2xl mx-auto text-center text-white">
+				<div className="max-w-screen-2xl mx-auto text-center">
 					<ul className="flex items-center text-sm">
-						<li className="basis-2/12 flex justify-start">
-							<HeaderButton
-								title="Select a Dealer"
-								buttonIcon="dealer"
-								onClick={() => toggleMenu("dealer")}
-								mobile
-								className="fill-white"
-							/>
+						<li className="">
+							<ShopYourDealer toggleMenu={toggleMenu} />
 						</li>
-						<li className="flex justify-end ml-auto">
+
+						<li className="basis-4/12 flex justify-end ml-auto">
 							<ul className="flex items-center">
 								{buttonItems.map((menu, i) => (
 									<li className="basis-full" key={i}>
@@ -60,6 +56,8 @@ export default function Header({ className, menuItems }) {
 											buttonIcon={menu.buttonIcon}
 											onClick={menu.onClick}
 											mobile
+											fillColor="fill-white"
+											className="text-white"
 										/>
 									</li>
 								))}

@@ -11,7 +11,8 @@
 			"@/cta/*": ["app/components/CTA/*"],
 			"@/product/*": ["app/components/Product/*"],
 			"@/addtocart/*": ["app/components/AddCart/*"],
-			"@/header/*": ["app/components/Header/*"]
+			"@/header/*": ["app/components/Header/*"],
+			"@/dealer/*": ["app/components/Dealer/*"]
 		}
 	}
 }

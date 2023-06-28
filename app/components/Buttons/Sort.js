@@ -1,7 +1,7 @@
 export default function Sort({}) {
 	return (
 		<button
-			className="bg-amber-400 rounded p-3"
+			className="bg-amber-400 p-3"
 			onClick={() => {
 				document.querySelector("#all-filters").classList.toggle("hidden");
 			}}>

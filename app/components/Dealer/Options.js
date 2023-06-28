@@ -21,7 +21,7 @@ export default function Options({
 					phone="(330) 554-5434"
 					id="Worcester"
 					reviewNum={44}
-					className="text-xs rounded-lg lg:p-3"
+					className="text-xs lg:p-3"
 					selected
 					shopYourDealer
 				/>
@@ -37,7 +37,7 @@ export default function Options({
 					cityState="NORTHFIELD, OH 44067"
 					phone="(330) 467-0020"
 					reviewNum={67}
-					className="text-xs rounded-lg lg:p-3 lg:ml-2"
+					className="text-xs lg:p-3 lg:ml-2"
 					id="Northfield"
 					shopYourDealer
 				/>
@@ -53,7 +53,7 @@ export default function Options({
 					cityState="LYNDHURST, OH 44124"
 					phone="(440) 442-1846"
 					reviewNum={23}
-					className="text-xs rounded-lg lg:p-3 lg:ml-2"
+					className="text-xs lg:p-3 lg:ml-2"
 					id="Marshall"
 					shopYourDealer
 				/>

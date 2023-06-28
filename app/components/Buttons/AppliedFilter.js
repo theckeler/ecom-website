@@ -7,7 +7,7 @@ export default function AppliedFilter({
 }) {
 	return (
 		<button
-			className={`p-3 rounded flex items-center justify-center bg-gray-200 text-xs ${className}`}
+			className={`p-3 flex items-center justify-center bg-gray-200 text-xs ${className}`}
 			onClick={onClick}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"

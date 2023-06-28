@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function CatAd() {
 	return (
-		<div className="bg-white p-2 lg:p-4 rounded h-full border border-gray-400">
+		<div className="bg-white p-2 lg:p-4 h-full border border-gray-400">
 			<Image
 				src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v2d2985a90f92210137904004bd415f8c604159aa/financing-view-all/cub-cadet-credit-card.png"
 				alt=""
@@ -11,7 +11,7 @@ export default function CatAd() {
 				height={125}
 				className="mx-auto w-full"
 			/>
-			<ul className="flex items-center mt-4 bg-amber-400 rounded-md p-4">
+			<ul className="flex items-center mt-4 bg-amber-400 p-4">
 				<li className="text-7xl mr-1">☜</li>
 				<li>
 					<h2 className="text-2xl font-bold">
@@ -38,7 +38,7 @@ export default function CatAd() {
 
 			<Button
 				title="Apply Now"
-				className="bg-gray-900 rounded p-2 mt-2 text-white w-full"
+				className="bg-gray-900 p-2 mt-2 text-white w-full"
 				noIcon={true}
 			/>
 		</div>

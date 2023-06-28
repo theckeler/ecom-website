@@ -24,7 +24,7 @@ export default function Card({
 						? "/lawn-mowers/riding-lawn-mowers/zero-turn-mowers/" + product.slug
 						: "#top"
 				}
-				className={`p-3 flex flex-col rounded-md ${className}`}>
+				className={`p-3 flex flex-col ${className}`}>
 				{!product.ad ? (
 					<div className="relative pt-[100%]">
 						<Image
@@ -81,7 +81,7 @@ export default function Card({
 						<Button
 							title={`View ${product.title}`}
 							noIcon={true}
-							className="w-full p-2 mt-2 text-sm font-bold bg-gray-200 rounded-lg overflow-hidden truncate"
+							className="w-full p-2 mt-2 text-sm font-bold bg-gray-200 overflow-hidden truncate"
 						/>
 					</div>
 				)}

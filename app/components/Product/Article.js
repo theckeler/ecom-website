@@ -14,13 +14,13 @@ export default function Article({ articles }) {
 							style={{ minWidth: "240px", maxWidth: "240px" }}>
 							<a
 								href="#top"
-								className="group flex flex-col mb-4 md:mb-0 px-5 py-7 bg-gray-200 lg:hover:bg-amber-200 rounded-md h-full select-auto">
+								className="group flex flex-col mb-4 md:mb-0 px-5 py-7 bg-gray-200 lg:hover:bg-amber-200 h-full select-auto">
 								<h3 className="text-lg font-bold w-full">{article.title}</h3>
 								<p className="text-xs leading-5 mt-3 mb-3">{article.copy}</p>
 								<Button
 									title="Read Article"
 									noIcon={false}
-									className="flex items-center justify-center px-1 py-2 mt-auto text-sm font-bold bg-amber-300 rounded-lg w-full group-hover:bg-black group-hover:text-white"
+									className="flex items-center justify-center px-1 py-2 mt-auto text-sm font-bold bg-amber-300 w-full group-hover:bg-black group-hover:text-white"
 								/>
 							</a>
 						</li>

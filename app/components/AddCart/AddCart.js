@@ -46,7 +46,7 @@ export default function AddCart({ shippingButtons }) {
 					</li>
 				</ul>
 				<div className="hidden" id="zipcodeedit">
-					<div className="p-4 bg-amber-200 rounded-md mt-4">
+					<div className="p-4 bg-amber-200 mt-4">
 						<h3 className="font-bold">Change Delivery Zipcode</h3>
 						<p className="text-xs mb-3">
 							The zip code you entered may change the shipping method.
@@ -82,7 +82,7 @@ export default function AddCart({ shippingButtons }) {
 			<li className="mt-3">
 				<Button
 					title="Add to Cart"
-					className="group flex items-center justify-center w-full p-3 uppercase font-bold bg-amber-400 lg:hover:bg-black lg:hover:text-white rounded-2xl"
+					className="group flex items-center justify-center w-full p-3 uppercase font-bold bg-amber-400 lg:hover:bg-black lg:hover:text-white"
 				/>
 			</li>
 		</ul>

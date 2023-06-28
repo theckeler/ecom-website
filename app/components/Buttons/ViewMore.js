@@ -1,7 +1,7 @@
 export default function ViewMore({ title, className, addStyle, onClick }) {
 	return (
 		<button
-			className={`px-8 py-4 lg:hover:bg-amber-300 border-amber-300 border rounded flex items-center ${className}`}
+			className={`px-8 py-4 lg:hover:bg-amber-300 border-amber-300 border flex items-center ${className}`}
 			onClick={onClick}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"

@@ -72,14 +72,14 @@ export default function Filters({ className }) {
 					<li className="basis-9/12 mr-2">
 						<Button
 							title="View 34"
-							className="bg-amber-400 w-full p-2 rounded-xl uppercase font-bold"
+							className="bg-amber-400 w-full p-2 uppercase font-bold"
 							noIcon={true}
 						/>
 					</li>
 					<li className="basis-3/12">
 						<Button
 							title="Reset"
-							className="bg-gray-300 w-full p-2 rounded-xl uppercase text-sm h-full"
+							className="bg-gray-300 w-full p-2 uppercase text-sm h-full"
 							noIcon={true}
 						/>
 					</li>

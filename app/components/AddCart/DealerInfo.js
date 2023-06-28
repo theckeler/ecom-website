@@ -101,7 +101,7 @@ export default function DealerInfo() {
 			</ul>
 
 			<div className="hidden" id="dealeredit">
-				<div className="p-4 bg-amber-200 rounded-md mt-4">
+				<div className="p-4 bg-amber-200 mt-4">
 					<h3 className="font-bold mb-3">Find a Dealer</h3>
 
 					<ul className="flex items-center w-full">

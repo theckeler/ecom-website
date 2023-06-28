@@ -5,7 +5,7 @@ export default function ButtonMap({
 }) {
 	return (
 		<button
-			className={`group lg:hover:bg-amber-400 text-center rounded-sm inline-block p-3 text-xs h-full uppercase font-bold bg-gray-200  ${className}`}
+			className={`group lg:hover:bg-amber-400 text-center inline-block p-3 text-xs h-full uppercase font-bold bg-gray-200  ${className}`}
 			onClick={addClick}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"

@@ -5,7 +5,7 @@ export default function SEOLinks() {
 				<li key={i}>
 					<a
 						href="#top"
-						className="underline flex items-center border p-2 text-xs rounded-2xl">
+						className="underline flex items-center border p-2 text-xs">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 96 960 960"

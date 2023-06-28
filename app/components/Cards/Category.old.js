@@ -30,7 +30,7 @@ export default function CategoryCard({
 				<div className="mt-auto">
 					<ButtonMain
 						title={`Shop ${h2}`}
-						className="w-full mt-4 p-2 flex justify-center items-center bg-amber-400 rounded-2xl text-xs lg:text-sm"
+						className="w-full mt-4 p-2 flex justify-center items-center bg-amber-400 text-xs lg:text-sm"
 						noButton
 					/>
 				</div>

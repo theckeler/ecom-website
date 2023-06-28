@@ -75,7 +75,7 @@ export default function BreadCrumbs({
 						href={cta.url}
 						title={cta.title}
 						noIcon={true}
-						className={`bg-amber-400 px-4 py-2 rounded uppercase ${cta.className}`}
+						className={`bg-amber-400 px-4 py-2 uppercase ${cta.className}`}
 					/>
 				</li>
 			)}

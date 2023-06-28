@@ -88,7 +88,7 @@ export default function Index() {
 						<Filter />
 
 						<button
-							className="bg-amber-400 rounded p-3 ml-2"
+							className="bg-amber-400 p-3 ml-2"
 							onClick={(e) => {
 								const productFinder = document.querySelector("#product-finder");
 								//productFinder.classList.toggle("hidden");
@@ -107,7 +107,7 @@ export default function Index() {
 						</button>
 
 						<button
-							className="hidden bg-red-500 rounded p-3 ml-2"
+							className="hidden bg-red-500 p-3 ml-2"
 							id="compare-button"
 							onClick={() => {
 								document.querySelector("#compare").classList.toggle("hidden");

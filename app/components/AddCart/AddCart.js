@@ -7,7 +7,6 @@ import InputButton from "app/components/InputButton";
 export default function AddCart({ shippingButtons }) {
 	const buyButtonsClick = (e) => {
 		e.preventDefault();
-		console.log(e.currentTarget.dataset.availability);
 
 		document.querySelectorAll(".buy-button").forEach((block) => {
 			block.classList.add("bg-gray-200");

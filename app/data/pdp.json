@@ -683,12 +683,18 @@
 	],
 	"ctaHero": [
 		{
-			"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw65a0ad0d/images/product-line-browse/Main-Carousel/47RTCAB7010_ZTXS554_Env_01-1015x630.jpg",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw65a0ad0d/images/product-line-browse/Main-Carousel/47RTCAB7010_ZTXS554_Env_01-1015x630.jpg"
+			},
 			"title": "Up to $300 off select Ultima Series™ Zero-Turns",
-			"copy": "From tight turns to inclined hillsides and stretching valleys, the Ultima ZTXS is built to help tackle your yard’s unique challenges. The Ultima ZTXS brings Cub Cadet’s innovative and proprietary Synchro-Steer ™ technology to the proven Ultima Series™ platform for reliable precision and confident control.",
-			"subCopy": "The Ultima Series™ Zero-Turn withCommercial-Grade Features",
-			"buttonText": "Learn more about the Ultima ZTXS",
-			"href": "#top"
+			"p": "From tight turns to inclined hillsides and stretching valleys, the Ultima ZTXS is built to help tackle your yard’s unique challenges. The Ultima ZTXS brings Cub Cadet’s innovative and proprietary Synchro-Steer ™ technology to the proven Ultima Series™ platform for reliable precision and confident control.",
+			"small": "The Ultima Series™ Zero-Turn withCommercial-Grade Features",
+			"button": {
+				"title": "Learn more about the Ultima ZTXS",
+				"href": "#top",
+				"className": "bg-black text-white"
+			},
+			"noIMG": true
 		}
 	]
 }

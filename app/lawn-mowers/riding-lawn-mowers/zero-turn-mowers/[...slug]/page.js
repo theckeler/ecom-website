@@ -13,7 +13,6 @@ import H1 from "app/components/H1";
 import H2 from "app/components/H2";
 import Price from "app/components/Price";
 import Desc from "app/components/Desc";
-// import SEOGreek from "@/components/SEOGreek";
 import SEOLinks from "app/components/SEOLinks";
 import ProductBlock from "app/components/Product/Block";
 import Faqs from "app/components/Faqs";
@@ -21,7 +20,7 @@ import Faqs from "app/components/Faqs";
 import productsJSON from "@/data/pdp.json";
 import faqs from "@/data/faqs.json";
 
-const IndexID = ({ params }) => {
+export default function Index({ params }) {
 	const product = productsJSON.products[Number(params.slug - 1)];
 
 	return (
@@ -86,5 +85,4 @@ const IndexID = ({ params }) => {
 			</div>
 		</>
 	);
-};
-export default IndexID;
+}

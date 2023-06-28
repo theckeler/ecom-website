@@ -3,8 +3,6 @@
 import Link from "next/link";
 
 export default function SubNav({ sub }) {
-	//console.log(typeof sub);
-
 	return (
 		sub && (
 			<>

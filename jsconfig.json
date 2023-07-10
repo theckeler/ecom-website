@@ -12,7 +12,7 @@
 			"@/product/*": ["app/components/Product/*"],
 			"@/addtocart/*": ["app/components/AddCart/*"],
 			"@/header/*": ["app/components/Header/*"],
-			"@/dealer/*": ["app/components/Dealer/*"],
+			"@/dealer/*": ["app/components/Menus/Dealer/*"],
 			"@/functions/*": ["app/components/Functions/*"]
 		}
 	}

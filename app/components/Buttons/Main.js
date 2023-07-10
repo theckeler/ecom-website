@@ -6,13 +6,15 @@ export default function Button({
 	href = null,
 	noButton = false,
 	buttonPadding = "py-3",
+	onClick,
 }) {
 	const Type = noButton ? "div" : href ? "a" : "button";
 
 	return (
 		<Type
 			className={`text-sm lg:text-base ${buttonPadding} ${className}`}
-			href={href}>
+			href={href}
+			onClick={onClick}>
 			{title}
 		</Type>
 	);

@@ -1,5 +1,7 @@
 export default function toggleMenu(toggleMe) {
-	document.querySelectorAll(".sub-nav").forEach((e) => {
+	//console.log(toggleMe);
+	document.querySelectorAll(".popup-item").forEach((e) => {
+		// console.log(e.id);
 		if (toggleMe === null) {
 			e.classList.add("hidden");
 			document.querySelector("#fixed-screen").classList.add("hidden");

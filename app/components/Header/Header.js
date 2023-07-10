@@ -6,7 +6,7 @@ import Hamburger from "@/icons/Hamburger";
 import Logo from "@/components/Logo";
 import Nav from "@/components/Menus/Nav";
 import Promo from "@/components/Header/Promo";
-import ShopYourDealer from "@/dealer/ShopYourDealer";
+import ShopYourDealer from "@/components/Menus/Dealer/ShopYourDealer";
 import toggleMenu from "@/functions/toggleMenu";
 
 export default function Header({ className, menuItems }) {
@@ -37,7 +37,7 @@ export default function Header({ className, menuItems }) {
 				<div className="max-w-screen-2xl mx-auto text-center">
 					<ul className="flex items-center text-sm">
 						<li className="">
-							<ShopYourDealer toggleMenu={toggleMenu} />
+							<ShopYourDealer />
 						</li>
 
 						<li className="basis-4/12 flex justify-end ml-auto">
@@ -67,7 +67,7 @@ export default function Header({ className, menuItems }) {
 							<button
 								className="lg:w-12 leading-none"
 								onClick={() => {
-									toggleMenu("#nav");
+									toggleMenu("main-nav");
 								}}>
 								<Hamburger className="w-12" fillColor="#fff" />
 								<span className="text-white text-xs leading-none relative -top-2">

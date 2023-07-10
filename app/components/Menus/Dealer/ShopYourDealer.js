@@ -4,7 +4,7 @@ import Close from "@/icons/Close";
 import HeaderButton from "@/header/Button";
 import toggleMenu from "@/functions/toggleMenu";
 
-export default function ShopYourDealer({ className, toggleMenu }) {
+export default function ShopYourDealer({ className }) {
 	return (
 		<div className={` ${className}`}>
 			<HeaderButton
@@ -17,7 +17,7 @@ export default function ShopYourDealer({ className, toggleMenu }) {
 			/>
 
 			<div
-				className="sub-nav hidden fixed z-50 left-0 top-0 h-screen w-full md:max-w-xl bg-white p-2 lg:p-4"
+				className="popup-item hidden fixed z-50 left-0 top-0 h-screen w-full md:max-w-xl bg-white p-2 lg:p-4"
 				id="dealer">
 				<ul className="flex">
 					<li>

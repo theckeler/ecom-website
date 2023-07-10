@@ -1,6 +1,7 @@
 import ButtonMain from "@/buttons/Main";
 import ExpandMore from "@/icons/ExpandMore";
 import Close from "../Icons/Close";
+import toggleMenu from "@/functions/toggleMenu";
 
 export default function Promo() {
 	return (
@@ -9,21 +10,19 @@ export default function Promo() {
 				<button
 					className="flex items-center justify-center w-full p-2 font-bold"
 					onClick={() => {
-						document.querySelector("#promo-content").classList.toggle("hidden");
+						toggleMenu("promo-content");
 					}}>
 					Promo: Aliquam dolor arcu, mattis vitae arcu et
 					<ExpandMore className="ml-1 w-6" />
 				</button>
 			</div>
-			<div className="hidden" id="promo-content">
+			<div className="hidden popup-item" id="promo-content">
 				<div
 					className="mx-auto px-2 py-4 fixed top-0 left-0 w-full z-50 h-full lg:h-auto"
 					style={{ backgroundColor: "#ffc20f" }}>
 					<button
 						onClick={() => {
-							document
-								.querySelector("#promo-content")
-								.classList.toggle("hidden");
+							toggleMenu(null);
 						}}
 						className="w-full">
 						<Close className="h-12 ml-auto" />
@@ -51,6 +50,9 @@ export default function Promo() {
 							<ButtonMain
 								title="CTA Button"
 								className="bg-black text-white font-uppercase inline-flex rounded justify-center px-8"
+								onClick={() => {
+									toggleMenu(null);
+								}}
 							/>
 						</div>
 					</div>

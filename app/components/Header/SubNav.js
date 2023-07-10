@@ -24,9 +24,9 @@ export default function SubNav({ sub }) {
 						</ul>
 					</div>
 				</div>
-				<div
+				{/* <div
 					className="hidden lg:bg-amber-400 w-0 lg:w-full h-0 lg:h-full fixed top-0 left-0 z-0 opacity-80"
-					id="bg-sub-menu"></div>
+					id="bg-sub-menu"></div> */}
 			</>
 		)
 	);

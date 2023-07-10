@@ -8,8 +8,8 @@ import toggleMenu from "@/functions/toggleMenu";
 export default function Nav({ menuItems }) {
 	let openSubMenu = null;
 	return (
-		<div id="nav" className="hidden lg:block w-full">
-			<ul className="lg:flex fixed lg:relative z-50 left-0 top-0 h-full w-full md:max-w-xl lg:max-w-fit bg-white lg:bg-transparent">
+		<div id="main-nav" className="hidden lg:block w-full popup-item">
+			<ul className="lg:flex fixed lg:relative z-50 lg:z-auto left-0 top-0 h-full w-full md:max-w-xl lg:max-w-fit bg-white lg:bg-transparent">
 				<li className="lg:hidden h-12">
 					<button
 						onClick={() => {
@@ -26,7 +26,7 @@ export default function Nav({ menuItems }) {
 								.querySelector(`#${menu.slug}`)
 								.querySelector(`#sub-nav`)
 								.classList.toggle("hidden");
-							document.querySelector("#bg-sub-menu").classList.toggle("hidden");
+							//document.querySelector("#bg-sub-menu").classList.toggle("hidden");
 							document
 								.querySelector("body")
 								.classList.toggle("overflow-hidden");

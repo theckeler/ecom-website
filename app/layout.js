@@ -17,10 +17,9 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className="bg-white">
 				<Header className="" menuItems={menuItems} />
-				<Cart className="sub-nav" />
-
-				<Account className="sub-nav" />
-				<Stores className="sub-nav" />
+				<Cart className="popup-item" />
+				<Account className="popup-item" />
+				<Stores className="popup-item" />
 				<main className="">{children}</main>
 				<div className="bg-gray-200" style={{ minHeight: "600px" }}></div>
 				<Screen />

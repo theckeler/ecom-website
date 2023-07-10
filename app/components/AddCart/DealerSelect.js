@@ -53,7 +53,7 @@ export default function DealerSelect({
 						defaultChecked={selected}
 					/>
 				</li>
-				<li className="w-full">
+				<li className="w-full text-left">
 					<div className="font-bold">{dealer}</div>
 					{showAdress && (
 						<ul className="text-xs mt-1">

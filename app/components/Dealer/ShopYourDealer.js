@@ -2,6 +2,7 @@ import InputButton from "@/components/InputButton";
 import Options from "./Options";
 import Close from "@/icons/Close";
 import HeaderButton from "@/header/Button";
+import toggleMenu from "@/functions/toggleMenu";
 
 export default function ShopYourDealer({ className, toggleMenu }) {
 	return (
@@ -25,7 +26,7 @@ export default function ShopYourDealer({ className, toggleMenu }) {
 					<li className="ml-auto">
 						<button
 							onClick={() => {
-								document.querySelector("#dealer").classList.toggle("hidden");
+								toggleMenu(null);
 							}}
 							className="w-full">
 							<Close className="h-12 " />
@@ -48,7 +49,7 @@ export default function ShopYourDealer({ className, toggleMenu }) {
 					neque. Phasellus ut enim velit.
 				</p>
 
-				<Options className="mt-2 lg:mt-4 grid grid-cols-1 lg:grid-cols-3 gap-2 lg:divide-x divide-gray-300" />
+				<Options className="mt-2 lg:mt-4" row={false} />
 			</div>
 		</div>
 	);

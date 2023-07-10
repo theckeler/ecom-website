@@ -6,6 +6,7 @@ export default function Options({
 	inputClass,
 	activeColor = "bg-amber-400",
 	inactiveColor = "bg-gray-200",
+	row = true,
 }) {
 	return (
 		<ul className={`${className}`}>
@@ -37,7 +38,7 @@ export default function Options({
 					cityState="NORTHFIELD, OH 44067"
 					phone="(330) 467-0020"
 					reviewNum={67}
-					className="text-xs lg:p-3 lg:ml-2"
+					className={`text-xs lg:p-3 ${row ? "lg:ml-2" : "mt-1"}`}
 					id="Northfield"
 					shopYourDealer
 				/>
@@ -53,7 +54,7 @@ export default function Options({
 					cityState="LYNDHURST, OH 44124"
 					phone="(440) 442-1846"
 					reviewNum={23}
-					className="text-xs lg:p-3 lg:ml-2"
+					className={`text-xs lg:p-3 ${row ? "lg:ml-2" : "mt-1"}`}
 					id="Marshall"
 					shopYourDealer
 				/>

@@ -7,16 +7,9 @@ import Logo from "@/components/Logo";
 import Nav from "@/components/Menus/Nav";
 import Promo from "@/components/Header/Promo";
 import ShopYourDealer from "@/dealer/ShopYourDealer";
-//import ShopYourDealer from "@/dealer/Options";
+import toggleMenu from "@/functions/toggleMenu";
 
 export default function Header({ className, menuItems }) {
-	const toggleMenu = (toggleMe) => {
-		document.querySelectorAll(".sub-nav").forEach((e) => {
-			e.classList.add("hidden");
-		});
-		document.querySelector(`#${toggleMe}`).classList.toggle("hidden");
-	};
-
 	const buttonItems = [
 		{ title: "Stores", url: null, onClick: () => toggleMenu("stores") },
 		{ title: "Help", buttonIcon: "help", url: "/" },
@@ -69,12 +62,12 @@ export default function Header({ className, menuItems }) {
 
 			<li className="bg-black">
 				<div className="max-w-screen-2xl mx-auto">
-					<ul className="flex items-center w-full relative z-30">
+					<ul className="flex items-center w-full relative">
 						<li className="lg:hidden flex flex-col items-center">
 							<button
 								className="lg:w-12 leading-none"
 								onClick={() => {
-									document.querySelector("#nav").classList.toggle("hidden");
+									toggleMenu("#nav");
 								}}>
 								<Hamburger className="w-12" fillColor="#fff" />
 								<span className="text-white text-xs leading-none relative -top-2">

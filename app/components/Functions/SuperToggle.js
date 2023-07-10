@@ -1,5 +1,3 @@
-const SuperToggle = function (e, a) {
+export default function SuperToggle(e, a) {
 	a.map((v) => e.currentTarget.classList.toggle(v));
-};
-
-export default SuperToggle;
+}

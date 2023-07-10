@@ -12,7 +12,8 @@
 			"@/product/*": ["app/components/Product/*"],
 			"@/addtocart/*": ["app/components/AddCart/*"],
 			"@/header/*": ["app/components/Header/*"],
-			"@/dealer/*": ["app/components/Dealer/*"]
+			"@/dealer/*": ["app/components/Dealer/*"],
+			"@/functions/*": ["app/components/Functions/*"]
 		}
 	}
 }

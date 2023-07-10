@@ -3,6 +3,7 @@
 import Close from "@/icons/Close";
 import LinkMain from "@/header/LinkMain";
 import SubNav from "@/header/SubNav";
+import toggleMenu from "@/functions/toggleMenu";
 
 export default function Nav({ menuItems }) {
 	let openSubMenu = null;
@@ -12,7 +13,7 @@ export default function Nav({ menuItems }) {
 				<li className="lg:hidden h-12">
 					<button
 						onClick={() => {
-							document.querySelector("#nav").classList.toggle("hidden");
+							toggleMenu(null);
 						}}
 						className="w-full">
 						<Close className="h-12 ml-auto" />

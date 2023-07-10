@@ -1,6 +1,7 @@
 "use client";
 import Close from "@/icons/Close";
 import ShopYourDealer from "@/dealer/ShopYourDealer";
+import toggleMenu from "@/functions/toggleMenu";
 
 export default function Dealer({ className }) {
 	return (
@@ -12,7 +13,7 @@ export default function Dealer({ className }) {
 				<li className="ml-auto">
 					<button
 						onClick={() => {
-							document.querySelector("#dealer").classList.toggle("hidden");
+							toggleMenu(null);
 						}}
 						className="w-full">
 						<Close className="h-12 " />

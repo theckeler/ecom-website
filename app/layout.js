@@ -5,6 +5,7 @@ import Stores from "@/components/Menus/Stores";
 import Account from "@/components/Menus/Account";
 import menuItems from "@/data/nav.json";
 import "./globals.css";
+import Screen from "./components/Screen";
 
 export const metadata = {
 	title: "Cub Cadet Rebuild",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
 				<Stores className="sub-nav" />
 				<main className="">{children}</main>
 				<div className="bg-gray-200" style={{ minHeight: "600px" }}></div>
+				<Screen />
 			</body>
 		</html>
 	);

@@ -7,7 +7,7 @@ export default function Cart({ className }) {
 		<div
 			id="cart"
 			className={`hidden fixed z-50 right-0 top-0 h-screen w-full md:max-w-xl bg-white ${className}`}>
-			<ul className="">
+			<ul>
 				<li className="py-3 border-b">
 					<button
 						onClick={() => {

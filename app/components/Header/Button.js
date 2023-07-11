@@ -36,7 +36,7 @@ export default function Buttons({
 				className={`h-8 lg:mr-1 ${fillColor}`}
 				style={{ minWidth: "2em", maxWidth: "2em" }}
 			/>
-			<span className={mobile && "hidden lg:block whitespace-nowrap"}>
+			<span className={mobile && "hidden xl:block whitespace-nowrap"}>
 				{title}
 			</span>
 		</LinkType>

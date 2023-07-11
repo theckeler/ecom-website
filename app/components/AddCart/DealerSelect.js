@@ -12,13 +12,13 @@ export default function DealerSelect({
 	id,
 	reviewNum,
 	className = null,
-	activeColor = "bg-amber-100",
-	inactiveColor = "bg-white",
+	activeColor = "",
+	inactiveColor = "",
 	showAdress = true,
 }) {
 	return (
 		<div
-			className={`dealer-select group flex relative p-2 text-black ${
+			className={`dealer-select group flex relative p-2  ${
 				!!selected ? activeColor : inactiveColor
 			} ${className}`}
 			onChange={(e) => {
@@ -43,7 +43,7 @@ export default function DealerSelect({
 					}
 				});
 			}}>
-			<ul className="z-0 h-full w-full flex">
+			<ul className="z-0 h-full w-full flex relative">
 				<li>
 					<input
 						type="radio"
@@ -54,18 +54,20 @@ export default function DealerSelect({
 					/>
 				</li>
 				<li className="w-full text-left">
-					<div className="font-bold">{dealer}</div>
-					{showAdress && (
-						<ul className="text-xs mt-1">
-							<li className="flex">
-								Dealer Review:
-								<Stars className="ml-1" starSize={12} /> ({reviewNum})
-							</li>
-							<li>{street}</li>
-							<li>{cityState}</li>
-							<li>{phone}</li>
-						</ul>
-					)}
+					<div className="font-bold truncate md:max-w-[120px] lg:max-w-none">
+						{dealer}
+					</div>
+					{/* {showAdress && ( */}
+					<ul className="text-xs hidden group-hover:block absolute z-50 p-2 bg-white text-black">
+						<li className="flex">
+							Dealer Review:
+							<Stars className="ml-1 fill-white" starSize={12} /> ({reviewNum})
+						</li>
+						<li>{street}</li>
+						<li>{cityState}</li>
+						<li>{phone}</li>
+					</ul>
+					{/* )} */}
 				</li>
 				{showAdress && <li className="ml-auto">{miles}mi</li>}
 			</ul>

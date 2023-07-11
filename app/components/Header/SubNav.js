@@ -23,7 +23,6 @@ export default function SubNav({ menuItems }) {
 											<button
 												className="p-4 block w-100"
 												onClick={(e) => {
-													console.log("click");
 													toggleMenu("main-nav");
 												}}>
 												<ul className="font-bold flex items-center">

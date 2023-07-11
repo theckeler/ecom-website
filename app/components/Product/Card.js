@@ -3,8 +3,6 @@ import Link from "next/link";
 import ButtonMain from "app/components/Buttons/Main";
 
 export default function Card({ block }) {
-	console.log(block);
-
 	return (
 		<Link
 			href={block.button.href}

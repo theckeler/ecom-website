@@ -9,7 +9,6 @@ export default function toggleMenu(toggleMe) {
 			document.querySelector("#fixed-screen").classList.remove("hidden");
 			document.querySelector("body").classList.add("overflow-hidden");
 		} else if (toggleMe === "main-nav") {
-			console.log("main-nav");
 			e.classList.add("hidden");
 			document.querySelector("#fixed-screen").classList.remove("hidden");
 			document.querySelector("body").classList.add("overflow-hidden");

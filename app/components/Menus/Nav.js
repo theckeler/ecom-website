@@ -2,44 +2,45 @@
 
 import Close from "@/icons/Close";
 import LinkMain from "@/header/LinkMain";
-import SubNav from "@/header/SubNav";
 import toggleMenu from "@/functions/toggleMenu";
+import ChevronLeft from "@/icons/ChevronLeft";
 
 export default function Nav({ menuItems }) {
 	let openSubMenu = null;
 	return (
 		<div id="main-nav" className="hidden lg:block w-full popup-item">
-			<ul className="lg:flex fixed lg:relative z-50 lg:z-auto left-0 top-0 h-full w-full md:max-w-xl lg:max-w-fit bg-white lg:bg-transparent">
-				<li className="lg:hidden h-12">
+			<ul className="lg:flex fixed lg:relative z-50 lg:z-auto left-0 top-0 h-full w-full md:max-w-xl lg:max-w-fit bg-white lg:bg-transparent ">
+				<li className="lg:hidden py-3">
 					<button
 						onClick={() => {
 							toggleMenu(null);
 						}}
-						className="w-full">
-						<Close className="h-12 ml-auto" />
+						className="w-full flex justify-end">
+						<Close className="h-12 " />
 					</button>
 				</li>
-				{menuItems.map((menu, i) => {
-					if (menu.sub) {
-						openSubMenu = () => {
-							document
-								.querySelector(`#${menu.slug}`)
-								.querySelector(`#sub-nav`)
-								.classList.toggle("hidden");
-							//document.querySelector("#bg-sub-menu").classList.toggle("hidden");
-							document
-								.querySelector("body")
-								.classList.toggle("overflow-hidden");
-						};
-					}
+				<li className="relative group overflow-x-scroll max-h-[calc(100vh-72px)]">
+					<ul className="flex flex-col lg:flex-row divide-y lg:divide-none divide-solid border-t lg:border-0 border-b pb-8 lg:pb-0">
+						{menuItems.map((menu, i) => {
+							if (menu.sub) {
+								openSubMenu = () => {
+									document
+										.querySelector(`#${menu.slug}-sub`)
+										.classList.toggle("hidden");
+									document
+										.querySelector("body")
+										.classList.toggle("overflow-hidden");
+								};
+							}
 
-					return (
-						<li className="relative group p-2" key={i} id={menu.slug}>
-							<LinkMain {...{ i, menu, openSubMenu }} />
-							{<SubNav sub={menu.sub} />}
-						</li>
-					);
-				})}
+							return (
+								<li key={i} className="">
+									<LinkMain {...{ i, menu, openSubMenu }} />
+								</li>
+							);
+						})}
+					</ul>
+				</li>
 			</ul>
 		</div>
 	);

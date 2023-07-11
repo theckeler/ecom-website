@@ -1,18 +1,18 @@
 import DealerSelect from "app/components/AddCart/DealerSelect";
 
 export default function Options({
-	className,
+	//className,
 	showAdress,
-	inputClass,
-	activeColor = "bg-amber-400",
-	inactiveColor = "bg-gray-200",
-	row = true,
+	//inputClass,
+	activeColor = "",
+	inactiveColor = "",
+	//row = true,
 }) {
 	return (
-		<ul className={`${className}`}>
+		<ul className="md:flex">
 			<li className="">
 				<DealerSelect
-					showAdress={showAdress}
+					showAdress={false}
 					activeColor={activeColor}
 					inactiveColor={inactiveColor}
 					dealer="Worcester Sales and Service, Inc."
@@ -22,14 +22,14 @@ export default function Options({
 					phone="(330) 554-5434"
 					id="Worcester"
 					reviewNum={44}
-					className="text-xs lg:p-3"
+					className="text-xs text-white"
 					selected
 					shopYourDealer
 				/>
 			</li>
 			<li className="">
 				<DealerSelect
-					showAdress={showAdress}
+					showAdress={false}
 					activeColor={activeColor}
 					inactiveColor={inactiveColor}
 					dealer="Northfield Power Equipment"
@@ -38,14 +38,14 @@ export default function Options({
 					cityState="NORTHFIELD, OH 44067"
 					phone="(330) 467-0020"
 					reviewNum={67}
-					className={`text-xs lg:p-3 ${row ? "lg:ml-2" : "mt-1"}`}
+					className="text-xs text-white"
 					id="Northfield"
 					shopYourDealer
 				/>
 			</li>
 			<li className="">
 				<DealerSelect
-					showAdress={showAdress}
+					showAdress={false}
 					activeColor={activeColor}
 					inactiveColor={inactiveColor}
 					dealer="Marshall Equipment Company"
@@ -54,7 +54,7 @@ export default function Options({
 					cityState="LYNDHURST, OH 44124"
 					phone="(440) 442-1846"
 					reviewNum={23}
-					className={`text-xs lg:p-3 ${row ? "lg:ml-2" : "mt-1"}`}
+					className="text-xs text-white"
 					id="Marshall"
 					shopYourDealer
 				/>

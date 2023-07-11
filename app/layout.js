@@ -3,7 +3,6 @@ import Cart from "@/components/Menus/Cart";
 //import Dealer from "@/components/Dealer";
 import Stores from "@/components/Menus/Stores";
 import Account from "@/components/Menus/Account";
-import menuItems from "@/data/nav.json";
 import "./globals.css";
 import Screen from "./components/Screen";
 
@@ -16,7 +15,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className="bg-white">
-				<Header className="" menuItems={menuItems} />
+				<Header />
 				<Cart className="popup-item" />
 				<Account className="popup-item" />
 				<Stores className="popup-item" />

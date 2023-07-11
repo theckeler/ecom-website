@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import ChevronRight from "@/icons/ChevronRight";
 import ExpandMore from "@/icons/ExpandMore";
 
 export default function LinkMain({ menu, openSubMenu }) {
@@ -14,7 +15,8 @@ export default function LinkMain({ menu, openSubMenu }) {
 			<span>{menu.title}</span>
 			{menu.sub && (
 				<span className="ml-auto sm:ml-1">
-					<ExpandMore className="w-6 fill-black lg:fill-white" />
+					<ChevronRight className="lg:hidden w-6 fill-black lg:fill-white" />
+					<ExpandMore className="hidden lg:block w-6 fill-black lg:fill-white" />
 				</span>
 			)}
 		</LinkType>

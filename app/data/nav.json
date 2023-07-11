@@ -6,39 +6,48 @@
 		"sub": [
 			{
 				"title": "Zero-Turn Mowers",
-				"url": "/lawn-mowers/riding-lawn-mowers/zero-turn-mowers"
+				"url": "/lawn-mowers/riding-lawn-mowers/zero-turn-mowers",
+				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw9cf18212/menu-card-images/Cub-Cadet-ZT260_NavCard.png"
 			},
 			{
 				"title": "Lawn & Garden Tractors",
-				"url": "#top"
+				"url": "#top",
+				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwf810af75/menu-card-images/Cub-Cadet-Riding-Mower2_NavCard.png"
 			},
 			{
 				"title": "Electric Riding Mowers",
-				"url": "#top"
+				"url": "#top",
+				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwb45fd490/menu-card-images/33AA27JDB10_XT1LT42E_RT_200x0_200.jpg"
 			},
 			{
 				"title": "Mower Accessories",
-				"url": "#top"
+				"url": "#top",
+				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw63b8d5db/menu-card-images/Cub-Cadet-Riding-Mower-Accessory1_NavCard.png"
 			},
 			{
 				"title": "Zero-Turn Mower Accessories",
-				"url": "#top"
+				"url": "#top",
+				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwb3c7d8c4/menu-card-images/Cub-Cadet-RZT-Mower-Accessory1_NavCard.png"
 			},
 			{
 				"title": "Push Mowers",
-				"url": "#top"
+				"url": "#top",
+				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw98f56dd0/menu-card-images/Cub-Cadet-SCP100_NavCard.png"
 			},
 			{
 				"title": "Self-Propelled Mowers",
-				"url": "#top"
+				"url": "#top",
+				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw59d09c81/menu-card-images/Cub-Cadet-SC500K_NavCard.png"
 			},
 			{
 				"title": "Wide Area Mowers",
-				"url": "#top"
+				"url": "#top",
+				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw1acb675f/menu-card-images/Cub-Cadet-CC800_NavCard.png"
 			},
 			{
 				"title": "Push Mower Accessories",
-				"url": "#top"
+				"url": "#top",
+				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw4e58dcc7/menu-card-images/Cub-Cadet-Walk-Behind-Accessory_NavCard.png"
 			}
 		]
 	},

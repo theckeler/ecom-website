@@ -8,8 +8,10 @@ import Nav from "@/components/Menus/Nav";
 import Promo from "@/components/Header/Promo";
 import ShopYourDealer from "@/components/Menus/Dealer/ShopYourDealer";
 import toggleMenu from "@/functions/toggleMenu";
+import SubNav from "@/header/SubNav";
+import menuItems from "@/data/nav.json";
 
-export default function Header({ className, menuItems }) {
+export default function Header() {
 	const buttonItems = [
 		{ title: "Stores", url: null, onClick: () => toggleMenu("stores") },
 		{ title: "Help", buttonIcon: "help", url: "/" },
@@ -63,16 +65,22 @@ export default function Header({ className, menuItems }) {
 			<li className="bg-black">
 				<div className="max-w-screen-2xl mx-auto">
 					<ul className="flex items-center w-full relative">
-						<li className="lg:hidden flex flex-col items-center">
+						<li className="lg:hidden flex flex-col items-center pr-2">
 							<button
 								className="lg:w-12 leading-none"
 								onClick={() => {
 									toggleMenu("main-nav");
 								}}>
-								<Hamburger className="w-12" fillColor="#fff" />
-								<span className="text-white text-xs leading-none relative -top-2">
-									Menu
-								</span>
+								<ul className="flex items-center">
+									<li>
+										<Hamburger className="w-12" fillColor="#fff" />
+									</li>
+									<li>
+										<span className="text-white text-sm text-bold leading-none">
+											Menu
+										</span>
+									</li>
+								</ul>
 							</button>
 						</li>
 						<li className="w-40 p-2">
@@ -85,6 +93,10 @@ export default function Header({ className, menuItems }) {
 						</li>
 					</ul>
 				</div>
+			</li>
+
+			<li className="bg-white border-b border-gray-300">
+				<SubNav menuItems={menuItems} />
 			</li>
 		</ul>
 	);

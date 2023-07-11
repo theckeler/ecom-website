@@ -10,7 +10,8 @@ const Faqs = ({ faqs, className, id }) => {
 							onClick={(e) => {
 								e.currentTarget.nextElementSibling.classList.toggle("hidden");
 							}}
-							className="question cursor-pointer w-full p-3 text-sm">
+							className="question cursor-pointer w-full p-3 text-sm"
+							aria-label="View FAQs">
 							<ul className="flex items-center">
 								<li
 									dangerouslySetInnerHTML={{

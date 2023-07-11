@@ -8,7 +8,8 @@ export default function ScrollButton({
 		<button
 			className={`hidden lg:group-hover/buttons:block absolute z-20 top-2/4 -translate-y-2/4 ${className}`}
 			id={`related-${buttonType}`}
-			onClick={onClick}>
+			onClick={onClick}
+			aria-label="Scroll">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 48 48"

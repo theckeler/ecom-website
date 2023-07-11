@@ -8,7 +8,8 @@ export default function AppliedFilter({
 	return (
 		<button
 			className={`p-3 flex items-center justify-center bg-gray-200 text-xs ${className}`}
-			onClick={onClick}>
+			onClick={onClick}
+			aria-label={title}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 96 960 960"

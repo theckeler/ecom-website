@@ -37,6 +37,7 @@ export default function CatAd() {
 			</p>
 
 			<Button
+				aria-label="Apply Now"
 				title="Apply Now"
 				className="bg-gray-900 p-2 mt-2 text-white w-full"
 				noIcon={true}

@@ -12,6 +12,7 @@
 			"@/product/*": ["app/components/Product/*"],
 			"@/addtocart/*": ["app/components/AddCart/*"],
 			"@/header/*": ["app/components/Header/*"],
+			"@/footer/*": ["app/components/Footer/*"],
 			"@/dealer/*": ["app/components/Menus/Dealer/*"],
 			"@/functions/*": ["app/components/Functions/*"],
 			"@/menus/*": ["app/components/Menus/*"]

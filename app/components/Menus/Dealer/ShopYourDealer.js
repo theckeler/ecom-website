@@ -32,7 +32,8 @@ export default function ShopYourDealer({ className }) {
 							onClick={() => {
 								toggleMenu(null);
 							}}
-							className="w-full">
+							className="w-full"
+							aria-label="Close">
 							<ul className="w-100 flex items-center w-100">
 								<li className="w-100 grow font-bold text-left pl-3">
 									Shop Your Dealer

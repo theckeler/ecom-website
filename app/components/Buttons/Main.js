@@ -12,9 +12,10 @@ export default function Button({
 
 	return (
 		<Type
-			className={`text-sm lg:text-base ${buttonPadding} ${className}`}
+			className={`text-xs ${buttonPadding} ${className}`}
 			href={href}
-			onClick={onClick}>
+			onClick={onClick}
+			aria-label={title}>
 			{title}
 		</Type>
 	);

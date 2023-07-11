@@ -54,11 +54,18 @@ export default function DealerSelect({
 					/>
 				</li>
 				<li className="w-full text-left">
-					<div className="font-bold truncate md:max-w-[120px] lg:max-w-none">
+					<div
+						className={`font-bold ${
+							!showAdress && "truncate md:max-w-[120px] lg:max-w-none"
+						}`}>
 						{dealer}
 					</div>
-					{/* {showAdress && ( */}
-					<ul className="flex flex-col md:hidden group-hover:block relative md:absolute z-50 p-2 bg-white text-black">
+
+					<ul
+						className={`p-2 bg-white text-black ${
+							!showAdress &&
+							"flex flex-col md:hidden group-hover:block relative md:absolute z-50"
+						}`}>
 						<li className="flex">
 							Dealer Review:
 							<Stars className="ml-1" starSize={12} /> ({reviewNum})
@@ -67,7 +74,6 @@ export default function DealerSelect({
 						<li>{cityState}</li>
 						<li>{phone}</li>
 					</ul>
-					{/* )} */}
 				</li>
 				{showAdress && <li className="ml-auto">{miles}mi</li>}
 			</ul>

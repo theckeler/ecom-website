@@ -23,6 +23,7 @@ export default function InputButton({
 			</li>
 			<li className="basis-auto">
 				<Button
+					aria-label={button}
 					title={button}
 					className={`flex items-center justify-center ${padding} text-sm font-bold rounded-r-lg border-0 ${classNameButton}`}
 					buttonPadding={padding}

@@ -7,7 +7,8 @@ export default function Filter({}) {
 				className="bg-amber-400 p-3"
 				onClick={() => {
 					document.querySelector("#all-filters").classList.toggle("hidden");
-				}}>
+				}}
+				aria-label="Filter">
 				<ul className="flex items-center">
 					<li className="h-6 w-6 xl:mr-2">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960">

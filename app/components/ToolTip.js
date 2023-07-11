@@ -3,7 +3,8 @@ export default function H3({ copy }) {
 
 	return (
 		<button
-			className={`group/tooltip bg-amber-400 rounded-full w-4 h-4 text-xs -mt-4 relative`}>
+			className={`group/tooltip bg-amber-400 rounded-full w-4 h-4 text-xs -mt-4 relative`}
+			aria-label="Tool Tip">
 			?
 			<div
 				className={`group-hover/tooltip:block hidden absolute bottom-100 w-52 h-auto bg-gray-800 p-4  text-white z-20 min-w-[300px]`}

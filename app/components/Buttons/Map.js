@@ -6,7 +6,8 @@ export default function ButtonMap({
 	return (
 		<button
 			className={`group lg:hover:bg-amber-400 text-center inline-block p-3 text-xs h-full uppercase font-bold bg-gray-200  ${className}`}
-			onClick={addClick}>
+			onClick={addClick}
+			aria-label="Map View">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 96 960 960"

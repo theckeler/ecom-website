@@ -81,7 +81,7 @@ export default function Card({
 						<Button
 							title={`View ${product.title}`}
 							noIcon={true}
-							className="w-full p-2 mt-2 text-sm font-bold bg-gray-200 overflow-hidden truncate"
+							className="w-full p-2 mt-2 text-xs font-bold bg-gray-200 overflow-hidden truncate"
 						/>
 					</div>
 				)}

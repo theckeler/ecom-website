@@ -88,7 +88,8 @@ export default function DealerInfo() {
 						className="block p-2 w-full bg-amber-200 toggle-button"
 						onClick={(e) => {
 							swapInfo(e, "dealer-list");
-						}}>
+						}}
+						aria-label="List View">
 						List View
 					</button>
 				</li>
@@ -97,7 +98,8 @@ export default function DealerInfo() {
 						className="block p-2 w-full toggle-button"
 						onClick={(e) => {
 							swapInfo(e, "dealer-map");
-						}}>
+						}}
+						aria-label="Map View">
 						Map View
 					</button>
 				</li>
@@ -121,6 +123,7 @@ export default function DealerInfo() {
 						<li className="basis-1/4">
 							<Button
 								title="Next"
+								aria-label="Next"
 								className="flex items-center justify-center p-3 text-sm font-bold bg-amber-400 rounded-r-lg"
 							/>
 						</li>

@@ -15,7 +15,8 @@ export default function Nav({ menuItems }) {
 						onClick={() => {
 							toggleMenu(null);
 						}}
-						className="w-full flex justify-end">
+						className="w-full flex justify-end"
+						aria-label="Close">
 						<Close className="h-12 " />
 					</button>
 				</li>

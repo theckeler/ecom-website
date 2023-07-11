@@ -2,7 +2,8 @@ export default function ButtonEdit({ title, className, addStyle, addClick }) {
 	return (
 		<button
 			className={`group lg:hover:bg-amber-400 text-center inline-block p-3 text-xs h-full uppercase font-bold bg-gray-200 ${className}`}
-			onClick={addClick}>
+			onClick={addClick}
+			aria-label="Edit">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="2em"

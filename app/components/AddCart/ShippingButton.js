@@ -20,7 +20,8 @@ export default function ShippingButton({ button, buyButtonsClick }) {
 			disabled={button.disabled && true}
 			onClick={buyButtonsClick}
 			data-availability={button.availability}
-			data-type={button.type}>
+			data-type={button.type}
+			aria-label={button.title}>
 			<ul className="flex items-center xl:flex-col w-full text-left xl:h-full">
 				<li className="basis-1/12 mr-2 xl:mr-0 xl:basis-full">
 					<div className="w-12 xl:min-w-full xl:h-14">

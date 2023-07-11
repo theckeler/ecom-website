@@ -41,7 +41,8 @@ export default function ButtonToggle({
 					toggleRelated.classList.toggle("lg:rotate-180");
 					toggleRelated.classList.toggle("lg:rotate-0");
 				}
-			}}>
+			}}
+			aria-label={title}>
 			<ul className={ulCSS}>
 				<li className="font-bold">{title}</li>
 				{!!stars && (

@@ -82,6 +82,7 @@ export default function AddCart({ shippingButtons }) {
 			<li className="mt-3">
 				<Button
 					title="Add to Cart"
+					aria-label="Add to Cart"
 					className="group flex items-center justify-center w-full p-3 uppercase font-bold bg-amber-400 lg:hover:bg-black lg:hover:text-white"
 				/>
 			</li>

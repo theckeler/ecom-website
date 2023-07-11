@@ -93,7 +93,8 @@ export default function Index() {
 								const productFinder = document.querySelector("#product-finder");
 								//productFinder.classList.toggle("hidden");
 								productFinder.scrollIntoView();
-							}}>
+							}}
+							aria-label="Help Me Decide">
 							<ul className="flex items-center">
 								<li className="h-6 w-6 mr-2">
 									<svg
@@ -111,7 +112,8 @@ export default function Index() {
 							id="compare-button"
 							onClick={() => {
 								document.querySelector("#compare").classList.toggle("hidden");
-							}}>
+							}}
+							aria-label="Compare">
 							<ul className="flex items-center">
 								<li className="h-6 w-6 mr-2">
 									<IconCompare />

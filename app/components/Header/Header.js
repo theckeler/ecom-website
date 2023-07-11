@@ -70,7 +70,8 @@ export default function Header() {
 								className="lg:w-12 leading-none"
 								onClick={() => {
 									toggleMenu("main-nav");
-								}}>
+								}}
+								aria-label="Navigation">
 								<ul className="flex items-center">
 									<li>
 										<Hamburger className="w-12" fillColor="#fff" />

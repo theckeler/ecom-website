@@ -11,6 +11,7 @@ export default function Filters({ className }) {
 					<li className="basis-1/12 text-right">
 						<button
 							className="w-12 p-1"
+							aria-label="Filter & Sort"
 							onClick={(e) => {
 								document.querySelector("#all-filters").classList.add("hidden");
 							}}>
@@ -72,6 +73,7 @@ export default function Filters({ className }) {
 					<li className="basis-9/12 mr-2">
 						<Button
 							title="View 34"
+							aria-label="View 34"
 							className="bg-amber-400 w-full p-2 uppercase font-bold"
 							noIcon={true}
 						/>
@@ -79,6 +81,7 @@ export default function Filters({ className }) {
 					<li className="basis-3/12">
 						<Button
 							title="Reset"
+							aria-label="Reset"
 							className="bg-gray-300 w-full p-2 uppercase text-sm h-full"
 							noIcon={true}
 						/>

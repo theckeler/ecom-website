@@ -11,7 +11,8 @@ export default function Promo() {
 					className="flex items-center justify-center w-full p-2 font-bold"
 					onClick={() => {
 						toggleMenu("promo-content");
-					}}>
+					}}
+					aria-label="Promo: Aliquam dolor arcu, mattis vitae arcu et">
 					Promo: Aliquam dolor arcu, mattis vitae arcu et
 					<ExpandMore className="ml-1 w-6" />
 				</button>
@@ -24,7 +25,8 @@ export default function Promo() {
 						onClick={() => {
 							toggleMenu(null);
 						}}
-						className="w-full">
+						className="w-full"
+						aria-label="Close">
 						<Close className="h-12 ml-auto" />
 					</button>
 					<div className="container mx-auto mt-2 px-2 py-4 bg-white rounded-xl">

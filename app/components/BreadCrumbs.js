@@ -33,6 +33,7 @@ export default function BreadCrumbs({
 			{!!stars && (
 				<li className="hidden lg:block lg:ml-auto basis-auto">
 					<button
+						aria-label="View Reviews"
 						href="#reviews"
 						onClick={(e) => {
 							document
@@ -74,6 +75,7 @@ export default function BreadCrumbs({
 					<Button
 						href={cta.url}
 						title={cta.title}
+						aria-label={cta.title}
 						noIcon={true}
 						className={`bg-amber-400 px-4 py-2 uppercase ${cta.className}`}
 					/>

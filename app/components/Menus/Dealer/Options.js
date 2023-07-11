@@ -9,7 +9,7 @@ export default function Options({
 	//row = true,
 }) {
 	return (
-		<ul className="md:flex">
+		<ul className="md:flex text-xs">
 			<li className="">
 				<DealerSelect
 					showAdress={false}

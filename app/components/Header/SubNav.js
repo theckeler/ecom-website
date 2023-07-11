@@ -24,7 +24,8 @@ export default function SubNav({ menuItems }) {
 												className="p-4 block w-100"
 												onClick={(e) => {
 													toggleMenu("main-nav");
-												}}>
+												}}
+												aria-label={`Back to ${menu.title}`}>
 												<ul className="font-bold flex items-center">
 													<li className="w-10">
 														<ChevronLeft />
@@ -38,7 +39,8 @@ export default function SubNav({ menuItems }) {
 												onClick={() => {
 													toggleMenu(null);
 												}}
-												className="w-full">
+												className="w-full"
+												aria-label="Close">
 												<Close className="h-12 " />
 											</button>
 										</li>

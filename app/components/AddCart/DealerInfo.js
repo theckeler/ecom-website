@@ -32,6 +32,7 @@ export default function DealerInfo() {
 								cityState="NORTH RIDGEVILLE, OH 44039"
 								phone="(330) 554-5434"
 								id="Worcester"
+								className="text-black"
 								reviewNum={44}
 								selected
 							/>
@@ -45,6 +46,7 @@ export default function DealerInfo() {
 								phone="(330) 467-0020"
 								reviewNum={67}
 								id="Northfield"
+								className="text-black"
 							/>
 						</li>
 						<li className="mt-2">
@@ -56,6 +58,7 @@ export default function DealerInfo() {
 								phone="(440) 442-1846"
 								reviewNum={23}
 								id="Marshall"
+								className="text-black"
 							/>
 						</li>
 					</ul>

@@ -8,19 +8,12 @@ import StoreIcon from "@/icons/Store";
 export default function ShopYourDealer({ className }) {
 	return (
 		<div className="flex items-center">
-			{/* <HeaderButton
-				title="Shop Your Dealer:"
-				buttonIcon="dealer"
-				onClick={() => toggleMenu("dealer")}
-				mobile
-				fillColor="fill-white"
-				className="text-white"
-			/> */}
-
 			<button
 				href="#top"
 				className="p-2 flex md:hidden"
-				onClick={() => toggleMenu("dealer")}>
+				onClick={() => {
+					document.querySelector("#dealer").classList.toggle("hidden");
+				}}>
 				<StoreIcon
 					className="h-8 lg:mr-1 fill-white"
 					style={{ minWidth: "2em", maxWidth: "2em" }}
@@ -31,7 +24,7 @@ export default function ShopYourDealer({ className }) {
 			</span>
 
 			<div
-				className="popup-item hidden fixed md:block md:relative z-40 left-0 top-0 h-screen md:h-auto w-full bg-white md:bg-transparent py-2 lg:py-3"
+				className="popup-item hidden fixed md:block md:relative z-30 lg:z-auto left-0 top-0 h-screen md:h-auto w-full bg-white md:bg-transparent py-2 lg:py-3"
 				id="dealer">
 				<ul className="flex flex-col">
 					<li className="md:hidden py-3 border-b">

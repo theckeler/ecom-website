@@ -3,13 +3,13 @@
 import Close from "@/icons/Close";
 import LinkMain from "@/header/LinkMain";
 import toggleMenu from "@/functions/toggleMenu";
-import ChevronLeft from "@/icons/ChevronLeft";
+// import ChevronLeft from "@/icons/ChevronLeft";
 
 export default function Nav({ menuItems }) {
 	let openSubMenu = null;
 	return (
 		<div id="main-nav" className="hidden lg:block w-full popup-item">
-			<ul className="lg:flex fixed lg:relative z-40 lg:z-auto left-0 top-0 h-full w-full md:max-w-xl lg:max-w-fit bg-white lg:bg-transparent ">
+			<ul className="lg:flex fixed lg:relative z-10 lg:z-auto left-0 top-0 h-full w-full md:max-w-xl lg:max-w-fit bg-white lg:bg-transparent ">
 				<li className="lg:hidden py-3">
 					<button
 						onClick={() => {

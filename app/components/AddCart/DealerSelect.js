@@ -43,7 +43,7 @@ export default function DealerSelect({
 					}
 				});
 			}}>
-			<ul className="z-0 h-full w-full flex relative">
+			<ul className="h-full w-full flex relative ">
 				<li>
 					<input
 						type="radio"
@@ -58,10 +58,10 @@ export default function DealerSelect({
 						{dealer}
 					</div>
 					{/* {showAdress && ( */}
-					<ul className="text-xs hidden group-hover:block absolute z-50 p-2 bg-white text-black">
+					<ul className="flex flex-col md:hidden group-hover:block relative md:absolute z-50 p-2 bg-white text-black">
 						<li className="flex">
 							Dealer Review:
-							<Stars className="ml-1 fill-white" starSize={12} /> ({reviewNum})
+							<Stars className="ml-1" starSize={12} /> ({reviewNum})
 						</li>
 						<li>{street}</li>
 						<li>{cityState}</li>

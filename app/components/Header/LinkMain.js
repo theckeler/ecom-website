@@ -10,7 +10,7 @@ export default function LinkMain({ menu, openSubMenu }) {
 	return (
 		<LinkType
 			href={menu.url}
-			className="py-3 px-2 w-full font-bold text-black lg:text-white lg:text-sm flex relative z-10"
+			className="py-3 px-2 w-full font-bold text-black lg:text-white lg:text-sm flex"
 			onClick={openSubMenu}>
 			<span>{menu.title}</span>
 			{menu.sub && (

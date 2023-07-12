@@ -12,7 +12,7 @@ export default function BlockSignUp() {
 					id="email-subscribe-form"
 					role="form"
 					autoComplete="on">
-					<h2 className="font-bold text-xl border-b pb-1 mb-4">
+					<h2 className="relative font-bold p-4 sm:p-0 sm:pb-1 lg:pb-3 flex 2xl:text-lg border-b mb-4">
 						Sign up for Emails from Cub Cadet
 					</h2>
 					<div className="px-4">

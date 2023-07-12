@@ -1,4 +1,4 @@
-import ToggleButton from "../Buttons/Toggle";
+import ToggleButton from "@/buttons/Toggle";
 
 export default function TabReviews({ starNum }) {
 	return (

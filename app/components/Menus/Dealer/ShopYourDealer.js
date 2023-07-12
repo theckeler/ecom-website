@@ -56,7 +56,7 @@ export default function ShopYourDealer() {
 									className: "border-gray-300 border-b-2 border-l-2 border-t-2",
 								},
 								button: {
-									title: "GO erewr ew rwewe rwe ",
+									title: "GO",
 									ariaLabel: null,
 									className: "bg-gray-400",
 								},

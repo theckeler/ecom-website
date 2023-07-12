@@ -74,12 +74,10 @@ export default function Header() {
 								aria-label="Navigation">
 								<ul className="flex items-center">
 									<li>
-										<Hamburger className="w-12" fillColor="#fff" />
+										<Hamburger className="w-12" fillColor="#000" />
 									</li>
 									<li>
-										<span className="text-white text-sm text-bold leading-none">
-											Menu
-										</span>
+										<span className="text-sm text-bold leading-none">Menu</span>
 									</li>
 								</ul>
 							</button>

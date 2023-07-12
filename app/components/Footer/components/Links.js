@@ -17,11 +17,13 @@ export default function FooterLinks({
 				} ${!row && "sm:pb-1 lg:pb-3 border-b"} ${row && "sm:py-5"}`}>
 				<button
 					className="block sm:hidden absolute top-0 left-0 w-full h-full"
+					aria-label={links.title.copy}
 					onClick={(e) => {
 						e.currentTarget.parentElement.nextElementSibling.classList.toggle(
 							"hidden"
 						);
-					}}></button>
+					}}
+				/>
 				{links.title.copy}
 				<ExpandMore className="sm:hidden ml-auto w-6" />
 			</h3>

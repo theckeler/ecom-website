@@ -1,14 +1,18 @@
 "use client";
 import Link from "next/link";
 
-import HeaderButton from "@/header/Button";
-import Hamburger from "@/icons/Hamburger";
-import Logo from "@/components/Logo";
-import Nav from "@/components/Menus/Nav";
-import Promo from "@/components/Header/Promo";
-import ShopYourDealer from "@/components/Menus/Dealer/ShopYourDealer";
 import toggleMenu from "@/functions/toggleMenu";
-import SubNav from "@/header/SubNav";
+
+import HeaderButton from "./components/Button";
+import Hamburger from "@/icons/Hamburger";
+import Nav from "@/menus/Nav";
+import ShopYourDealer from "@/menus/Dealer/ShopYourDealer";
+
+import SubNav from "./components/SubNav";
+import Promo from "./components/Promo";
+
+import Logo from "@/components/Logo";
+
 import menuItems from "@/data/nav.json";
 
 export default function Header() {
@@ -50,6 +54,7 @@ export default function Header() {
 											title={menu.title}
 											buttonIcon={menu.buttonIcon}
 											onClick={menu.onClick}
+											ariaLabel={menu.title}
 											mobile
 											fillColor="fill-white"
 											className="text-white"
@@ -83,7 +88,7 @@ export default function Header() {
 							</button>
 						</li>
 						<li className="w-40 p-2">
-							<Link href="/">
+							<Link href="/" aria-label="Return Home">
 								<Logo />
 							</Link>
 						</li>

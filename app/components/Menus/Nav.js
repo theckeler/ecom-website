@@ -1,7 +1,7 @@
 "use client";
 
 import Close from "@/icons/Close";
-import LinkMain from "@/header/LinkMain";
+import LinkMain from "@/components/Header/components/LinkMain";
 import toggleMenu from "@/functions/toggleMenu";
 // import ChevronLeft from "@/icons/ChevronLeft";
 

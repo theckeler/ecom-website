@@ -1,6 +1,6 @@
 import ButtonMain from "@/buttons/Main";
 import ExpandMore from "@/icons/ExpandMore";
-import Close from "../Icons/Close";
+import Close from "@/icons/Close";
 import toggleMenu from "@/functions/toggleMenu";
 
 export default function Promo() {

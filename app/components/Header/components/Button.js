@@ -6,7 +6,7 @@ import Location from "@/icons/Location";
 import Cart from "@/icons/Cart";
 import Dealer from "@/icons/Store";
 
-export default function Buttons({
+export default function HeaderButton({
 	title,
 	buttonIcon = "location",
 	className = "",
@@ -14,6 +14,7 @@ export default function Buttons({
 	mobile,
 	style,
 	fillColor = "fill-white",
+	ariaLabel = { title },
 }) {
 	const Icons = {
 		account: Account,
@@ -31,6 +32,7 @@ export default function Buttons({
 			href="#top"
 			className={`p-2 flex items-center ${className}`}
 			style={style}
+			aria-label={ariaLabel}
 			onClick={onClick}>
 			<Icon
 				className={`h-8 lg:mr-1 ${fillColor}`}

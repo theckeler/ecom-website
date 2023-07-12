@@ -6,7 +6,6 @@ export default function InputButton({
 	button,
 	padding = "p-3",
 }) {
-	console.log(className);
 	return (
 		<ul className={`flex w-100 ${className}`}>
 			<li className="flex-1">

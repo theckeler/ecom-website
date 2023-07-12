@@ -12,7 +12,7 @@ import FooterCustomerService from "./components/CustomerService";
 
 export default function Footer() {
 	const headerCSS = "font-bold text-lg border-b pb-1 mb-2";
-	const linkCSS = "text-xs underline";
+	const linkCSS = "text-xs underline p-4 lg:p-2 block";
 
 	return (
 		<footer className="border-t border-gray-300 px-4 xxl:px-0 pt-12 pb-20">

@@ -12,7 +12,7 @@ export default function InputButton({
 				<input
 					required=""
 					type="text"
-					className={`${padding} w-full rounded-l-lg ${input.className}`}
+					className={`${padding} w-full rounded-l ${input.className}`}
 					id={input.id}
 					placeholder={input.placeholder}
 					name={input.name}
@@ -22,7 +22,7 @@ export default function InputButton({
 				<Button
 					aria-label={button.ariaLabel}
 					title={button.title}
-					className={`w-full h-full font-bold rounded-r-lg outline-0 border-0 whitespace-nowrap ${button.className} ${padding}`}
+					className={`w-full h-full font-bold rounded-r outline-0 border-0 whitespace-nowrap uppercase ${button.className} ${padding}`}
 				/>
 			</li>
 		</ul>

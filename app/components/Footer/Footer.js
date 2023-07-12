@@ -43,7 +43,7 @@ export default function Footer() {
 					<FooterTerms />
 					<FooterHelp className="mt-4" />
 				</li>
-				<li className="mt-6 pt-4 border-t text-xs leading-tight text-gray-400">
+				<li className="mt-6 pt-4 border-t text-xs leading-tight text-gray-800">
 					<FooterDisclamers />
 				</li>
 			</ul>

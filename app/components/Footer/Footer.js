@@ -16,6 +16,9 @@ export default function Footer() {
 						<li className="border-t sm:border-t-0 mt-6 sm:pt-1 sm:mt-6 lg:pt-0 lg:mt-0">
 							<FooterLinks
 								{...{
+									className: null,
+									row: false,
+									alignRight: false,
 									links: {
 										title: {
 											copy: "About Us",
@@ -36,6 +39,9 @@ export default function Footer() {
 						<li className="mt-0 sm:pt-1 sm:mt-6 lg:pt-0 lg:mt-0">
 							<FooterLinks
 								{...{
+									className: null,
+									row: false,
+									alignRight: false,
 									links: {
 										title: {
 											copy: "Owner's Center",
@@ -58,6 +64,9 @@ export default function Footer() {
 						<li>
 							<FooterLinks
 								{...{
+									className: null,
+									row: false,
+									alignRight: false,
 									links: {
 										title: {
 											copy: "Independent Dealers",
@@ -77,6 +86,9 @@ export default function Footer() {
 						<li>
 							<FooterLinks
 								{...{
+									className: null,
+									row: false,
+									alignRight: false,
 									links: {
 										title: {
 											copy: "Customer Service",
@@ -98,7 +110,9 @@ export default function Footer() {
 				<li className="mt-6 pt-4 border-b">
 					<FooterLinks
 						{...{
+							className: null,
 							row: true,
+							alignRight: false,
 							links: {
 								title: {
 									copy: "Global Sites",
@@ -111,6 +125,7 @@ export default function Footer() {
 
 					<FooterLinks
 						{...{
+							className: null,
 							row: true,
 							alignRight: true,
 							links: {

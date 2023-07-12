@@ -10,7 +10,7 @@ export default function FooterLinks({
 	alignRight = false,
 }) {
 	return (
-		<div className={row && "sm:flex flex-wrap items-center border-t"}>
+		<div className={row ? "sm:flex flex-wrap items-center border-t" : ""}>
 			<h3
 				className={`relative font-bold p-4 sm:p-0 flex truncate ${
 					links.title.className

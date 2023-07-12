@@ -1,7 +1,8 @@
 import Image from "next/image";
-import ButtonEdit from "app/components/Buttons/Edit";
-import Button from "app/components/Buttons/Main";
+import ButtonEdit from "@/components/Buttons/Edit";
+import Button from "@/components/Buttons/Main";
 import DealerSelect from "./DealerSelect";
+import InputButton from "@/components/InputButton";
 
 export default function DealerInfo() {
 	const swapInfo = (e, which = "dealer-list") => {
@@ -109,25 +110,23 @@ export default function DealerInfo() {
 				<div className="p-4 bg-amber-200 mt-4">
 					<h3 className="font-bold mb-3">Find a Dealer</h3>
 
-					<ul className="flex items-center w-full">
-						<li className="basis-full">
-							<input
-								required=""
-								type="text"
-								className="p-3 text-sm w-full rounded-l-lg"
-								id="zipcode-postal-code"
-								placeholder="Enter Zipcode"
-								name="zipcode"
-							/>
-						</li>
-						<li className="basis-1/4">
-							<Button
-								title="Next"
-								aria-label="Next"
-								className="flex items-center justify-center p-3 text-sm font-bold bg-amber-400 rounded-r-lg"
-							/>
-						</li>
-					</ul>
+					<InputButton
+						{...{
+							className: null,
+							padding: "p-3",
+							input: {
+								id: "zipcode-postal-code",
+								placeholder: "Enter Zipcode",
+								name: "zipcode",
+								className: "",
+							},
+							button: {
+								title: "Next",
+								ariaLabel: null,
+								className: "bg-amber-400",
+							},
+						}}
+					/>
 				</div>
 			</div>
 		</div>

@@ -1,32 +1,29 @@
 import Button from "app/components/Buttons/Main";
 
 export default function InputButton({
-	id,
-	placeholder,
-	name,
-	className = null,
-	button = "Next",
-	classNameButton = "bg-amber-400",
+	className,
+	input,
+	button,
 	padding = "p-3",
 }) {
+	console.log(className);
 	return (
-		<ul className={`flex items-center mb-2 ${className}`}>
-			<li className="basis-full">
+		<ul className={`flex w-100 ${className}`}>
+			<li className="flex-1">
 				<input
 					required=""
 					type="text"
-					className={`${padding} text-sm w-full rounded-l-lg border-gray-300 border-b border-l border-t`}
-					id={id}
-					placeholder={placeholder}
-					name={name}
+					className={`${padding} w-full rounded-l-lg ${input.className}`}
+					id={input.id}
+					placeholder={input.placeholder}
+					name={input.name}
 				/>
 			</li>
-			<li className="basis-auto">
+			<li className="flex-initial">
 				<Button
-					aria-label={button}
-					title={button}
-					className={`flex items-center justify-center ${padding} text-sm font-bold rounded-r-lg border-0 ${classNameButton}`}
-					buttonPadding={padding}
+					aria-label={button.ariaLabel}
+					title={button.title}
+					className={`w-full h-full font-bold rounded-r-lg outline-0 border-0 whitespace-nowrap ${button.className} ${padding}`}
 				/>
 			</li>
 		</ul>

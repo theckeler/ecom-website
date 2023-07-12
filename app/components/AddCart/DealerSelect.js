@@ -62,9 +62,9 @@ export default function DealerSelect({
 					</div>
 
 					<ul
-						className={`p-2 bg-white text-black ${
+						className={`px-2 bg-white text-black text-xs ${
 							!showAdress &&
-							"flex flex-col md:hidden group-hover:block relative md:absolute z-50"
+							"flex flex-col md:hidden group-hover:block relative md:absolute z-50 py-2"
 						}`}>
 						<li className="flex">
 							Dealer Review:

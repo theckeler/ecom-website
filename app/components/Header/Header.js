@@ -62,7 +62,7 @@ export default function Header() {
 				</div>
 			</li>
 
-			<li className="bg-black">
+			<li className="bg-white">
 				<div className="max-w-screen-2xl mx-auto">
 					<ul className="flex items-center w-full relative">
 						<li className="lg:hidden flex flex-col items-center pr-2">

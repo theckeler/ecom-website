@@ -5,7 +5,7 @@ import HeaderButton from "@/header/Button";
 import toggleMenu from "@/functions/toggleMenu";
 import StoreIcon from "@/icons/Store";
 
-export default function ShopYourDealer({ className }) {
+export default function ShopYourDealer() {
 	return (
 		<div className="flex items-center">
 			<button
@@ -46,12 +46,21 @@ export default function ShopYourDealer({ className }) {
 					</li>
 					<li className="p-3 md:p-0">
 						<InputButton
-							id="zipcode-postal-code"
-							placeholder="44280"
-							name="zipcode"
-							className="mt-2 lg:mt-0 lg:ml-4 md:hidden"
-							classNameButton="bg-gray-300"
-							padding="p-2"
+							{...{
+								className: "mt-2 lg:mt-0 lg:ml-4 md:hidden",
+								padding: "p-2",
+								input: {
+									id: "zipcode-postal-code",
+									placeholder: "44280",
+									name: "zipcode",
+									className: "border-gray-300 border-b-2 border-l-2 border-t-2",
+								},
+								button: {
+									title: "GO erewr ew rwewe rwe ",
+									ariaLabel: null,
+									className: "bg-gray-400",
+								},
+							}}
 						/>
 
 						<p className="text-xs mt-1 md:hidden">

@@ -52,9 +52,21 @@ export default function AddCart({ shippingButtons }) {
 							The zip code you entered may change the shipping method.
 						</p>
 						<InputButton
-							id="zipcode-postal-code"
-							placeholder="Enter Zipcode"
-							name="zipcode"
+							{...{
+								className: null,
+								padding: "p-3",
+								input: {
+									id: "zipcode-postal-code",
+									placeholder: "Enter Zipcode",
+									name: "zipcode",
+									className: "",
+								},
+								button: {
+									title: "Next",
+									ariaLabel: null,
+									className: "bg-amber-400",
+								},
+							}}
 						/>
 					</div>
 				</div>

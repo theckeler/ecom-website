@@ -47,7 +47,7 @@ export default function SubNav({ menuItems }) {
 									</ul>
 								</li>
 								<li>
-									<ul className="flex flex-col lg:flex-row divide-y divide-solid border-t border-b lg:border-0">
+									<ul className="flex flex-col lg:flex-row divide-y divide-solid border-t border-b lg:border-0 lg:divide-y-0">
 										{menu.sub &&
 											menu.sub.map((sub, i) => (
 												<li className="" key={i}>

@@ -1,37 +1,5 @@
 export default function FormQuanity({ className, quantity }) {
 	return (
-		// <ul className="flex  w-full">
-		// 	<li className="w-12">
-		// 		<label>
-		// 			<button
-		// 				name="minus"
-		// 				defaultValue="-"
-		// 				className="bg-amber-400 rounded-full w-12 h-12 text-xs"
-		// 				aria-label="Decrease Quantity">
-		// 				-
-		// 			</button>
-		// 		</label>
-		// 	</li>
-		// 	<li className="w-full h-full">
-		// <input
-		// 	type="number"
-		// 	className="appearance-none bg-gray-200 text-gray-700 p-1 border text-center w-full text-xs"
-		// 	style={{ maxWidth: "48px", minHeight: "48px" }}
-		// 	defaultValue={quantity}
-		// />
-		// 	</li>
-		// 	<li className="w-12">
-		// 		<label className="plus">
-		// 			<button
-		// 				name="plus"
-		// 				defaultValue="+"
-		// 				className="bg-amber-400 rounded-full w-12 h-12 text-xs"
-		// 				aria-label="Increase Quantity">
-		// 				+
-		// 			</button>
-		// 		</label>
-		// 	</li>
-		// </ul>
 		<div className="flex items-center">
 			<button
 				type="button"

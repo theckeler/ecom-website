@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
 
 				<Footer />
 
-				<Menu menu={{ title: "Cart", id: "cart", component: "cart" }} />
+				<Menu menu={{ title: "Cart", id: "cart", component: "cart", button:"Checkout" }} />
 				<Menu menu={{ title: "Account", id: "account" }} />
 				<Menu menu={{ title: "Stores", id: "stores" }} />
 				<Menu menu={{ title: "Help", id: "help" }} />

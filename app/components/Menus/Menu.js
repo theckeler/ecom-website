@@ -15,6 +15,13 @@ export default function Menu({ className, menu }) {
 				<li>
 					<MenuBody {...{ loadComponent: menu.component }} />
 				</li>
+				{menu.button && (
+					<li className="absolute bottom-0 left-0 h-16 px-2 py-2 w-full bg-white">
+						<button className="bg-amber-400 p-2 h-12 min-h-full w-full block">
+							{menu.button}
+						</button>
+					</li>
+				)}
 			</ul>
 		</div>
 	);

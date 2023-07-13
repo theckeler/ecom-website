@@ -30,14 +30,14 @@
 		"active": "dealerDelivery"
 	},
 	{
-		"title": "CS16E",
-		"small": "60V CORDLESS CHAINSAW",
-		"itemNum": "41AT125C810",
-		"version": "CS16E with Battery and Charger",
-		"price": 299.0,
-		"quantity": 2,
+		"title": "ST15E",
+		"small": "60V CORDLESS STRING TRIMMER",
+		"itemNum": "41AE125B810",
+		"version": "ST15E Tool Only",
+		"price": 169.0,
+		"quantity": 6,
 		"img": {
-			"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw7b269624/products/Equipment/Cub_Cadet_CS16E_2000x2000_4.jpg?sw=200&sh=200&sm=fit",
+			"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwac98f5d4/products/Equipment/Cub_Cadet_STE15E_2000x2000_5.jpg?sw=200&sh=200&sm=fit",
 			"width": 200,
 			"height": 200
 		},

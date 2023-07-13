@@ -7,7 +7,7 @@ export default function Menu({ className, menu }) {
 	return (
 		<div
 			id={menu.id}
-			className={`popup-item hidden fixed z-50 right-0 top-0 h-screen w-full md:max-w-xl bg-white ${className}`}>
+			className={`popup-item hidden fixed z-50 right-0 top-0 w-full md:max-w-xl bg-white ${className}`}>
 			<ul>
 				<li className="py-3 border-b bg-zinc-200">
 					<MenuTitle {...{ title: menu.title }} />

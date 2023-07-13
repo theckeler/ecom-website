@@ -7,7 +7,7 @@ export default function MenuBody({ className, loadComponent }) {
 	const Component = ComponentList[loadComponent];
 
 	return (
-		<div className="p-3 overflow-x-scroll max-h-[calc(100vh-72px)]">
+		<div className="p-3 overflow-x-scroll h-[calc(100vh-72px) min-h-[calc(100dvh-72px)] max-h-[calc(100dvh-72px)]">
 			<ul className="">{loadComponent ? <Component /> : <LoremIpsum />}</ul>
 		</div>
 	);

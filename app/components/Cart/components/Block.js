@@ -9,7 +9,7 @@ import currency from "@/functions/Currency";
 export default function CartBlock({ className, block, i }) {
 	return (
 		<React.Fragment key={i}>
-			<li className="min-w-max relative">
+			<li className="col-span-2 sm:col-span-1 min-w-max min-h-[8em] relative">
 				<Image
 					src={block.img.src}
 					fill
@@ -18,7 +18,7 @@ export default function CartBlock({ className, block, i }) {
 				/>
 			</li>
 
-			<li className="col-start-2">
+			<li className="col-span-2 sm:col-span-1 sm:col-start-2">
 				<ul>
 					<li className="font-bold">{block.title}</li>
 					<li className="text-sm">{block.small}</li>
@@ -32,10 +32,10 @@ export default function CartBlock({ className, block, i }) {
 				</ul>
 			</li>
 
-			<li className="col-start-1 text-xs text-center self-center">
+			<li className="sm:col-start-1 col-span-2 sm:col-span-1 text-xs sm:text-center self-center">
 				{block.itemNum}
 			</li>
-			<li className="col-start-2">
+			<li className="col-start-1 sm:col-start-2">
 				<ul className="flex items-center gap-2">
 					<li>
 						<FormQuanity {...{ quantity: block.quantity }} />
@@ -45,11 +45,11 @@ export default function CartBlock({ className, block, i }) {
 					</li>
 				</ul>
 			</li>
-			<li className="col-start-3 text-right self-center">
+			<li className="col-start-2 sm:col-start-3 text-right self-center">
 				{currency(block.price * block.quantity)}
 			</li>
 
-			<li className="col-start-2 col-span-2">
+			<li className="sm:col-start-2 col-span-2">
 				<ul className="grid grid-cols-3 gap-1">
 					<li>
 						<CartButton
@@ -84,8 +84,8 @@ export default function CartBlock({ className, block, i }) {
 				</ul>
 			</li>
 
-			<li className="col-start-1 col-span-3 py-4">
-				<hr />
+			<li className="col-start-1 col-span-2 sm:col-span-3 py-4">
+				<hr className="h-px bg-gray-500 border-0" />
 			</li>
 		</React.Fragment>
 	);

@@ -25,7 +25,7 @@ export default function Cart({ className }) {
 				<li className="text-sm">Delivery Charge</li>
 				<li className="text-right">{currency(shippingCost)}</li>
 				<li className="col-span-2">
-					<hr />
+					<hr className="h-px bg-gray-500 border-0" />
 				</li>
 				<li className="font-bold">Total (Excl. tax)</li>
 				<li className="text-right">{currency(getTotal + shippingCost)}</li>

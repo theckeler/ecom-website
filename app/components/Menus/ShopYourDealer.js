@@ -1,5 +1,5 @@
 import InputButton from "@/components/InputButton";
-import Options from "./Options";
+import Options from "./components/Options";
 import Close from "@/icons/Close";
 import HeaderButton from "@/components/Header/components/Button";
 import toggleMenu from "@/functions/toggleMenu";

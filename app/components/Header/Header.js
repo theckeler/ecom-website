@@ -5,8 +5,8 @@ import toggleMenu from "@/functions/toggleMenu";
 
 import HeaderButton from "./components/Button";
 import Hamburger from "@/icons/Hamburger";
-import Nav from "@/menus/Nav";
-import ShopYourDealer from "@/menus/Dealer/ShopYourDealer";
+import Nav from "@/components/Header/components/Nav";
+import ShopYourDealer from "@/components/Menus/ShopYourDealer";
 
 import SubNav from "./components/SubNav";
 import Promo from "./components/Promo";
@@ -18,7 +18,12 @@ import menuItems from "@/data/nav.json";
 export default function Header() {
 	const buttonItems = [
 		{ title: "Stores", url: null, onClick: () => toggleMenu("stores") },
-		{ title: "Help", buttonIcon: "help", url: "/" },
+		{
+			title: "Help",
+			buttonIcon: "help",
+			url: null,
+			onClick: () => toggleMenu("help"),
+		},
 		{
 			title: "Account",
 			buttonIcon: "account",
@@ -87,7 +92,7 @@ export default function Header() {
 								</ul>
 							</button>
 						</li>
-						<li className="w-40 p-2">
+						<li className="ml-auto md:ml-0 w-40 p-2">
 							<Link href="/" aria-label="Return Home">
 								<Logo />
 							</Link>

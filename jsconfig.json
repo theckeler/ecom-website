@@ -13,9 +13,11 @@
 			"@/addtocart/*": ["app/components/AddCart/*"],
 			"@/header/*": ["app/components/Header/*"],
 			"@/footer/*": ["app/components/Footer/*"],
-			"@/dealer/*": ["app/components/Menus/Dealer/*"],
+			"@/dealer/*": ["app/components/Menus/components/*"],
 			"@/functions/*": ["app/components/Functions/*"],
-			"@/menus/*": ["app/components/Menus/*"]
+			"@/menus/*": ["app/components/Menus/*"],
+			"@/cart/*": ["app/components/Cart/*"],
+			"@/form/*": ["app/components/Form/*"]
 		}
 	}
 }

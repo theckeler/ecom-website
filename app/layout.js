@@ -49,6 +49,17 @@ export default function RootLayout({ children }) {
 						},
 					}}
 				/>
+				<Menu
+					menu={{
+						title: "Filter & Sort",
+						id: "all-filters",
+						button: {
+							title: "Apply",
+							className: "bg-black font-bold text-white",
+						},
+						component: "filters",
+					}}
+				/>
 
 				{/* <Screen className="hidden" /> */}
 			</body>

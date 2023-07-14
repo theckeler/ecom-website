@@ -12,6 +12,7 @@ import CTAHero from "@/components/Hero";
 import SEOLinks from "@/components/SEOLinks";
 import Article from "@/components/Product/Article";
 import Faqs from "@/components/Faqs";
+import Menu from "@/menus/Menu";
 
 import pdpJSON from "@/data/pdp.json";
 import faqs from "@/data/faqs.json";
@@ -89,6 +90,17 @@ export default function Index() {
 					</li>
 					<li className="ml-auto flex">
 						<Filter />
+						{/* <Menu
+							menu={{
+								title: "Filter & Sort",
+								id: "all-filters",
+								button: {
+									title: "Apply",
+									className: "bg-black font-bold text-white",
+								},
+								component: "filters",
+							}}
+						/> */}
 
 						<button
 							className="bg-amber-400 p-3 ml-2"

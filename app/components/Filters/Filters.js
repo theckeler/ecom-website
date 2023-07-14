@@ -1,27 +1,10 @@
-import AppliedFilter from "./Buttons/AppliedFilter";
-import Button from "./Buttons/Main";
-import DummyFilters from "./Filters/DummyFilters";
+import AppliedFilter from "@/buttons/AppliedFilter";
+import Button from "@/buttons/Main";
+import DummyFilters from "./components/DummyFilters";
 
 export default function Filters({ className }) {
 	return (
-		<ul className="p-6">
-			<li className="border-b border-gray-400 uppercase font-bold pb-1 mb-1 text-2xl">
-				<ul className="flex items-center">
-					<li className="basis-11/12">Filter & Sort</li>
-					<li className="basis-1/12 text-right">
-						<button
-							className="w-12 p-1"
-							aria-label="Filter & Sort"
-							onClick={(e) => {
-								document.querySelector("#all-filters").classList.add("hidden");
-							}}>
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960">
-								<path d="m330 768 150-150 150 150 42-42-150-150 150-150-42-42-150 150-150-150-42 42 150 150-150 150 42 42Zm150 208q-82 0-155-31.5t-127.5-86Q143 804 111.5 731T80 576q0-83 31.5-156t86-127Q252 239 325 207.5T480 176q83 0 156 31.5T763 293q54 54 85.5 127T880 576q0 82-31.5 155T763 858.5q-54 54.5-127 86T480 976Z" />
-							</svg>
-						</button>
-					</li>
-				</ul>
-			</li>
+		<ul className="">
 			<li className="border-b pb-1 mb-1">
 				<p className="text-lg">Applied filters:</p>
 				<div className="flex my-2">
@@ -67,26 +50,6 @@ export default function Filters({ className }) {
 						<DummyFilters key={i} />
 					))}
 				</div>
-			</li>
-			<li className="border-t border-gray-400 py-2">
-				<ul className="flex">
-					<li className="basis-9/12 mr-2">
-						<Button
-							title="View 34"
-							aria-label="View 34"
-							className="bg-amber-400 w-full p-2 uppercase font-bold"
-							noIcon={true}
-						/>
-					</li>
-					<li className="basis-3/12">
-						<Button
-							title="Reset"
-							aria-label="Reset"
-							className="bg-gray-300 w-full p-2 uppercase text-sm h-full"
-							noIcon={true}
-						/>
-					</li>
-				</ul>
 			</li>
 		</ul>
 	);

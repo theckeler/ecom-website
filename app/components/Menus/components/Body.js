@@ -4,6 +4,7 @@ import Cart from "@/cart/Cart";
 import Stores from "@/components/Stores/Stores";
 import MainNav from "@/header/components/Nav";
 import SubNav from "@/header/components/SubNav";
+import Filters from "@/filters/Filters";
 
 export default function MenuBody({
 	className,
@@ -16,6 +17,7 @@ export default function MenuBody({
 		stores: Stores,
 		mainNav: MainNav,
 		subNav: SubNav,
+		filters: Filters,
 	};
 	const Component = ComponentList[loadComponent];
 

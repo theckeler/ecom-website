@@ -17,7 +17,8 @@
 			"@/functions/*": ["app/components/Functions/*"],
 			"@/menus/*": ["app/components/Menus/*"],
 			"@/cart/*": ["app/components/Cart/*"],
-			"@/form/*": ["app/components/Form/*"]
+			"@/form/*": ["app/components/Form/*"],
+			"@/filters/*": ["app/components/Filters/*"]
 		}
 	}
 }

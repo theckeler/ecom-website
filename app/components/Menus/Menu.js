@@ -13,7 +13,7 @@ export default function Menu({ className, menu }) {
 				menu.left ? "left-0" : "right-0"
 			} top-0 w-full md:max-w-xl bg-white ${className}`}>
 			<ul
-				className={`flex flex-col h-[100dvh] max-h-screen min-h-[100dvh] ${
+				className={`flex flex-col h-[calc(100vh-114px)]  max-h-screen min-h-[100dvh] ${
 					menu.component === "mainNav" && "lg:h-auto"
 				}`}>
 				<li className={`py-2 border-b bg-zinc-200 ${mainNavCSS}`}>

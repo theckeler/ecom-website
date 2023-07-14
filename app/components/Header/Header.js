@@ -144,7 +144,7 @@ export default function Header() {
 								toggleMenu("main-nav");
 							}}
 							aria-label="Navigation">
-							<ul className="flex items-center">
+							<ul className="flex flex-row-reverse sm:flex-row items-center">
 								<li>
 									<Hamburger className="w-12" fillColor="#000" />
 								</li>
@@ -161,7 +161,7 @@ export default function Header() {
 					</li>
 					<li>
 						<Menu
-							className="lg:flex lg:relative lg:z-auto lg:max-w-fit lg:bg-transparent"
+							className="lg:flex  lg:relative lg:z-auto lg:max-w-fit lg:bg-transparent"
 							menu={{
 								title: "",
 								id: "main-nav",

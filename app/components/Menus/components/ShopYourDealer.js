@@ -10,15 +10,16 @@ export default function ShopYourDealer() {
 		<div className="flex items-center">
 			<button
 				href="?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
-				className="p-2 flex md:hidden"
+				className="p-2 flex items-center text-white md:hidden"
 				aria-label="Select Your Dealer"
 				onClick={() => {
 					document.querySelector("#dealer").classList.toggle("hidden");
 				}}>
 				<StoreIcon
-					className="h-8 lg:mr-1 fill-white"
+					className="h-8 mr-2 fill-white"
 					style={{ minWidth: "2em", maxWidth: "2em" }}
 				/>
+				Shop your Dealer
 			</button>
 			<span className="pl-2 hidden md:block whitespace-nowrap text-white text-xs">
 				Your Dealer:

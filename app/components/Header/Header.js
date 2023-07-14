@@ -136,7 +136,7 @@ export default function Header() {
 			</ul>
 
 			<div className="max-w-screen-2xl mx-auto sticky md:relative top-0 z-20 bg-white border-b">
-				<ul className="flex items-center w-full relative">
+				<ul className="flex flex-row-reverse sm:flex-row items-center w-full relative">
 					<li className="lg:hidden flex flex-col items-center pr-2">
 						<button
 							className="lg:w-12 leading-none"
@@ -154,7 +154,7 @@ export default function Header() {
 							</ul>
 						</button>
 					</li>
-					<li className="ml-auto md:ml-0 w-40 p-2">
+					<li className="mr-auto lg:ml-0 w-40 p-2">
 						<Link href="/" aria-label="Return Home">
 							<Logo />
 						</Link>

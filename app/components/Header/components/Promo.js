@@ -2,6 +2,7 @@ import ButtonMain from "@/buttons/Main";
 import ExpandMore from "@/icons/ExpandMore";
 import Close from "@/icons/Close";
 import toggleMenu from "@/functions/toggleMenu";
+import Menu from "@/menus/Menu";
 
 export default function Promo() {
 	return (
@@ -60,7 +61,20 @@ export default function Promo() {
 					</div>
 				</div>
 			</div> */}
-			
+
+			<Menu
+				className="md:max-w-none"
+				menu={{
+					title: "Promo Title",
+					id: "promo-content",
+					//component: "promo",
+					left: true,
+					button: {
+						title: "Promo Link",
+						className: "font-bold",
+					},
+				}}
+			/>
 		</div>
 	);
 }

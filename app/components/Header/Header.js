@@ -2,18 +2,12 @@
 import Link from "next/link";
 
 import toggleMenu from "@/functions/toggleMenu";
-
 import HeaderButton from "./components/Button";
 import Hamburger from "@/icons/Hamburger";
-// import Nav from "@/components/Header/components/Nav";
 import Menu from "@/menus/Menu";
 import ShopYourDealer from "@/components/Menus/components/ShopYourDealer";
-
-// import SubNav from "./components/SubNav";
 import Promo from "./components/Promo";
-
 import Logo from "@/components/Logo";
-
 import menuItems from "@/data/nav.json";
 
 export default function Header() {

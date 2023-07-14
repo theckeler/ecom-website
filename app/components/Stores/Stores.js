@@ -1,10 +1,16 @@
-import jsonData from "./data/data.json";
+import jsonData from "@/data/stores.json";
 
 export default function Stores({ className }) {
 	return (
 		<div className="pb-20">
 			<ul className="">
-				<li>stores</li>
+				{jsonData.map((menu, i) => {
+					return (
+						<li key={i} className="">
+							sadasd
+						</li>
+					);
+				})}
 			</ul>
 		</div>
 	);

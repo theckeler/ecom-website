@@ -39,7 +39,7 @@ export default function FooterLinks({
 									className={`sm:text-xs underline p-5 block ${
 										!row && "sm:p-2"
 									}`}
-									href="#top">
+									href="#ClickZeroTurnMowersLink">
 									{link}
 								</a>
 							</li>

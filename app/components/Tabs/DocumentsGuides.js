@@ -14,7 +14,9 @@ export default function TabDocumentsGuides() {
 						<li className="attribute-values text-sm mb-2" tabIndex="0">
 							<ul className="flex">
 								<li className="font-bold text-right mr-3">
-									<a href="#top">769-25609b-rzt-assembly [pdf]</a>
+									<a href="#ClickZeroTurnMowersLink">
+										769-25609b-rzt-assembly [pdf]
+									</a>
 								</li>
 							</ul>
 						</li>
@@ -44,21 +46,21 @@ export default function TabDocumentsGuides() {
 						<li className="basis-3/12 p-3">MANL:OPER:TRILING:RZ19:DIGEST</li>
 						<li className="basis-3/12 p-3">769-25609A</li>
 						<li className="basis-3/12 p-3">
-							<a href="#top">Download</a>
+							<a href="#ClickZeroTurnMowersLink">Download</a>
 						</li>
 
 						<li className="basis-3/12 p-3">17AREACM010</li>
 						<li className="basis-3/12 p-3">MANL:OPER:TRILING:RZ19:DIGEST</li>
 						<li className="basis-3/12 p-3">769-25609B</li>
 						<li className="basis-3/12 p-3">
-							<a href="#top">Download</a>
+							<a href="#ClickZeroTurnMowersLink">Download</a>
 						</li>
 
 						<li className="basis-3/12 p-3">17AREACM010</li>
 						<li className="basis-3/12 p-3">MANL:OPER:TRILING:RZ19:DIGEST</li>
 						<li className="basis-3/12 p-3">769-25609C</li>
 						<li className="basis-3/12 p-3">
-							<a href="#top">Download</a>
+							<a href="#ClickZeroTurnMowersLink">Download</a>
 						</li>
 					</ul>
 				</div>

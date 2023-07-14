@@ -29,7 +29,7 @@ export default function HeaderButton({
 
 	return (
 		<LinkType
-			href="#top"
+			href="#ClickZeroTurnMowersLink"
 			className={`p-2 flex items-center ${className}`}
 			style={style}
 			aria-label={ariaLabel}

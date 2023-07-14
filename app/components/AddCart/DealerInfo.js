@@ -1,8 +1,8 @@
 import Image from "next/image";
 import ButtonEdit from "@/components/Buttons/Edit";
-import Button from "@/components/Buttons/Main";
 import DealerSelect from "./DealerSelect";
 import InputButton from "@/components/InputButton";
+import jsonData from "@/data/dealers.json";
 
 export default function DealerInfo() {
 	const swapInfo = (e, which = "dealer-list") => {

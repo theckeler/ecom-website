@@ -3,7 +3,7 @@ import Image from "next/image";
 import Stars from "app/components/Stars";
 
 export default function DealerSelect({
-	dealer,
+	title,
 	miles,
 	street,
 	cityState,
@@ -21,28 +21,29 @@ export default function DealerSelect({
 			className={`dealer-select group flex relative p-2  ${
 				!!selected ? activeColor : inactiveColor
 			} ${className}`}
-			onChange={(e) => {
-				document.querySelectorAll(".dealer-select").forEach((e) => {
-					e.classList.remove("active");
-				});
-				e.currentTarget.classList.add("active");
+			// onChange={(e) => {
+			// 	document.querySelectorAll(".dealer-select").forEach((e) => {
+			// 		e.classList.remove("active");
+			// 	});
+			// 	e.currentTarget.classList.add("active");
 
-				document.querySelectorAll(".dealer-select-address").forEach((e) => {
-					e.classList.add("hidden");
-				});
-				e.currentTarget
-					.querySelector(".dealer-select-address")
-					.classList.remove("hidden");
+			// 	document.querySelectorAll(".dealer-select-address").forEach((e) => {
+			// 		e.classList.add("hidden");
+			// 	});
+			// 	e.currentTarget
+			// 		.querySelector(".dealer-select-address")
+			// 		.classList.remove("hidden");
 
-				document.querySelectorAll(".dealer-select").forEach((e) => {
-					e.classList.remove(activeColor);
-					e.classList.add(inactiveColor);
-					if (e.classList.contains("active")) {
-						e.classList.remove(inactiveColor);
-						e.classList.add(activeColor);
-					}
-				});
-			}}>
+			// 	document.querySelectorAll(".dealer-select").forEach((e) => {
+			// 		e.classList.remove(activeColor);
+			// 		e.classList.add(inactiveColor);
+			// 		if (e.classList.contains("active")) {
+			// 			e.classList.remove(inactiveColor);
+			// 			e.classList.add(activeColor);
+			// 		}
+			// 	});
+			// }}
+		>
 			<ul className="h-full w-full flex relative ">
 				<li>
 					<input
@@ -58,7 +59,7 @@ export default function DealerSelect({
 						className={`font-bold ${
 							!showAdress && "truncate md:max-w-[120px] lg:max-w-none"
 						}`}>
-						{dealer}
+						{title}
 					</div>
 
 					<ul

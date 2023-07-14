@@ -22,7 +22,7 @@
 			},
 			"button": {
 				"title": "Shop Ultima Series™ Zero-Turns",
-				"href": "#top",
+				"href": "#ClickZeroTurnMowersLink",
 				"className": "bg-black text-white"
 			}
 		},
@@ -35,7 +35,7 @@
 			},
 			"button": {
 				"title": "Shop Ultima Series™ Zero-Turns",
-				"href": "#top",
+				"href": "#ClickZeroTurnMowersLink",
 				"className": "bg-black text-white"
 			}
 		}

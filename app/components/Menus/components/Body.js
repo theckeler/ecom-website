@@ -20,12 +20,7 @@ export default function MenuBody({
 	const Component = ComponentList[loadComponent];
 
 	return (
-		<div
-			className="p-3"
-			//className={`p-3 overflow-x-scroll h-[calc(100vh-72px) min-h-[calc(100dvh-72px)] max-h-[calc(100dvh-72px)] ${
-			//	loadComponent === "mainNav" && "lg:h-auto lg:min-h-default"
-			//}`}
-		>
+		<div className="p-3">
 			<ul className={`${loadComponent === "mainNav" && "lg:pb-0"}`}>
 				{loadComponent ? <Component menuItems={menuItems} /> : <LoremIpsum />}
 			</ul>

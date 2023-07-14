@@ -13,7 +13,7 @@ export default function Article({ articles }) {
 							className="p-2"
 							style={{ minWidth: "240px", maxWidth: "240px" }}>
 							<a
-								href="#top"
+								href="#ClickZeroTurnMowersLink"
 								className="group flex flex-col mb-4 md:mb-0 px-5 py-7 bg-gray-200 lg:hover:bg-amber-200 h-full select-auto">
 								<h3 className="text-lg font-bold w-full">{article.title}</h3>
 								<p className="text-xs leading-5 mt-3 mb-3">{article.copy}</p>

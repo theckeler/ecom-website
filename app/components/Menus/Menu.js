@@ -41,7 +41,7 @@ export default function Menu({ className, menu }) {
 						//className={`absolute z-10 bottom-0 left-0 h-16 px-2 py-2 w-full bg-zinc-200 ${mainNavCSS}`}>
 						className={`mt-auto h-16 px-2 py-2 w-full bg-zinc-200 ${mainNavCSS}`}>
 						<button
-							className={`bg-amber-400 p-2 h-12 min-h-full w-full block ${menu.button.className}`}>
+							className={`bg-amber-400 p-2 h-12 min-h-full w-full block truncate ... ${menu.button.className}`}>
 							{menu.button.title}
 						</button>
 					</li>

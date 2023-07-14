@@ -9,7 +9,7 @@ export default function ShopYourDealer() {
 	return (
 		<div className="flex items-center">
 			<button
-				href="#top"
+				href="#ClickZeroTurnMowersLink"
 				className="p-2 flex md:hidden"
 				aria-label="Select Your Dealer"
 				onClick={() => {

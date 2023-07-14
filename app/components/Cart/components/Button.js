@@ -5,8 +5,6 @@ export default function CartButton({
 	shipping,
 	active,
 }) {
-	//console.log(active);
-
 	return (
 		<button
 			className={`w-full h-full border text-sm p-2 ${

@@ -6,11 +6,10 @@ import Close from "@/icons/Close";
 import ChevronLeft from "@/icons/ChevronLeft";
 import toggleMenu from "@/functions/toggleMenu";
 
-
 export default function SubNav({ menuItems }) {
 	return (
 		menuItems.sub && (
-			<ul className="flex flex-col divide-y divide-solid lg:border-0 lg:divide-y-0">
+			<ul className="divide-y divide-solid lg:border-0 pb-8 lg:pb-0">
 				{menuItems.sub.map((sub, i) => (
 					<li className="" key={i}>
 						<Link

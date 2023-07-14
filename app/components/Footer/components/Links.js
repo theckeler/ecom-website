@@ -36,7 +36,9 @@ export default function FooterLinks({
 						return (
 							<li className="" key={i}>
 								<a
-									className={`text-xs underline p-5 block ${!row && "lg:p-2"}`}
+									className={`sm:text-xs underline p-5 block ${
+										!row && "sm:p-2"
+									}`}
 									href="#top">
 									{link}
 								</a>

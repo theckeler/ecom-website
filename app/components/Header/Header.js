@@ -5,10 +5,11 @@ import toggleMenu from "@/functions/toggleMenu";
 
 import HeaderButton from "./components/Button";
 import Hamburger from "@/icons/Hamburger";
-import Nav from "@/components/Header/components/Nav";
-import ShopYourDealer from "@/components/Menus/ShopYourDealer";
+// import Nav from "@/components/Header/components/Nav";
+import Menu from "@/menus/Menu";
+import ShopYourDealer from "@/components/Menus/components/ShopYourDealer";
 
-import SubNav from "./components/SubNav";
+// import SubNav from "./components/SubNav";
 import Promo from "./components/Promo";
 
 import Logo from "@/components/Logo";
@@ -97,15 +98,42 @@ export default function Header() {
 								<Logo />
 							</Link>
 						</li>
-						<li className="">
-							<Nav menuItems={menuItems} />
+						<li>
+							<Menu
+								className="lg:flex lg:relative lg:z-auto lg:max-w-fit lg:bg-transparent"
+								menu={{
+									title: "",
+									id: "main-nav",
+									component: "mainNav",
+									// button: {
+									// 	title: "Finacing CTA?",
+									// 	className: "font-bold",
+									// },
+									left: true,
+									menuItems: menuItems,
+								}}
+							/>
 						</li>
 					</ul>
 				</div>
 			</li>
 
 			<li className="bg-white border-b border-gray-300">
-				<SubNav menuItems={menuItems} />
+				<Menu
+					className=""
+					menu={{
+						title: "Lawn Mowers",
+						id: "lawn-mowers-sub",
+						component: "subNav",
+						className: "lg:relative",
+						button: {
+							title: "Finacing CTA?",
+							className: "font-bold",
+						},
+						left: true,
+						menuItems: menuItems[0],
+					}}
+				/>
 			</li>
 		</ul>
 	);

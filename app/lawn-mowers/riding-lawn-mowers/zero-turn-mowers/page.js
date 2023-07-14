@@ -50,7 +50,7 @@ export default function Index() {
 				</p>
 			</li>
 
-			<li className="sticky top-12 z-10 bg-gray-200" id="products">
+			<li className="sticky top-12 md:top-0 z-10 bg-gray-200" id="products">
 				<ul className="flex items-center max-w-screen-2xl mx-auto px-3 py-2">
 					<li>
 						<Sort />

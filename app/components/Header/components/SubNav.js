@@ -6,7 +6,6 @@ import Close from "@/icons/Close";
 import ChevronLeft from "@/icons/ChevronLeft";
 import toggleMenu from "@/functions/toggleMenu";
 
-// import menuItems from "@/data/nav.json";
 
 export default function SubNav({ menuItems }) {
 	return (

@@ -1,11 +1,9 @@
 "use client";
 
 import LinkMain from "@/components/Header/components/LinkMain";
-// import menuItems from "@/data/nav.json";
 
 export default function Nav({ menuItems }) {
 	let openSubMenu = null;
-	// console.log("Nav", menuItems);
 
 	return (
 		<ul className="flex flex-col lg:flex-row divide-y lg:divide-none divide-solid lg:border-0 pb-8 lg:pb-0">

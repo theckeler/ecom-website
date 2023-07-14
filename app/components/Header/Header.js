@@ -40,7 +40,7 @@ export default function Header() {
 	];
 
 	return (
-		<ul className="mb-3">
+		<ul className="mb-3 border-b">
 			<li className="">
 				<Promo />
 			</li>
@@ -105,35 +105,31 @@ export default function Header() {
 									title: "",
 									id: "main-nav",
 									component: "mainNav",
-									// button: {
-									// 	title: "Finacing CTA?",
-									// 	className: "font-bold",
-									// },
 									left: true,
 									menuItems: menuItems,
 								}}
 							/>
+							{menuItems.map(
+								(mainMenu, i) =>
+									mainMenu.sub && (
+										<Menu
+											key={i}
+											className=""
+											menu={{
+												title: mainMenu.title,
+												id: mainMenu.slug + "-sub",
+												component: "subNav",
+												className: "lg:relative",
+												button: mainMenu.button,
+												left: true,
+												menuItems: mainMenu,
+											}}
+										/>
+									)
+							)}
 						</li>
 					</ul>
 				</div>
-			</li>
-
-			<li className="bg-white border-b border-gray-300">
-				<Menu
-					className=""
-					menu={{
-						title: "Lawn Mowers",
-						id: "lawn-mowers-sub",
-						component: "subNav",
-						className: "lg:relative",
-						button: {
-							title: "Finacing CTA?",
-							className: "font-bold",
-						},
-						left: true,
-						menuItems: menuItems[0],
-					}}
-				/>
 			</li>
 		</ul>
 	);

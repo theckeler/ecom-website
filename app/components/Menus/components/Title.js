@@ -7,14 +7,17 @@ export default function MenuTitle({ className, title, component }) {
 	return (
 		<ul className="w-100 flex items-center w-100">
 			{title && (
-				<li className="w-100 grow font-bold text-left pl-3 hidden lg:block">
+				<li
+					className={`w-100 grow font-bold text-left pl-3  ${
+						component === "subNav" && "hidden lg:block"
+					}`}>
 					{title}
 				</li>
 			)}
 
 			{component === "subNav" && (
 				<button
-					className="lg:hidden p-4 block w-100"
+					className="lg:hidden block w-100"
 					onClick={(e) => {
 						toggleMenu("main-nav");
 					}}

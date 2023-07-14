@@ -17,7 +17,7 @@ export default function Promo() {
 					<ExpandMore className="ml-1 w-6" />
 				</button>
 			</div>
-			<div className="hidden popup-item" id="promo-content">
+			{/* <div className="hidden popup-item" id="promo-content">
 				<div
 					className="mx-auto px-2 py-4 fixed top-0 left-0 w-full z-50 h-full lg:h-auto"
 					style={{ backgroundColor: "#ffc20f" }}>
@@ -59,7 +59,8 @@ export default function Promo() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> */}
+			
 		</div>
 	);
 }

@@ -14,9 +14,10 @@ export default function Menu({ className, menu }) {
 			} top-0 w-full md:max-w-xl bg-white ${className}`}>
 			<ul
 				className={`flex flex-col h-[calc(100vh-114px)]  max-h-screen min-h-[100dvh] ${
-					menu.component === "mainNav" && "lg:h-auto"
+					menu.component === "mainNav" &&
+					"lg:h-auto lg:max-h-none lg:min-h-[auto]"
 				}`}>
-				<li className={`py-2 border-b bg-zinc-200 ${mainNavCSS}`}>
+				<li className={`border-b bg-zinc-200 ${mainNavCSS}`}>
 					<MenuTitle
 						{...{
 							title: menu.title,

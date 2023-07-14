@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 
 import toggleMenu from "@/functions/toggleMenu";
 import HeaderButton from "./components/Button";
@@ -9,8 +10,13 @@ import ShopYourDealer from "@/components/Menus/components/ShopYourDealer";
 import Promo from "./components/Promo";
 import Logo from "@/components/Logo";
 import menuItems from "@/data/nav.json";
+import Screen from "@/components/Screen";
 
 export default function Header() {
+	const searchParams = useSearchParams();
+	const oops = searchParams.get("oops");
+	console.log(oops);
+
 	const buttonItems = [
 		{ title: "Stores", url: null, onClick: () => toggleMenu("stores") },
 		{
@@ -35,6 +41,7 @@ export default function Header() {
 
 	return (
 		<>
+			{oops && <Screen />}
 			<ul className="mb-3 border-b">
 				<li className="">
 					<Promo />

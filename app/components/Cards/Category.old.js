@@ -12,7 +12,10 @@ export default function CategoryCard({
 	className,
 	style,
 }) {
-	const Selector = href !== "#ClickZeroTurnMowersLink" ? Link : "div";
+	const Selector =
+		href !== "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
+			? Link
+			: "div";
 	{
 		return (
 			<Selector

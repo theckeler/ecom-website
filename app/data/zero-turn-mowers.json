@@ -22,7 +22,7 @@
 			},
 			"button": {
 				"title": "Shop Walk-Behind Mowers",
-				"href": "#ClickZeroTurnMowersLink",
+				"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
 				"className": "bg-black text-white"
 			}
 		},
@@ -35,7 +35,7 @@
 			},
 			"button": {
 				"title": "Shop Robotic Mowers",
-				"href": "#ClickZeroTurnMowersLink",
+				"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
 				"className": "bg-black text-white"
 			}
 		}

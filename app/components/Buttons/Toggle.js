@@ -17,7 +17,9 @@ export default function ButtonToggle({
 	const ulCSS = `flex items-center px-4 py-2`;
 
 	return linkOnly ? (
-		<a href="#ClickZeroTurnMowersLink" className={linkCSS}>
+		<a
+			href="?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
+			className={linkCSS}>
 			<ul className={ulCSS}>
 				<li className="font-bold">{title}</li>
 				<li className="ml-auto">

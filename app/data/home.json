@@ -23,7 +23,7 @@
 			},
 			"button": {
 				"title": "Shop Commercial Equipment",
-				"href": "#ClickZeroTurnMowersLink",
+				"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
 				"className": "bg-amber-400 text-black"
 			},
 			"span": true,
@@ -44,7 +44,7 @@
 			"p": "Three tiers of snow-clearing power engineered so winter never stands in your way.",
 			"button": {
 				"title": "Shop Snow Blowers",
-				"href": "#ClickZeroTurnMowersLink"
+				"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
 			},
 			"className": "bg-gray-200"
 		},
@@ -53,7 +53,7 @@
 			"p": "Introducing the all fully electric lineup from Cub Cadet. 100% electric. 0% Compromise. Explore Now.",
 			"button": {
 				"title": "Shop Electric Mowers & Tools",
-				"href": "#ClickZeroTurnMowersLink"
+				"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
 			},
 			"className": "bg-gray-200"
 		},
@@ -62,7 +62,7 @@
 			"p": "Optimize your equipment with a full line of accessories and attachments such as baggers, snow blades and mulch kits.",
 			"button": {
 				"title": "Shop Accessories",
-				"href": "#ClickZeroTurnMowersLink"
+				"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
 			},
 			"className": "bg-gray-200"
 		}
@@ -76,7 +76,7 @@
 			},
 			"button": {
 				"title": "Get Started",
-				"href": "#ClickZeroTurnMowersLink",
+				"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
 				"className": "bg-black text-white"
 			},
 			"className": "bg-amber-400",
@@ -90,7 +90,7 @@
 			},
 			"button": {
 				"title": "Learn More About the Cub Cadet® LT42E",
-				"href": "#ClickZeroTurnMowersLink",
+				"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
 				"className": "bg-amber-400 text-black"
 			},
 			"className": "bg-black text-white",
@@ -104,7 +104,7 @@
 			},
 			"button": {
 				"title": "Shop PRO X Series™",
-				"href": "#ClickZeroTurnMowersLink",
+				"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
 				"className": "bg-amber-400 text-black"
 			},
 			"className": "bg-black text-white",
@@ -180,7 +180,7 @@
 			},
 			"button": {
 				"title": "Shop Cub Cadet® Enduro Series™ Mowers",
-				"href": "#ClickZeroTurnMowersLink",
+				"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
 				"className": "bg-black text-white"
 			},
 			"span": true,
@@ -195,7 +195,7 @@
 			},
 			"button": {
 				"title": "Shop Cub Cadet® Cras Dapibus Euismod",
-				"href": "#ClickZeroTurnMowersLink",
+				"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
 				"className": "bg-black text-white"
 			},
 			"span": true,

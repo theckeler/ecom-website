@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
 					}}
 				/>
 
-				<Screen />
+				{/* <Screen className="hidden" /> */}
 			</body>
 		</html>
 	);

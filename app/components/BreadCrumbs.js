@@ -19,7 +19,11 @@ export default function BreadCrumbs({
 							<Fragment key={i}>
 								<li className={`${crumbCSS} ${checkNum ? "truncate" : ""} `}>
 									<LinkElement
-										href={crumb.url ? crumb.url : "#ClickZeroTurnMowersLink"}
+										href={
+											crumb.url
+												? crumb.url
+												: "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
+										}
 										className={checkNum ? "underline" : ""}>
 										{crumb.title}
 									</LinkElement>

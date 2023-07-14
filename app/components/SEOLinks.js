@@ -4,7 +4,7 @@ export default function SEOLinks() {
 			{[...Array(8)].map((x, i) => (
 				<li key={i}>
 					<a
-						href="#ClickZeroTurnMowersLink"
+						href="?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
 						className="underline flex items-center border p-2 text-xs">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"

@@ -50,7 +50,7 @@ export default function Index() {
 				</p>
 			</li>
 
-			<li className="sticky top-0 z-20 bg-gray-200" id="products">
+			<li className="sticky top-0 z-30 bg-gray-200" id="products">
 				<ul className="flex items-center max-w-screen-2xl mx-auto px-3 py-2">
 					<li>
 						<Sort />
@@ -58,22 +58,30 @@ export default function Index() {
 					<li className="hidden lg:block">
 						<ul className="flex items-center text-sm">
 							<li>
-								<a className="block p-3" href="#ClickZeroTurnMowersLink">
+								<a
+									className="block p-3"
+									href="?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp">
 									Ultima Series™ ZT
 								</a>
 							</li>
 							<li>
-								<a className="block p-3" href="#ClickZeroTurnMowersLink">
+								<a
+									className="block p-3"
+									href="?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp">
 									Ultima Series™ ZTS
 								</a>
 							</li>
 							<li>
-								<a className="block p-3" href="#ClickZeroTurnMowersLink">
+								<a
+									className="block p-3"
+									href="?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp">
 									Ultima Series™ ZTX
 								</a>
 							</li>
 							<li>
-								<a className="block p-3" href="#ClickZeroTurnMowersLink">
+								<a
+									className="block p-3"
+									href="?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp">
 									Ultima Series™ ZTXS
 								</a>
 							</li>

@@ -22,7 +22,7 @@ export default function Card({
 				href={
 					product.slug && !product.ad
 						? "/lawn-mowers/riding-lawn-mowers/zero-turn-mowers/" + product.slug
-						: "#ClickZeroTurnMowersLink"
+						: "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
 				}
 				className={`p-3 flex flex-col ${className}`}>
 				{!product.ad ? (

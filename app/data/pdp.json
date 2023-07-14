@@ -584,13 +584,13 @@
 			"h2": "Walk-Behind Mowers",
 			"h3": "A power walk.",
 			"p": "From the Signature Cut™ series lawn mowers to the wide area mowers, every walk-behind mower features incredible control and maneuverability to match your mowing needs.",
-			"href": "#ClickZeroTurnMowersLink"
+			"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
 		},
 		{
 			"h2": "Robotic Mowers",
 			"h3": "Cutting-edge results. Zero effort.",
 			"p": "With the XR3 robotic mower, we combined Cub Cadet power with innovative technology like the Smart Mode feature. With the touch of a button, you get a just-mowed look so you can focus on getting the most out of your yard.",
-			"href": "#ClickZeroTurnMowersLink"
+			"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
 		}
 	],
 	"relatedProducts": [
@@ -691,7 +691,7 @@
 			"small": "The Ultima Series™ Zero-Turn withCommercial-Grade Features",
 			"button": {
 				"title": "Learn more about the Ultima ZTXS",
-				"href": "#ClickZeroTurnMowersLink",
+				"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
 				"className": "bg-black text-white"
 			},
 			"noIMG": true

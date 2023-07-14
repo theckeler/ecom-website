@@ -29,7 +29,7 @@ export default function HeaderButton({
 
 	return (
 		<LinkType
-			href="#ClickZeroTurnMowersLink"
+			href="?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
 			className={`p-2 flex items-center ${className}`}
 			style={style}
 			aria-label={ariaLabel}

@@ -31,7 +31,9 @@ export default function CatAd() {
 				Quisque eu euismod nulla, quis aliquam leo. Pellentesque ac mollis
 				neque. Etiam ultricies sed massa sed consectetur. Ut id est nec neque
 				venenatis ullamcorper ac ut mauris.{" "}
-				<span href="#ClickZeroTurnMowersLink" className="underline">
+				<span
+					href="?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
+					className="underline">
 					See Details
 				</span>
 			</p>

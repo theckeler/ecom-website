@@ -18,7 +18,8 @@
 			"@/menus/*": ["app/components/Menus/*"],
 			"@/cart/*": ["app/components/Cart/*"],
 			"@/form/*": ["app/components/Form/*"],
-			"@/filters/*": ["app/components/Filters/*"]
+			"@/filters/*": ["app/components/Filters/*"],
+			"@/cookie/*": ["app/components/Cookie/*"]
 		}
 	}
 }

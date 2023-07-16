@@ -1,6 +1,7 @@
 [
 	{
 		"title": "Lawn Mowers",
+		"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw9cf18212/menu-card-images/Cub-Cadet-ZT260_NavCard.png",
 		"url": "/lawn-mowers",
 		"slug": "lawn-mowers",
 		"button": {
@@ -57,6 +58,7 @@
 	},
 	{
 		"title": "Electric Mowers & Tools",
+		"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwd04de196/menu-card-images/34ABA2CS710_ZT142E_RT_200x200.jpg",
 		"url": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
 		"slug": "electric-mowers-tools",
 		"sub": [
@@ -99,6 +101,7 @@
 	},
 	{
 		"title": "Snow Blowers",
+		"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwb4f46384/menu-card-images/Cub-Cadet_ALL_NAV_200x200.png",
 		"url": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
 		"slug": "snow-blowers",
 		"sub": [
@@ -131,6 +134,7 @@
 	},
 	{
 		"title": "Commercial Equipment",
+		"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwb5a52365/menu-card-images/53RIHMAY050_ProZ972SSurepath_RT-200x200.jpg",
 		"url": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
 		"slug": "commercial-equipment",
 		"sub": [
@@ -205,5 +209,36 @@
 				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwcc225e7e/menu-card-images/Cub-Cadet-Snow-Blower-Accessory_NavCard.png"
 			}
 		]
+	},
+	{
+		"title": "Cub Cadet Dealer Locator & Store Locations",
+		"url": "#top",
+		"className": "lg:hidden",
+		"slug": "stores",
+		"showMenu": true,
+		"sub": false
+	},
+	{
+		"title": "Help",
+		"url": "#top",
+		"className": "lg:hidden",
+		"slug": "help",
+		"showMenu": true,
+		"sub": false
+	},
+	{
+		"title": "Account",
+		"url": "#top",
+		"className": "lg:hidden",
+		"slug": "account",
+		"showMenu": true,
+		"sub": false
+	},
+	{
+		"title": "Cart",
+		"url": "#top",
+		"className": "lg:hidden",
+		"slug": "cart",
+		"sub": false
 	}
 ]

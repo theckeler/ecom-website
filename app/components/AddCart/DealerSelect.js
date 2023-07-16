@@ -18,7 +18,7 @@ export default function DealerSelect({
 }) {
 	return (
 		<div
-			className={`dealer-select group flex relative p-2  ${
+			className={`dealer-select group flex relative z-0 p-2  ${
 				!!selected ? activeColor : inactiveColor
 			} ${className}`}
 			// onChange={(e) => {
@@ -44,7 +44,7 @@ export default function DealerSelect({
 			// 	});
 			// }}
 		>
-			<ul className="h-full w-full flex relative ">
+			<ul className="h-full w-full flex relative z-0">
 				<li>
 					<input
 						type="radio"
@@ -65,7 +65,7 @@ export default function DealerSelect({
 					<ul
 						className={`px-2 bg-white text-black text-xs ${
 							!showAdress &&
-							"flex flex-col md:hidden group-hover:block relative md:absolute z-50 py-2"
+							"flex flex-col md:hidden relative z-10 py-2"
 						}`}>
 						<li className="flex">
 							Dealer Review:

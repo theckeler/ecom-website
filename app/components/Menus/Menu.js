@@ -9,7 +9,9 @@ export default function Menu({ className, menu }) {
 	return (
 		<div
 			id={menu.id}
-			className={`popup-item hidden fixed z-50 ${
+			className={`popup-item hidden fixed ${
+				menu.component === "mainNav" ? "z-50" : "z-30"
+			} ${
 				menu.left ? "left-0" : "right-0"
 			} top-0 w-full md:max-w-xl bg-white ${className}`}>
 			<ul

@@ -2,6 +2,8 @@ import Header from "@/header/Header";
 import Menu from "@/components/Menus/Menu";
 import Screen from "@/components/Screen";
 import Footer from "@/footer/Footer";
+import Cookie from "@/cookie/Cookie";
+
 import "./globals.css";
 
 export const metadata = {
@@ -62,6 +64,7 @@ export default function RootLayout({ children }) {
 				/>
 
 				{/* <Screen className="hidden" /> */}
+				<Cookie />
 			</body>
 		</html>
 	);

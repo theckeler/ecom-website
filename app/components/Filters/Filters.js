@@ -13,9 +13,7 @@ export default function Filters({ className }) {
 					<AppliedFilter title="Lawn Mowers" />
 				</div>
 			</li>
-			<li
-				className="max-h-screen overflow-scroll mt-3"
-				style={{ maxHeight: "calc(100vh - 270px)" }}>
+			<li className="mt-3" style={{ maxHeight: "calc(100vh - 270px)" }}>
 				<div className="py-3">
 					<div>
 						<p className="text-lg font-bold mb-2 pb-1 border-b">Sort</p>

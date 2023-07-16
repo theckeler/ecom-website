@@ -9,13 +9,13 @@ import Menu from "@/menus/Menu";
 import ShopYourDealer from "@/components/Menus/components/ShopYourDealer";
 import Promo from "./components/Promo";
 import Logo from "@/components/Logo";
-import menuItems from "@/data/nav.json";
 import Screen from "@/components/Screen";
+
+import menuItems from "@/data/nav.json";
 
 export default function Header() {
 	const searchParams = useSearchParams();
 	const oops = searchParams.get("oops");
-	console.log(oops);
 
 	const buttonItems = [
 		{ title: "Stores", url: null, onClick: () => toggleMenu("stores") },
@@ -74,69 +74,12 @@ export default function Header() {
 						</ul>
 					</div>
 				</li>
-
-				{/* <li className="bg-white sticky top-0">
-				<div className="max-w-screen-2xl mx-auto">
-					<ul className="flex items-center w-full relative">
-						<li className="lg:hidden flex flex-col items-center pr-2">
-							<button
-								className="lg:w-12 leading-none"
-								onClick={() => {
-									toggleMenu("main-nav");
-								}}
-								aria-label="Navigation">
-								<ul className="flex items-center">
-									<li>
-										<Hamburger className="w-12" fillColor="#000" />
-									</li>
-									<li>
-										<span className="text-sm text-bold leading-none">Menu</span>
-									</li>
-								</ul>
-							</button>
-						</li>
-						<li className="ml-auto md:ml-0 w-40 p-2">
-							<Link href="/" aria-label="Return Home">
-								<Logo />
-							</Link>
-						</li>
-						<li>
-							<Menu
-								className="lg:flex lg:relative lg:z-auto lg:max-w-fit lg:bg-transparent"
-								menu={{
-									title: "",
-									id: "main-nav",
-									component: "mainNav",
-									left: true,
-									menuItems: menuItems,
-								}}
-							/>
-							{menuItems.map(
-								(mainMenu, i) =>
-									mainMenu.sub && (
-										<Menu
-											key={i}
-											className=""
-											menu={{
-												title: mainMenu.title,
-												id: mainMenu.slug + "-sub",
-												component: "subNav",
-												className: "lg:relative",
-												button: mainMenu.button,
-												left: true,
-												menuItems: mainMenu,
-											}}
-										/>
-									)
-							)}
-						</li>
-					</ul>
-				</div>
-			</li> */}
 			</ul>
 
-			<div className="max-w-screen-2xl mx-auto sticky md:relative top-0 z-20 bg-white border-b">
-				<ul className="flex flex-row-reverse sm:flex-row items-center w-full relative">
+			<div
+				className="max-w-screen-2xl mx-auto sticky md:relative top-0 z-20 bg-white border-b"
+				id="sticky-nav">
+				<ul className="flex flex-row-reverse lg:flex-row items-center w-full relative">
 					<li className="lg:hidden flex flex-col items-center pr-2">
 						<button
 							className="lg:w-12 leading-none"
@@ -161,13 +104,17 @@ export default function Header() {
 					</li>
 					<li>
 						<Menu
-							className="lg:flex  lg:relative lg:z-auto lg:max-w-fit lg:bg-transparent"
+							className="lg:flex lg:relative lg:z-auto lg:max-w-fit lg:bg-transparent"
 							menu={{
 								title: "",
 								id: "main-nav",
 								component: "mainNav",
-								left: true,
+								left: false,
 								menuItems: menuItems,
+								button: {
+									title: "Up to $300 off select Ultima Series™ Zero-Turns",
+									className: "font-bold",
+								},
 							}}
 						/>
 						{menuItems.map(
@@ -182,7 +129,7 @@ export default function Header() {
 											component: "subNav",
 											className: "lg:relative",
 											button: mainMenu.button,
-											left: true,
+											left: false,
 											menuItems: mainMenu,
 										}}
 									/>

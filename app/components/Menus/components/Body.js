@@ -2,7 +2,7 @@ import LoremIpsum from "@/components/LoremIpsum";
 
 import Cart from "@/cart/Cart";
 import Stores from "@/components/Stores/Stores";
-import MainNav from "@/header/components/Nav";
+import MainNav from "@/components/Nav/Nav";
 import SubNav from "@/header/components/SubNav";
 import Filters from "@/filters/Filters";
 

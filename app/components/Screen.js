@@ -14,7 +14,7 @@ export default function Screen({ className }) {
 				oops... it seems there is no link yet, try this one:
 				<Link
 					className="bg-black underline p-2 uppercase ml-3 inline-block"
-					href="http://localhost:3000/lawn-mowers/riding-lawn-mowers/zero-turn-mowers#top">
+					href="/lawn-mowers/riding-lawn-mowers/zero-turn-mowers#top">
 					This one
 				</Link>
 				, or click outside this box to close this warning.

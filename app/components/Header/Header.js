@@ -77,7 +77,7 @@ export default function Header() {
 			</ul>
 
 			<div
-				className="max-w-screen-2xl mx-auto sticky md:relative top-0 z-20 bg-white border-b"
+				className="max-w-screen-2xl mx-auto sticky md:relative top-0 z-30 bg-white border-b"
 				id="sticky-nav">
 				<ul className="flex flex-row-reverse lg:flex-row items-center w-full relative">
 					<li className="lg:hidden flex flex-col items-center pr-2">
@@ -85,6 +85,7 @@ export default function Header() {
 							className="lg:w-12 leading-none"
 							onClick={() => {
 								toggleMenu("main-nav");
+								document.querySelector("#sticky-nav").scrollIntoView();
 							}}
 							aria-label="Navigation">
 							<ul className="flex flex-row-reverse sm:flex-row items-center">
@@ -131,6 +132,17 @@ export default function Header() {
 											button: mainMenu.button,
 											left: false,
 											menuItems: mainMenu,
+											ad: {
+												title:
+													"Check out special offers on residential and professional products",
+												copy: "Save any season with rebates and discounts on residential and professional outdoor power equipment from Cub Cadet. Plus, learn more about year round specials for first responders, military members, NHLA members and Equine Groups.",
+												img: "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dwc805e60b/special-offers/so-fleet-discount-program.jpg",
+												button: {
+													title:
+														"Special offers on residential and professional products",
+													className: "font-bold",
+												},
+											},
 										}}
 									/>
 								)

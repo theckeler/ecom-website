@@ -10,6 +10,7 @@ import Store from "@/icons/Store";
 import Cart from "@/icons/Cart";
 import Account from "@/icons/Account";
 import Help from "@/icons/Help";
+import Location from "@/icons/Location";
 
 // import LinkMain from "@/components/Header/components/LinkMain";
 
@@ -22,12 +23,9 @@ export default function Nav({ menuItems }) {
 					cart: Cart,
 					account: Account,
 					help: Help,
+					location: Location,
 				};
 				const IconComponent = Icons[menu.icon];
-				console.log(Icons.store);
-				console.log(IconComponent);
-				console.log(menu.icon);
-				const LinkType = menu.slug ? "button" : Link;
 
 				return (
 					<li key={i} className={menu.className}>
@@ -44,11 +42,11 @@ export default function Nav({ menuItems }) {
 									</li>
 								)}
 								{menu.icon && IconComponent && (
-									<li className="w-16 lg:hidden">
+									<li className="w-10 lg:hidden">
 										<IconComponent />
 									</li>
 								)}
-								<li className="text-base lg:text-xs 2xl:text-base font-bold flex items-center truncate grow">
+								<li className="ml-1 md:ml-0 text-base lg:text-xs 2xl:text-base font-bold flex items-center truncate grow">
 									{menu.title}
 									{menu.sub && (
 										<span className="ml-auto">

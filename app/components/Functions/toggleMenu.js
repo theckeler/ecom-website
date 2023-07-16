@@ -4,6 +4,5 @@ export default function toggleMenu(toggleMe) {
 	});
 	if (toggleMe !== null) {
 		document.querySelector(`#${toggleMe}`).classList.remove("hidden");
-		document.querySelector("#sticky-nav").scrollIntoView();
 	}
 }

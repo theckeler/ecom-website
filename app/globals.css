@@ -20,5 +20,11 @@
 	border-radius: 1em;
 }
 
+@media all and (max-height: 843px) {
+	.tall\:hidden {
+		display: none;
+	}
+}
+
 @tailwind components;
 @tailwind utilities;

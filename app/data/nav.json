@@ -4,10 +4,6 @@
 		"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw9cf18212/menu-card-images/Cub-Cadet-ZT260_NavCard.png",
 		"url": "/lawn-mowers",
 		"slug": "lawn-mowers",
-		"button": {
-			"title": "Up to $300 off select Ultima Series™ Zero-Turns",
-			"className": "font-bold"
-		},
 		"sub": [
 			{
 				"title": "Zero-Turn Mowers",
@@ -160,6 +156,51 @@
 			}
 		]
 	},
+
+	{
+		"title": "Shop Your Dealer",
+		"icon": "store",
+		"url": "#top",
+		"className": "lg:hidden",
+		"slug": "dealer",
+		"showMenu": true,
+		"sub": false
+	},
+	{
+		"title": "Cub Cadet Dealer Locator & Store Locations",
+		"icon": "location",
+		"url": "#top",
+		"className": "lg:hidden",
+		"slug": "stores",
+		"showMenu": true,
+		"sub": false
+	},
+	{
+		"title": "Help",
+		"icon": "help",
+		"url": "#top",
+		"className": "lg:hidden",
+		"slug": "help",
+		"showMenu": true,
+		"sub": false
+	},
+	{
+		"title": "Account",
+		"icon": "account",
+		"url": "#top",
+		"className": "lg:hidden",
+		"slug": "account",
+		"showMenu": true,
+		"sub": false
+	},
+	{
+		"title": "Cart",
+		"icon": "cart",
+		"url": "#top",
+		"className": "lg:hidden",
+		"slug": "cart",
+		"sub": false
+	},
 	{
 		"title": "Services & Parts",
 		"url": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
@@ -209,40 +250,5 @@
 				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwcc225e7e/menu-card-images/Cub-Cadet-Snow-Blower-Accessory_NavCard.png"
 			}
 		]
-	},
-	{
-		"title": "Cub Cadet Dealer Locator & Store Locations",
-		"icon": "store",
-		"url": "#top",
-		"className": "lg:hidden",
-		"slug": "stores",
-		"showMenu": true,
-		"sub": false
-	},
-	{
-		"title": "Help",
-		"icon": "help",
-		"url": "#top",
-		"className": "lg:hidden",
-		"slug": "help",
-		"showMenu": true,
-		"sub": false
-	},
-	{
-		"title": "Account",
-		"icon": "account",
-		"url": "#top",
-		"className": "lg:hidden",
-		"slug": "account",
-		"showMenu": true,
-		"sub": false
-	},
-	{
-		"title": "Cart",
-		"icon": "cart",
-		"url": "#top",
-		"className": "lg:hidden",
-		"slug": "cart",
-		"sub": false
 	}
 ]

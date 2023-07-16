@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import MenuBody from "./components/Body";
 import MenuTitle from "./components/Title";
 
@@ -46,6 +48,28 @@ export default function Menu({ className, menu }) {
 							className={`bg-amber-400 p-2 h-12 min-h-full w-full block truncate ... ${menu.button.className}`}>
 							{menu.button.title}
 						</button>
+					</li>
+				)}
+				{menu.ad && (
+					<li className={`mt-auto px-2 py-2 w-full bg-zinc-200 ${mainNavCSS}`}>
+						<ul>
+							<li className="relative h-24 tall:hidden">
+								{" "}
+								<Image src={menu.ad.img} fill className="object-cover" alt="" />
+							</li>
+							<li className="text-sm text-center font-bold p-2 pb-0">
+								{menu.ad.button.title}
+							</li>
+							<li className="text-xs text-center line-clamp-1 overflow-hidden mb-1">
+								{menu.ad.copy}
+							</li>
+							<li>
+								<button
+									className={`bg-amber-400 text-xs p-2 w-full block uppercase truncate ... ${menu.ad.button.className}`}>
+									Find out more
+								</button>
+							</li>
+						</ul>
 					</li>
 				)}
 			</ul>

@@ -6,14 +6,27 @@ import ChevronRight from "@/icons/ChevronRight";
 import ExpandMore from "@/icons/ExpandMore";
 import toggleMenu from "../Functions/toggleMenu";
 
+import Store from "@/icons/Store";
+import Cart from "@/icons/Cart";
+import Account from "@/icons/Account";
+import Help from "@/icons/Help";
+
 // import LinkMain from "@/components/Header/components/LinkMain";
 
 export default function Nav({ menuItems }) {
-	let openSubMenu = null;
-
 	return (
 		<ul className="flex flex-col lg:flex-row divide-y lg:divide-none divide-solid lg:border-0 pb-8 lg:pb-0">
 			{menuItems.map((menu, i) => {
+				const Icons = {
+					store: Store,
+					cart: Cart,
+					account: Account,
+					help: Help,
+				};
+				const IconComponent = Icons[menu.icon];
+				console.log(Icons.store);
+				console.log(IconComponent);
+				console.log(menu.icon);
 				const LinkType = menu.slug ? "button" : Link;
 
 				return (
@@ -25,12 +38,17 @@ export default function Nav({ menuItems }) {
 								toggleMenu(`${menu.slug}${menu.sub ? "-sub" : ""}`);
 							}}>
 							<ul className="flex flex-row items-center w-full">
-								{!!menu.img && (
+								{menu.img && (
 									<li className="w-16 lg:hidden">
 										<Image src={menu.img} width={200} height={200} alt="" />
 									</li>
 								)}
-								<li className="text-xs xl:text-sm 2xl:text-base font-bold flex items-center truncate grow">
+								{menu.icon && IconComponent && (
+									<li className="w-16 lg:hidden">
+										<IconComponent />
+									</li>
+								)}
+								<li className="text-base lg:text-xs 2xl:text-base font-bold flex items-center truncate grow">
 									{menu.title}
 									{menu.sub && (
 										<span className="ml-auto">

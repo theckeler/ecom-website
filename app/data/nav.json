@@ -212,6 +212,7 @@
 	},
 	{
 		"title": "Cub Cadet Dealer Locator & Store Locations",
+		"icon": "store",
 		"url": "#top",
 		"className": "lg:hidden",
 		"slug": "stores",
@@ -220,6 +221,7 @@
 	},
 	{
 		"title": "Help",
+		"icon": "help",
 		"url": "#top",
 		"className": "lg:hidden",
 		"slug": "help",
@@ -228,6 +230,7 @@
 	},
 	{
 		"title": "Account",
+		"icon": "account",
 		"url": "#top",
 		"className": "lg:hidden",
 		"slug": "account",
@@ -236,6 +239,7 @@
 	},
 	{
 		"title": "Cart",
+		"icon": "cart",
 		"url": "#top",
 		"className": "lg:hidden",
 		"slug": "cart",

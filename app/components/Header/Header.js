@@ -1,21 +1,27 @@
 "use client";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+import { useState, useEffect } from "react";
 
 import toggleMenu from "@/functions/toggleMenu";
+
+import Promo from "./components/Promo";
 import HeaderButton from "./components/Button";
 import Hamburger from "@/icons/Hamburger";
 import Menu from "@/menus/Menu";
 import ShopYourDealer from "@/components/Menus/components/ShopYourDealer";
-import Promo from "./components/Promo";
 import Logo from "@/components/Logo";
-import Screen from "@/components/Oops";
+// import Oops from "@/components/Oops";
 
-import menuItems from "@/data/nav.json";
-
-export default function Header() {
+export default function Header({ menuItems }) {
 	const searchParams = useSearchParams();
 	const oops = searchParams.get("oops");
+
+	const [oopsTriggered, setOopsTriggered] = useState(false);
+	useEffect(() => {
+		setOopsTriggered(searchParams.get("oops"));
+		console.log("oopsTriggered", oopsTriggered);
+	}, [oopsTriggered, searchParams]);
 
 	const buttonItems = [
 		{ title: "Stores", url: null, onClick: () => toggleMenu("stores") },
@@ -41,7 +47,17 @@ export default function Header() {
 
 	return (
 		<>
-			{oops && <Screen />}
+			{oopsTriggered && (
+				<Menu
+					menu={{
+						title: "Oops",
+						id: "oops",
+						component: "oops",
+						button: { title: "Close", className: "font-bold" },
+						fullscreen: true,
+					}}
+				/>
+			)}
 			<ul className="mb-3 border-b">
 				<li className="">
 					<Promo />
@@ -77,7 +93,7 @@ export default function Header() {
 			</ul>
 
 			<div
-				className="max-w-screen-2xl mx-auto sticky md:relative top-0 z-30 bg-white border-b"
+				className="max-w-screen-2xl mx-auto sticky md:relative top-0 z-30 bg-white/70 border-b backdrop-blur-sm"
 				id="sticky-nav">
 				<ul className="flex flex-row-reverse lg:flex-row items-center w-full relative">
 					<li className="lg:hidden flex flex-col items-center pr-2">
@@ -118,35 +134,6 @@ export default function Header() {
 								},
 							}}
 						/>
-						{menuItems.map(
-							(mainMenu, i) =>
-								mainMenu.sub && (
-									<Menu
-										key={i}
-										className=""
-										menu={{
-											title: mainMenu.title,
-											id: mainMenu.slug + "-sub",
-											component: "subNav",
-											className: "lg:relative",
-											button: mainMenu.button,
-											left: false,
-											menuItems: mainMenu,
-											ad: {
-												title:
-													"Check out special offers on residential and professional products",
-												copy: "Save any season with rebates and discounts on residential and professional outdoor power equipment from Cub Cadet. Plus, learn more about year round specials for first responders, military members, NHLA members and Equine Groups.",
-												img: "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dwc805e60b/special-offers/so-fleet-discount-program.jpg",
-												button: {
-													title:
-														"Special offers on residential and professional products",
-													className: "font-bold",
-												},
-											},
-										}}
-									/>
-								)
-						)}
 					</li>
 				</ul>
 			</div>

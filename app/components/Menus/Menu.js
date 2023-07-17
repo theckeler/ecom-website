@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import MenuBody from "./components/Body";
 import MenuTitle from "./components/Title";
+import toggleMenu from "@/functions/toggleMenu";
 
 export default function Menu({ className, menu }) {
 	const mainNavCSS = menu.component === "mainNav" && "lg:hidden";
@@ -15,9 +16,9 @@ export default function Menu({ className, menu }) {
 				menu.component === "mainNav" ? "z-50" : "z-40"
 			} ${menu.left ? "left-0" : "right-0"} ${
 				!menu.fullscreen && "hidden md:max-w-xl"
-			} top-0 w-full  bg-white ${className}`}>
+			} top-0 w-full bg-white ${className}`}>
 			<ul
-				className={`flex flex-col h-[calc(100vh-114px)]  max-h-screen min-h-[100dvh] ${
+				className={`flex flex-col h-[calc(100vh-114px)] max-h-screen min-h-[100dvh] ${
 					menu.component === "mainNav" &&
 					"lg:h-auto lg:max-h-none lg:min-h-[auto]"
 				}`}>
@@ -54,7 +55,6 @@ export default function Menu({ className, menu }) {
 					<li className={`mt-auto px-2 py-2 w-full bg-zinc-200 ${mainNavCSS}`}>
 						<ul>
 							<li className="relative h-24 tall:hidden">
-								{" "}
 								<Image src={menu.ad.img} fill className="object-cover" alt="" />
 							</li>
 							<li className="text-sm text-center font-bold p-2 pb-0">
@@ -65,7 +65,8 @@ export default function Menu({ className, menu }) {
 							</li>
 							<li>
 								<button
-									className={`bg-amber-400 text-xs p-2 w-full block uppercase truncate ... ${menu.ad.button.className}`}>
+									className={`bg-amber-400 text-xs p-2 w-full block uppercase truncate ... ${menu.ad.button.className}`}
+									onClick={() => toggleMenu("promo")}>
 									Find out more
 								</button>
 							</li>

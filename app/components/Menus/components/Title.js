@@ -51,14 +51,14 @@ export default function MenuTitle({ className, title, component }) {
 				</li>
 			)}
 
-			<li className="ml-auto w-12">
+			<li className="ml-auto w-14 py-2">
 				<button
 					onClick={() => {
 						toggleMenu(null);
 					}}
-					className="w-full"
+					className="flex items-center justify-center w-12 h-12 rounded-full bg-white"
 					aria-label="Close">
-					<Close className="h-12 " />
+					<Close className="w-10 h-10" />
 				</button>
 			</li>
 		</ul>

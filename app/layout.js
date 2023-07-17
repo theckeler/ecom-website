@@ -1,11 +1,12 @@
 import Header from "@/header/Header";
 import Menu from "@/components/Menus/Menu";
-// import Screen from "@/components/Oops";
+// import Screen from "@/components/Screen";
 import Footer from "@/footer/Footer";
 import Cookie from "@/cookie/Cookie";
 import menuItems from "@/data/nav.json";
 
 import "@/styles/globals.css";
+import Screen from "./components/Screen";
 
 export const metadata = {
 	title: "Cub Cadet Rebuild",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className="bg-white">
 				<Header menuItems={menuItems} />
+
 				<Menu
 					menu={{
 						title: "Cart",
@@ -43,7 +45,7 @@ export default function RootLayout({ children }) {
 						id: "help",
 						button: {
 							title: "Need more help?",
-							className: "bg-black font-bold text-white",
+							className: "bg-amber-400 font-bold text-black",
 						},
 					}}
 				/>
@@ -92,6 +94,7 @@ export default function RootLayout({ children }) {
 
 				<Footer />
 				<Cookie />
+				<Screen />
 			</body>
 		</html>
 	);

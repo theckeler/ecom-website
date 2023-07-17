@@ -63,6 +63,7 @@ export default function TitleFlexGridViews({
 								block={block}
 								className="h-full"
 								style={{ backgroundColor: "#ecedee" }}
+								buttonWide={buttonWide}
 							/>
 						</li>
 					);

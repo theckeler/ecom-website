@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ButtonMain from "app/components/Buttons/Main";
 
-export default function Card({ block }) {
+export default function Card({ block, buttonWide }) {
 	return (
 		<Link
 			href={block.button.href}
@@ -28,7 +28,11 @@ export default function Card({ block }) {
 				<div className="pt-4 mt-auto">
 					<ButtonMain
 						title={block.button.title}
-						className={`w-full lg:w-auto mt-auto p-2 px-10 inline-flex justify-center bg-amber-400 text-xs lg:text-sm ${block.button.className}`}
+						className={`w-full ${
+							!buttonWide && "lg:w-auto"
+						}   mt-auto p-2 px-10 inline-flex justify-center bg-amber-400 text-xs lg:text-sm ${
+							block.button.className
+						}`}
 					/>
 				</div>
 			</div>

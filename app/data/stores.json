@@ -1,1 +1,12 @@
-[]
+[
+	{
+		"title": "THE HOME DEPOT - STORE #3820",
+		"miles": "22.0",
+		"street": "11901 Scelerisque RD",
+		"cityState": "molestie, OH 555555",
+		"phone": "(345) 123-4567",
+		"reviewNum": 67,
+		"id": "store-3820",
+		"className": "text-black"
+	}
+]

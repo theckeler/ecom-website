@@ -104,12 +104,12 @@ export default function Header({ menuItems }) {
 								document.querySelector("#sticky-nav").scrollIntoView();
 							}}
 							aria-label="Navigation">
-							<ul className="flex flex-row-reverse sm:flex-row items-center">
-								<li>
-									<Hamburger className="w-12" fillColor="#000" />
-								</li>
+							<ul className="flex flex-row items-center">
 								<li>
 									<span className="text-sm text-bold leading-none">Menu</span>
+								</li>
+								<li>
+									<Hamburger className="w-12" fillColor="#000" />
 								</li>
 							</ul>
 						</button>
@@ -145,7 +145,7 @@ export default function Header({ menuItems }) {
 							className: "",
 							padding: "p-2",
 							input: {
-								id: "email-signup",
+								id: "search-bar",
 								placeholder: "Search",
 								name: "search",
 								className: "",

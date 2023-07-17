@@ -1,6 +1,6 @@
-import Image from "next/image";
+// import Image from "next/image";
 
-import Stars from "app/components/Stars";
+import Stars from "@/components/Stars";
 
 export default function DealerSelect({
 	title,
@@ -64,8 +64,7 @@ export default function DealerSelect({
 
 					<ul
 						className={`px-2 bg-white text-black text-xs ${
-							!showAdress &&
-							"flex flex-col md:hidden relative z-10 py-2"
+							!showAdress && "flex flex-col md:hidden relative z-10 py-2"
 						}`}>
 						<li className="flex">
 							Dealer Review:

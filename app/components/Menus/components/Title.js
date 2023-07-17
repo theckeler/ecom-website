@@ -17,7 +17,7 @@ export default function MenuTitle({ className, title, component }) {
 							className: "max-w-[88%]",
 							padding: "p-2",
 							input: {
-								id: "email-signup",
+								id: "search",
 								placeholder: "Search",
 								name: "search",
 								className: "border-amber-400 border-2 bg-black",

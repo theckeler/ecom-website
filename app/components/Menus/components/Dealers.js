@@ -1,4 +1,4 @@
-import DealerSelect from "app/components/AddCart/DealerSelect";
+import DealerSelect from "@/components/AddCart/DealerSelect";
 import jsonData from "@/data/dealers.json";
 
 export default function MenuDealers({

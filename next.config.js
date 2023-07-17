@@ -5,19 +5,15 @@ const nextConfig = {
 		remotePatterns: [
 			{
 				protocol: "https",
-				hostname: "www.cubcadet.com",
+				hostname: "*.cubcadet.com",
 			},
 			{
 				protocol: "https",
-				hostname: "ubcadet.com",
+				hostname: "*.google.com",
 			},
 			{
 				protocol: "https",
-				hostname: "www.google.com",
-			},
-			{
-				protocol: "https",
-				hostname: "google.com",
+				hostname: "*.imgur.com",
 			},
 		],
 	},

@@ -109,6 +109,20 @@
 			},
 			"className": "bg-black text-white",
 			"lineClamp": true
+		},
+		{
+			"title": "An Elite Experience",
+			"p": "Elite Dealers deliver premium customer service and a service guarantee on all Cub Cadet® equipment, regardless of where it was bought.",
+			"img": {
+				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw9047089c/images/product-line-browse/Main-Carousel/OutdoorSale-0767-1015x630.jpg"
+			},
+			"button": {
+				"title": "Shop an Elite Dealer",
+				"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
+				"className": "bg-amber-400 text-black"
+			},
+			"className": "bg-gray-800 text-white",
+			"lineClamp": true
 		}
 	],
 	"recentlyViewed": [

@@ -11,6 +11,7 @@ export default function TitleFlexGridViews({
 	className = null,
 	gridCSS,
 	breakpoint = "lg",
+	buttonWide,
 }) {
 	const [whichView, setWhichView] = useState("flex");
 

@@ -1,7 +1,6 @@
 import H1 from "@/components/H1";
 import CTAHero from "@/components/Hero";
 import ProductFinder from "@/components/Product/Finder";
-// import ProductCard from "@/components/Product/Card";
 
 import homeJSON from "@/data/home.json";
 import TitleFlexGridViews from "@/components/FlexGridViews/TitleFlexGridViews";
@@ -38,7 +37,8 @@ export default function Index() {
 					breakpoint="md"
 					jsonData={homeJSON.ctaBlocks}
 					title=""
-					gridCSS="max-w-screen-2xl mx-auto flex md:grid md:grid-cols-2 xl:grid-cols-3 gap-2 pb-6 lg:pb-0 overflow-x-auto overflow-scrollbar"
+					buttonWide={true}
+					gridCSS="max-w-screen-2xl mx-auto flex md:grid md:grid-cols-2 xl:grid-cols-4 gap-2 pb-6 lg:pb-0 overflow-x-auto overflow-scrollbar"
 				/>
 			</li>
 

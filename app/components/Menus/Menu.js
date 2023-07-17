@@ -22,7 +22,7 @@ export default function Menu({ className, menu }) {
 					menu.component === "mainNav" &&
 					"lg:h-auto lg:max-h-none lg:min-h-[auto]"
 				}`}>
-				<li className={`border-b bg-zinc-200 ${mainNavCSS}`}>
+				<li className={`border-b bg-black text-white ${mainNavCSS}`}>
 					<MenuTitle
 						{...{
 							title: menu.title,
@@ -44,7 +44,7 @@ export default function Menu({ className, menu }) {
 				</li>
 				{menu.button && (
 					<li
-						className={`mt-auto h-16 px-2 py-2 w-full bg-zinc-200 ${mainNavCSS}`}>
+						className={`mt-auto h-16 px-2 py-2 w-full bg-black ${mainNavCSS}`}>
 						<button
 							className={`bg-amber-400 p-2 h-12 min-h-full w-full block truncate ... ${menu.button.className}`}>
 							{menu.button.title}
@@ -52,7 +52,7 @@ export default function Menu({ className, menu }) {
 					</li>
 				)}
 				{menu.ad && (
-					<li className={`mt-auto px-2 py-2 w-full bg-zinc-200 ${mainNavCSS}`}>
+					<li className={`mt-auto px-2 py-2 w-full bg-amber-400 ${mainNavCSS}`}>
 						<ul>
 							<li className="relative h-24 tall:hidden">
 								<Image src={menu.ad.img} fill className="object-cover" alt="" />
@@ -60,12 +60,12 @@ export default function Menu({ className, menu }) {
 							<li className="text-sm text-center font-bold p-2 pb-0">
 								{menu.ad.button.title}
 							</li>
-							<li className="text-xs text-center line-clamp-1 overflow-hidden mb-1">
+							<li className="text-xs text-center line-clamp-1 overflow-hidden mb-2">
 								{menu.ad.copy}
 							</li>
-							<li>
+							<li className="">
 								<button
-									className={`bg-amber-400 text-xs p-2 w-full block uppercase truncate ... ${menu.ad.button.className}`}
+									className={`bg-black text-white font-bold text-xs p-2 w-full block uppercase truncate ... ${menu.ad.button.className}`}
 									onClick={() => toggleMenu("promo")}>
 									Find out more
 								</button>

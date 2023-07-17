@@ -20,12 +20,12 @@ export default function MenuTitle({ className, title, component }) {
 								id: "email-signup",
 								placeholder: "Search",
 								name: "search",
-								className: "border-amber-400 border-2",
+								className: "border-amber-400 border-2 bg-black",
 							},
 							button: {
 								title: "Search",
 								ariaLabel: null,
-								className: "bg-amber-400",
+								className: "bg-amber-400 text-black",
 							},
 						}}
 					/>
@@ -43,7 +43,7 @@ export default function MenuTitle({ className, title, component }) {
 						aria-label={`Back to the main menu`}>
 						<ul className="font-bold flex items-center">
 							<li className="w-10">
-								<ChevronLeft />
+								<ChevronLeft className="fill-white" />
 							</li>
 							<li>Back to the main menu</li>
 						</ul>

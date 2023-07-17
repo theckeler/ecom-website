@@ -34,7 +34,7 @@ export default function FooterLinks({
 					}`}>
 					{links.links.map((link, i) => {
 						return (
-							<li className="" key={i}>
+							<li key={i}>
 								<a
 									className={`sm:text-xs underline p-5 block ${
 										!row && "sm:p-2"

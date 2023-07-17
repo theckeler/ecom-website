@@ -20,7 +20,7 @@ import articles from "@/data/articles.json";
 
 export default function Index() {
 	return (
-		<ul className="">
+		<ul>
 			<li className="max-w-screen-2xl mx-auto p-3">
 				<BreadCrumbs
 					crumbs={[
@@ -135,7 +135,7 @@ export default function Index() {
 				<ul className="md:grid lg:grid-cols-2 xl:grid-cols-4 gap-3 max-w-screen-2xl mx-auto">
 					{pdpJSON.products.map(function (product, i) {
 						return (
-							<li key={i} className="" style={{ minWidth: "240px" }}>
+							<li key={i} style={{ minWidth: "240px" }}>
 								<ProductCard
 									{...{ product }}
 									displayButton={false}
@@ -171,7 +171,7 @@ export default function Index() {
 
 			<li className="max-w-screen-2xl mx-auto p-3 border-t mt-20">
 				<h2 className="text-3xl mb-4">Questions & Answers</h2>
-				<Faqs faqs={faqs} addID="faqs" className="" />
+				<Faqs faqs={faqs} addID="faqs" />
 			</li>
 
 			<li className="max-w-screen-2xl mx-auto p-3">

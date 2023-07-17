@@ -124,7 +124,7 @@ export default function Card({
 											className={`block rounded-full h-4 w-4 mr-2  ${
 												button.disabled ? "bg-red-500" : "bg-green-500"
 											}`}></span>
-										<span className="">{button.title}</span>
+										<span>{button.title}</span>
 										<span className="ml-auto pl-1 block">
 											{button.disabled
 												? "Unavailable"

@@ -4,7 +4,7 @@ import DummyFilters from "./components/DummyFilters";
 
 export default function Filters({ className }) {
 	return (
-		<ul className="">
+		<ul>
 			<li className="border-b pb-1 mb-1">
 				<p className="text-lg">Applied filters:</p>
 				<div className="flex my-2">

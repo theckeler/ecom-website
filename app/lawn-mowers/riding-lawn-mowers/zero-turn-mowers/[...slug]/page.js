@@ -80,7 +80,7 @@ export default function Index({ params }) {
 
 				<div className="mt-20">
 					<h2 className="text-3xl mb-4">Questions & Answers</h2>
-					<Faqs faqs={faqs} addID="faqs" className="" />
+					<Faqs faqs={faqs} addID="faqs" />
 				</div>
 			</div>
 		</>

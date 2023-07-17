@@ -22,7 +22,7 @@ export default function Cookie() {
 					</li>
 					<li className="justify-end">
 						<ul className="grid gap-1 lg:grid-cols-3 justify-items-stretch auto-rows-max">
-							<li className="">
+							<li>
 								<ButtonMain
 									title="Cookies Settings"
 									className="bg-black text-white p-1 text-xs text-center w-full h-full min-h-[48px] whitespace-nowrap"

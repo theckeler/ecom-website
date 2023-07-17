@@ -4,6 +4,10 @@ import Link from "next/link";
 export default function Oops({ className }) {
 	const oopsList = [
 		{
+			tile: "Home",
+			url: "/",
+		},
+		{
 			tile: "Category Page (/lawn-mowers/)",
 			url: "/lawn-mowers/",
 		},

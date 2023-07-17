@@ -1,7 +1,7 @@
 "use client";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { useState, useEffect } from "react";
 
 import toggleMenu from "@/functions/toggleMenu";
 
@@ -58,14 +58,14 @@ export default function Header({ menuItems }) {
 			)}
 
 			<ul className="mb-3 border-b">
-				<li className="">
+				<li>
 					<Promo />
 				</li>
 
 				<li className="bg-gray-800">
 					<div className="max-w-screen-2xl mx-auto text-center">
 						<ul className="flex items-center text-sm">
-							<li className="">
+							<li>
 								<ShopYourDealer />
 							</li>
 

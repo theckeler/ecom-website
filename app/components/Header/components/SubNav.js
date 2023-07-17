@@ -11,7 +11,7 @@ export default function SubNav({ menuItems }) {
 		menuItems.sub && (
 			<ul className="divide-y divide-solid lg:border-0 pb-8 lg:pb-0">
 				{menuItems.sub.map((sub, i) => (
-					<li className="" key={i}>
+					<li key={i}>
 						<Link
 							href={sub.url}
 							className="block p-2 relative z-10"

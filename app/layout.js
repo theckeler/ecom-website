@@ -88,7 +88,7 @@ export default function RootLayout({ children }) {
 						)
 				)}
 
-				<main className="">{children}</main>
+				<main>{children}</main>
 
 				<Footer />
 				<Cookie />

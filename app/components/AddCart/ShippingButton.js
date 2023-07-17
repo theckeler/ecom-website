@@ -25,7 +25,7 @@ export default function ShippingButton({ button, buyButtonsClick }) {
 			<ul className="flex items-center xl:flex-col w-full text-left xl:h-full">
 				<li className="basis-1/12 mr-2 xl:mr-0 xl:basis-full">
 					<div className="w-12 xl:min-w-full xl:h-14">
-						<Icon className="" />
+						<Icon />
 					</div>
 				</li>
 				<li className="basis-full text-xs xl:text-center">

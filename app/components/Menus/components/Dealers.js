@@ -11,7 +11,7 @@ export default function MenuDealers({
 		<ul className="md:flex text-xs">
 			{jsonData.map((block, i) => {
 				return (
-					<li key={i} className="">
+					<li key={i}>
 						<DealerSelect
 							{...{
 								...block,

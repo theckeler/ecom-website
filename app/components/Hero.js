@@ -24,6 +24,8 @@ export default function CTAHero({
 							alt=""
 							className="object-cover"
 							priority
+							rel="preload"
+							as="image"
 						/>
 					</div>
 				</li>

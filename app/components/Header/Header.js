@@ -11,6 +11,7 @@ import Hamburger from "@/icons/Hamburger";
 import Menu from "@/menus/Menu";
 import ShopYourDealer from "@/components/Menus/components/ShopYourDealer";
 import Logo from "@/components/Logo";
+import InputButton from "@/components/InputButton";
 // import Oops from "@/components/Oops";
 
 export default function Header({ menuItems }) {
@@ -92,7 +93,7 @@ export default function Header({ menuItems }) {
 			</ul>
 
 			<div
-				className=" sticky md:relative top-0 z-30 bg-white/70 border-b backdrop-blur-sm"
+				className="sticky md:relative top-0 z-30 bg-white/70 border-b backdrop-blur-sm"
 				id="sticky-nav">
 				<ul className="max-w-screen-2xl mx-auto flex flex-row-reverse lg:flex-row items-center w-full relative">
 					<li className="lg:hidden flex flex-col items-center pr-2">
@@ -135,6 +136,28 @@ export default function Header({ menuItems }) {
 						/>
 					</li>
 				</ul>
+			</div>
+
+			<div className="bg-gray-200 lg:hidden">
+				<div className="max-w-screen-2xl mx-auto text-center p-2">
+					<InputButton
+						{...{
+							className: "",
+							padding: "p-2",
+							input: {
+								id: "email-signup",
+								placeholder: "Search",
+								name: "search",
+								className: "",
+							},
+							button: {
+								title: "Search",
+								ariaLabel: null,
+								className: "bg-amber-400 text-black",
+							},
+						}}
+					/>
+				</div>
 			</div>
 		</>
 	);

@@ -9,7 +9,7 @@ import Menu from "@/menus/Menu";
 import ShopYourDealer from "@/components/Menus/components/ShopYourDealer";
 import Promo from "./components/Promo";
 import Logo from "@/components/Logo";
-import Screen from "@/components/Screen";
+import Screen from "@/components/Oops";
 
 import menuItems from "@/data/nav.json";
 

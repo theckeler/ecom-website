@@ -2,33 +2,53 @@
 import Close from "@/icons/Close";
 import toggleMenu from "@/functions/toggleMenu";
 import ChevronLeft from "@/icons/ChevronLeft";
+import InputButton from "@/components/InputButton";
 
 export default function MenuTitle({ className, title, component }) {
 	return (
 		<ul className="w-100 flex items-center w-100">
-			{title && (
-				<li
-					className={`w-100 grow font-bold text-left pl-3  ${
-						component === "subNav" && "hidden lg:block"
-					}`}>
-					{title}
-				</li>
-			)}
+			<li
+				className={`w-100 grow font-bold text-left pl-3  ${
+					component === "subNav" && "hidden lg:block"
+				}`}>
+				{component === "mainNav" && (
+					<InputButton
+						{...{
+							className: "max-w-[88%]",
+							padding: "p-2",
+							input: {
+								id: "email-signup",
+								placeholder: "Search",
+								name: "search",
+								className: "border-amber-400 border-2",
+							},
+							button: {
+								title: "Search",
+								ariaLabel: null,
+								className: "bg-amber-400",
+							},
+						}}
+					/>
+				)}
+				{!!title && title}
+			</li>
 
 			{component === "subNav" && (
-				<button
-					className="lg:hidden block w-100"
-					onClick={(e) => {
-						toggleMenu("main-nav");
-					}}
-					aria-label={`Back to the main menu`}>
-					<ul className="font-bold flex items-center">
-						<li className="w-10">
-							<ChevronLeft />
-						</li>
-						<li>Back to the main menu</li>
-					</ul>
-				</button>
+				<li>
+					<button
+						className="lg:hidden block w-100"
+						onClick={(e) => {
+							toggleMenu("main-nav");
+						}}
+						aria-label={`Back to the main menu`}>
+						<ul className="font-bold flex items-center">
+							<li className="w-10">
+								<ChevronLeft />
+							</li>
+							<li>Back to the main menu</li>
+						</ul>
+					</button>
+				</li>
 			)}
 
 			<li className="ml-auto w-12">

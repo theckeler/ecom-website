@@ -1,6 +1,6 @@
 import Header from "@/header/Header";
 import Menu from "@/components/Menus/Menu";
-import Screen from "@/components/Screen";
+import Screen from "@/components/Oops";
 import Footer from "@/footer/Footer";
 import Cookie from "@/cookie/Cookie";
 

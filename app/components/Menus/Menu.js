@@ -11,11 +11,11 @@ export default function Menu({ className, menu }) {
 	return (
 		<div
 			id={menu.id}
-			className={`popup-item hidden fixed ${
-				menu.component === "mainNav" ? "z-50" : "z-30"
-			} ${
-				menu.left ? "left-0" : "right-0"
-			} top-0 w-full md:max-w-xl bg-white ${className}`}>
+			className={`popup-item fixed ${
+				menu.component === "mainNav" ? "z-50" : "z-40"
+			} ${menu.left ? "left-0" : "right-0"} ${
+				!menu.fullscreen && "hidden md:max-w-xl"
+			} top-0 w-full  bg-white ${className}`}>
 			<ul
 				className={`flex flex-col h-[calc(100vh-114px)]  max-h-screen min-h-[100dvh] ${
 					menu.component === "mainNav" &&

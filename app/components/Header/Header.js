@@ -17,10 +17,10 @@ export default function Header({ menuItems }) {
 	const searchParams = useSearchParams();
 	const oops = searchParams.get("oops");
 
-	const [oopsTriggered, setOopsTriggered] = useState(false);
+	const [oopsTriggered, setOopsTriggered] = useState(oops);
 	useEffect(() => {
-		setOopsTriggered(searchParams.get("oops"));
-		console.log("oopsTriggered", oopsTriggered);
+		setOopsTriggered(oopsTriggered);
+		//console.log("oopsTriggered", oopsTriggered);
 	}, [oopsTriggered, searchParams]);
 
 	const buttonItems = [
@@ -93,9 +93,9 @@ export default function Header({ menuItems }) {
 			</ul>
 
 			<div
-				className="max-w-screen-2xl mx-auto sticky md:relative top-0 z-30 bg-white/70 border-b backdrop-blur-sm"
+				className=" sticky md:relative top-0 z-30 bg-white/70 border-b backdrop-blur-sm"
 				id="sticky-nav">
-				<ul className="flex flex-row-reverse lg:flex-row items-center w-full relative">
+				<ul className="max-w-screen-2xl mx-auto flex flex-row-reverse lg:flex-row items-center w-full relative">
 					<li className="lg:hidden flex flex-col items-center pr-2">
 						<button
 							className="lg:w-12 leading-none"

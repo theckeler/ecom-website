@@ -15,12 +15,12 @@ import Logo from "@/components/Logo";
 
 export default function Header({ menuItems }) {
 	const searchParams = useSearchParams();
-	const oops = searchParams.get("oops");
+	//const oops = searchParams.get("oops");
 
-	const [oopsTriggered, setOopsTriggered] = useState(oops);
+	const [oopsTriggered, setOopsTriggered] = useState(searchParams.get("oops"));
 	useEffect(() => {
-		setOopsTriggered(oopsTriggered);
-		//console.log("oopsTriggered", oopsTriggered);
+		setOopsTriggered(searchParams.get("oops"));
+		console.log("oopsTriggered", oopsTriggered);
 	}, [oopsTriggered, searchParams]);
 
 	const buttonItems = [
@@ -58,6 +58,7 @@ export default function Header({ menuItems }) {
 					}}
 				/>
 			)}
+
 			<ul className="mb-3 border-b">
 				<li className="">
 					<Promo />

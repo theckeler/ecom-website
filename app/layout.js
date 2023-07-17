@@ -5,7 +5,7 @@ import Footer from "@/footer/Footer";
 import Cookie from "@/cookie/Cookie";
 import menuItems from "@/data/nav.json";
 
-import "./globals.css";
+import "@/styles/globals.css";
 
 export const metadata = {
 	title: "Cub Cadet Rebuild",
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className="bg-white">
 				<Cookie />
-	
+
 				<Header menuItems={menuItems} />
 
 				<Menu

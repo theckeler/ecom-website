@@ -2,14 +2,15 @@
 import { useState } from "react";
 
 import ProductCard from "@/components/Product/Card";
-import H1 from "@/components/H1";
 import IconGridView from "@/icons/GridView";
 import FlexView from "@/icons/FlexView";
 
 export default function TitleFlexGridViews({
 	title,
-	homeJSON,
+	jsonData,
 	className = null,
+	gridCSS,
+	breakpoint = "lg",
 }) {
 	const [whichView, setWhichView] = useState("flex");
 
@@ -28,21 +29,20 @@ export default function TitleFlexGridViews({
 
 	return (
 		<div className="max-w-screen-2xl mx-auto p-3">
-			<ul className="flex justify-center items-center mb-8">
-				<li>{title}</li>
-				<li className="w-14 ml-2">
+			<ul
+				className={`flex justify-center items-center mb-8 ${breakpoint}:hidden`}>
+				<li className="">{title && title}</li>
+				<li className="ml-auto">
 					<button
-						className={`p-1`}
+						className="w-12 p-1"
 						onClick={(e) => {
 							resetBG(e);
 							setWhichView("flex");
 						}}>
 						<FlexView className="reset-views flex items-center justify-center w-10 h-10 p-1 rounded-full bg-amber-400" />
 					</button>
-				</li>
-				<li className="w-14">
 					<button
-						className="p-1"
+						className="w-12 p-1"
 						onClick={(e) => {
 							resetBG(e);
 							setWhichView("grid");
@@ -52,9 +52,8 @@ export default function TitleFlexGridViews({
 				</li>
 			</ul>
 
-			<ul
-				className={`${whichView} lg:grid lg:grid-cols-4 gap-2 pb-6 lg:pb-0 overflow-x-auto overflow-scrollbar`}>
-				{homeJSON.categories.map(function (block, i) {
+			<ul className={`${whichView} ${gridCSS}`}>
+				{jsonData.map(function (block, i) {
 					return (
 						<li
 							className={`min-w-[250px] ${block.span && "lg:col-span-2"}`}

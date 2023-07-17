@@ -11,7 +11,7 @@ export default function Cookie() {
 	});
 
 	return (
-		!GetCookie("cookie") && (
+		GetCookie("cookie") === false && (
 			<div className="fixed bottom-0 left-0 z-50 bg-gray-100 p-6 border-t w-full">
 				<ul className="max-w-screen-2xl mx-auto grid lg:grid-cols-2 gap-1">
 					<li className="text-xs font-bold mb-2 lg:mb-0 text-center lg:text-left pr-2">

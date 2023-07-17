@@ -16,10 +16,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className="bg-white">
-				<Cookie />
-
 				<Header menuItems={menuItems} />
-
 				<Menu
 					menu={{
 						title: "Cart",
@@ -61,7 +58,6 @@ export default function RootLayout({ children }) {
 						component: "filters",
 					}}
 				/>
-
 				{menuItems.map(
 					(mainMenu, i) =>
 						mainMenu.sub && (
@@ -95,6 +91,7 @@ export default function RootLayout({ children }) {
 				<main className="">{children}</main>
 
 				<Footer />
+				<Cookie />
 			</body>
 		</html>
 	);

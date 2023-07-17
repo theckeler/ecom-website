@@ -12,7 +12,7 @@ export default function InputButton({
 				<input
 					required=""
 					type="text"
-					className={`${padding} w-full rounded-l ${input.className}`}
+					className={`${padding} w-full rounded-l rounded-r-none ${input.className}`}
 					id={input.id}
 					placeholder={input.placeholder}
 					name={input.name}

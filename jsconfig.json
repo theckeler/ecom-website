@@ -19,7 +19,7 @@
 			"@/cart/*": ["app/components/Cart/*"],
 			"@/form/*": ["app/components/Form/*"],
 			"@/filters/*": ["app/components/Filters/*"],
-			"@/styles/*": ["app/components/Styles/*"],
+			"@/styles/*": ["app/styles/*"],
 			"@/cookie/*": ["app/components/Cookie/*"]
 		}
 	}

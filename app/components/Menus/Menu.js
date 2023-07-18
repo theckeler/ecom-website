@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import MenuBody from "./components/Body";
 import MenuTitle from "./components/Title";
-import ToggleMenu from "@/functions/ToggleMenu";
+import ToggleMenu from "@/components/Functions/ToggleMenu";
 
 export default function Menu({ className, menu }) {
 	const mainNavCSS = menu.component === "mainNav" && "lg:hidden";

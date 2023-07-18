@@ -17,7 +17,7 @@ export default function FooterLinks({
 			}`}>
 			<h3
 				className={`relative font-bold p-4 sm:p-0 flex truncate ${
-					row ? "sm:py-5" : "md:pb-3 md:border-b"
+					row ? "sm:py-5" : "sm:pb-3 sm:border-b"
 				} ${title.className}`}>
 				<button
 					className="block sm:hidden absolute top-0 left-0 w-full h-full"

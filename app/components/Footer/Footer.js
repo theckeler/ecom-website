@@ -10,18 +10,21 @@ export default function Footer() {
 		<footer className="border-t border-gray-300 px-4 xxl:px-0 pt-12 pb-20">
 			<ul className="max-w-screen-2xl mx-auto">
 				<li>
-					<ul className="grid md:grid-cols-2 lg:grid-cols-7 sm:gap-2 lg:gap-6">
-						<li className="sm:col-span-2 lg:col-span-3 2xl:col-span-3">
+					<ul className="lg:flex sm:gap-2 lg:gap-6">
+						<li className="lg:max-w-lg mb-6 lg:mb-0">
 							<BlockSignUp />
 						</li>
-
-						{footerNavData.map((block, i) => {
-							return (
-								<li className="sm:pt-1 sm:mt-6 lg:pt-0 lg:mt-0" key={i}>
-									<FooterLinks {...block} />
-								</li>
-							);
-						})}
+						<li className="grow">
+							<ul className="sm:grid sm:grid-cols-2 xl:grid-cols-4 gap-2 lg:gap-4 w-full">
+								{footerNavData.map((block, i) => {
+									return (
+										<li className="sm:pt-1 sm:mt-6 lg:pt-0 lg:mt-0" key={i}>
+											<FooterLinks {...block} key={i} />
+										</li>
+									);
+								})}
+							</ul>
+						</li>
 					</ul>
 
 					<FooterLinks

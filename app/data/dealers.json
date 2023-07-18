@@ -8,7 +8,9 @@
 		"id": "Worcester",
 		"className": "text-black",
 		"reviewNum": 44,
-		"selected": true
+		"selected": true,
+		"shop": true,
+		"make": true
 	},
 	{
 		"title": "Northfield Power Equipment",
@@ -18,7 +20,9 @@
 		"phone": "(330) 467-0020",
 		"reviewNum": 67,
 		"id": "Northfield",
-		"className": "text-black"
+		"className": "text-black",
+		"shop": true,
+		"make": false
 	},
 	{
 		"title": "Marshall Equipment Company",
@@ -28,6 +32,8 @@
 		"phone": "(440) 442-1846",
 		"reviewNum": 23,
 		"id": "Marshall",
-		"className": "text-black"
+		"className": "text-black",
+		"shop": false,
+		"make": true
 	}
 ]

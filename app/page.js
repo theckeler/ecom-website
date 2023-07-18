@@ -32,7 +32,7 @@ export default function Index() {
 				</div>
 			</li>
 
-			<li className="bg-gray-200 py-10">
+			<li className="bg-gray-200 py-4 lg:py-10">
 				<TitleFlexGridViews
 					breakpoint="md"
 					jsonData={homeJSON.ctaBlocks}

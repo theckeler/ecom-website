@@ -4,6 +4,7 @@ import Menu from "@/components/Menus/Menu";
 import Footer from "@/footer/Footer";
 import Cookie from "@/cookie/Cookie";
 import menuItems from "@/data/nav.json";
+import Chat from "@/components/Chat/Chat";
 
 import "@/styles/globals.css";
 import Screen from "./components/Screen";
@@ -33,10 +34,6 @@ export default function RootLayout({ children }) {
 						title: "Stores",
 						id: "stores",
 						component: "stores",
-						button: {
-							title: "Find A Store",
-							className: "font-bold",
-						},
 					}}
 				/>
 				<Menu
@@ -95,6 +92,7 @@ export default function RootLayout({ children }) {
 				<Footer />
 				<Cookie />
 				<Screen />
+				<Chat />
 			</body>
 		</html>
 	);

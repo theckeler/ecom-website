@@ -7,6 +7,8 @@
 		"phone": "(345) 123-4567",
 		"reviewNum": 67,
 		"id": "store-3820",
-		"className": "text-black"
+		"className": "text-black",
+		"shop": false,
+		"make": false
 	}
 ]

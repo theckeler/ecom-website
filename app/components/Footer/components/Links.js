@@ -4,27 +4,31 @@ import ExpandMore from "@/icons/ExpandMore";
 
 export default function FooterLinks({
 	className,
+	title,
 	links,
 	row = false,
 	extra = null,
 	alignRight = false,
 }) {
 	return (
-		<div className={row ? "sm:flex flex-wrap items-center border-t" : ""}>
+		<div
+			className={`border-b sm:border-b-0 ${
+				row ? "sm:flex flex-wrap items-center " : "border-b sm:border-b-0"
+			}`}>
 			<h3
 				className={`relative font-bold p-4 sm:p-0 flex truncate ${
-					links.title.className
-				} ${!row && "sm:pb-1 lg:pb-3 border-b"} ${row && "sm:py-5"}`}>
+					row ? "sm:py-5" : "md:pb-3 md:border-b"
+				} ${title.className}`}>
 				<button
 					className="block sm:hidden absolute top-0 left-0 w-full h-full"
-					aria-label={links.title.copy}
+					aria-label={title.copy}
 					onClick={(e) => {
 						e.currentTarget.parentElement.nextElementSibling.classList.toggle(
 							"hidden"
 						);
 					}}
 				/>
-				{links.title.copy}
+				{title.copy}
 				<ExpandMore className="sm:hidden ml-auto w-6" />
 			</h3>
 			<div className="hidden sm:block">
@@ -32,7 +36,7 @@ export default function FooterLinks({
 					className={`${row && "sm:flex items-center"} ${
 						alignRight && "ml-auto"
 					}`}>
-					{links.links.map((link, i) => {
+					{links.map((link, i) => {
 						return (
 							<li key={i}>
 								<a

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import Close from "@/icons/Close";
 import ChevronLeft from "@/icons/ChevronLeft";
-import toggleMenu from "@/functions/toggleMenu";
+import ToggleMenu from "@/functions/ToggleMenu";
 
 export default function SubNav({ menuItems }) {
 	return (
@@ -16,7 +16,7 @@ export default function SubNav({ menuItems }) {
 							href={sub.url}
 							className="block p-2 relative z-10"
 							onClick={() => {
-								toggleMenu(null);
+								ToggleMenu(null);
 							}}>
 							<ul className="flex flex-row items-center">
 								{!!sub.img && (

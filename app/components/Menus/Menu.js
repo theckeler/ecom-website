@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import MenuBody from "./components/Body";
 import MenuTitle from "./components/Title";
-import toggleMenu from "@/functions/toggleMenu";
+import ToggleMenu from "@/functions/ToggleMenu";
 
 export default function Menu({ className, menu }) {
 	const mainNavCSS = menu.component === "mainNav" && "lg:hidden";
@@ -12,8 +12,7 @@ export default function Menu({ className, menu }) {
 	return (
 		<div
 			id={menu.id}
-			className={`popup-item fixed ${
-				menu.component === "mainNav" ? "z-50" : "z-40"
+			className={`popup-item fixed z-40
 			} ${menu.left ? "left-0" : "right-0"} ${
 				!menu.fullscreen && "hidden md:max-w-xl"
 			} top-0 w-full bg-white ${className}`}>
@@ -66,7 +65,7 @@ export default function Menu({ className, menu }) {
 							<li className="">
 								<button
 									className={`bg-black text-white font-bold text-xs p-2 w-full block uppercase truncate ... ${menu.ad.button.className}`}
-									onClick={() => toggleMenu("promo")}>
+									onClick={() => ToggleMenu("promo")}>
 									Find out more
 								</button>
 							</li>

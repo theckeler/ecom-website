@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
-import toggleMenu from "@/functions/toggleMenu";
+import ToggleMenu from "@/functions/ToggleMenu";
 
 import Promo from "./components/Promo";
 import HeaderButton from "./components/Button";
@@ -23,24 +23,24 @@ export default function Header({ menuItems }) {
 	}, [oopsTriggered, searchParams]);
 
 	const buttonItems = [
-		{ title: "Stores", url: null, onClick: () => toggleMenu("stores") },
+		{ title: "Stores", url: null, onClick: () => ToggleMenu("stores") },
 		{
 			title: "Help",
 			buttonIcon: "help",
 			url: null,
-			onClick: () => toggleMenu("help"),
+			onClick: () => ToggleMenu("help"),
 		},
 		{
 			title: "Account",
 			buttonIcon: "account",
 			url: null,
-			onClick: () => toggleMenu("account"),
+			onClick: () => ToggleMenu("account"),
 		},
 		{
 			title: "Cart",
 			buttonIcon: "cart",
 			url: null,
-			onClick: () => toggleMenu("cart"),
+			onClick: () => ToggleMenu("cart"),
 		},
 	];
 
@@ -93,14 +93,15 @@ export default function Header({ menuItems }) {
 			</ul>
 
 			<div
-				className="sticky md:relative top-0 z-30 bg-white/70 border-b backdrop-blur-sm"
+				//className="z-40 md:z-auto bg-white/70 border-b backdrop-blur-sm"
+				className="bg-white border-b"
 				id="sticky-nav">
-				<ul className="max-w-screen-2xl mx-auto flex flex-row-reverse lg:flex-row items-center w-full relative">
+				<ul className="max-w-screen-2xl mx-auto flex flex-row-reverse lg:flex-row items-center w-full">
 					<li className="lg:hidden flex flex-col items-center pr-2">
 						<button
 							className="lg:w-12 leading-none"
 							onClick={() => {
-								toggleMenu("main-nav");
+								ToggleMenu("main-nav");
 								document.querySelector("#sticky-nav").scrollIntoView();
 							}}
 							aria-label="Navigation">

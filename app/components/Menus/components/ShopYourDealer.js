@@ -2,7 +2,7 @@ import InputButton from "@/components/InputButton";
 import Options from "./Dealers";
 import Close from "@/icons/Close";
 import HeaderButton from "@/components/Header/components/Button";
-import toggleMenu from "@/functions/toggleMenu";
+import ToggleMenu from "@/functions/ToggleMenu";
 import StoreIcon from "@/icons/Store";
 
 export default function ShopYourDealer() {
@@ -32,7 +32,7 @@ export default function ShopYourDealer() {
 					<li className="md:hidden py-3 border-b">
 						<button
 							onClick={() => {
-								toggleMenu(null);
+								ToggleMenu(null);
 							}}
 							className="w-full"
 							aria-label="Close">

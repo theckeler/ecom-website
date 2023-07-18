@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import ChevronRight from "@/icons/ChevronRight";
 import ExpandMore from "@/icons/ExpandMore";
-import toggleMenu from "../Functions/toggleMenu";
+import ToggleMenu from "../Functions/ToggleMenu";
 
 import Store from "@/icons/Store";
 import Cart from "@/icons/Cart";
@@ -33,7 +33,7 @@ export default function Nav({ menuItems }) {
 							href={menu.url}
 							className="block p-2 relative z-10 w-full"
 							onClick={() => {
-								toggleMenu(`${menu.slug}${menu.sub ? "-sub" : ""}`);
+								ToggleMenu(`${menu.slug}${menu.sub ? "-sub" : ""}`);
 							}}>
 							<ul className="flex flex-row items-center w-full">
 								{menu.img && (

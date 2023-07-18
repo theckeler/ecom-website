@@ -94,7 +94,7 @@ export default function RootLayout({ children }) {
 
 				<Footer />
 				<Cookie />
-				{/* <Screen /> */}
+				<Screen />
 			</body>
 		</html>
 	);

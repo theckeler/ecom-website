@@ -1,7 +1,7 @@
 import ButtonMain from "@/buttons/Main";
 import ExpandMore from "@/icons/ExpandMore";
 import Close from "@/icons/Close";
-import toggleMenu from "@/functions/toggleMenu";
+import ToggleMenu from "@/functions/ToggleMenu";
 import Menu from "@/menus/Menu";
 
 export default function Promo() {
@@ -11,7 +11,7 @@ export default function Promo() {
 				<button
 					className="flex items-center justify-center w-full p-2 font-bold"
 					onClick={() => {
-						toggleMenu("promo-content");
+						ToggleMenu("promo-content");
 					}}
 					aria-label="Promo: Aliquam dolor arcu, mattis vitae arcu et">
 					Promo: Aliquam dolor arcu, mattis vitae arcu et
@@ -24,7 +24,7 @@ export default function Promo() {
 					style={{ backgroundColor: "#ffc20f" }}>
 					<button
 						onClick={() => {
-							toggleMenu(null);
+							ToggleMenu(null);
 						}}
 						className="w-full"
 						aria-label="Close">
@@ -54,7 +54,7 @@ export default function Promo() {
 								title="CTA Button"
 								className="bg-black text-white font-uppercase inline-flex rounded justify-center px-8"
 								onClick={() => {
-									toggleMenu(null);
+									ToggleMenu(null);
 								}}
 							/>
 						</div>

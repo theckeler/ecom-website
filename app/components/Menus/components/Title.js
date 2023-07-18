@@ -1,6 +1,6 @@
 "use client";
 import Close from "@/icons/Close";
-import toggleMenu from "@/functions/toggleMenu";
+import ToggleMenu from "@/functions/ToggleMenu";
 import ChevronLeft from "@/icons/ChevronLeft";
 import InputButton from "@/components/InputButton";
 
@@ -38,7 +38,7 @@ export default function MenuTitle({ className, title, component }) {
 					<button
 						className="lg:hidden block w-100"
 						onClick={(e) => {
-							toggleMenu("main-nav");
+							ToggleMenu("main-nav");
 						}}
 						aria-label={`Back to the main menu`}>
 						<ul className="font-bold flex items-center">
@@ -54,7 +54,7 @@ export default function MenuTitle({ className, title, component }) {
 			<li className="ml-auto w-14 py-2">
 				<button
 					onClick={() => {
-						toggleMenu(null);
+						ToggleMenu(null);
 					}}
 					className="flex items-center justify-center w-12 h-12 rounded-full bg-white"
 					aria-label="Close">

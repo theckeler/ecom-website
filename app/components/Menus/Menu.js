@@ -12,8 +12,7 @@ export default function Menu({ className, menu }) {
 	return (
 		<div
 			id={menu.id}
-			className={`popup-item fixed z-40
-			} ${menu.left ? "left-0" : "right-0"} ${
+			className={`popup-item fixed z-40 ${menu.left ? "left-0" : "right-0"} ${
 				!menu.fullscreen && "hidden md:max-w-xl"
 			} top-0 w-full bg-white ${className}`}>
 			<ul

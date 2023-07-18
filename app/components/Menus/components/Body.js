@@ -6,6 +6,8 @@ import MainNav from "@/components/Nav/Nav";
 import SubNav from "@/header/components/SubNav";
 import Filters from "@/filters/Filters";
 import Oops from "@/components/Oops";
+import Account from "@/components/Account/Account";
+import Dealers from "@/components/Dealers/Dealers";
 
 export default function MenuBody({ className, loadComponent, menuItems }) {
 	const ComponentList = {
@@ -15,6 +17,8 @@ export default function MenuBody({ className, loadComponent, menuItems }) {
 		subNav: SubNav,
 		filters: Filters,
 		oops: Oops,
+		account: Account,
+		dealers: Dealers,
 	};
 	const Component = ComponentList[loadComponent];
 

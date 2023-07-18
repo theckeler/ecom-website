@@ -60,7 +60,7 @@ export default function LoremIpsum({ blocks }) {
 				Nulla laoreet eget libero id tristique
 			</h2>
 			<p className="mb-2">
-				<span className="relative h-96 w-96 float-right ml-2 mb-2">
+				<span className="block relative h-60 w-full sm:w-60 sm:float-right mb-4 sm:ml-2 sm:mb-2">
 					<Image
 						src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw832aa68d/images/product-line-browse/Main-Carousel/31AH8E4V710_3X34MAX_ENV-1015x630.jpg?sw=1116"
 						fill

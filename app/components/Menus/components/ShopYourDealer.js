@@ -1,9 +1,7 @@
 import InputButton from "@/components/InputButton";
 import Options from "./Dealers";
 import Close from "@/icons/Close";
-import HeaderButton from "@/components/Header/components/Button";
-import ToggleMenu from "@/components/Functions/toggleMenu";
-
+import ToggleMenu from "@/functions/toggleMenu";
 import StoreIcon from "@/icons/Store";
 
 export default function ShopYourDealer() {
@@ -14,7 +12,7 @@ export default function ShopYourDealer() {
 				className="p-2 flex items-center text-white md:hidden"
 				aria-label="Select Your Dealer"
 				onClick={() => {
-					document.querySelector("#dealer").classList.toggle("hidden");
+					ToggleMenu("dealers");
 				}}>
 				<StoreIcon
 					className="h-8 mr-2 fill-white"

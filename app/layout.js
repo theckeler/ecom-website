@@ -28,7 +28,9 @@ export default function RootLayout({ children }) {
 						button: { title: "Checkout", className: "font-bold" },
 					}}
 				/>
-				<Menu menu={{ title: "Account", id: "account" }} />
+				<Menu
+					menu={{ title: "Account", id: "account", component: "account" }}
+				/>
 				<Menu
 					menu={{
 						title: "Stores",
@@ -55,6 +57,17 @@ export default function RootLayout({ children }) {
 							className: "bg-black font-bold text-white",
 						},
 						component: "filters",
+					}}
+				/>
+				<Menu
+					menu={{
+						title: "Shop Your Dealers",
+						id: "dealers",
+						button: {
+							title: "Update Dealer",
+							className: "bg-amber-400 font-bold text-black",
+						},
+						component: "dealers",
 					}}
 				/>
 				{menuItems.map(

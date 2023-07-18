@@ -12,7 +12,7 @@ import CTAHero from "@/components/Hero";
 import SEOLinks from "@/components/SEOLinks";
 import Article from "@/components/Product/Article";
 import Faqs from "@/components/Faqs";
-import Menu from "@/menus/Menu";
+// import Menu from "@/menus/Menu";
 
 import pdpJSON from "@/data/pdp.json";
 import faqs from "@/data/faqs.json";

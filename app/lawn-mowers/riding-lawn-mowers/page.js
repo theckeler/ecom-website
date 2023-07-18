@@ -3,11 +3,31 @@ import H1 from "app/components/H1";
 import SEOGreek from "app/components/SEOGreek";
 import SEOLinks from "app/components/SEOLinks";
 import ProductFinder from "app/components/Product/Finder";
-import ProductCategories from "app/components/Product/Categories";
+// import ProductCategories from "app/components/Product/Categories";
+import TitleFlexGridViews from "@/components/FlexGridViews/TitleFlexGridViews";
+import IconGridView from "@/icons/GridView";
+import FlexView from "@/icons/FlexView";
 
 import zeroTurnJSON from "@/data/riding-lawn-mowers.json";
 
 export default function Index() {
+	const buttons = [
+		{
+			icon: (
+				<FlexView className="reset-views flex items-center justify-center w-10 h-10 p-2 rounded-full bg-amber-400" />
+			),
+			className: "",
+			whatView: "flex",
+		},
+		{
+			icon: (
+				<IconGridView className="reset-views flex items-center justify-center w-10 h-10 p-2 rounded-full" />
+			),
+			className: "",
+			whatView: "grid",
+		},
+	];
+
 	return (
 		<ul className="pb-20">
 			<li className="max-w-screen-2xl mx-auto p-3">
@@ -33,9 +53,22 @@ export default function Index() {
 					your lawn to life.
 				</p>
 
-				<ProductCategories
+				{/* <ProductCategories
 					categories={zeroTurnJSON.categories}
 					className="bg-gray-200"
+				/> */}
+
+				<TitleFlexGridViews
+					jsonData={zeroTurnJSON.categories}
+					title={
+						<H1
+							title="Explore Lawn Mowers"
+							srOnly="Cub Cadet"
+							className="text-center"
+						/>
+					}
+					gridCSS="lg:grid lg:grid-cols-3 gap-2 pb-6 lg:pb-0 overflow-x-auto overflow-scrollbar"
+					buttons={buttons}
 				/>
 			</li>
 

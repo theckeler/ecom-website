@@ -1,6 +1,6 @@
 "use client";
 import Close from "@/icons/Close";
-import ToggleMenu from "@/functions/ToggleMenu";
+import ToggleMenu from "@/components/Functions/toggleMenu";
 
 import ChevronLeft from "@/icons/ChevronLeft";
 import InputButton from "@/components/InputButton";

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import ChevronRight from "@/icons/ChevronRight";
 import ExpandMore from "@/icons/ExpandMore";
-import ToggleMenu from "@/functions/ToggleMenu";
+import ToggleMenu from "@/components/Functions/toggleMenu";
 
 import Store from "@/icons/Store";
 import Cart from "@/icons/Cart";

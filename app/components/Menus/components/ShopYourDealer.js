@@ -2,7 +2,7 @@ import InputButton from "@/components/InputButton";
 import Options from "./Dealers";
 import Close from "@/icons/Close";
 import HeaderButton from "@/components/Header/components/Button";
-import ToggleMenu from "@/functions/ToggleMenu";
+import ToggleMenu from "@/components/Functions/toggleMenu";
 
 import StoreIcon from "@/icons/Store";
 

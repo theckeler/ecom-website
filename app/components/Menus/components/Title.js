@@ -7,7 +7,7 @@ import InputButton from "@/components/InputButton";
 
 export default function MenuTitle({ className, title, component }) {
 	return (
-		<ul className="w-100 flex items-center w-100">
+		<ul className="w-100 flex items-center w-100 py-1">
 			<li
 				className={`w-100 grow font-bold text-left pl-3  ${
 					component === "subNav" && "hidden lg:block"
@@ -31,7 +31,7 @@ export default function MenuTitle({ className, title, component }) {
 						}}
 					/>
 				)}
-				{!!title && title}
+				<span className="text-xl">{!!title && title}</span>
 			</li>
 
 			{component === "subNav" && (
@@ -52,14 +52,14 @@ export default function MenuTitle({ className, title, component }) {
 				</li>
 			)}
 
-			<li className="ml-auto w-14 py-2">
+			<li className="ml-auto w-14">
 				<button
 					onClick={() => {
 						ToggleMenu(null);
 					}}
-					className="flex items-center justify-center w-12 h-12 rounded-full bg-white"
+					className="flex items-center justify-center w-12 h-12"
 					aria-label="Close">
-					<Close className="w-10 h-10" />
+					<Close className="w-10 h-10 p-2 rounded-full bg-white" />
 				</button>
 			</li>
 		</ul>

@@ -96,7 +96,28 @@ export default function Header({ menuItems }) {
 				//className="z-40 md:z-auto bg-white/70 border-b backdrop-blur-sm"
 				className="bg-white border-b"
 				id="sticky-nav">
-				<ul className="max-w-screen-2xl mx-auto flex flex-row-reverse lg:flex-row items-center w-full">
+				<ul className="max-w-screen-2xl mx-auto flex flex-row items-center w-full">
+					<li className="p-2">
+						<Link href="/" aria-label="Return Home">
+							<Logo className="w-40" />
+						</Link>
+					</li>
+					<li className="ml-auto">
+						<Menu
+							className="lg:flex lg:relative lg:z-auto lg:max-w-fit lg:bg-transparent"
+							menu={{
+								title: "",
+								id: "main-nav",
+								component: "mainNav",
+								left: false,
+								menuItems: menuItems,
+								button: {
+									title: "Up to $300 off select Ultima Series™ Zero-Turns",
+									className: "font-bold",
+								},
+							}}
+						/>
+					</li>
 					<li className="lg:hidden flex flex-col items-center pr-2">
 						<button
 							className="lg:w-12 leading-none"
@@ -114,27 +135,6 @@ export default function Header({ menuItems }) {
 								</li>
 							</ul>
 						</button>
-					</li>
-					<li className="mr-auto lg:ml-0 w-40 p-2">
-						<Link href="/" aria-label="Return Home">
-							<Logo />
-						</Link>
-					</li>
-					<li>
-						<Menu
-							className="lg:flex lg:relative lg:z-auto lg:max-w-fit lg:bg-transparent"
-							menu={{
-								title: "",
-								id: "main-nav",
-								component: "mainNav",
-								left: false,
-								menuItems: menuItems,
-								button: {
-									title: "Up to $300 off select Ultima Series™ Zero-Turns",
-									className: "font-bold",
-								},
-							}}
-						/>
 					</li>
 				</ul>
 			</div>

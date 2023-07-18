@@ -29,9 +29,8 @@ export default function CTAHero({
 						/>
 					</div>
 				</li>
-				<li
-					className={`md:basis-6/12 lg:basis-${blockWidths.r}/12 p-2 lg:p-6 bg-amber-400`}>
-					<ProductCard block={block} />
+				<li className={`md:basis-6/12 lg:basis-${blockWidths.r}/12`}>
+					<ProductCard className="p-2 lg:p-6" block={block} />
 				</li>
 			</ul>
 		);

@@ -20,7 +20,7 @@ export default function MenuTitle({ className, title, component }) {
 								id: "search",
 								placeholder: "Search",
 								name: "search",
-								className: "border-amber-400 border-2 bg-black",
+								className: "border-amber-400 border-2 bg-neutral-800",
 							},
 							button: {
 								title: "Search",

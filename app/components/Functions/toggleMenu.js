@@ -1,4 +1,4 @@
-export default function ToggleMenu(toggleMe) {
+export default function ToggleMenu(e, toggleMe) {
 	document.querySelector("body").classList.remove("overflow-hidden");
 	document.querySelector(`#screen`).classList.add("hidden");
 	document.querySelectorAll(".popup-item").forEach((e) => {

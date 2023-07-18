@@ -1,5 +1,5 @@
 "use client";
-import ToggleMenu from "@/components/Functions/ToggleMenu";
+import ToggleMenu from "@/functions/ToggleMenu";
 
 export default function Screen({ className }) {
 	return (

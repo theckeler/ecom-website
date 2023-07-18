@@ -2,7 +2,8 @@ import InputButton from "@/components/InputButton";
 import Options from "./Dealers";
 import Close from "@/icons/Close";
 import HeaderButton from "@/components/Header/components/Button";
-import ToggleMenu from "@/components/Functions/ToggleMenu";
+import ToggleMenu from "@/functions/ToggleMenu";
+
 import StoreIcon from "@/icons/Store";
 
 export default function ShopYourDealer() {

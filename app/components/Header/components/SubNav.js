@@ -4,7 +4,8 @@ import Link from "next/link";
 
 import Close from "@/icons/Close";
 import ChevronLeft from "@/icons/ChevronLeft";
-import ToggleMenu from "@/components/Functions/ToggleMenu";
+import ToggleMenu from "@/functions/ToggleMenu";
+
 
 export default function SubNav({ menuItems }) {
 	return (

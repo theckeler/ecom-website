@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
-import ToggleMenu from "@/components/Functions/ToggleMenu";
+import ToggleMenu from "@/functions/ToggleMenu";
 
 import Promo from "./components/Promo";
 import HeaderButton from "./components/Button";

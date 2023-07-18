@@ -9,7 +9,7 @@ export default function Index() {
 	return (
 		<ul className="pb-20">
 			<li className="mb-8">
-				<div className="max-w-screen-2xl mx-auto p-3">
+				<div className="max-w-screen-2xl mx-auto p-2 2xl:py-2 2xl:px-0">
 					<CTAHero block={homeJSON.ctaHero[0]} minHeight="xl" />
 				</div>
 			</li>
@@ -27,12 +27,12 @@ export default function Index() {
 			/>
 
 			<li className="mt-4">
-				<div className="bg-gray-300 p-3 lg:py-8">
+				<div className="bg-gray-300 lg:py-8">
 					<ProductFinder className="max-w-screen-2xl mx-auto" />
 				</div>
 			</li>
 
-			<li className="bg-gray-200 p-4 lg:p-8">
+			<li className="bg-gray-200 p-2 py-10">
 				<TitleFlexGridViews
 					breakpoint="md"
 					jsonData={homeJSON.ctaBlocks}
@@ -55,7 +55,7 @@ export default function Index() {
 					block={homeJSON.ctaHero[2]}
 					reverse
 					minHeight="lg"
-					className="mt-6"
+					className="pt-6 px-2 2xl:px-0"
 				/>
 
 				{/* <CTAHero

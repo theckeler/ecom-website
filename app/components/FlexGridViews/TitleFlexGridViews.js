@@ -29,7 +29,7 @@ export default function TitleFlexGridViews({
 	};
 
 	return (
-		<div className="max-w-screen-2xl mx-auto p-3">
+		<div className="max-w-screen-2xl mx-auto p-2 2xl:py-2 2xl:px-0">
 			<ul
 				className={`flex justify-center items-center mb-8 ${breakpoint}:hidden`}>
 				<li className="">{title && title}</li>

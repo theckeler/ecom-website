@@ -1,13 +1,22 @@
 import Header from "@/header/Header";
 import Menu from "@/components/Menus/Menu";
-// import Screen from "@/components/Screen";
 import Footer from "@/footer/Footer";
 import Cookie from "@/cookie/Cookie";
 import menuItems from "@/data/nav.json";
 import Chat from "@/components/Chat/Chat";
 
 import "@/styles/globals.css";
-import Screen from "./components/Screen";
+import Screen from "@/components/Screen";
+
+import Cart from "@/cart/Cart";
+import Stores from "@/components/Stores/Stores";
+import MainNav from "@/components/Nav/Nav";
+import SubNav from "@/header/components/SubNav";
+import Filters from "@/filters/Filters";
+import Account from "@/components/Account/Account";
+import Dealers from "@/components/Dealers/Dealers";
+import Help from "@/components/Help/Help";
+import Promo from "@/components/Promo/Promo";
 
 export const metadata = {
 	title: "Cub Cadet Rebuild",
@@ -19,33 +28,41 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className="bg-white">
 				<Header menuItems={menuItems} />
-
 				<Menu
 					menu={{
 						title: "Cart",
 						id: "cart",
-						component: "cart",
+						component: <Cart menuItems={menuItems} />,
 						button: { title: "Checkout", className: "font-bold" },
+						componentType: "cart",
 					}}
 				/>
 				<Menu
-					menu={{ title: "Account", id: "account", component: "account" }}
+					menu={{
+						title: "Account",
+						id: "account",
+						component: <Account menuItems={menuItems} />,
+						componentType: "account",
+					}}
 				/>
 				<Menu
 					menu={{
 						title: "Stores",
 						id: "stores",
-						component: "stores",
+						component: <Stores menuItems={menuItems} />,
+						componentType: "stores",
 					}}
 				/>
 				<Menu
 					menu={{
-						title: "Help",
+						title: "Cub Cadet Customer Service",
 						id: "help",
 						button: {
 							title: "Need more help?",
 							className: "bg-amber-400 font-bold text-black",
 						},
+						component: <Help menuItems={menuItems} />,
+						componentType: "help",
 					}}
 				/>
 				<Menu
@@ -56,7 +73,8 @@ export default function RootLayout({ children }) {
 							title: "Apply",
 							className: "bg-black font-bold text-white",
 						},
-						component: "filters",
+						component: <Filters menuItems={menuItems} />,
+						componentType: "filters",
 					}}
 				/>
 				<Menu
@@ -67,7 +85,21 @@ export default function RootLayout({ children }) {
 							title: "Update Dealer",
 							className: "bg-amber-400 font-bold text-black",
 						},
-						component: "dealers",
+						component: <Dealers menuItems={menuItems} />,
+						componentType: "dealers",
+					}}
+				/>
+				<Menu
+					className="md:max-w-none"
+					menu={{
+						title: "Promo Title",
+						id: "promo-content",
+						component: <Promo menuItems={menuItems} />,
+						left: false,
+						button: {
+							title: "Promo Link",
+							className: "font-bold",
+						},
 					}}
 				/>
 				{menuItems.map(
@@ -79,7 +111,8 @@ export default function RootLayout({ children }) {
 								menu={{
 									title: mainMenu.title,
 									id: mainMenu.slug + "-sub",
-									component: "subNav",
+									component: <SubNav menuItems={mainMenu.sub} />,
+									componentType: "subNav",
 									className: "lg:relative",
 									button: mainMenu.button,
 									left: false,
@@ -99,9 +132,7 @@ export default function RootLayout({ children }) {
 							/>
 						)
 				)}
-
 				<main>{children}</main>
-
 				<Footer />
 				<Cookie />
 				<Screen />

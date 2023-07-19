@@ -7,7 +7,7 @@ import MenuTitle from "./components/Title";
 import ToggleMenu from "@/components/Functions/toggleMenu";
 
 export default function Menu({ className, menu }) {
-	const mainNavCSS = menu.component === "mainNav" && "lg:hidden";
+	const mainNavCSS = menu.componentType === "mainNav" && "lg:hidden";
 
 	return (
 		<div
@@ -15,12 +15,12 @@ export default function Menu({ className, menu }) {
 			className={`popup-item asdasd fixed z-40 ${
 				menu.left ? "left-0" : "right-0"
 			} ${!menu.fullscreen && "hidden"} ${
-				menu.component !== "mainNav" &&
+				menu.componentType !== "mainNav" &&
 				"lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl"
 			} top-0 w-full bg-white ${className}`}>
 			<ul
 				className={`flex flex-col h-[calc(100vh-114px)] max-h-screen min-h-[100dvh] ${
-					menu.component === "mainNav" &&
+					menu.componentType === "mainNav" &&
 					"lg:h-auto lg:max-h-none lg:min-h-[auto]"
 				}`}>
 				<li className={`border-b bg-black text-white ${mainNavCSS}`}>
@@ -33,13 +33,14 @@ export default function Menu({ className, menu }) {
 				</li>
 				<li
 					className={`overflow-x-scroll grow ${
-						menu.component !== "mainNav" && "pt-2 pb-10"
+						menu.componentType !== "mainNav" && "pt-2 pb-10"
 					} `}>
 					<MenuBody
 						{...{
 							loadComponent: menu.component,
 							button: { ...menu.button },
 							menuItems: menu.menuItems,
+							componentType: menu.componentType,
 						}}
 					/>
 				</li>

@@ -64,7 +64,7 @@ export default function Index() {
 						<H1
 							title="Explore Lawn Mowers"
 							srOnly="Cub Cadet"
-							className="text-center"
+							className="lg:text-center"
 						/>
 					}
 					gridCSS="lg:grid lg:grid-cols-3 gap-2 pb-6 lg:pb-0 overflow-x-auto overflow-scrollbar"

@@ -9,10 +9,11 @@ import Promo from "./components/Promo";
 import HeaderButton from "./components/Button";
 import Hamburger from "@/icons/Hamburger";
 import Menu from "@/menus/Menu";
-import ShopYourDealer from "@/components/Menus/components/ShopYourDealer";
+import ShopYourDealer from "@/components/ShopYourDealer/ShopYourDealer";
 import Logo from "@/components/Logo";
 import InputButton from "@/components/InputButton";
-// import Oops from "@/components/Oops";
+import Oops from "@/components/Oops";
+import MainNav from "@/components/Nav/Nav";
 
 export default function Header({ menuItems }) {
 	const searchParams = useSearchParams();
@@ -51,9 +52,10 @@ export default function Header({ menuItems }) {
 					menu={{
 						title: "Oops",
 						id: "oops",
-						component: "oops",
+						component: <Oops menuItems={menuItems} />,
 						button: { title: "Close", className: "font-bold" },
 						fullscreen: true,
+						componentType: "oops",
 					}}
 				/>
 			)}
@@ -108,7 +110,8 @@ export default function Header({ menuItems }) {
 							menu={{
 								title: "",
 								id: "main-nav",
-								component: "mainNav",
+								component: <MainNav menuItems={menuItems} />,
+								componentType: "mainNav",
 								left: false,
 								menuItems: menuItems,
 								button: {

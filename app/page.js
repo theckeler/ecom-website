@@ -39,7 +39,7 @@ export default function Index() {
 					<H1
 						title="Product Lineup"
 						srOnly="Cub Cadet"
-						className="text-center"
+						className="lg:text-center"
 					/>
 				}
 				gridCSS="lg:grid lg:grid-cols-4 gap-2 pb-6 lg:pb-0 overflow-x-auto overflow-scrollbar"
@@ -56,7 +56,7 @@ export default function Index() {
 				<TitleFlexGridViews
 					breakpoint="md"
 					jsonData={homeJSON.ctaBlocks}
-					title=""
+					title={<H1 title="" srOnly="Cub Cadet" className="lg:text-center" />}
 					buttonWide={true}
 					gridCSS="max-w-screen-2xl mx-auto flex md:grid md:grid-cols-2 xl:grid-cols-4 gap-2 pb-6 lg:pb-0 overflow-x-auto overflow-scrollbar"
 					buttons={buttons}

@@ -1,5 +1,5 @@
 import InputButton from "@/components/InputButton";
-import Options from "./Dealers";
+import Options from "./components/Dealers";
 import Close from "@/icons/Close";
 import ToggleMenu from "@/functions/toggleMenu";
 import StoreIcon from "@/icons/Store";

@@ -1,4 +1,5 @@
 "use client";
+
 import BreadCrumbs from "app/components/BreadCrumbs";
 import Gallery from "app/components/Gallery";
 import AddCart from "app/components/AddCart/AddCart";
@@ -25,7 +26,7 @@ export default function Index({ params }) {
 
 	return (
 		<>
-			<ul className="max-w-screen-2xl grid grid-cols-12 gap-3 mx-auto p-3">
+			<ul className="max-w-screen-2xl lg:grid grid-cols-12 gap-3 mx-auto p-3">
 				<li className="col-span-12">
 					<BreadCrumbs
 						crumbs={[
@@ -45,10 +46,10 @@ export default function Index({ params }) {
 						starNum={product.reviews}
 					/>
 				</li>
-				<li className="col-span-12 lg:col-span-7 xl:col-span-8">
+				<li className="lg:col-span-7 xl:col-span-8">
 					<Gallery gallery={product.gallery} />
 				</li>
-				<li className="col-span-12 lg:col-span-5 xl:col-span-4 lg:sticky lg:top-0 self-start row-span-2">
+				<li className="lg:col-span-5 xl:col-span-4 lg:sticky lg:top-0 self-start row-span-2">
 					<div className="md:px-6 py-4">
 						<H1 title={product.title} srOnly="Cub Cadet Zero-Turn Mower" />
 						<H2 title={product.series} />
@@ -57,7 +58,7 @@ export default function Index({ params }) {
 						<Desc blocks={product.desc} />
 					</div>
 				</li>
-				<li className="col-span-12 lg:col-span-7 xl:col-span-8">
+				<li className="lg:col-span-7 xl:col-span-8">
 					<Reviews starNum={product.reviews} />
 					<Features />
 					<Specs />

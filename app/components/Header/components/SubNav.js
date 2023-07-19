@@ -2,15 +2,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Close from "@/icons/Close";
-import ChevronLeft from "@/icons/ChevronLeft";
+// import Close from "@/icons/Close";
+// import ChevronLeft from "@/icons/ChevronLeft";
 import ToggleMenu from "@/components/Functions/toggleMenu";
 
 export default function SubNav({ menuItems }) {
 	return (
-		menuItems.sub && (
+		menuItems && (
 			<ul className="divide-y divide-solid lg:border-0 pb-8 lg:pb-0">
-				{menuItems.sub.map((sub, i) => (
+				{menuItems.map((sub, i) => (
 					<li key={i}>
 						<Link
 							href={sub.url}

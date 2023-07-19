@@ -7,7 +7,7 @@ import HelpTrackOrder from "./components/TrackOrder";
 
 export default function Help() {
 	const iconCSS = "w-24 mr-4";
-	const linkTitleCSS = "text-xl text-bold";
+	const linkTitleCSS = "text-lg text-bold";
 	const titleCSS = "sm:text-2xl";
 
 	return (

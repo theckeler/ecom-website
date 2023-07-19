@@ -3,7 +3,7 @@ import Menu from "@/components/Menus/Menu";
 import Footer from "@/footer/Footer";
 import Cookie from "@/cookie/Cookie";
 import menuItems from "@/data/nav.json";
-import Chat from "@/components/Chat/Chat";
+import Chat from "@/components/Buttons/Chat";
 
 import "@/styles/globals.css";
 import Screen from "@/components/Screen";
@@ -17,6 +17,7 @@ import Account from "@/components/Account/Account";
 import Dealers from "@/components/Dealers/Dealers";
 import Help from "@/components/Help/Help";
 import Promo from "@/components/Promo/Promo";
+import ButtonsCart from "@/buttons/Cart";
 
 export const metadata = {
 	title: "Cub Cadet Rebuild",
@@ -136,7 +137,10 @@ export default function RootLayout({ children }) {
 				<Footer />
 				<Cookie />
 				<Screen />
-				<Chat />
+				<div className="fixed z-30 top-3/4 right-0 md:rotate-270 origin-top-left grid md:grid-cols-2 gap-2 md:-mr-[10.5em]">
+					<ButtonsCart />
+					<Chat />
+				</div>
 			</body>
 		</html>
 	);

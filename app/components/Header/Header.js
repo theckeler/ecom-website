@@ -15,6 +15,12 @@ import InputButton from "@/components/Form/InputButton";
 import Oops from "@/components/Oops";
 import MainNav from "@/components/Nav/Nav";
 
+import Account from "@/icons/Account";
+import Help from "@/icons/Help";
+import Location from "@/icons/Location";
+import Cart from "@/icons/Cart";
+import Search from "@/icons/Search";
+
 export default function Header({ menuItems }) {
 	const searchParams = useSearchParams();
 
@@ -24,24 +30,61 @@ export default function Header({ menuItems }) {
 	}, [oopsTriggered, searchParams]);
 
 	const buttonItems = [
-		{ title: "Stores", url: null, onClick: () => ToggleMenu("stores") },
+		{
+			title: "Search",
+			buttonIcon: (
+				<Search
+					className="h-8 lg:mr-1 fill-white"
+					style={{ minWidth: "2em", maxWidth: "2em" }}
+				/>
+			),
+			url: null,
+			onClick: () => ToggleMenu("search"),
+		},
+		{
+			title: "Stores",
+			buttonIcon: (
+				<Location
+					className="h-8 lg:mr-1 fill-white"
+					style={{ minWidth: "2em", maxWidth: "2em" }}
+				/>
+			),
+			url: null,
+			onClick: () => ToggleMenu("stores"),
+		},
 		{
 			title: "Help",
-			buttonIcon: "help",
+			buttonIcon: (
+				<Help
+					className="h-8 lg:mr-1 fill-white"
+					style={{ minWidth: "2em", maxWidth: "2em" }}
+				/>
+			),
 			url: null,
 			onClick: () => ToggleMenu("help"),
 		},
 		{
 			title: "Account",
-			buttonIcon: "account",
+			buttonIcon: (
+				<Account
+					className="h-8 lg:mr-1 fill-white"
+					style={{ minWidth: "2em", maxWidth: "2em" }}
+				/>
+			),
 			url: null,
 			onClick: () => ToggleMenu("account"),
 		},
 		{
 			title: "Cart",
-			buttonIcon: "cart",
+			buttonIcon: (
+				<Cart
+					className="h-8 lg:mr-1 fill-white"
+					style={{ minWidth: "2em", maxWidth: "2em" }}
+				/>
+			),
 			url: null,
 			onClick: () => ToggleMenu("cart"),
+			className: "hidden md:block",
 		},
 	];
 
@@ -83,7 +126,7 @@ export default function Header({ menuItems }) {
 												ariaLabel={menu.title}
 												mobile
 												fillColor="fill-white"
-												className="text-white"
+												className={menu.className + " text-white"}
 											/>
 										</li>
 									))}

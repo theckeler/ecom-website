@@ -1,6 +1,7 @@
 "use client";
 
 import ExpandMore from "@/icons/ExpandMore";
+import LinksOutput from "./components/Output";
 
 export default function LinksReveal({
 	className,
@@ -9,7 +10,6 @@ export default function LinksReveal({
 	component,
 	row = false,
 	extra = null,
-	alignRight = false,
 }) {
 	return (
 		<div
@@ -38,33 +38,7 @@ export default function LinksReveal({
 			<div className="hidden sm:block sm:h-full">
 				{component && component}
 
-				{links && (
-					<ul
-						className={`${row && "sm:flex items-center"} ${
-							alignRight && "ml-auto"
-						}`}>
-						{links.map((link, i) => {
-							return (
-								<li key={i}>
-									<a
-										className={`flex items-center sm:text-xs underline p-5 w-full ${
-											!row && "sm:p-2"
-										}`}
-										href={
-											link.url
-												? link.url
-												: "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
-										}>
-										{link.icon && link.icon}
-										<span className={`inline-block w-full ${link.className}`}>
-											{link.title}
-										</span>
-									</a>
-								</li>
-							);
-						})}
-					</ul>
-				)}
+				{links && <LinksOutput links={links} />}
 
 				{extra && (
 					<div

@@ -11,7 +11,7 @@ import Hamburger from "@/icons/Hamburger";
 import Menu from "@/menus/Menu";
 import ShopYourDealer from "@/components/ShopYourDealer/ShopYourDealer";
 import Logo from "@/components/Logo";
-import InputButton from "@/components/InputButton";
+import InputButton from "@/components/Form/InputButton";
 import Oops from "@/components/Oops";
 import MainNav from "@/components/Nav/Nav";
 
@@ -94,9 +94,7 @@ export default function Header({ menuItems }) {
 				</li>
 			</ul>
 
-			<div
-				className="bg-white border-b"
-				id="sticky-nav">
+			<div className="bg-white border-b" id="sticky-nav">
 				<ul className="max-w-screen-2xl mx-auto flex flex-row items-center w-full">
 					<li className="p-2">
 						<Link href="/" aria-label="Return Home">

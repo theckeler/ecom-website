@@ -3,16 +3,16 @@ import Close from "@/icons/Close";
 import ToggleMenu from "@/components/Functions/toggleMenu";
 
 import ChevronLeft from "@/icons/ChevronLeft";
-import InputButton from "@/components/InputButton";
+import InputButton from "@/components/Form/InputButton";
 
-export default function MenuTitle({ className, title, component }) {
+export default function MenuTitle({ className, title, componentType }) {
 	return (
-		<ul className="w-100 flex items-center w-100 py-1">
+		<ul className={`w-100 flex items-center w-100 py-1 ${className}`}>
 			<li
 				className={`w-100 grow font-bold text-left pl-3  ${
-					component === "subNav" && "hidden lg:block"
+					componentType === "subNav" && "hidden lg:block"
 				}`}>
-				{component === "mainNav" && (
+				{componentType === "mainNav" && (
 					<InputButton
 						{...{
 							className: "max-w-[88%]",
@@ -34,7 +34,7 @@ export default function MenuTitle({ className, title, component }) {
 				<span className="text-xl">{!!title && title}</span>
 			</li>
 
-			{component === "subNav" && (
+			{componentType === "subNav" && (
 				<li>
 					<button
 						className="lg:hidden block w-100"

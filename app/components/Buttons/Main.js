@@ -1,8 +1,6 @@
-export default function Button({
+export default function ButtonMain({
 	title,
 	className,
-	addStyle,
-	noIcon = false,
 	href = null,
 	noButton = false,
 	buttonPadding = "py-3",

@@ -1,4 +1,4 @@
-import InputButton from "@/components/InputButton";
+import InputButton from "@/components/Form/InputButton";
 import Options from "./components/Dealers";
 import Close from "@/icons/Close";
 import ToggleMenu from "@/functions/toggleMenu";

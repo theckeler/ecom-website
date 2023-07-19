@@ -27,7 +27,7 @@ export default function Menu({ className, menu }) {
 					<MenuTitle
 						{...{
 							title: menu.title,
-							component: menu.component,
+							componentType: menu.componentType,
 						}}
 					/>
 				</li>

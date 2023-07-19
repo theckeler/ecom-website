@@ -4,7 +4,7 @@ import Image from "next/image";
 import dealersData from "@/data/dealers.json";
 import storesData from "@/data/stores.json";
 import Stars from "@/components/Stars";
-import InputButton from "@/components/InputButton";
+import InputButton from "@/components/Form/InputButton";
 import IconMyLocation from "../Icons/MyLocation";
 
 export default function Stores({ className }) {

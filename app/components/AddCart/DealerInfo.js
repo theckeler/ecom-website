@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ButtonEdit from "@/components/Buttons/Edit";
 import DealerSelect from "./DealerSelect";
-import InputButton from "@/components/InputButton";
+import InputButton from "@/components/Form/InputButton";
 import jsonData from "@/data/dealers.json";
 
 export default function DealerInfo() {

@@ -1,8 +1,7 @@
 "use client";
 
-// import FooterHelp from "./components/Help";
 import BlockSignUp from "./components/SignUp";
-import FooterLinks from "./components/Links";
+import FooterLinks from "../Links/Reveal";
 import footerNavData from "@/data/nav-footer.json";
 
 export default function Footer() {
@@ -33,7 +32,12 @@ export default function Footer() {
 								copy: "Global Sites",
 								className: "",
 							},
-							links: ["Canada", "Europe", "Australia", "China"],
+							links: [
+								{ title: "Canada" },
+								{ title: "Europe" },
+								{ title: "Australia" },
+								{ title: "China" },
+							],
 							className: "",
 							row: true,
 							alignRight: false,
@@ -46,9 +50,9 @@ export default function Footer() {
 								className: "text-sm",
 							},
 							links: [
-								"Privacy Policy",
-								"Terms of Use",
-								"Online Store Policies",
+								{ title: "Privacy Policy" },
+								{ title: "Terms of Use" },
+								{ title: "Online Store Policies" },
 							],
 							className: null,
 							row: true,

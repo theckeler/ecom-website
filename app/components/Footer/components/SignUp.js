@@ -1,7 +1,7 @@
 "use client";
 
 import FooterSocial from "./Social";
-import InputButton from "@/components/InputButton";
+import InputButton from "@/components/Form/InputButton";
 
 export default function BlockSignUp() {
 	return (

@@ -95,7 +95,6 @@ export default function Header({ menuItems }) {
 			</ul>
 
 			<div
-				//className="z-40 md:z-auto bg-white/70 border-b backdrop-blur-sm"
 				className="bg-white border-b"
 				id="sticky-nav">
 				<ul className="max-w-screen-2xl mx-auto flex flex-row items-center w-full">

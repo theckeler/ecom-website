@@ -2,8 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// import Close from "@/icons/Close";
-// import ChevronLeft from "@/icons/ChevronLeft";
 import ToggleMenu from "@/components/Functions/toggleMenu";
 
 export default function SubNav({ menuItems }) {

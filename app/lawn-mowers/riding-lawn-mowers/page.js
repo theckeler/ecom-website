@@ -3,7 +3,6 @@ import H1 from "app/components/H1";
 import SEOGreek from "app/components/SEOGreek";
 import SEOLinks from "app/components/SEOLinks";
 import ProductFinder from "app/components/Product/Finder";
-// import ProductCategories from "app/components/Product/Categories";
 import TitleFlexGridViews from "@/components/FlexGridViews/TitleFlexGridViews";
 import IconGridView from "@/icons/GridView";
 import FlexView from "@/icons/FlexView";
@@ -47,26 +46,15 @@ export default function Index() {
 					srOnly="Cub Cadet"
 					className=""
 				/>
-				<p className="text-sm my-8 max-w-6xl leading-6">
+				<p className="text-sm mt-8 max-w-6xl leading-6">
 					A complete lineup of zero-turn mowers, lawn and garden tractors, and
 					electric mowers, all featuring the strength and durability that bring
 					your lawn to life.
 				</p>
 
-				{/* <ProductCategories
-					categories={zeroTurnJSON.categories}
-					className="bg-gray-200"
-				/> */}
-
 				<TitleFlexGridViews
 					jsonData={zeroTurnJSON.categories}
-					title={
-						<H1
-							title="Explore Lawn Mowers"
-							srOnly="Cub Cadet"
-							className="lg:text-center"
-						/>
-					}
+					title={<H1 title="" srOnly="Cub Cadet" className="lg:text-center" />}
 					gridCSS="lg:grid lg:grid-cols-3 gap-2 pb-6 lg:pb-0 overflow-x-auto overflow-scrollbar"
 					buttons={buttons}
 				/>

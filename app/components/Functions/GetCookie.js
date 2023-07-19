@@ -1,5 +1,4 @@
 export default function getCookie(cName) {
-	//console.log("cookie", document.cookie);
 	if (typeof document !== "undefined") {
 		let name = cName + "=";
 		let decodedCookie = decodeURIComponent(document.cookie);

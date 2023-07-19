@@ -1,5 +1,3 @@
-// import Image from "next/image";
-
 import Stars from "@/components/Stars";
 
 export default function DealerSelect({
@@ -20,30 +18,7 @@ export default function DealerSelect({
 		<div
 			className={`dealer-select group flex relative z-0 p-2  ${
 				!!selected ? activeColor : inactiveColor
-			} ${className}`}
-			// onChange={(e) => {
-			// 	document.querySelectorAll(".dealer-select").forEach((e) => {
-			// 		e.classList.remove("active");
-			// 	});
-			// 	e.currentTarget.classList.add("active");
-
-			// 	document.querySelectorAll(".dealer-select-address").forEach((e) => {
-			// 		e.classList.add("hidden");
-			// 	});
-			// 	e.currentTarget
-			// 		.querySelector(".dealer-select-address")
-			// 		.classList.remove("hidden");
-
-			// 	document.querySelectorAll(".dealer-select").forEach((e) => {
-			// 		e.classList.remove(activeColor);
-			// 		e.classList.add(inactiveColor);
-			// 		if (e.classList.contains("active")) {
-			// 			e.classList.remove(inactiveColor);
-			// 			e.classList.add(activeColor);
-			// 		}
-			// 	});
-			// }}
-		>
+			} ${className}`}>
 			<ul className="h-full w-full flex relative z-0">
 				<li>
 					<input

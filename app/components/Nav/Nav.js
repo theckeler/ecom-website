@@ -12,8 +12,6 @@ import Account from "@/icons/Account";
 import Help from "@/icons/Help";
 import Location from "@/icons/Location";
 
-// import LinkMain from "@/components/Header/components/LinkMain";
-
 export default function Nav({ menuItems }) {
 	return (
 		<ul className="flex flex-col lg:flex-row divide-y lg:divide-none divide-solid lg:border-0 pb-8 lg:pb-0">

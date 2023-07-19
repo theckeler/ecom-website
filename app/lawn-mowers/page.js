@@ -3,7 +3,6 @@ import H1 from "@/components/H1";
 import SEOGreek from "@/components/SEOGreek";
 import SEOLinks from "@/components/SEOLinks";
 import ProductFinder from "@/components/Product/Finder";
-// import ProductCategories from "@/components/Product/Categories";
 import IconGridView from "@/icons/GridView";
 import FlexView from "@/icons/FlexView";
 import ridingLawnJSON from "@/data/lawn-mowers";
@@ -37,15 +36,7 @@ export default function Index() {
 			</li>
 
 			<li className="max-w-screen-2xl mx-auto p-3">
-				{/* <H1
-					title="Explore Lawn Mowers"
-					srOnly="Cub Cadet"
-					className="text-4xl mb-4"
-				/> */}
-				{/* <ProductCategories
-					categories={ridingLawnJSON.categories}
-					className="bg-gray-200"
-				/> */}
+				
 
 				<TitleFlexGridViews
 					jsonData={ridingLawnJSON.categories}

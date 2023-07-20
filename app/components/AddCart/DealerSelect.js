@@ -31,7 +31,9 @@ export default function DealerSelect({
 				</li>
 				<li className="w-full text-left">
 					<div
-						className={`font-bold ${!showAdress && "truncate max-w-[120px]"}`}>
+						className={`font-bold ${
+							!showAdress && "truncate max-w-[120px] 2xl:max-w-none"
+						}`}>
 						{title}
 					</div>
 

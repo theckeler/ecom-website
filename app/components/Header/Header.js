@@ -40,7 +40,7 @@ export default function Header({ menuItems }) {
 			),
 			url: null,
 			onClick: () => ToggleMenu("search"),
-			className: "hidden lg:block",
+			className: "hidden lg:flex",
 		},
 		{
 			title: "Stores",

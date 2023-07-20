@@ -3,8 +3,6 @@ import { useState } from "react";
 
 import ProductCard from "@/components/Product/Card";
 import TitleFlexGridViewsButtons from "./components/Buttons";
-// import IconGridView from "@/icons/GridView";
-// import FlexView from "@/icons/FlexView";
 
 export default function TitleFlexGridViews({
 	title,
@@ -19,7 +17,7 @@ export default function TitleFlexGridViews({
 
 	return (
 		<div className={`max-w-screen-2xl mx-auto p-2 ${className}`}>
-			<ul className={`flex justify-center items-center mb-8`}>
+			<ul className={`flex justify-center items-center mb-8 sticky top-0 z-30`}>
 				<li className="">{title && title}</li>
 				<li className={`flex ml-auto ${breakpoint}:hidden`}>
 					<TitleFlexGridViewsButtons

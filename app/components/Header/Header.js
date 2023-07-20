@@ -40,6 +40,7 @@ export default function Header({ menuItems }) {
 			),
 			url: null,
 			onClick: () => ToggleMenu("search"),
+			className: "hidden lg:block",
 		},
 		{
 			title: "Stores",
@@ -84,7 +85,6 @@ export default function Header({ menuItems }) {
 			),
 			url: null,
 			onClick: () => ToggleMenu("cart"),
-			className: "hidden md:block",
 		},
 	];
 

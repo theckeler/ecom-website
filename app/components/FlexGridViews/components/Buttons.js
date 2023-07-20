@@ -1,6 +1,5 @@
 "use client";
 
-
 export default function TitleFlexGridViewsButtons({
 	className = null,
 	setWhichView,
@@ -24,7 +23,7 @@ export default function TitleFlexGridViewsButtons({
 			{buttons.map(function (block, i) {
 				return (
 					<button
-						className={`"w-12 p-1 "${block.className}`}
+						className={`"w-12 p-1  "${block.className}`}
 						onClick={(e) => {
 							resetBG(e);
 							setWhichView(block.whatView);

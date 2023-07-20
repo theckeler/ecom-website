@@ -5,13 +5,10 @@ export default function HeaderButton({
 	buttonIcon,
 	className = "",
 	onClick = null,
-	mobile,
 	style,
 	ariaLabel = { title },
 }) {
 	const LinkType = onClick ? "button" : Link;
-
-	console.log(className);
 
 	return (
 		<LinkType
@@ -21,9 +18,7 @@ export default function HeaderButton({
 			aria-label={ariaLabel}
 			onClick={onClick}>
 			{buttonIcon}
-			<span className={mobile && "hidden xl:block whitespace-nowrap"}>
-				{title}
-			</span>
+			<span className="hidden xl:block whitespace-nowrap">{title}</span>
 		</LinkType>
 	);
 }

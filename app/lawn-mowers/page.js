@@ -19,7 +19,7 @@ export default function Index() {
 		},
 		{
 			icon: (
-				<IconGridView className="reset-views flex items-center justify-center w-10 h-10 p-2 rounded-full" />
+				<IconGridView className="reset-views flex items-center justify-center w-10 h-10 p-2 rounded-full bg-gray-200" />
 			),
 			className: "",
 			whatView: "grid",
@@ -36,8 +36,6 @@ export default function Index() {
 			</li>
 
 			<li className="max-w-screen-2xl mx-auto p-3">
-				
-
 				<TitleFlexGridViews
 					jsonData={ridingLawnJSON.categories}
 					title={

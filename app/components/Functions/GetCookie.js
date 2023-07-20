@@ -1,17 +1,13 @@
-export default function getCookie(cName) {
-	if (typeof document !== "undefined") {
-		let name = cName + "=";
-		let decodedCookie = decodeURIComponent(document.cookie);
-		let ca = decodedCookie.split(";");
-		for (let i = 0; i < ca.length; i++) {
-			let c = ca[i];
-			while (c.charAt(0) == " ") {
-				c = c.substring(1);
-			}
-			if (c.indexOf(name) == 0) {
-				return c.substring(name.length, c.length);
-			}
+export default function getCookie(name) {
+	var cookieArr = document.cookie.split(";");
+
+	for (var i = 0; i < cookieArr.length; i++) {
+		var cookiePair = cookieArr[i].split("=");
+
+		if (name == cookiePair[0].trim()) {
+			return decodeURIComponent(cookiePair[1]);
 		}
 	}
-	return "";
+
+	return null;
 }

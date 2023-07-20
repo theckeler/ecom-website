@@ -135,12 +135,12 @@ export default function RootLayout({ children }) {
 				)}
 				<main>{children}</main>
 				<Footer />
-				<Cookie />
 				<Screen />
-				<div className="fixed z-30 top-3/4 right-0 md:rotate-270 origin-top-left grid md:grid-cols-2 gap-2 md:-mr-[10.5em]">
+				<div className="fixed z-30 bottom-72 md:bottom-72 right-0 md:rotate-270 origin-top-left flex flex-col md:flex-row-reverse gap-1 md:-mr-[10.5em]">
 					<ButtonsCart />
 					<Chat />
 				</div>
+				<Cookie display={true} />
 			</body>
 		</html>
 	);

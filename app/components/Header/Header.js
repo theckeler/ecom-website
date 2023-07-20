@@ -116,18 +116,18 @@ export default function Header({ menuItems }) {
 							</li>
 
 							<li className="grow flex justify-end">
-								<ul className="flex items-center lg:w-full">
+								<ul className="flex">
 									<li className="hidden lg:flex justify-end grow basis-full pr-4">
 										<InputButton
 											{...{
-												className: "group max-w-xs ",
+												className: "group",
 												padding: "p-2",
 												input: {
 													id: "search-bar",
 													placeholder: "Search",
 													name: "search",
 													className:
-														"text-sm bg-neutral-700 text-white border border-neutral-700 group-hover:border-amber-400 outline-0",
+														"text-sm bg-neutral-700 text-white border border-neutral-700 group-hover:border-amber-400 outline-0 placeholder:text-neutral-500 placeholder:italic w-full",
 												},
 												icon: <Search className="w-8 fill-black" />,
 												button: {

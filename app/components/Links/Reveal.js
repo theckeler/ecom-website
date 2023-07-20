@@ -14,7 +14,7 @@ export default function LinksReveal({
 	return (
 		<div
 			className={`sm:h-full border-b sm:border-b-0 ${
-				row ? "sm:flex flex-wrap items-center " : "border-b sm:border-b-0"
+				row ? "sm:flex flex-wrap items-center" : "border-b sm:border-b-0"
 			} ${className}`}>
 			{title && (
 				<h3
@@ -38,7 +38,7 @@ export default function LinksReveal({
 			<div className="hidden sm:block sm:h-full">
 				{component && component}
 
-				{links && <LinksOutput links={links} />}
+				{links && <LinksOutput links={links} row={row} />}
 
 				{extra && (
 					<div

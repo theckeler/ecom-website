@@ -136,7 +136,7 @@ export default function RootLayout({ children }) {
 				<main>{children}</main>
 				<Footer />
 				<Screen />
-				<div className="fixed z-30 bottom-72 md:bottom-72 right-0 md:rotate-270 origin-top-left flex flex-col md:flex-row-reverse gap-1 md:-mr-[172px]">
+				<div className="fixed z-30 bottom-72 md:bottom-72 right-0 md:rotate-270 origin-top-left flex flex-col md:flex-row-reverse gap-1 md:-mr-[173px]">
 					<ButtonsCart />
 					<ButtonsChat />
 				</div>

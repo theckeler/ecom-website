@@ -9,8 +9,8 @@ export default function InputButton({
 	icon = null,
 }) {
 	return (
-		<ul className={`flex w-full ${className}`}>
-			<li className="flex-1">
+		<ul className={`flex ${className}`}>
+			<li className="grow">
 				<input
 					required=""
 					type="text"
@@ -20,7 +20,7 @@ export default function InputButton({
 					name={input.name}
 				/>
 			</li>
-			<li className="flex-initial">
+			<li className="shrink">
 				<Button
 					aria-label={button.ariaLabel}
 					title={button.title}

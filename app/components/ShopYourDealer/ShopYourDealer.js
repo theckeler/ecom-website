@@ -9,13 +9,13 @@ export default function ShopYourDealer() {
 		<div className="flex items-center">
 			<button
 				href="?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
-				className="p-2 flex items-center text-white md:hidden"
+				className="p-1 flex items-center text-white md:hidden"
 				aria-label="Select Your Dealer"
 				onClick={() => {
 					ToggleMenu("dealers");
 				}}>
 				<StoreIcon
-					className="h-8 mr-2 fill-white"
+					className="h-8 mr-1 md:mr-2 fill-white"
 					style={{ minWidth: "2em", maxWidth: "2em" }}
 				/>
 				Shop your Dealer

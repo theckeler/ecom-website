@@ -46,7 +46,7 @@ export default function Header({ menuItems }) {
 			title: "Stores",
 			buttonIcon: (
 				<Location
-					className="h-8 lg:mr-1 fill-white"
+					className="h-8 lg:mr-1 fill-white md:group-hover:fill-amber-400"
 					style={{ minWidth: "2em", maxWidth: "2em" }}
 				/>
 			),
@@ -57,7 +57,7 @@ export default function Header({ menuItems }) {
 			title: "Help",
 			buttonIcon: (
 				<Help
-					className="h-8 lg:mr-1 fill-white"
+					className="h-8 lg:mr-1 fill-white md:group-hover:fill-amber-400"
 					style={{ minWidth: "2em", maxWidth: "2em" }}
 				/>
 			),
@@ -68,7 +68,7 @@ export default function Header({ menuItems }) {
 			title: "Account",
 			buttonIcon: (
 				<Account
-					className="h-8 lg:mr-1 fill-white"
+					className="h-8 lg:mr-1 fill-white md:group-hover:fill-amber-400"
 					style={{ minWidth: "2em", maxWidth: "2em" }}
 				/>
 			),
@@ -79,7 +79,7 @@ export default function Header({ menuItems }) {
 			title: "Cart",
 			buttonIcon: (
 				<Cart
-					className="h-8 lg:mr-1 fill-white"
+					className="h-8 lg:mr-1 fill-white md:group-hover:fill-amber-400"
 					style={{ minWidth: "2em", maxWidth: "2em" }}
 				/>
 			),
@@ -123,7 +123,7 @@ export default function Header({ menuItems }) {
 												className: "group",
 												padding: "p-2",
 												input: {
-													id: "search-bar",
+													//id: "search-bar",
 													placeholder: "Search",
 													name: "search",
 													className:
@@ -148,7 +148,7 @@ export default function Header({ menuItems }) {
 												ariaLabel={menu.title}
 												mobile
 												fillColor="fill-white"
-												className={menu.className + " text-white"}
+												className={menu.className + " text-white "}
 											/>
 										</li>
 									))}

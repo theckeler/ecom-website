@@ -123,7 +123,7 @@ export default function Header({ menuItems }) {
 												className: "group",
 												padding: "p-2",
 												input: {
-													//id: "search-bar",
+													id: "search-bar-header",
 													placeholder: "Search",
 													name: "search",
 													className:

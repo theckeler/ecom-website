@@ -3,8 +3,9 @@ export default function ButtonMain({
 	className,
 	href = null,
 	noButton = false,
-	buttonPadding = "py-3",
+	buttonPadding = "py-1",
 	onClick,
+	icon,
 }) {
 	const Type = noButton ? "div" : href ? "a" : "button";
 
@@ -14,7 +15,7 @@ export default function ButtonMain({
 			href={href}
 			onClick={onClick}
 			aria-label={title}>
-			{title}
+			{icon ? icon : title}
 		</Type>
 	);
 }

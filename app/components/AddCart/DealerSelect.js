@@ -19,21 +19,19 @@ export default function DealerSelect({
 			className={`dealer-select group flex relative z-0 p-2  ${
 				!!selected ? activeColor : inactiveColor
 			} ${className}`}>
-			<ul className="h-full w-full flex relative z-0">
+			<ul className="h-full w-full flex gap-2 relative z-0">
 				<li>
 					<input
 						type="radio"
 						name="inventory"
 						id={id}
-						className="appearance-none mr-2 checked:bg-gray-800 ring-gray-600 ring-offset-2 ring-1 rounded-full p-1"
+						className="appearance-none checked:bg-gray-800 ring-gray-600 ring-offset-2 ring-1 rounded-full p-1"
 						defaultChecked={selected}
 					/>
 				</li>
 				<li className="w-full text-left">
 					<div
-						className={`font-bold ${
-							!showAdress && "truncate md:max-w-[120px] lg:max-w-none"
-						}`}>
+						className={`font-bold ${!showAdress && "truncate max-w-[120px]"}`}>
 						{title}
 					</div>
 

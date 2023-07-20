@@ -30,18 +30,18 @@ export default function Header({ menuItems }) {
 	}, [oopsTriggered, searchParams]);
 
 	const buttonItems = [
-		{
-			title: "Search",
-			buttonIcon: (
-				<Search
-					className="h-8 lg:mr-1 fill-white"
-					style={{ minWidth: "2em", maxWidth: "2em" }}
-				/>
-			),
-			url: null,
-			onClick: () => ToggleMenu("search"),
-			className: "hidden lg:flex",
-		},
+		// {
+		// 	title: "Search",
+		// 	buttonIcon: (
+		// 		<Search
+		// 			className="h-8 lg:mr-1 fill-white"
+		// 			style={{ minWidth: "2em", maxWidth: "2em" }}
+		// 		/>
+		// 	),
+		// 	url: null,
+		// 	onClick: () => ToggleMenu("search"),
+		// 	className: "hidden lg:flex",
+		// },
 		{
 			title: "Stores",
 			buttonIcon: (
@@ -108,17 +108,39 @@ export default function Header({ menuItems }) {
 					<Promo />
 				</li>
 
-				<li className="bg-gray-800">
+				<li className="bg-neutral-800 py-2">
 					<div className="max-w-screen-2xl mx-auto text-center">
-						<ul className="flex items-center text-sm">
-							<li>
+						<ul className="flex gap-6 xl:gap-10 2xl:gap-20 items-center text-sm">
+							<li className="shrink">
 								<ShopYourDealer />
 							</li>
 
-							<li className="basis-4/12 flex justify-end ml-auto">
-								<ul className="flex items-center">
+							<li className="grow flex justify-end">
+								<ul className="flex items-center lg:w-full">
+									<li className="hidden lg:flex justify-end grow basis-full pr-4">
+										<InputButton
+											{...{
+												className: "group max-w-xs ",
+												padding: "p-2",
+												input: {
+													id: "search-bar",
+													placeholder: "Search",
+													name: "search",
+													className:
+														"text-sm bg-neutral-700 text-white border border-neutral-700 group-hover:border-amber-400 outline-0",
+												},
+												icon: <Search className="w-8 fill-black" />,
+												button: {
+													title: "Search",
+													ariaLabel: null,
+													className:
+														"bg-neutral-300 group-hover:bg-amber-400 text-black text-sm min-h-[4em]",
+												},
+											}}
+										/>
+									</li>
 									{buttonItems.map((menu, i) => (
-										<li className="basis-full" key={i}>
+										<li className="shrink" key={i}>
 											<HeaderButton
 												title={menu.title}
 												buttonIcon={menu.buttonIcon}

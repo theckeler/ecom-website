@@ -28,7 +28,8 @@ export default function TitleFlexGridViewsButtons({
 							resetBG(e);
 							setWhichView(block.whatView);
 						}}
-						key={i}>
+						key={i}
+						aria-label={`View ${block.whatView}`}>
 						{block.icon}
 					</button>
 				);

@@ -33,18 +33,20 @@ export default function Index() {
 				</div>
 			</li>
 
-			<TitleFlexGridViews
-				jsonData={homeJSON.categories}
-				title={
-					<H1
-						title="Product Lineup"
-						srOnly="Cub Cadet"
-						className="lg:text-center"
-					/>
-				}
-				gridCSS="lg:grid lg:grid-cols-4 gap-2 pb-6 lg:pb-0 overflow-x-auto overflow-scrollbar"
-				buttons={buttons}
-			/>
+			<li>
+				<TitleFlexGridViews
+					jsonData={homeJSON.categories}
+					title={
+						<H1
+							title="Product Lineup"
+							srOnly="Cub Cadet"
+							className="lg:text-center"
+						/>
+					}
+					gridCSS="lg:grid lg:grid-cols-4 gap-2 pb-6 lg:pb-0 overflow-x-auto overflow-scrollbar"
+					buttons={buttons}
+				/>
+			</li>
 
 			<li className="mt-4 bg-gray-300 lg:py-8">
 				<div className="max-w-screen-2xl mx-auto p-2">

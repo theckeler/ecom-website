@@ -3,7 +3,7 @@ export default function ButtonMain({
 	className,
 	href = null,
 	noButton = false,
-	buttonPadding = "py-1",
+	buttonPadding = "py-4",
 	onClick,
 	icon,
 }) {
@@ -11,7 +11,7 @@ export default function ButtonMain({
 
 	return (
 		<Type
-			className={`text-xs ${buttonPadding} ${className}`}
+			className={`text-xs ${!icon && buttonPadding} ${className}`}
 			href={href}
 			onClick={onClick}
 			aria-label={title}>

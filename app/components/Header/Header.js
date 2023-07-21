@@ -121,7 +121,7 @@ export default function Header({ menuItems }) {
 										<InputButton
 											{...{
 												className: "group",
-												padding: "p-2",
+												padding: "px-3",
 												input: {
 													id: "search-bar-header",
 													placeholder: "Search",

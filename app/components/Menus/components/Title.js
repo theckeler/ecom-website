@@ -21,7 +21,7 @@ export default function MenuTitle({ className, title, componentType }) {
 								id: "search",
 								placeholder: "Search",
 								name: "search",
-								className: "border-amber-400 border-2 bg-neutral-800",
+								className: "border-amber-400 border-2",
 							},
 							button: {
 								title: "Search",
@@ -59,7 +59,7 @@ export default function MenuTitle({ className, title, componentType }) {
 					}}
 					className="flex items-center justify-center w-12 h-12"
 					aria-label="Close">
-					<Close className="w-10 h-10 p-2 rounded-full bg-white" />
+					<Close className="w-12 h-12 rounded-full bg-white" />
 				</button>
 			</li>
 		</ul>

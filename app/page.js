@@ -26,7 +26,7 @@ export default function Index() {
 	];
 
 	return (
-		<ul className="pb-20">
+		<ul className="">
 			<li className="mb-8">
 				<div className="max-w-screen-2xl mx-auto p-2">
 					<CTAHero block={homeJSON.ctaHero[0]} minHeight="xl" />

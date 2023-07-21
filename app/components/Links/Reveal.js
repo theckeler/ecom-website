@@ -13,8 +13,8 @@ export default function LinksReveal({
 }) {
 	return (
 		<div
-			className={`sm:h-full border-b sm:border-b-0 ${
-				row ? "sm:flex flex-wrap items-center" : "border-b sm:border-b-0"
+			className={`sm:h-full sm:border-b-0 ${
+				row ? "sm:flex flex-wrap items-center" : ""
 			} ${className}`}>
 			{title && (
 				<h3
@@ -28,6 +28,7 @@ export default function LinksReveal({
 							e.currentTarget.parentElement.nextElementSibling.classList.toggle(
 								"hidden"
 							);
+							e.currentTarget.nextElementSibling.classList.toggle("rotate-180");
 						}}
 					/>
 					{title.copy}
@@ -49,6 +50,7 @@ export default function LinksReveal({
 					/>
 				)}
 			</div>
+			<hr className="border-t border-gray-300 sm:hidden" />
 		</div>
 	);
 }

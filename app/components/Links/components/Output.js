@@ -12,9 +12,9 @@ export default function LinksOutput({
 				return (
 					<li key={i}>
 						<a
-							className={`flex items-center sm:text-xs underline p-5 w-full ${
+							className={`flex items-center sm:text-xs underline p-4 w-full ${
 								!row && "sm:p-2"
-							}`}
+							} ${link.className}`}
 							href={
 								link.url
 									? link.url

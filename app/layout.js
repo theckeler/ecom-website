@@ -18,6 +18,7 @@ import Help from "@/components/Help/Help";
 import Promo from "@/components/Promo/Promo";
 import ButtonsCart from "@/buttons/Cart";
 import ButtonsChat from "@/buttons/Chat";
+import LoremIpsum from "@/components/LoremIpsum";
 
 export const metadata = {
 	title: "Cub Cadet Rebuild",
@@ -95,12 +96,13 @@ export default function RootLayout({ children }) {
 					menu={{
 						title: "Promo Title",
 						id: "promo-content",
-						component: <Promo menuItems={menuItems} />,
+						component: <LoremIpsum menuItems={menuItems} />,
 						left: false,
 						button: {
 							title: "Promo Link",
 							className: "font-bold",
 						},
+						className: "bg-amber-400 font-black",
 					}}
 				/>
 				{menuItems.map(

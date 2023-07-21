@@ -23,7 +23,10 @@ export default function Menu({ className, menu }) {
 					menu.componentType === "mainNav" &&
 					"lg:h-auto lg:max-h-none lg:min-h-[auto]"
 				}`}>
-				<li className={`border-b bg-black text-white ${mainNavCSS}`}>
+				<li
+					className={`border-b ${mainNavCSS} ${
+						menu.className ? menu.className : ""
+					}`}>
 					<MenuTitle
 						{...{
 							title: menu.title,
@@ -46,7 +49,7 @@ export default function Menu({ className, menu }) {
 				</li>
 				{menu.button && (
 					<li
-						className={`mt-auto h-16 px-2 py-2 w-full bg-black ${mainNavCSS}`}>
+						className={`mt-auto h-16 px-2 py-2 w-full ${mainNavCSS}`}>
 						<button
 							className={`bg-amber-400 p-2 h-12 min-h-full w-full block truncate ... ${menu.button.className}`}>
 							{menu.button.title}

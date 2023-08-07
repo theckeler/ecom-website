@@ -6,6 +6,8 @@ import Terms from "./components/Terms";
 import FooterLinks from "@/components/Links/Reveal";
 import footerNavData from "@/data/nav-footer.json";
 
+import Icons from "@/icons/Icons";
+
 export default function Footer() {
 	const footerPadding = "px-4";
 
@@ -36,14 +38,14 @@ export default function Footer() {
 			<FooterLinks
 				{...{
 					title: {
-						copy: "Social",
-						className: "block sm:hidden",
+						copy: "Global Sites",
+						className: "",
 					},
 					links: [
-						{ title: "Facebook", icon: "test" },
-						{ title: "Instagram" },
-						{ title: "Twitter" },
-						{ title: "YouTube" },
+						{ title: "Canada" },
+						{ title: "Europe" },
+						{ title: "Australia" },
+						{ title: "China" },
 					],
 					className: `max-w-screen-2xl mx-auto items-center sm:justify-center lg:justify-start ${footerPadding}`,
 					row: true,
@@ -54,14 +56,30 @@ export default function Footer() {
 			<FooterLinks
 				{...{
 					title: {
-						copy: "Global Sites",
-						className: "",
+						copy: "Social",
+						className: "block sm:hidden",
 					},
 					links: [
-						{ title: "Canada" },
-						{ title: "Europe" },
-						{ title: "Australia" },
-						{ title: "China" },
+						{
+							title: "Facebook",
+							icon: <Icons icon="facebook" className="w-12 mr-1" />,
+						},
+						{
+							title: "LinkedIn",
+							icon: <Icons icon="linkedin" className="w-12 mr-1" />,
+						},
+						{
+							title: "Instagram",
+							icon: <Icons icon="instagram" className="w-12 mr-1" />,
+						},
+						{
+							title: "Twitter",
+							icon: <Icons icon="twitter" className="w-12 mr-1" />,
+						},
+						{
+							title: "YouTube",
+							icon: <Icons icon="youtube" className="w-12 mr-1" />,
+						},
 					],
 					className: `max-w-screen-2xl mx-auto items-center sm:justify-center lg:justify-start ${footerPadding}`,
 					row: true,
@@ -109,7 +127,7 @@ export default function Footer() {
 			<div
 				className={`max-w-screen-2xl mx-auto text-sm font-bold text-center lg:text-left mt-6 ${footerPadding}`}>
 				If you experience any problems accessing this website,{" "}
-				<br className="lg:hidden" />
+				<br className="hidden sm:block lg:hidden" />
 				please call us at 1-877-428-2349 for assistance.
 			</div>
 		</footer>

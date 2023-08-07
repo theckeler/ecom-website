@@ -44,7 +44,7 @@ export default function MenuTitle({ className, title, componentType }) {
 						aria-label={`Back to the main menu`}>
 						<ul className="font-bold flex items-center">
 							<li className="w-10">
-								<ChevronLeft className="fill-white" />
+								<ChevronLeft className="fill-black" />
 							</li>
 							<li>Back to the main menu</li>
 						</ul>

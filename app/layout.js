@@ -9,13 +9,13 @@ import Screen from "@/components/Screen";
 
 import Cart from "@/cart/Cart";
 import Stores from "@/components/Stores/Stores";
-import MainNav from "@/components/Nav/Nav";
+// import MainNav from "@/components/Nav/Nav";
 import SubNav from "@/header/components/SubNav";
 import Filters from "@/filters/Filters";
 import Account from "@/components/Account/Account";
 import Dealers from "@/components/Dealers/Dealers";
 import Help from "@/components/Help/Help";
-import Promo from "@/components/Promo/Promo";
+// import Promo from "@/components/Promo/Promo";
 import ButtonsCart from "@/buttons/Cart";
 import ButtonsChat from "@/buttons/Chat";
 import LoremIpsum from "@/components/LoremIpsum";

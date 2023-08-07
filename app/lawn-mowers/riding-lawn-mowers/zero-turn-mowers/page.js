@@ -20,7 +20,7 @@ import articles from "@/data/articles.json";
 export default function Index() {
 	return (
 		<ul>
-			<li className="max-w-screen-2xl mx-auto p-3">
+			<li className="max-w-screen-2xl mx-auto p-2">
 				<BreadCrumbs
 					crumbs={[
 						{ title: "Home", url: "/" },
@@ -38,7 +38,7 @@ export default function Index() {
 					}}
 				/>
 			</li>
-			<li className="max-w-screen-2xl mx-auto p-3">
+			<li className="max-w-screen-2xl mx-auto p-2">
 				<H1 title="Zero-Turn Mowers" srOnly="Cub Cadet" />
 
 				<p className="text-sm leading-loose">

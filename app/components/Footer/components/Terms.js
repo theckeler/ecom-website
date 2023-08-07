@@ -10,26 +10,27 @@ export default function FooterHelp({ className }) {
 			later. <strong>Engine Disclaimer: </strong>The engine horsepower
 			information is provided by the engine manufacturer to be used for
 			comparison purposesonly. See your local Cub Cadet Dealer for warranty
-			details.<strong>Pricing Disclaimer:</strong> Posted price is in USD
+			details. <strong>Pricing Disclaimer:</strong> Posted price is in USD
 			Dollars andis&nbsp;manufacturer&apos;s suggested sale price. Models and
 			pricing mayvary by location. Taxes, freight, set-up&nbsp;and delivery not
 			included.Optional equipment, accessories and attachments sold separately.
 			See yourretailer for details.&nbsp;<strong>Image Disclaimer:</strong>
 			&nbsp;Products may vary from depictedmodel image in design, required
 			attachments, safety features andnon-functional appearance, and may not
-			reflect dealer inventory or unitspecifications.
+			reflect dealer inventory or unitspecifications.&nbsp;
 			<strong>Specifications Disclaimer:</strong> Specifications subject
 			tochange without notice. Images may not reflect retailer inventory
-			and/orunit specifications.
+			and/orunit specifications.&nbsp;
 			<strong>Operator&apos;s Manual Disclaimer:</strong> The
 			operator&apos;smanual posted is for general information and use. To ensure
 			the downloadof the operator&apos;s manual specific to your unit, we
-			require a modeland serial number.&nbsp;<strong>Speed Disclaimer: </strong>
+			require a modeland serial number.&nbsp;
+			<strong>Speed Disclaimer: </strong>
 			Actual vehicle speed varies based onload, use and environmental
-			conditions.<strong>Battery Disclaimer: </strong>Battery and battery
+			conditions. <strong>Battery Disclaimer: </strong>Battery and battery
 			powered productperformance varies with load, use and environmental
-			conditions.<strong>Software Disclaimer:</strong> Software available on
-			Companywebsites is provided on an &apos;&apos;as is&apos;&apos; basis
+			conditions.&nbsp;<strong>Software Disclaimer:</strong> Software available
+			on Companywebsites is provided on an &apos;&apos;as is&apos;&apos; basis
 			without anywarranty of any kind, either express or implied. The download
 			and use ofany software is done at the user&apos;s own risk.&nbsp;
 			<strong>Professional Products:</strong> Cub Cadet commercial products

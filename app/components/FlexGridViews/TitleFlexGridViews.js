@@ -18,7 +18,7 @@ export default function TitleFlexGridViews({
 	return (
 		<div className={`max-w-screen-2xl mx-auto p-2 ${className}`}>
 			<ul className={`flex justify-center items-center mb-8`}>
-				<li className="">{title && title}</li>
+				<li>{title && title}</li>
 				<li className={`flex ml-auto ${breakpoint}:hidden`}>
 					<TitleFlexGridViewsButtons
 						setWhichView={setWhichView}

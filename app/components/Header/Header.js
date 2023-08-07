@@ -103,7 +103,7 @@ export default function Header({ menuItems }) {
 				/>
 			)}
 
-			<ul className="mb-3 border-b">
+			<ul className="border-b">
 				<li>
 					<Promo />
 				</li>

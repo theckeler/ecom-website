@@ -34,7 +34,7 @@ export default function Header({ menuItems }) {
 			title: "Stores",
 			buttonIcon: (
 				<Location
-					className="h-8 lg:mr-1 fill-white md:group-hover:fill-amber-400"
+					className="h-8 lg:mr-1 fill-white dark:fill-amber-400 md:group-hover:fill-amber-400"
 					style={{ minWidth: "2em", maxWidth: "2em" }}
 				/>
 			),
@@ -45,7 +45,7 @@ export default function Header({ menuItems }) {
 			title: "Help",
 			buttonIcon: (
 				<Help
-					className="h-8 lg:mr-1 fill-white md:group-hover:fill-amber-400"
+					className="h-8 lg:mr-1 fill-white dark:fill-amber-400 md:group-hover:fill-amber-400"
 					style={{ minWidth: "2em", maxWidth: "2em" }}
 				/>
 			),
@@ -56,7 +56,7 @@ export default function Header({ menuItems }) {
 			title: "Account",
 			buttonIcon: (
 				<Account
-					className="h-8 lg:mr-1 fill-white md:group-hover:fill-amber-400"
+					className="h-8 lg:mr-1 fill-white dark:fill-amber-400 md:group-hover:fill-amber-400"
 					style={{ minWidth: "2em", maxWidth: "2em" }}
 				/>
 			),
@@ -67,7 +67,7 @@ export default function Header({ menuItems }) {
 			title: "Cart",
 			buttonIcon: (
 				<Cart
-					className="h-8 lg:mr-1 fill-white md:group-hover:fill-amber-400"
+					className="h-8 lg:mr-1 fill-white dark:fill-amber-400 md:group-hover:fill-amber-400"
 					style={{ minWidth: "2em", maxWidth: "2em" }}
 				/>
 			),
@@ -153,7 +153,7 @@ export default function Header({ menuItems }) {
 				<ul className="max-w-screen-2xl mx-auto flex flex-row items-center w-full">
 					<li className="p-2">
 						<Link href="/" aria-label="Return Home">
-							<Logo className="w-40 dark:fill-white" />
+							<Logo className="w-40 dark:fill-amber-400" />
 						</Link>
 					</li>
 					<li className="ml-auto">
@@ -186,7 +186,7 @@ export default function Header({ menuItems }) {
 									<span className="text-sm text-bold leading-none">Menu</span>
 								</li>
 								<li>
-									<Hamburger className="w-12" fillColor="#000" />
+									<Hamburger className="w-12 dark:fill-amber-400" />
 								</li>
 							</ul>
 						</button>
@@ -194,7 +194,7 @@ export default function Header({ menuItems }) {
 				</ul>
 			</div>
 
-			<div className="bg-gray-200 lg:hidden">
+			<div className="bg-gray-200 dark:bg-neutral-700 lg:hidden">
 				<div className="max-w-screen-2xl mx-auto text-center p-2">
 					<InputButton
 						{...{
@@ -204,12 +204,13 @@ export default function Header({ menuItems }) {
 								id: "search-bar",
 								placeholder: "Search",
 								name: "search",
-								className: "",
+								className: "dark:bg-neutral-200",
 							},
 							button: {
 								title: "Search",
 								ariaLabel: null,
-								className: "bg-amber-400 text-black",
+								className:
+									"bg-amber-400 dark:bg-black text-black dark:text-white",
 							},
 						}}
 					/>

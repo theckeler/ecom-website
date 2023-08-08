@@ -46,6 +46,10 @@ module.exports = {
 		"lg:min-h-xl",
 
 		"min-h-[50%]",
+
+		"dark:text-black",
+		"dark:bg-amber-400",
+		"dark:text-white",
 	],
 	theme: {
 		minHeight: {

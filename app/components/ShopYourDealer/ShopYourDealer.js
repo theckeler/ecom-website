@@ -15,7 +15,7 @@ export default function ShopYourDealer() {
 					ToggleMenu("dealers");
 				}}>
 				<StoreIcon
-					className="h-8 mr-1 md:mr-2 fill-white"
+					className="h-8 mr-1 md:mr-2 fill-white dark:fill-amber-400"
 					style={{ minWidth: "2em", maxWidth: "2em" }}
 				/>
 				Shop your Dealer

@@ -61,23 +61,33 @@ export default function Footer() {
 					links: [
 						{
 							title: "Facebook",
-							icon: <Icons icon="facebook" className="w-12 mr-1" />,
+							icon: (
+								<Icons icon="facebook" className="w-12 mr-1 dark:fill-white" />
+							),
 						},
 						{
 							title: "LinkedIn",
-							icon: <Icons icon="linkedin" className="w-12 mr-1" />,
+							icon: (
+								<Icons icon="linkedin" className="w-12 mr-1 dark:fill-white" />
+							),
 						},
 						{
 							title: "Instagram",
-							icon: <Icons icon="instagram" className="w-12 mr-1" />,
+							icon: (
+								<Icons icon="instagram" className="w-12 mr-1 dark:fill-white" />
+							),
 						},
 						{
 							title: "Twitter",
-							icon: <Icons icon="twitter" className="w-12 mr-1" />,
+							icon: (
+								<Icons icon="twitter" className="w-12 mr-1 dark:fill-white" />
+							),
 						},
 						{
 							title: "YouTube",
-							icon: <Icons icon="youtube" className="w-12 mr-1" />,
+							icon: (
+								<Icons icon="youtube" className="w-12 mr-1 dark:fill-white" />
+							),
 						},
 					],
 					className: `max-w-screen-2xl mx-auto items-center sm:justify-center lg:justify-start ${footerPadding}`,
@@ -94,7 +104,7 @@ export default function Footer() {
 					},
 					className: `max-w-screen-2xl mx-auto ${footerPadding}`,
 					component: (
-						<Terms className="p-5 lg:p-0 lg:pt-8 text-xs leading-tight" />
+						<Terms className="p-5 lg:p-0 lg:pt-8 text-xs leading-tight dark:text-neutral-400" />
 					),
 				}}
 			/>
@@ -118,13 +128,13 @@ export default function Footer() {
 						}}
 					/>
 				</li>
-				<li className="text-center lg:text-left text-sm lg:col-start-1 lg:row-start-1">
+				<li className="text-center lg:text-left text-sm lg:col-start-1 lg:row-start-1 dark:text-neutral-200">
 					©2022 Cubcadet. All Rights Reserved.
 				</li>
 			</ul>
 
 			<div
-				className={`max-w-screen-2xl mx-auto text-sm font-bold text-center lg:text-left mt-6 ${footerPadding}`}>
+				className={`max-w-screen-2xl mx-auto text-sm font-bold text-center lg:text-left mt-6 dark:text-white ${footerPadding}`}>
 				If you experience any problems accessing this website,{" "}
 				<br className="hidden sm:block lg:hidden" />
 				please call us at 1-877-428-2349 for assistance.

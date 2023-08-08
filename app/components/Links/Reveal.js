@@ -50,7 +50,7 @@ export default function LinksReveal({
 					/>
 				)}
 			</div>
-			<hr className="border-t border-gray-300 sm:hidden" />
+			<hr className="border-t border-gray-300 dark:border-neutral-800 sm:hidden" />
 		</div>
 	);
 }

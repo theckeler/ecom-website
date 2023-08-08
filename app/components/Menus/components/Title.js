@@ -7,7 +7,8 @@ import InputButton from "@/components/Form/InputButton";
 
 export default function MenuTitle({ className, title, componentType }) {
 	return (
-		<ul className={`w-100 flex items-center w-100 py-1 ${className}`}>
+		<ul
+			className={`dark:bg-black w-100 flex items-center w-100 py-1 ${className}`}>
 			<li
 				className={`w-100 grow font-bold text-left pl-3  ${
 					componentType === "subNav" && "hidden lg:block"
@@ -21,7 +22,8 @@ export default function MenuTitle({ className, title, componentType }) {
 								id: "search",
 								placeholder: "Search",
 								name: "search",
-								className: "border-amber-400 border-2",
+								className:
+									"border-amber-400 border-2 dark:bg-neutral-900 dark:text-white",
 							},
 							button: {
 								title: "Search",
@@ -31,7 +33,7 @@ export default function MenuTitle({ className, title, componentType }) {
 						}}
 					/>
 				)}
-				<span className="text-xl">{!!title && title}</span>
+				<span className="text-xl dark:text-white">{!!title && title}</span>
 			</li>
 
 			{componentType === "subNav" && (
@@ -59,7 +61,7 @@ export default function MenuTitle({ className, title, componentType }) {
 					}}
 					className="flex items-center justify-center w-12 h-12"
 					aria-label="Close">
-					<Close className="w-12 h-12 rounded-full bg-white" />
+					<Close className="w-12 h-12 rounded-full bg-white dark:bg-amber-400" />
 				</button>
 			</li>
 		</ul>

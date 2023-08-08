@@ -180,7 +180,7 @@
 			"button": {
 				"title": "Shop Ultima Series™ Zero-Turns",
 				"href": "/lawn-mowers/riding-lawn-mowers/zero-turn-mowers",
-				"className": "bg-black dark:bg-neutral-700 text-white"
+				"className": "bg-black dark:bg-amber-400 text-white dark:text-black"
 			},
 			"span": true,
 			"noIMG": true,

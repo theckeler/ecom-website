@@ -14,7 +14,7 @@ import Location from "@/icons/Location";
 
 export default function Nav({ menuItems }) {
 	return (
-		<ul className="flex flex-col lg:flex-row divide-y lg:divide-none divide-solid lg:border-0 pb-8 lg:pb-0">
+		<ul className="flex flex-col lg:flex-row divide-y lg:divide-none divide-solid lg:border-0 pb-8 lg:pb-0 dark:divide-neutral-800">
 			{menuItems.map((menu, i) => {
 				const Icons = {
 					store: Store,

@@ -48,13 +48,13 @@ export default function Index() {
 				/>
 			</li>
 
-			<li className="mt-4 bg-gray-300 lg:py-8">
+			<li className="mt-4 bg-gray-300 dark:bg-neutral-700 lg:py-8">
 				<div className="max-w-screen-2xl mx-auto p-2">
 					<ProductFinder className="" />
 				</div>
 			</li>
 
-			<li className="bg-gray-200 py-4 lg:py-10">
+			<li className="bg-gray-200 dark:bg-neutral-600 py-4 lg:py-10">
 				<TitleFlexGridViews
 					breakpoint="md"
 					jsonData={homeJSON.ctaBlocks}

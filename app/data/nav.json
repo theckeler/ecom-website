@@ -161,7 +161,7 @@
 		"title": "Shop Your Dealer",
 		"icon": "store",
 		"url": "#top",
-		"className": "lg:hidden",
+		"className": "lg:hidden dark:fill-white",
 		"slug": "dealer",
 		"showMenu": true,
 		"sub": false
@@ -170,7 +170,7 @@
 		"title": "Cub Cadet Dealer Locator & Store Locations",
 		"icon": "location",
 		"url": "#top",
-		"className": "lg:hidden",
+		"className": "lg:hidden dark:fill-white",
 		"slug": "stores",
 		"showMenu": true,
 		"sub": false
@@ -179,7 +179,7 @@
 		"title": "Help",
 		"icon": "help",
 		"url": "#top",
-		"className": "lg:hidden",
+		"className": "lg:hidden dark:fill-white",
 		"slug": "help",
 		"showMenu": true,
 		"sub": false
@@ -188,7 +188,7 @@
 		"title": "Account",
 		"icon": "account",
 		"url": "#top",
-		"className": "lg:hidden",
+		"className": "lg:hidden dark:fill-white",
 		"slug": "account",
 		"showMenu": true,
 		"sub": false
@@ -197,7 +197,7 @@
 		"title": "Cart",
 		"icon": "cart",
 		"url": "#top",
-		"className": "lg:hidden",
+		"className": "lg:hidden dark:fill-white",
 		"slug": "cart",
 		"sub": false
 	},

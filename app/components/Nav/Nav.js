@@ -48,8 +48,8 @@ export default function Nav({ menuItems }) {
 									{menu.title}
 									{menu.sub && (
 										<span className="ml-auto">
-											<ChevronRight className="lg:hidden w-6 fill-black" />
-											<ExpandMore className="hidden lg:block w-6 fill-black" />
+											<ChevronRight className="lg:hidden w-6 fill-black dark:fill-white" />
+											<ExpandMore className="hidden lg:block w-6 fill-black dark:fill-white" />
 										</span>
 									)}
 								</li>

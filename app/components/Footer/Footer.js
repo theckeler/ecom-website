@@ -1,5 +1,3 @@
-"use client";
-
 import BlockSignUp from "./components/SignUp";
 import Terms from "./components/Terms";
 
@@ -7,6 +5,7 @@ import FooterLinks from "@/components/Links/Reveal";
 import footerNavData from "@/data/nav-footer.json";
 
 import Icons from "@/icons/Icons";
+import ThemeSwitch from "../ThemeSwitch";
 
 export default function Footer() {
 	const footerPadding = "px-4";
@@ -130,6 +129,8 @@ export default function Footer() {
 				<br className="hidden sm:block lg:hidden" />
 				please call us at 1-877-428-2349 for assistance.
 			</div>
+
+			<ThemeSwitch />
 		</footer>
 	);
 }

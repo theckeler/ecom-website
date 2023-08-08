@@ -26,9 +26,16 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+	let theme;
+	if (typeof window !== "undefined") {
+		theme = localStorage.getItem("theme");
+	} else {
+		theme = "light";
+	}
+
 	return (
-		<html lang="en">
-			<body className="bg-white">
+		<html lang="en" className={theme}>
+			<body className="bg-white dark:bg-neutral-800">
 				<Header menuItems={menuItems} />
 				<Menu
 					menu={{

@@ -79,7 +79,7 @@
 				"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
 				"className": "bg-black text-white"
 			},
-			"className": "bg-amber-400",
+			"className": "bg-amber-400 z",
 			"lineClamp": true
 		},
 		{
@@ -180,11 +180,11 @@
 			"button": {
 				"title": "Shop Ultima Series™ Zero-Turns",
 				"href": "/lawn-mowers/riding-lawn-mowers/zero-turn-mowers",
-				"className": "bg-black text-white"
+				"className": "bg-black dark:bg-neutral-700 text-white"
 			},
 			"span": true,
 			"noIMG": true,
-			"className": "bg-amber-400"
+			"className": "bg-amber-400 dark:bg-neutral-900 dark:text-white"
 		},
 		{
 			"title": "Tackle Your Yard",

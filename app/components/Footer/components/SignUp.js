@@ -12,11 +12,13 @@ export default function BlockSignUp() {
 					id="email-subscribe-form"
 					role="form"
 					autoComplete="on">
-					<h2 className="relative font-bold p-4 sm:p-0 sm:pb-1 lg:pb-3 flex 2xl:text-lg border-b mb-4">
+					<h2 className="relative font-bold p-4 sm:p-0 sm:pb-1 lg:pb-3 flex 2xl:text-lg border-b mb-4 dark:text-neutral-400">
 						Sign up for Emails from Cub Cadet
 					</h2>
 					<div className="px-4">
-						<label htmlFor="email-signup" className="text-xs mb-4 block">
+						<label
+							htmlFor="email-signup"
+							className="text-xs mb-4 block dark:text-white">
 							Sign up to receive communication on services, products and special
 							offers. You may unsubscribe at any time. Please refer to our{" "}
 							<a
@@ -35,7 +37,7 @@ export default function BlockSignUp() {
 									id: "email-signup",
 									placeholder: "Enter in your email address",
 									name: "email-signup",
-									className: "border-amber-400 border-2",
+									className: "border-amber-400 border-2 dark:bg-neutral-800",
 								},
 								button: {
 									title: "Next",

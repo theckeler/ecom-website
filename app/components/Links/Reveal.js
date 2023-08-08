@@ -18,7 +18,7 @@ export default function LinksReveal({
 			} ${className}`}>
 			{title && (
 				<h3
-					className={`relative font-bold p-4 sm:p-0 flex truncate ${
+					className={`relative font-bold p-4 sm:p-0 flex truncate dark:text-neutral-400 ${
 						row ? "sm:py-5" : "sm:pb-3 sm:border-b"
 					} ${title.className}`}>
 					<button
@@ -32,7 +32,7 @@ export default function LinksReveal({
 						}}
 					/>
 					{title.copy}
-					<ExpandMore className="sm:hidden ml-auto w-6" />
+					<ExpandMore className="sm:hidden ml-auto w-6 dark:fill-white" />
 				</h3>
 			)}
 

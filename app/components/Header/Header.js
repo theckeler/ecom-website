@@ -30,18 +30,6 @@ export default function Header({ menuItems }) {
 	}, [oopsTriggered, searchParams]);
 
 	const buttonItems = [
-		// {
-		// 	title: "Search",
-		// 	buttonIcon: (
-		// 		<Search
-		// 			className="h-8 lg:mr-1 fill-white"
-		// 			style={{ minWidth: "2em", maxWidth: "2em" }}
-		// 		/>
-		// 	),
-		// 	url: null,
-		// 	onClick: () => ToggleMenu("search"),
-		// 	className: "hidden lg:flex",
-		// },
 		{
 			title: "Stores",
 			buttonIcon: (
@@ -103,7 +91,7 @@ export default function Header({ menuItems }) {
 				/>
 			)}
 
-			<ul className="border-b">
+			<ul className="border-b dark:border-neutral-700">
 				<li>
 					<Promo />
 				</li>
@@ -127,7 +115,7 @@ export default function Header({ menuItems }) {
 													placeholder: "Search",
 													name: "search",
 													className:
-														"text-sm bg-neutral-700 text-white border border-neutral-700 group-hover:border-amber-400 outline-0 placeholder:text-neutral-500 placeholder:italic w-full",
+														"text-sm bg-neutral-700 dark:bg-neutral-600 text-white border border-neutral-700 group-hover:border-amber-400 outline-0 placeholder:text-neutral-500 placeholder:italic w-full",
 												},
 												icon: <Search className="w-8 fill-black" />,
 												button: {
@@ -159,11 +147,13 @@ export default function Header({ menuItems }) {
 				</li>
 			</ul>
 
-			<div className="bg-white border-b" id="sticky-nav">
+			<div
+				className="bg-white dark:bg-black border-b dark:border-neutral-700"
+				id="sticky-nav">
 				<ul className="max-w-screen-2xl mx-auto flex flex-row items-center w-full">
 					<li className="p-2">
 						<Link href="/" aria-label="Return Home">
-							<Logo className="w-40" />
+							<Logo className="w-40 dark:fill-white" />
 						</Link>
 					</li>
 					<li className="ml-auto">

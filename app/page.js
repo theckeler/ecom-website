@@ -1,4 +1,5 @@
 import H1 from "@/components/H1";
+import H2 from "@/components/H2";
 import CTAHero from "@/components/Hero";
 import ProductFinder from "@/components/Product/Finder";
 
@@ -6,6 +7,7 @@ import homeJSON from "@/data/home.json";
 import TitleFlexGridViews from "@/components/FlexGridViews/TitleFlexGridViews";
 import IconGridView from "@/icons/GridView";
 import FlexView from "@/icons/FlexView";
+import Articles from "@/components/Articles/Articles";
 
 export default function Index() {
 	const buttons = [
@@ -66,14 +68,6 @@ export default function Index() {
 			</li>
 
 			<li className="max-w-screen-2xl mx-auto py-3 lg:py-8">
-				{/* <CTAHero
-					block={homeJSON.ctaHero[1]}
-					blockWidths={{ l: 4, r: 8 }}
-					minHeight="xs"
-					reverse
-					fullButton
-				/>  */}
-
 				<CTAHero
 					block={homeJSON.ctaHero[2]}
 					reverse
@@ -81,26 +75,20 @@ export default function Index() {
 					className="pt-6 px-2"
 				/>
 
-				{/* <CTAHero
-					block={homeJSON.ctaHero[1]}
-					blockWidths={{ l: 6, r: 6 }}
-					minHeight="xs"
-					className="mt-6"
-				/> */}
-
 				<CTAHero
 					block={homeJSON.ctaHero[1]}
 					blockWidths={{ l: 8, r: 4 }}
 					minHeight="xl"
 					className="mt-6 px-2"
 				/>
-
-				{/* <CTAHero
-					block={homeJSON.ctaHero[1]}
-					blockWidths={{ l: 9, r: 3 }}
-					minHeight="xs"
-					className="mt-6"
-				/>  */}
+			</li>
+			<li className="bg-neutral-200 py-3 lg:py-8">
+				<div className="max-w-screen-2xl mx-auto p-2">
+					<Articles
+						limitNum={4}
+						card={{ className: "bg-gray-100", noImg: true }}
+					/>
+				</div>
 			</li>
 		</ul>
 	);

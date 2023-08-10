@@ -1,38 +1,87 @@
 [
 	{
-		"title": "How to Change the Air Filter in Zero-Turn Lawn Mower",
-		"copy": "Changing the air filter in your zero-turn lawn mower is very easy with a little direction. Watch our instructional video that will take you step by step through",
+		"title": "Is An Electric Rider Right For You?",
+		"p": "Cub Cadet® riding mowers provide a hassle-free, easy to use mowing experience, delivering uncompromising power, minimal maintenance and the cut quality you can expect from its gas counterpart. But is an electric riding mower right for you? You’ll need to consider a few factors before making that determination.",
+		"copy": "article",
+		"img": {
+			"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw80702b2c/images/product-line-browse/Main-Carousel/Hero_ElectricMower_Desktop_1015x630.jpg?sw=1116"
+		},
 		"type": "MAINTENANCE",
-		"url": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
+		"button": {
+			"title": "Read More",
+			"href": "/articles/0"
+		}
 	},
 	{
 		"title": "How to Change the Deck Belt on a Cub Cadet Zero-Turn Rider",
-		"copy": "Change the mower deck belt on your Cub Cadet zero-turn mower with these helpful tips. Cub Cadet has the mower deck parts and advice you need to do a mower deck belt replacement on your own. Learn mower about repairing your",
+		"p": "Change the mower deck belt on your Cub Cadet zero-turn mower with these helpful tips. Cub Cadet has the mower deck parts and advice you need to do a mower deck belt replacement on your own. Learn mower about repairing your",
+		"img": {
+			"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/zero-turn-2.jpg"
+		},
 		"type": "REPAIRS",
-		"url": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
+		"button": {
+			"title": "Read More",
+			"href": "/articles/1"
+		}
 	},
 	{
 		"title": "How to Change the Gas on a Cub Cadet Zero-Turn Rider",
-		"copy": "Changing the air filter in your zero-turn lawn mower is very easy with a little direction. Watch our instructional video that will take you step by step through",
+		"p": "Changing the air filter in your zero-turn lawn mower is very easy with a little direction. Watch our instructional video that will take you step by step through",
+		"img": {
+			"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/zero-turn-3.jpg"
+		},
 		"type": "MAINTENANCE",
-		"url": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
+		"button": {
+			"title": "Read More",
+			"href": "/articles/2"
+		}
 	},
 	{
 		"title": "How to Change the Oil on a Cub Cadet Zero-Turn Rider",
-		"copy": "Learn how to change the oil in a riding lawn mower with instructions from Cub Cadet. Our video and tips make changing the lawn mower oil on your zero-turn",
+		"p": "Learn how to change the oil in a riding lawn mower with instructions from Cub Cadet. Our video and tips make changing the lawn mower oil on your zero-turn",
+		"img": {
+			"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw79307f23/Knowledge_Center/help-center/how-to-change-the-oil-in-a-cub-cadet-riding-lawn-mower_1100x572.jpg?sw=472&sh=245&sm=cut"
+		},
 		"type": "MAINTENANCE",
-		"url": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
+		"button": {
+			"title": "Read More",
+			"href": "/articles/3"
+		}
 	},
 	{
 		"title": "Maintenance Schedule and Tips",
-		"copy": "Learn how to keep your mower running smoothly with Cub Cadet's zero-turn mower maintenance schedule and tips.",
+		"p": "Learn how to keep your mower running smoothly with Cub Cadet's zero-turn mower maintenance schedule and tips.",
 		"type": "MAINTENANCE",
-		"url": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
+		"button": {
+			"title": "Read More",
+			"href": "/articles/4"
+		}
 	},
 	{
 		"title": "Zero-Turn Operation Tips",
-		"copy": "Find out how to use a zero-turn riding lawn mower with these tips from Cub Cadet. Zero-turn mowers allow you greater control over your lawn, especially",
+		"p": "Find out how to use a zero-turn riding lawn mower with these tips from Cub Cadet. Zero-turn mowers allow you greater control over your lawn, especially",
 		"type": "TRICKS AND TIPS",
-		"url": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
+		"button": {
+			"title": "Read More",
+			"href": "/articles/5"
+		}
+	},
+	{
+		"title": "Aenean rutrum enim eget vulputate",
+		"p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel mauris accumsan, vestibulum odio ac, finibus metus. Sed congue lobortis mi id bibendum. Aenean sit amet ipsum eget quam finibus pellentesque. Nunc dui dui, pulvinar et dignissim at, porta id leo. Morbi ex dolor, dapibus a facilisis et, posuere sit amet arcu. In scelerisque vitae lorem et pellentesque. Nullam quis libero lacinia ligula consequat viverra. Maecenas lobortis ultricies velit, vel volutpat erat tincidunt et. Sed volutpat facilisis ipsum nec luctus. Suspendisse molestie, quam non varius ultrices, mauris augue congue augue, interdum sollicitudin est tortor ac quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
+		"type": "TRICKS AND TIPS",
+		"button": {
+			"title": "Read More",
+			"href": "/articles/6"
+		}
+	},
+	{
+		"title": "Suspendisse a nisi ultricies",
+		"p": "Praesent interdum sollicitudin ex, nec suscipit massa eleifend sed. Donec malesuada varius nulla ut fermentum. Aliquam sed magna id erat posuere vestibulum. Proin condimentum quam ipsum, at aliquam augue volutpat sit amet. Curabitur lorem nibh, dictum vitae consectetur tristique, semper at justo. Etiam imperdiet augue ligula, eu suscipit urna vehicula euismod. Quisque fermentum quam id accumsan tempus. Morbi hendrerit id ipsum eget interdum. Vestibulum ultrices nisi vel justo pellentesque, sollicitudin ullamcorper urna efficitur. Nam in nibh vel tortor scelerisque blandit in laoreet arcu. Ut purus ex, rutrum at aliquet nec, malesuada nec dolor. Vivamus in ante sit amet arcu blandit accumsan nec eget sapien. Nullam auctor lacus ut diam venenatis, euismod ullamcorper lorem interdum. Aliquam erat volutpat. Integer eu aliquam lacus.",
+		"type": "TRICKS AND TIPS",
+		"button": {
+			"title": "Read More",
+			"href": "/articles/7"
+		}
 	}
 ]

@@ -19,10 +19,17 @@ export default function Oops({ className }) {
 			tile: "PLP Page",
 			url: "/lawn-mowers/riding-lawn-mowers/zero-turn-mowers#top",
 		},
-		,
 		{
 			tile: "PDP Page",
 			url: "/lawn-mowers/riding-lawn-mowers/zero-turn-mowers/1",
+		},
+		{
+			tile: "Articles Page",
+			url: "/articles/",
+		},
+		{
+			tile: "Article Page",
+			url: "/articles/0/",
 		},
 	];
 

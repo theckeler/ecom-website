@@ -91,61 +91,57 @@ export default function Header({ menuItems }) {
 				/>
 			)}
 
-			<ul className="border-b dark:border-neutral-700">
-				<li>
-					<Promo />
-				</li>
+			<Promo />
 
-				<li className="bg-neutral-800 py-2">
-					<div className="max-w-screen-2xl mx-auto text-center">
-						<ul className="flex gap-6 xl:gap-10 2xl:gap-20 items-center text-sm">
-							<li className="shrink">
-								<ShopYourDealer />
-							</li>
+			<div className="bg-neutral-800 py-2 border-b dark:border-neutral-700">
+				<div className="max-w-screen-2xl mx-auto text-center">
+					<ul className="flex gap-6 xl:gap-10 2xl:gap-20 items-center text-sm">
+						{/* <li className="shrink">
+							<ShopYourDealer />
+						</li> */}
 
-							<li className="grow flex justify-end">
-								<ul className="flex">
-									<li className="hidden lg:flex justify-end grow basis-full pr-4">
-										<InputButton
-											{...{
-												className: "group",
-												padding: "px-3",
-												input: {
-													id: "search-bar-header",
-													placeholder: "Search",
-													name: "search",
-													className:
-														"text-sm bg-neutral-700 dark:bg-neutral-600 text-white border border-neutral-700 group-hover:border-amber-400 outline-0 placeholder:text-neutral-500 placeholder:italic w-full",
-												},
-												icon: <Search className="w-8 fill-black" />,
-												button: {
-													title: "Search",
-													ariaLabel: null,
-													className:
-														"bg-neutral-300 group-hover:bg-amber-400 text-black text-sm min-h-[4em]",
-												},
-											}}
+						<li className="grow flex justify-end">
+							<ul className="flex">
+								<li className="hidden lg:flex justify-end grow basis-full pr-4">
+									<InputButton
+										{...{
+											className: "group",
+											padding: "px-3",
+											input: {
+												id: "search-bar-header",
+												placeholder: "Search",
+												name: "search",
+												className:
+													"text-sm bg-neutral-700 dark:bg-neutral-600 text-white border border-neutral-700 group-hover:border-amber-400 outline-0 placeholder:text-neutral-500 placeholder:italic w-full",
+											},
+											icon: <Search className="w-8 fill-black" />,
+											button: {
+												title: "Search",
+												ariaLabel: null,
+												className:
+													"bg-neutral-300 group-hover:bg-amber-400 text-black text-sm min-h-[4em]",
+											},
+										}}
+									/>
+								</li>
+								{buttonItems.map((menu, i) => (
+									<li className="shrink" key={i}>
+										<HeaderButton
+											title={menu.title}
+											buttonIcon={menu.buttonIcon}
+											onClick={menu.onClick}
+											ariaLabel={menu.title}
+											mobile
+											fillColor="fill-white"
+											className={menu.className + " text-white "}
 										/>
 									</li>
-									{buttonItems.map((menu, i) => (
-										<li className="shrink" key={i}>
-											<HeaderButton
-												title={menu.title}
-												buttonIcon={menu.buttonIcon}
-												onClick={menu.onClick}
-												ariaLabel={menu.title}
-												mobile
-												fillColor="fill-white"
-												className={menu.className + " text-white "}
-											/>
-										</li>
-									))}
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</li>
-			</ul>
+								))}
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
 
 			<div
 				className="bg-white dark:bg-black border-b dark:border-neutral-700"

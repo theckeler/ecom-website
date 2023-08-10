@@ -46,7 +46,7 @@ export default function MenuTitle({ className, title, componentType }) {
 						aria-label={`Back to the main menu`}>
 						<ul className="font-bold flex items-center">
 							<li className="w-10">
-								<ChevronLeft className="fill-black" />
+								<ChevronLeft className="fill-black dark:fill-white" />
 							</li>
 							<li>Back to the main menu</li>
 						</ul>
@@ -59,9 +59,9 @@ export default function MenuTitle({ className, title, componentType }) {
 					onClick={() => {
 						ToggleMenu(null);
 					}}
-					className="flex items-center justify-center w-12 h-12"
+					className="flex items-center justify-center p-1"
 					aria-label="Close">
-					<Close className="w-12 h-12 rounded-full bg-white dark:bg-amber-400" />
+					<Close className="w-10 h-10 rounded-full bg-gray-200 dark:bg-amber-400 p-1" />
 				</button>
 			</li>
 		</ul>

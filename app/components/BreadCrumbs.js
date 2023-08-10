@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import Link from "next/link";
 import Button from "./Buttons/Main";
 
 export default function BreadCrumbs({
@@ -13,7 +14,7 @@ export default function BreadCrumbs({
 				<ul className="grid grid-flow-col items-center text-xs">
 					{crumbs.map(function (crumb, i) {
 						const checkNum = i < crumbs.length - 1 ? true : false;
-						const LinkElement = checkNum ? "a" : "div";
+						const LinkElement = checkNum ? Link : "div";
 						const crumbCSS = i === 0 ? "py-1 pr-1" : "p-1";
 						return (
 							<Fragment key={i}>

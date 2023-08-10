@@ -6,7 +6,7 @@
 		},
 		"links": [
 			{ "title": "Our Story" },
-			{ "title": "How-To Articles" },
+			{ "title": "How-To Articles", "url": "/articles/" },
 			{ "title": "Special Offers" },
 			{ "title": "News" },
 			{ "title": "Financing" },

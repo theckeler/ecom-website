@@ -79,7 +79,7 @@
 				"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
 				"className": "bg-black text-white"
 			},
-			"className": "bg-amber-400 z",
+			"className": "bg-amber-400 ",
 			"lineClamp": true
 		},
 		{
@@ -121,7 +121,7 @@
 				"href": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
 				"className": "bg-amber-400 text-black"
 			},
-			"className": "bg-gray-800 text-white",
+			"className": "bg-black text-white",
 			"lineClamp": true
 		}
 	],

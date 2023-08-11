@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ButtonMain from "app/components/Buttons/Main";
 
-export default function Card({ className, block, buttonWide, noImg }) {
+export default function Card({ className, block, buttonWide }) {
 	return (
 		<Link
 			href={block.button.href}

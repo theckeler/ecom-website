@@ -8,6 +8,7 @@ import TitleFlexGridViews from "@/components/FlexGridViews/TitleFlexGridViews";
 import IconGridView from "@/icons/GridView";
 import FlexView from "@/icons/FlexView";
 import Articles from "@/components/Articles/Articles";
+import articlesData from "@/data/articles.json";
 
 export default function Index() {
 	const buttons = [
@@ -37,6 +38,7 @@ export default function Index() {
 
 			<li>
 				<TitleFlexGridViews
+					card={{ className: "" }}
 					jsonData={homeJSON.categories}
 					title={
 						<H1
@@ -58,6 +60,7 @@ export default function Index() {
 
 			<li className="bg-gray-200 dark:bg-neutral-600 py-4 lg:py-10">
 				<TitleFlexGridViews
+					card={{ className: "" }}
 					breakpoint="md"
 					jsonData={homeJSON.ctaBlocks}
 					title={<H1 title="" srOnly="Cub Cadet" className="lg:text-center" />}
@@ -84,9 +87,14 @@ export default function Index() {
 			</li>
 			<li className="bg-neutral-200 py-3 lg:py-8">
 				<div className="max-w-screen-2xl mx-auto p-2">
-					<Articles
+					<TitleFlexGridViews
+						jsonData={articlesData}
+						card={{ className: "bg-gray-100" }}
 						limitNum={4}
-						card={{ className: "bg-gray-100", noImg: true }}
+						breakpoint="md"
+						title={<H1 title="" srOnly="" className="lg:text-center" />}
+						gridCSS="max-w-screen-2xl mx-auto flex md:grid md:grid-cols-2 xl:grid-cols-4 gap-2 pb-6 lg:pb-0 overflow-x-auto overflow-scrollbar"
+						buttons={buttons}
 					/>
 				</div>
 			</li>

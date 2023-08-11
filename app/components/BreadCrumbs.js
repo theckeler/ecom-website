@@ -18,7 +18,7 @@ export default function BreadCrumbs({
 						const crumbCSS = i === 0 ? "py-1 pr-1" : "p-1";
 						return (
 							<Fragment key={i}>
-								<li className={`${crumbCSS} ${checkNum ? "truncate" : ""} `}>
+								<li className={`truncate ${crumbCSS}`}>
 									<LinkElement
 										href={
 											crumb.url

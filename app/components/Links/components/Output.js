@@ -20,7 +20,7 @@ export default function LinksOutput({
 									? link.url
 									: "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp"
 							}>
-							{link.icon && link.icon}
+							{link.icon && <span className="w-12">{link.icon}</span>}
 							<span className={`inline-block w-full ${link.className}`}>
 								{link.title}
 							</span>

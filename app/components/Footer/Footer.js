@@ -62,31 +62,34 @@ export default function Footer() {
 						{
 							title: "Facebook",
 							icon: (
-								<Icons icon="facebook" className="w-12 mr-1 dark:fill-white" />
+								<Icons icon="facebook" className="w-100 mr-1 dark:fill-white" />
 							),
 						},
 						{
 							title: "LinkedIn",
 							icon: (
-								<Icons icon="linkedin" className="w-12 mr-1 dark:fill-white" />
+								<Icons icon="linkedin" className="w-100 mr-1 dark:fill-white" />
 							),
 						},
 						{
 							title: "Instagram",
 							icon: (
-								<Icons icon="instagram" className="w-12 mr-1 dark:fill-white" />
+								<Icons
+									icon="instagram"
+									className="w-100 mr-1 dark:fill-white"
+								/>
 							),
 						},
 						{
 							title: "Twitter",
 							icon: (
-								<Icons icon="twitter" className="w-12 mr-1 dark:fill-white" />
+								<Icons icon="twitter" className="w-100 mr-1 dark:fill-white" />
 							),
 						},
 						{
 							title: "YouTube",
 							icon: (
-								<Icons icon="youtube" className="w-12 mr-1 dark:fill-white" />
+								<Icons icon="youtube" className="w-100 mr-1 dark:fill-white" />
 							),
 						},
 					],

@@ -31,7 +31,7 @@ export default function Index() {
 	return (
 		<ul className="">
 			<li className="mb-8">
-				<div className="max-w-screen-2xl mx-auto p-2">
+				<div className="max-w-screen-2xl mx-auto 2xl:p-2">
 					<CTAHero block={homeJSON.ctaHero[0]} minHeight="xl" />
 				</div>
 			</li>
@@ -44,10 +44,10 @@ export default function Index() {
 						<H1
 							title="Product Lineup"
 							srOnly="Cub Cadet"
-							className="lg:text-center"
+							className="lg:text-center mb-4"
 						/>
 					}
-					gridCSS="lg:grid lg:grid-cols-4 gap-2 pb-6 lg:pb-0 overflow-x-auto overflow-scrollbar"
+					gridCSS="lg:grid lg:grid-cols-4 gap-2 pb-6 overflow-x-auto overflow-scrollbar"
 					buttons={buttons}
 				/>
 			</li>
@@ -63,9 +63,9 @@ export default function Index() {
 					card={{ className: "" }}
 					breakpoint="md"
 					jsonData={homeJSON.ctaBlocks}
-					title={<H1 title="" srOnly="Cub Cadet" className="lg:text-center" />}
+					title={null}
 					buttonWide={true}
-					gridCSS="max-w-screen-2xl mx-auto flex md:grid md:grid-cols-2 xl:grid-cols-4 gap-2 pb-6 lg:pb-0 overflow-x-auto overflow-scrollbar"
+					gridCSS="max-w-screen-2xl mx-auto flex md:grid md:grid-cols-2 xl:grid-cols-4 gap-2  overflow-x-auto overflow-scrollbar"
 					buttons={buttons}
 				/>
 			</li>
@@ -75,14 +75,14 @@ export default function Index() {
 					block={homeJSON.ctaHero[2]}
 					reverse
 					minHeight="lg"
-					className="pt-6 px-2"
+					className="2xl:px-2"
 				/>
 
 				<CTAHero
 					block={homeJSON.ctaHero[1]}
 					blockWidths={{ l: 8, r: 4 }}
 					minHeight="xl"
-					className="mt-6 px-2"
+					className="mt-6 2xl:px-2"
 				/>
 			</li>
 			<li className="bg-neutral-200 py-3 lg:py-8">
@@ -92,7 +92,7 @@ export default function Index() {
 						card={{ className: "bg-gray-100" }}
 						limitNum={4}
 						breakpoint="md"
-						title={<H1 title="" srOnly="" className="lg:text-center" />}
+						title={null}
 						gridCSS="max-w-screen-2xl mx-auto flex md:grid md:grid-cols-2 xl:grid-cols-4 gap-2 pb-6 lg:pb-0 overflow-x-auto overflow-scrollbar"
 						buttons={buttons}
 					/>

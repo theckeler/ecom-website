@@ -50,6 +50,14 @@ module.exports = {
 		"dark:text-black",
 		"dark:bg-amber-400",
 		"dark:text-white",
+
+		"md:border-t-0",
+		"mt-4",
+		"md:mt-0",
+		"md:text-base",
+		"text-base",
+		"lg:text-xs",
+		"2xl:text-base",
 	],
 	theme: {
 		minHeight: {

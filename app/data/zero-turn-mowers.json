@@ -3,6 +3,7 @@
 		{
 			"title": "Riding Lawn Mowers",
 			"p": "Our quality lineup of riding lawn mowers, such as our zero-turn riders and lawn tractors, offers unparalleled strength and comfort so you can get the most out of your lawn.",
+			"lineClamp": true,
 			"small": "Incredible strength. Incredibly comfortable",
 			"img": {
 				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v9e835077e52279a69a54b4c30b00cf9f3c2d0358/ultima/product-ZT.jpg?version=1,639,577,706,000"
@@ -16,6 +17,7 @@
 		{
 			"title": "Walk-Behind Mowers",
 			"p": "From the Signature Cut™ series lawn mowers to the wide area mowers, every walk-behind mower features incredible control and maneuverability to match your mowing needs.",
+			"lineClamp": true,
 			"small": "Incredible strength. Incredibly comfortable",
 			"img": {
 				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v9e835077e52279a69a54b4c30b00cf9f3c2d0358/ultima/product-ZT.jpg?version=1,639,577,706,000"
@@ -29,6 +31,7 @@
 		{
 			"title": "Robotic Mowers",
 			"p": "With the XR3 robotic mower, we combined Cub Cadet power with innovative technology like the Smart Mode feature. With the touch of a button, you get a just-mowed look so you can focus on getting the most out of your yard.",
+			"lineClamp": true,
 			"small": "Incredible strength. Incredibly comfortable",
 			"img": {
 				"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v9e835077e52279a69a54b4c30b00cf9f3c2d0358/ultima/product-ZT.jpg?version=1,639,577,706,000"

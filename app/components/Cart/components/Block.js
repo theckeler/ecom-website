@@ -9,7 +9,7 @@ import currency from "@/functions/Currency";
 export default function CartBlock({ className, block, i }) {
 	return (
 		<React.Fragment key={i}>
-			<li className="col-span-2 sm:col-span-1 min-w-max min-h-[8em] relative">
+			<li className="min-w-max min-h-[8em] relative">
 				<Image
 					src={block.img.src}
 					fill
@@ -18,7 +18,7 @@ export default function CartBlock({ className, block, i }) {
 				/>
 			</li>
 
-			<li className="col-span-2 sm:col-span-1 sm:col-start-2">
+			<li className="sm:col-start-2">
 				<ul>
 					<li className="font-bold">{block.title}</li>
 					<li className="text-sm">{block.small}</li>

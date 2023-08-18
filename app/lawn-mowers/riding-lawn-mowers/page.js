@@ -28,7 +28,7 @@ export default function Index() {
 	];
 
 	return (
-		<ul className="pb-20">
+		<ul>
 			<li className="max-w-screen-2xl mx-auto p-2">
 				<BreadCrumbs
 					crumbs={[
@@ -36,7 +36,10 @@ export default function Index() {
 						{ title: "Lawn Mowers", url: "/lawn-mowers" },
 						{ title: "Riding Lawn Mowers" },
 					]}
-					cta={{ title: "Buy Stuff", url: "#products" }}
+					cta={{
+						title: "Buy Stuff",
+						url: "?oops=1",
+					}}
 				/>
 			</li>
 
@@ -44,9 +47,9 @@ export default function Index() {
 				<H1
 					title="Explore Riding Lawn Mowers"
 					srOnly="Cub Cadet"
-					className=""
+					className="p-2"
 				/>
-				<p className="text-sm mt-8 max-w-6xl leading-6">
+				<p className="text-sm mt-2 md:mb-4 max-w-6xl leading-6 p-2">
 					A complete lineup of zero-turn mowers, lawn and garden tractors, and
 					electric mowers, all featuring the strength and durability that bring
 					your lawn to life.
@@ -66,7 +69,7 @@ export default function Index() {
 				</div>
 			</li>
 
-			<li className="max-w-screen-2xl mx-auto p-2 border-t mt-20 pt-8">
+			<li className="max-w-screen-2xl mx-auto p-2 mt-20 pt-8">
 				<h2 className="text-3xl mb-8">Related Searches</h2>
 				<SEOLinks />
 			</li>

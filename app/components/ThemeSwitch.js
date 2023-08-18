@@ -21,7 +21,7 @@ export default function ThemeSwitch({ className }) {
 	};
 
 	return (
-		<div className="max-w-screen-2xl mx-auto grid items-center sm:justify-center mt-10">
+		<div className="max-w-screen-2xl mx-auto grid items-center justify-center mt-10">
 			<label className="relative inline-flex items-center cursor-pointer">
 				<input
 					type="checkbox"
@@ -33,7 +33,7 @@ export default function ThemeSwitch({ className }) {
 				/>
 				<div className="w-11 h-6 peer-focus:outline-none peer-focus:ring-4 rounded-full peer bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border after:rounded-full after:h-5 after:w-5  peer-checked:bg-amber-400"></div>
 				<span className="ml-3 text-sm font-medium dark:text-white">
-					Light/Dark Mode (In Progress)
+					Light/Dark Mode <small className="text-gray-600">(In Progress)</small>
 				</span>
 			</label>
 		</div>

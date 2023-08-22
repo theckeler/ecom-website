@@ -86,7 +86,7 @@ export default function Index() {
 				/>
 			</li>
 			<li className="bg-neutral-200 py-3 lg:py-8">
-				<div className="max-w-screen-2xl mx-auto p-2">
+				<div className="max-w-screen-2xl mx-auto p-2 2xl:p-0">
 					<TitleFlexGridViews
 						jsonData={articlesData}
 						card={{ className: "bg-gray-100" }}

@@ -34,7 +34,7 @@ export default function ProductBlock({ products }) {
 			/>
 
 			<div
-				className="mb-6 overflow-scrollbar overflow-x-auto snap-x py-2 flex"
+				className="mb-6 overflow-scrollbar overflow-x-auto snap-x snap-mandatory py-2 flex"
 				id="related-container">
 				{products.map(function (product, i) {
 					return (

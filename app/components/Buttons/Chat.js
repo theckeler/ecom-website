@@ -1,4 +1,4 @@
-import IconChat from "../Icons/Chat";
+import IconChat from "@/icons/Chat";
 
 export default function Chat({ className }) {
 	return (

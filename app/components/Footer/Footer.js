@@ -1,5 +1,6 @@
 import BlockSignUp from "./components/SignUp";
 import Terms from "./components/Terms";
+import HelpDealerChat from "./components/HelpDealerChat";
 
 import FooterLinks from "@/components/Links/Reveal";
 import footerNavData from "@/data/nav-footer.json";
@@ -12,12 +13,25 @@ export default function Footer() {
 
 	return (
 		<footer className="pt-4 lg:pt-12 pb-20">
-			<hr className="border-t border-gray-300 my-4 md:my-12" />
+			<HelpDealerChat />
+
+			<hr className="border-t border-gray-300 my-4 md:my-12 max-w-screen-2xl mx-auto" />
 
 			<ul
 				className={`max-w-screen-2xl mx-auto lg:flex sm:gap-2 lg:gap-6 ${footerPadding}`}>
 				<li className="lg:max-w-lg mb-6 lg:mb-0">
 					<BlockSignUp />
+
+					<hr className="border-t border-gray-200 w-full mt-6" />
+					<ul className="text-center mt-4">
+						<li className="text-sm">How are we doing?</li>
+						<li className="text-sm">
+							<a href="?oops=1" className="underline">
+								Give us feedback
+							</a>{" "}
+							on this page.
+						</li>
+					</ul>
 				</li>
 				<li className="grow">
 					<ul className="sm:grid sm:grid-cols-2 xl:grid-cols-4 gap-2 lg:gap-4 w-full">
@@ -32,7 +46,7 @@ export default function Footer() {
 				</li>
 			</ul>
 
-			<hr className="border-t border-gray-300 my-8 hidden sm:block" />
+			<hr className="border-t border-gray-300 my-8 hidden sm:block max-w-screen-2xl mx-auto" />
 
 			<FooterLinks
 				{...{
@@ -137,7 +151,7 @@ export default function Footer() {
 			</ul>
 
 			<div
-				className={`max-w-screen-2xl mx-auto text-sm font-bold text-center lg:text-left mt-6 dark:text-white ${footerPadding}`}>
+				className={`col-span-3 max-w-screen-2xl mx-auto text-sm font-bold text-center lg:text-left mt-6 dark:text-white ${footerPadding}`}>
 				If you experience any problems accessing this website,{" "}
 				<br className="hidden sm:block lg:hidden" />
 				please call us at 1-877-428-2349 for assistance.

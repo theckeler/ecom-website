@@ -34,13 +34,15 @@ export default function TitleFlexGridViews({
 			</ul>
 
 			{jsonData && (
-				<ul className={`${whichView} ${gridCSS}`}>
+				<ul className={`snap-x snap-mandatory ${whichView} ${gridCSS}`}>
 					{jsonData.map(function (block, i) {
 						return (
 							<Fragment key={i}>
 								{i !== itemNum && i <= limitNum && (
 									<li
-										className={`min-w-[250px] ${block.span && "lg:col-span-2"}`}
+										className={`snap-center min-w-[250px] ${
+											block.span && "lg:col-span-2"
+										}`}
 										key={i}>
 										<ProductCard
 											block={block}

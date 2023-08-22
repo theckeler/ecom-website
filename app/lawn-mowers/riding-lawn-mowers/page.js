@@ -69,7 +69,7 @@ export default function Index() {
 				</div>
 			</li>
 
-			<li className="max-w-screen-2xl mx-auto p-2 mt-20 pt-8">
+			<li className="max-w-screen-2xl mx-auto p-2 lg:mt-20 pt-8">
 				<h2 className="text-3xl mb-8">Related Searches</h2>
 				<SEOLinks />
 			</li>

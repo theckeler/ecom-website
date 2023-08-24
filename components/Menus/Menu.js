@@ -48,7 +48,7 @@ export default function Menu({ className, menu }) {
 					/>
 				</li>
 				{menu.button && (
-					<li className={`mt-auto h-16 px-2 py-2 w-full ${mainNavCSS}`}>
+					<li className={`mt-auto h-16 p-2 w-full ${mainNavCSS}`}>
 						<button
 							className={`bg-amber-400 p-2 h-12 min-h-full w-full block truncate ... ${menu.button.className}`}
 							onClick={() => ToggleMenu(null)}>

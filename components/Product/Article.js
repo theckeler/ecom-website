@@ -1,4 +1,4 @@
-import Button from "app/components/Buttons/Main";
+import Button from "@/components/Buttons/Main";
 
 export default function Article({ articles }) {
 	return (

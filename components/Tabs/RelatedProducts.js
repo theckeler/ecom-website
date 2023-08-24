@@ -1,5 +1,5 @@
 import ToggleButton from "../Buttons/Toggle";
-import ProductBlock from "app/components/Product/Block";
+import ProductBlock from "@/components/Product/Block";
 
 export default function TabRelatedProducts({ products }) {
 	return (

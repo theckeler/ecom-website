@@ -29,7 +29,7 @@ export default function Nav({ menuItems }) {
 					<li key={i} className={menu.className}>
 						<button
 							href={menu.url}
-							className="block p-2 relative z-10 w-full"
+							className="block p-2 sm:p-1 xl:p-2 relative z-10 w-full"
 							onClick={() => {
 								ToggleMenu(`${menu.slug}${menu.sub ? "-sub" : ""}`);
 							}}>

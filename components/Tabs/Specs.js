@@ -1,8 +1,7 @@
-import ToggleButton from "app/components/Buttons/Toggle";
+import ToggleButton from "@/components/Buttons/Toggle";
 import specsJson from "@/data/specs.json";
 
 export default function TabSpecs() {
-
 	return (
 		<div className="border-b">
 			<ToggleButton title="Specs" id="specs" />

@@ -1,5 +1,5 @@
-import Button from "app/components/Buttons/Main";
-import ButtonEdit from "app/components/Buttons/Edit";
+import Button from "@/components/Buttons/Main";
+import ButtonEdit from "@/components/Buttons/Edit";
 import DealerInfo from "./DealerInfo";
 import ShippingButton from "./ShippingButton";
 import InputButton from "@/components/Form/InputButton";

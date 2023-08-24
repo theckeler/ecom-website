@@ -1,26 +1,26 @@
 {
 	"compilerOptions": {
-		"baseUrl": ".",
+		"baseUrl": "./",
 		"paths": {
-			"@/components/*": ["app/components/*"],
-			"@/buttons/*": ["app/components/Buttons/*"],
-			"@/tabs/*": ["app/components/Tabs/*"],
-			"@/cards/*": ["app/components/Cards/*"],
-			"@/icons/*": ["app/components/Icons/*"],
-			"@/data/*": ["app/data/*"],
-			"@/cta/*": ["app/components/CTA/*"],
-			"@/product/*": ["app/components/Product/*"],
-			"@/addtocart/*": ["app/components/AddCart/*"],
-			"@/header/*": ["app/components/Header/*"],
-			"@/footer/*": ["app/components/Footer/*"],
-			"@/dealer/*": ["app/components/Menus/components/*"],
-			"@/functions/*": ["app/components/Functions/*"],
-			"@/menus/*": ["app/components/Menus/*"],
-			"@/cart/*": ["app/components/Cart/*"],
-			"@/form/*": ["app/components/Form/*"],
-			"@/filters/*": ["app/components/Filters/*"],
-			"@/styles/*": ["app/styles/*"],
-			"@/cookie/*": ["app/components/Cookie/*"]
+			"@/components/*": ["components/*"],
+			"@/buttons/*": ["components/Buttons/*"],
+			"@/tabs/*": ["components/Tabs/*"],
+			"@/cards/*": ["components/Cards/*"],
+			"@/icons/*": ["components/Icons/*"],
+			"@/data/*": ["data/*"],
+			"@/cta/*": ["components/CTA/*"],
+			"@/product/*": ["components/Product/*"],
+			"@/addtocart/*": ["components/AddCart/*"],
+			"@/header/*": ["components/Header/*"],
+			"@/footer/*": ["components/Footer/*"],
+			"@/dealer/*": ["components/Menus/components/*"],
+			"@/functions/*": ["components/Functions/*"],
+			"@/menus/*": ["components/Menus/*"],
+			"@/cart/*": ["components/Cart/*"],
+			"@/form/*": ["components/Form/*"],
+			"@/filters/*": ["components/Filters/*"],
+			"@/styles/*": ["styles/*"],
+			"@/cookie/*": ["components/Cookie/*"]
 		}
 	}
 }

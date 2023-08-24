@@ -1,7 +1,7 @@
 "use client";
 import articlesData from "@/data/articles.json";
 import H1 from "@/components/H1";
-import BreadCrumbs from "app/components/BreadCrumbs";
+import BreadCrumbs from "@/components/BreadCrumbs";
 import LoremIpsum from "@/components/LoremIpsum";
 import Faqs from "@/components/Faqs";
 import faqs from "@/data/faqs.json";

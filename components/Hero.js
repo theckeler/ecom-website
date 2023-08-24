@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import ProductCard from "app/components/Product/Card";
+import ProductCard from "@/components/Product/Card";
 
 export default function CTAHero({
 	block,

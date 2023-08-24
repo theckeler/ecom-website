@@ -91,14 +91,14 @@ export default function Header({ menuItems }) {
 				/>
 			)}
 
-			<ul className="grid grid-cols-2 mb-24">
+			<ul className="grid grid-cols-2 2xl:mb-1">
 				<li className="row-start-1 col-span-12 bg-amber-400">
 					<div className="max-w-screen-2xl mx-auto">
 						<Promo />
 					</div>
 				</li>
 				<li className="row-start-2 col-span-2 lg:col-span-1 lg:bg-neutral-800">
-					<div className="lg:max-w-screen-md bg-neutral-800 flex justify-end p-2">
+					<div className="lg:max-w-screen-md bg-neutral-800 flex justify-end p-1">
 						{buttonItems.map((menu, i) => (
 							<HeaderButton
 								key={i}
@@ -115,7 +115,7 @@ export default function Header({ menuItems }) {
 				</li>
 				<li className="row-start-3 col-span-2" id="sticky-nav">
 					<div className="max-w-screen-2xl mx-auto">
-						<ul className="max-w-screen-2xl mx-auto flex flex-row items-center w-full border-b dark:border-neutral-700">
+						<ul className="max-w-screen-2xl mx-auto flex flex-row items-center w-full 2xl:border-b dark:border-neutral-700">
 							<li className="p-2">
 								<Link href="/" aria-label="Return Home">
 									<Logo className="w-40 dark:fill-amber-400" />

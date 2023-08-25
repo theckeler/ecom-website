@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className={theme}>
 			<body className="bg-white dark:bg-neutral-800">
-				<Header menuItems={menuItems} />
+				<Header menuItems={menuItems}  />
 				<Menu
 					menu={{
 						title: "Cart",
@@ -146,7 +146,7 @@ export default function RootLayout({ children }) {
 				<Footer />
 				<Screen />
 				<div className="fixed z-30 bottom-72 md:bottom-72 right-0 md:rotate-270 origin-top-left flex flex-col md:flex-row-reverse gap-1 md:-mr-[173px]">
-					<ButtonsCart />
+					<ButtonsCart className="" button={{ icon: { className: "" } }} />
 					<ButtonsChat />
 				</div>
 				<Cookie display={true} />

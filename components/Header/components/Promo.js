@@ -5,7 +5,7 @@ import Menu from "@/menus/Menu";
 
 export default function Promo() {
 	return (
-		<div className="text-sm bg-amber-400 dark:bg-neutral-900 dark:text-white">
+		<div className="text-sm">
 			<div className="container mx-auto">
 				<button
 					className="flex items-center justify-center w-full p-2 font-bold"

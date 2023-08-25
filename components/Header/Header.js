@@ -21,60 +21,59 @@ import Location from "@/icons/Location";
 import Cart from "@/icons/Cart";
 import Search from "@/icons/Search";
 
-export default function Header({ menuItems }) {
-	const searchParams = useSearchParams();
+const backs = {
+	nav: "bg-neutral-100",
+	buttons: "bg-neutral-200",
+	input: "bg-neutral-700",
+	promo: "bg-amber-400",
+};
 
-	const [oopsTriggered, setOopsTriggered] = useState(searchParams.get("oops"));
-	useEffect(() => {
-		setOopsTriggered(searchParams.get("oops"));
-	}, [oopsTriggered, searchParams]);
-
-	const buttonItems = [
+export default function Header({
+	menuItems,
+	backgrounds = {
+		nav: backs.nav,
+		buttons: backs.buttons,
+		logo: `${backs.nav} lg:${backs.buttons}`,
+		input: `${backs.input} lg:${backs.buttons}`,
+	},
+	button = {
+		className: "h-8 lg:mr-1 fill-neutral-800 md:group-hover:fill-black",
+		style: { minWidth: "2em", maxWidth: "2em" },
+	},
+	buttonItems = [
 		{
 			title: "Stores",
 			buttonIcon: (
-				<Location
-					className="h-8 lg:mr-1 fill-white dark:fill-amber-400 md:group-hover:fill-amber-400"
-					style={{ minWidth: "2em", maxWidth: "2em" }}
-				/>
+				<Location className={button.className} style={button.style} />
 			),
 			url: null,
 			onClick: () => ToggleMenu("stores"),
 		},
 		{
 			title: "Help",
-			buttonIcon: (
-				<Help
-					className="h-8 lg:mr-1 fill-white dark:fill-amber-400 md:group-hover:fill-amber-400"
-					style={{ minWidth: "2em", maxWidth: "2em" }}
-				/>
-			),
+			buttonIcon: <Help className={button.className} style={button.style} />,
 			url: null,
 			onClick: () => ToggleMenu("help"),
 		},
 		{
 			title: "Account",
-			buttonIcon: (
-				<Account
-					className="h-8 lg:mr-1 fill-white dark:fill-amber-400 md:group-hover:fill-amber-400"
-					style={{ minWidth: "2em", maxWidth: "2em" }}
-				/>
-			),
+			buttonIcon: <Account className={button.className} style={button.style} />,
 			url: null,
 			onClick: () => ToggleMenu("account"),
 		},
 		{
 			title: "Cart",
-			buttonIcon: (
-				<Cart
-					className="h-8 lg:mr-1 fill-white dark:fill-amber-400 md:group-hover:fill-amber-400"
-					style={{ minWidth: "2em", maxWidth: "2em" }}
-				/>
-			),
+			buttonIcon: <Cart className={button.className} style={button.style} />,
 			url: null,
 			onClick: () => ToggleMenu("cart"),
 		},
-	];
+	],
+}) {
+	const searchParams = useSearchParams();
+	const [oopsTriggered, setOopsTriggered] = useState(searchParams.get("oops"));
+	useEffect(() => {
+		setOopsTriggered(searchParams.get("oops"));
+	}, [oopsTriggered, searchParams]);
 
 	return (
 		<>
@@ -91,14 +90,15 @@ export default function Header({ menuItems }) {
 				/>
 			)}
 
-			<ul className="grid grid-cols-2 2xl:mb-1">
-				<li className="row-start-1 col-span-12 bg-amber-400">
+			<ul className="grid grid-cols-2 lg:grid-cols-[1fr_180px_minmax(100px,_976px)_210px_1fr] xl:grid-cols-[1fr_180px_minmax(100px,_976px)_380px_1fr] 2xl:mb-1">
+				<li className={`col-span-full ${backs.promo}`}>
 					<div className="max-w-screen-2xl mx-auto">
 						<Promo />
 					</div>
 				</li>
-				<li className="row-start-2 col-span-2 lg:col-span-1 lg:bg-neutral-800">
-					<div className="lg:max-w-screen-md bg-neutral-800 flex justify-end p-1">
+				<li
+					className={`lg:col-start-4 col-span-full lg:col-span-1 ${backgrounds.buttons}`}>
+					<div className="flex justify-end p-1">
 						{buttonItems.map((menu, i) => (
 							<HeaderButton
 								key={i}
@@ -108,61 +108,66 @@ export default function Header({ menuItems }) {
 								ariaLabel={menu.title}
 								mobile
 								fillColor="fill-white"
-								className={menu.className + " text-white "}
+								className={menu.className}
 							/>
 						))}
 					</div>
 				</li>
-				<li className="row-start-3 col-span-2" id="sticky-nav">
-					<div className="max-w-screen-2xl mx-auto">
-						<ul className="max-w-screen-2xl mx-auto flex flex-row items-center w-full 2xl:border-b dark:border-neutral-700">
-							<li className="p-2">
-								<Link href="/" aria-label="Return Home">
-									<Logo className="w-40 dark:fill-amber-400" />
-								</Link>
-							</li>
-							<li className="ml-auto">
-								<Menu
-									className="lg:flex lg:relative lg:z-auto lg:max-w-fit lg:bg-transparent"
-									menu={{
-										title: "",
-										id: "main-nav",
-										component: <MainNav menuItems={menuItems} />,
-										componentType: "mainNav",
-										left: false,
-										menuItems: menuItems,
-										button: {
-											title: "Up to $300 off select Ultima Series™ Zero-Turns",
-											className: "font-bold",
-										},
-									}}
-								/>
-							</li>
-							<li className="lg:hidden flex flex-col items-center pr-2">
-								<button
-									className="lg:w-12 leading-none"
-									onClick={() => {
-										ToggleMenu("main-nav");
-										document.querySelector("#sticky-nav").scrollIntoView();
-									}}
-									aria-label="Navigation">
-									<ul className="flex flex-row items-center">
-										<li>
-											<span className="text-sm text-bold leading-none">
-												Menu
-											</span>
-										</li>
-										<li>
-											<Hamburger className="w-12 dark:fill-amber-400" />
-										</li>
-									</ul>
-								</button>
-							</li>
-						</ul>
-					</div>
+				<li
+					className={`${backgrounds.buttons} hidden lg:block col-start-1 row-start-2`}></li>
+				<li
+					className={`col-start-1 lg:col-start-2 row-start-3 lg:row-start-2 ${backgrounds.logo}`}>
+					<Link
+						href="/"
+						className="flex content-center h-full p-2"
+						aria-label="Return Home">
+						<Logo className="w-40 fill-black dark:fill-amber-400" />
+					</Link>
 				</li>
-				<li className="row-start-4 lg:col-start-1 lg:row-start-2 col-span-2 lg:col-span-1 flex lg:justify-end bg-gray-200 dark:bg-neutral-700 lg:bg-neutral-800">
-					<div className="lg:max-w-screen-md lg:bg-neutral-800 w-full p-2">
+				<li
+					className={`col-start-2 lg:col-start-1 row-start-3 col-span-full ${backgrounds.nav}`}
+					id="sticky-nav">
+					<ul className="max-w-screen-2xl mx-auto flex flex-row items-center w-full 2xl:border-b dark:border-neutral-700">
+						<li className="ml-auto">
+							<Menu
+								className="lg:flex lg:relative lg:z-auto lg:max-w-fit"
+								menu={{
+									title: "",
+									id: "main-nav",
+									component: <MainNav menuItems={menuItems} />,
+									componentType: "mainNav",
+									left: false,
+									menuItems: menuItems,
+									button: {
+										title: "Up to $300 off select Ultima Series™ Zero-Turns",
+										className: "font-bold",
+									},
+								}}
+							/>
+						</li>
+						<li className="lg:hidden flex flex-col items-center pr-2">
+							<button
+								className="lg:w-12 leading-none"
+								onClick={() => {
+									ToggleMenu("main-nav");
+									document.querySelector("#sticky-nav").scrollIntoView();
+								}}
+								aria-label="Navigation">
+								<ul className="flex flex-row items-center">
+									<li>
+										<span className="text-sm text-bold leading-none">Menu</span>
+									</li>
+									<li>
+										<Hamburger className="w-12 dark:fill-amber-400" />
+									</li>
+								</ul>
+							</button>
+						</li>
+					</ul>
+				</li>
+				<li
+					className={`row-start-4 lg:col-start-3 lg:row-start-2 col-span-full lg:col-span-1 flex lg:justify-end ${backgrounds.input}`}>
+					<div className="w-full p-2">
 						<InputButton
 							{...{
 								className: "group",
@@ -172,9 +177,9 @@ export default function Header({ menuItems }) {
 									placeholder: "Search",
 									name: "search",
 									className:
-										"text-sm lg:bg-neutral-700 dark:bg-neutral-600 text-white border lg:border-neutral-700 group-hover:border-amber-400 outline-0 placeholder:text-neutral-500 placeholder:italic w-full",
+										"text-sm lg:bg-neutral-300 dark:bg-neutral-600 text-white border lg:border-neutral-300 group-hover:border-amber-400 outline-0 placeholder:text-neutral-500 placeholder:italic w-full",
 								},
-								icon: <Search className="w-8 fill-black" />,
+								icon: <Search className="w-8 fill-black lg:fill-white" />,
 								button: {
 									title: "Search",
 									ariaLabel: null,
@@ -185,6 +190,8 @@ export default function Header({ menuItems }) {
 						/>
 					</div>
 				</li>
+				<li
+					className={`${backgrounds.buttons} hidden lg:block col-start-5 row-start-2`}></li>
 			</ul>
 		</>
 	);

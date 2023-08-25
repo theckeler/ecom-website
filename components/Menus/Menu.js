@@ -20,7 +20,7 @@ export default function Menu({ className, menu }) {
 				!menu.fullscreen && "hidden"
 			} ${className}`}>
 			<ul
-				className={`w-screen flex flex-col h-[calc(100vh-114px)] max-h-screen min-h-[100dvh] ${
+				className={`w-full flex flex-col h-[calc(100vh-114px)] max-h-screen min-h-[100dvh] ${
 					menu.componentType === "mainNav" &&
 					"lg:h-auto lg:max-h-none lg:min-h-[auto]"
 				}`}>

@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className={theme}>
 			<body className="bg-white dark:bg-neutral-800">
-				<Header menuItems={menuItems}  />
+				<Header menuItems={menuItems} />
 				<Menu
 					menu={{
 						title: "Cart",
@@ -44,6 +44,7 @@ export default function RootLayout({ children }) {
 						component: <Cart menuItems={menuItems} />,
 						button: { title: "Checkout", className: "font-bold" },
 						componentType: "cart",
+						//left: true,
 					}}
 				/>
 				<Menu
@@ -125,7 +126,7 @@ export default function RootLayout({ children }) {
 									componentType: "subNav",
 									className: "lg:relative",
 									button: mainMenu.button,
-									left: false,
+									left: true,
 									menuItems: mainMenu,
 									ad: {
 										title:

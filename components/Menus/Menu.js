@@ -13,13 +13,14 @@ export default function Menu({ className, menu }) {
 		<div
 			id={menu.id}
 			className={`popup-item fixed z-40 top-0 w-full bg-white dark:bg-black ${
-				menu.componentType === "mainNav" ? "lg:bg-transparent" :
-				"lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl"
+				menu.componentType === "mainNav"
+					? "lg:bg-transparent"
+					: "lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl"
 			} ${menu.left ? "left-0" : "right-0"} ${
 				!menu.fullscreen && "hidden"
 			} ${className}`}>
 			<ul
-				className={`flex flex-col h-[calc(100vh-114px)] max-h-screen min-h-[100dvh] ${
+				className={`w-screen flex flex-col h-[calc(100vh-114px)] max-h-screen min-h-[100dvh] ${
 					menu.componentType === "mainNav" &&
 					"lg:h-auto lg:max-h-none lg:min-h-[auto]"
 				}`}>

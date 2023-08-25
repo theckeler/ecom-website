@@ -23,9 +23,10 @@ import Search from "@/icons/Search";
 
 const backs = {
 	nav: "bg-neutral-100",
-	buttons: "bg-neutral-200",
-	input: "bg-neutral-700",
-	promo: "bg-amber-400",
+	buttons: "bg-neutral-100",
+	input: "bg-neutral-800",
+	promo:
+		"bg-neutral-200 lg:bg-neutral-900 lg:text-white lg:fill-white 2xl:bg-neutral-200 2xl:text-black 2xl:fill-black",
 };
 
 export default function Header({
@@ -90,14 +91,14 @@ export default function Header({
 				/>
 			)}
 
-			<ul className="grid grid-cols-2 lg:grid-cols-[1fr_180px_minmax(100px,_976px)_210px_1fr] xl:grid-cols-[1fr_180px_minmax(100px,_976px)_380px_1fr] 2xl:mb-1">
+			<ul className="grid grid-cols-[1fr,100px] lg:grid-cols-[1fr_180px_minmax(100px,976px)_210px_1fr] xl:grid-cols-[1fr_180px_minmax(100px,976px)_380px_1fr] 2xl:mb-1">
 				<li className={`col-span-full ${backs.promo}`}>
 					<div className="max-w-screen-2xl mx-auto">
 						<Promo />
 					</div>
 				</li>
 				<li
-					className={`lg:col-start-4 col-span-full lg:col-span-1 ${backgrounds.buttons}`}>
+					className={`lg:col-start-4 col-span-full lg:col-span-1 border-b ${backgrounds.buttons}`}>
 					<div className="flex justify-end p-1">
 						{buttonItems.map((menu, i) => (
 							<HeaderButton
@@ -116,7 +117,7 @@ export default function Header({
 				<li
 					className={`${backgrounds.buttons} hidden lg:block col-start-1 row-start-2`}></li>
 				<li
-					className={`col-start-1 lg:col-start-2 row-start-3 lg:row-start-2 ${backgrounds.logo}`}>
+					className={`col-start-1 lg:col-start-2 row-start-3 lg:row-start-2 border-b ${backgrounds.logo}`}>
 					<Link
 						href="/"
 						className="flex content-center h-full p-2"
@@ -127,46 +128,43 @@ export default function Header({
 				<li
 					className={`col-start-2 lg:col-start-1 row-start-3 col-span-full ${backgrounds.nav}`}
 					id="sticky-nav">
-					<ul className="max-w-screen-2xl mx-auto flex flex-row items-center w-full 2xl:border-b dark:border-neutral-700">
-						<li className="ml-auto">
-							<Menu
-								className="lg:flex lg:relative lg:z-auto lg:max-w-fit"
-								menu={{
-									title: "",
-									id: "main-nav",
-									component: <MainNav menuItems={menuItems} />,
-									componentType: "mainNav",
-									left: false,
-									menuItems: menuItems,
-									button: {
-										title: "Up to $300 off select Ultima Series™ Zero-Turns",
-										className: "font-bold",
-									},
-								}}
-							/>
-						</li>
-						<li className="lg:hidden flex flex-col items-center pr-2">
-							<button
-								className="lg:w-12 leading-none"
-								onClick={() => {
-									ToggleMenu("main-nav");
-									document.querySelector("#sticky-nav").scrollIntoView();
-								}}
-								aria-label="Navigation">
-								<ul className="flex flex-row items-center">
-									<li>
-										<span className="text-sm text-bold leading-none">Menu</span>
-									</li>
-									<li>
-										<Hamburger className="w-12 dark:fill-amber-400" />
-									</li>
-								</ul>
-							</button>
-						</li>
-					</ul>
+					<Menu
+						className="max-w-screen-2xl mx-auto flex flex-row items-center w-full lg:flex lg:relative lg:z-auto"
+						menu={{
+							title: "",
+							id: "main-nav",
+							component: <MainNav menuItems={menuItems} />,
+							componentType: "mainNav",
+							left: true,
+							menuItems: menuItems,
+							button: {
+								title: "Up to $300 off select Ultima Series™ Zero-Turns",
+								className: "font-bold",
+							},
+						}}
+					/>
+
+					<div className="lg:hidden flex flex-col items-center p-2">
+						<button
+							className="lg:w-12 leading-none"
+							onClick={() => {
+								ToggleMenu("main-nav");
+								document.querySelector("#sticky-nav").scrollIntoView();
+							}}
+							aria-label="Navigation">
+							<ul className="flex gap-1 flex-row items-center">
+								<li>
+									<span className="text-sm text-bold leading-none">Menu</span>
+								</li>
+								<li className="bg-neutral-800 rounded">
+									<Hamburger className="w-12 fill-amber-400 p-1" />
+								</li>
+							</ul>
+						</button>
+					</div>
 				</li>
 				<li
-					className={`row-start-4 lg:col-start-3 lg:row-start-2 col-span-full lg:col-span-1 flex lg:justify-end ${backgrounds.input}`}>
+					className={`row-start-4 lg:col-start-3 lg:row-start-2 col-span-full lg:col-span-1 flex lg:justify-end border-b ${backgrounds.input}`}>
 					<div className="w-full p-2">
 						<InputButton
 							{...{
@@ -177,14 +175,16 @@ export default function Header({
 									placeholder: "Search",
 									name: "search",
 									className:
-										"text-sm lg:bg-neutral-300 dark:bg-neutral-600 text-white border lg:border-neutral-300 group-hover:border-amber-400 outline-0 placeholder:text-neutral-500 placeholder:italic w-full",
+										"text-sm lg:bg-neutral-100 dark:bg-neutral-600 text-white border lg:border-neutral-300 group-hover:border-amber-400 outline-0 placeholder:text-neutral-500 placeholder:italic w-full",
 								},
-								icon: <Search className="w-8 fill-black lg:fill-white" />,
+								icon: (
+									<Search className="w-8 fill-black lg:fill-white group-hover:fill-neutral-800" />
+								),
 								button: {
 									title: "Search",
 									ariaLabel: null,
 									className:
-										"bg-neutral-300 group-hover:bg-amber-400 text-black text-sm min-h-[4em]",
+										"bg-amber-400 lg:bg-neutral-800 group-hover:bg-amber-400 text-black text-sm min-h-[4em]",
 								},
 							}}
 						/>

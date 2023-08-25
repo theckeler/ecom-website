@@ -98,7 +98,7 @@ export default function Header({
 					</div>
 				</li>
 				<li
-					className={`lg:col-start-4 col-span-full lg:col-span-1 border-b ${backgrounds.buttons}`}>
+					className={`header-buttons lg:col-start-4 col-span-full lg:col-span-1 border-b ${backgrounds.buttons}`}>
 					<div className="flex justify-end p-1">
 						{buttonItems.map((menu, i) => (
 							<HeaderButton
@@ -164,7 +164,7 @@ export default function Header({
 					</div>
 				</li>
 				<li
-					className={`row-start-4 lg:col-start-3 lg:row-start-2 col-span-full lg:col-span-1 flex lg:justify-end border-b ${backgrounds.input}`}>
+					className={`header-input row-start-4 lg:col-start-3 lg:row-start-2 col-span-full lg:col-span-1 flex lg:justify-end lg:border-b ${backgrounds.input}`}>
 					<div className="w-full p-2">
 						<InputButton
 							{...{

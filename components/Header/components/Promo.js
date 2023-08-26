@@ -13,7 +13,7 @@ export default function Promo() {
 						ToggleMenu("promo-content");
 					}}
 					aria-label="Promo: Aliquam dolor arcu, mattis vitae arcu et">
-					Promo: Aliquam dolor arcu, mattis vitae arcu et
+					Promo: Aliquam dolor arcu, mattis vitae
 					<ExpandMore className="ml-1 w-6 dark:fill-white" />
 				</button>
 			</div>

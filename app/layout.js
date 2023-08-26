@@ -10,7 +10,6 @@ import Screen from "@/components/Screen";
 import Cart from "@/cart/Cart";
 import Stores from "@/components/Stores/Stores";
 // import MainNav from "@/components/Nav/Nav";
-import SubNav from "@/header/components/SubNav";
 import Filters from "@/filters/Filters";
 import Account from "@/components/Account/Account";
 import Dealers from "@/components/Dealers/Dealers";
@@ -113,36 +112,7 @@ export default function RootLayout({ children }) {
 						className: "bg-amber-400 font-black",
 					}}
 				/>
-				{menuItems.map(
-					(mainMenu, i) =>
-						mainMenu.sub && (
-							<Menu
-								key={i}
-								className=""
-								menu={{
-									title: mainMenu.title,
-									id: mainMenu.slug + "-sub",
-									component: <SubNav menuItems={mainMenu.sub} />,
-									componentType: "subNav",
-									className: "lg:relative",
-									button: mainMenu.button,
-									left: true,
-									menuItems: mainMenu,
-									ad: {
-										title:
-											"Check out special offers on residential and professional products",
-										copy: "Save any season with rebates and discounts on residential and professional outdoor power equipment from Cub Cadet. Plus, learn more about year round specials for first responders, military members, NHLA members and Equine Groups.",
-										img: "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dwc805e60b/special-offers/so-fleet-discount-program.jpg",
-										button: {
-											title:
-												"Special offers on residential and professional products",
-											className: "font-bold",
-										},
-									},
-								}}
-							/>
-						)
-				)}
+				
 				<main>{children}</main>
 				<Footer />
 				<Screen />

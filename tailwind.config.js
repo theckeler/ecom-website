@@ -60,6 +60,7 @@ module.exports = {
 		"2xl:text-base",
 
 		"lg:bg-neutral-100",
+		"lg:border-t-0",
 	],
 	theme: {
 		minHeight: {

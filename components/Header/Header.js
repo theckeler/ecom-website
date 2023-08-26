@@ -14,6 +14,7 @@ import Logo from "@/components/Logo";
 import InputButton from "@/components/Form/InputButton";
 import Oops from "@/components/Oops";
 import MainNav from "@/components/Nav/Nav";
+import SubNav from "@/header/components/SubNav";
 
 import Account from "@/icons/Account";
 import Help from "@/icons/Help";
@@ -77,7 +78,7 @@ export default function Header({
 	}, [oopsTriggered, searchParams]);
 
 	return (
-		<>
+		<header>
 			{oopsTriggered && (
 				<Menu
 					menu={{
@@ -91,7 +92,7 @@ export default function Header({
 				/>
 			)}
 
-			<ul className="grid grid-cols-[1fr,100px] lg:grid-cols-[1fr_180px_minmax(100px,976px)_210px_1fr] xl:grid-cols-[1fr_180px_minmax(100px,976px)_380px_1fr] 2xl:mb-1">
+			<ul className="grid grid-cols-[1fr,100px] lg:grid-cols-[1fr_180px_minmax(100px,976px)_210px_1fr] xl:grid-cols-[1fr_180px_minmax(100px,976px)_380px_1fr]">
 				<li className={`col-span-full ${backs.promo}`}>
 					<div className="max-w-screen-2xl mx-auto">
 						<Promo />
@@ -175,7 +176,7 @@ export default function Header({
 									placeholder: "Search",
 									name: "search",
 									className:
-										"text-sm lg:bg-neutral-100 dark:bg-neutral-600 text-white border lg:border-neutral-300 group-hover:border-amber-400 outline-0 placeholder:text-neutral-500 placeholder:italic w-full",
+										"text-sm lg:bg-neutral-100 dark:bg-neutral-600 text-black border lg:border-neutral-300 group-hover:border-amber-400 outline-0 placeholder:text-neutral-500 placeholder:italic w-full",
 								},
 								icon: (
 									<Search className="w-8 fill-black lg:fill-white group-hover:fill-neutral-800" />
@@ -193,6 +194,36 @@ export default function Header({
 				<li
 					className={`${backgrounds.buttons} hidden lg:block col-start-5 row-start-2`}></li>
 			</ul>
-		</>
+			{menuItems.map(
+				(mainMenu, i) =>
+					mainMenu.sub && (
+						<Menu
+							key={i}
+							className=""
+							menu={{
+								title: mainMenu.title,
+								id: mainMenu.slug + "-sub",
+								component: <SubNav menuItems={mainMenu.sub} />,
+								componentType: "subNav",
+								className: "lg:relative",
+								button: mainMenu.button,
+								left: true,
+								menuItems: mainMenu,
+								ad: {
+									title:
+										"Check out special offers on residential and professional products",
+									copy: "Save any season with rebates and discounts on residential and professional outdoor power equipment from Cub Cadet. Plus, learn more about year round specials for first responders, military members, NHLA members and Equine Groups.",
+									img: "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dwc805e60b/special-offers/so-fleet-discount-program.jpg",
+									button: {
+										title:
+											"Special offers on residential and professional products",
+										className: "font-bold",
+									},
+								},
+							}}
+						/>
+					)
+			)}
+		</header>
 	);
 }

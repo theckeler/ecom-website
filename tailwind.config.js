@@ -59,7 +59,7 @@ module.exports = {
 		"lg:text-xs",
 		"2xl:text-base",
 
-		"lg:bg-neutral-100",
+		"bg-neutral-700",
 		"lg:border-t-0",
 	],
 	theme: {

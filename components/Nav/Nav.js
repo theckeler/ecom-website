@@ -17,11 +17,11 @@ export default function Nav({ menuItems }) {
 		<ul className="flex flex-col lg:flex-row lg:border-0 pb-8 lg:pb-0 ">
 			{menuItems.map((menu, i) => {
 				const Icons = {
-					store: Store,
-					cart: Cart,
-					account: Account,
-					help: Help,
-					location: Location,
+					store: <Store />,
+					cart: <Cart cartNum={{ className: "", cart: 3 }} />,
+					account: <Account />,
+					help: <Help />,
+					location: <Location />,
 				};
 				const IconComponent = Icons[menu.icon];
 
@@ -40,9 +40,7 @@ export default function Nav({ menuItems }) {
 									</li>
 								)}
 								{menu.icon && IconComponent && (
-									<li className="w-10 lg:hidden">
-										<IconComponent />
-									</li>
+									<li className="w-10 lg:hidden">{IconComponent}</li>
 								)}
 								<li className="ml-1 md:ml-0 font-bold flex items-center truncate grow">
 									{menu.title}

@@ -22,24 +22,11 @@ import Location from "@/icons/Location";
 import Cart from "@/icons/Cart";
 import Search from "@/icons/Search";
 
-const backs = {
-	nav: "bg-neutral-100",
-	buttons: "bg-neutral-100",
-	input: "bg-neutral-800",
-	promo:
-		"bg-neutral-200 lg:bg-neutral-900 lg:text-white lg:fill-white 2xl:bg-neutral-200 2xl:text-black 2xl:fill-black",
-};
-
 export default function Header({
+	settings,
 	menuItems,
-	backgrounds = {
-		nav: backs.nav,
-		buttons: backs.buttons,
-		logo: `${backs.nav} lg:${backs.buttons}`,
-		input: `${backs.input} lg:${backs.buttons}`,
-	},
 	button = {
-		className: "h-8 lg:mr-1 fill-neutral-800 md:group-hover:fill-black",
+		className: "h-8 lg:mr-1 fill-white md:group-hover:fill-amber-400",
 		style: { minWidth: "2em", maxWidth: "2em" },
 	},
 	buttonItems = [
@@ -65,7 +52,13 @@ export default function Header({
 		},
 		{
 			title: "Cart",
-			buttonIcon: <Cart className={button.className} style={button.style} />,
+			buttonIcon: (
+				<Cart
+					className={button.className}
+					style={button.style}
+					cartNum={{ className: "", cart: 3 }}
+				/>
+			),
 			url: null,
 			onClick: () => ToggleMenu("cart"),
 		},
@@ -76,6 +69,13 @@ export default function Header({
 	useEffect(() => {
 		setOopsTriggered(searchParams.get("oops"));
 	}, [oopsTriggered, searchParams]);
+
+	const backgrounds = {
+		nav: settings.header.bgColor.nav,
+		buttons: settings.header.bgColor.buttons,
+		logo: `${settings.header.bgColor.nav} lg:${settings.header.bgColor.buttons}`,
+		input: `${settings.header.bgColor.input} lg:${settings.header.bgColor.buttons}`,
+	};
 
 	return (
 		<header>
@@ -93,14 +93,14 @@ export default function Header({
 			)}
 
 			<ul className="grid grid-cols-[1fr,100px] lg:grid-cols-[1fr_180px_minmax(100px,976px)_210px_1fr] xl:grid-cols-[1fr_180px_minmax(100px,976px)_380px_1fr]">
-				<li className={`col-span-full ${backs.promo}`}>
+				<li className={`col-span-full ${settings.header.bgColor.promo}`}>
 					<div className="max-w-screen-2xl mx-auto">
 						<Promo />
 					</div>
 				</li>
 				<li
-					className={`header-buttons lg:col-start-4 col-span-full lg:col-span-1 border-b ${backgrounds.buttons}`}>
-					<div className="flex justify-end p-1">
+					className={`header-buttons lg:col-start-4 col-span-full lg:col-span-1 ${backgrounds.buttons}`}>
+					<div className="flex justify-end p-1 h-full">
 						{buttonItems.map((menu, i) => (
 							<HeaderButton
 								key={i}
@@ -118,12 +118,12 @@ export default function Header({
 				<li
 					className={`${backgrounds.buttons} hidden lg:block col-start-1 row-start-2`}></li>
 				<li
-					className={`col-start-1 lg:col-start-2 row-start-3 lg:row-start-2 border-b ${backgrounds.logo}`}>
+					className={`col-start-1 lg:col-start-2 row-start-3 lg:row-start-2 ${backgrounds.logo}`}>
 					<Link
 						href="/"
 						className="flex content-center h-full p-2"
 						aria-label="Return Home">
-						<Logo className="w-40 fill-black dark:fill-amber-400" />
+						<Logo className="w-40 lg:fill-amber-400" />
 					</Link>
 				</li>
 				<li
@@ -165,7 +165,7 @@ export default function Header({
 					</div>
 				</li>
 				<li
-					className={`header-input row-start-4 lg:col-start-3 lg:row-start-2 col-span-full lg:col-span-1 flex lg:justify-end lg:border-b ${backgrounds.input}`}>
+					className={`header-input row-start-4 lg:col-start-3 lg:row-start-2 col-span-full lg:col-span-1 flex lg:justify-end ${backgrounds.input}`}>
 					<div className="w-full p-2">
 						<InputButton
 							{...{
@@ -179,13 +179,13 @@ export default function Header({
 										"text-sm lg:bg-neutral-100 dark:bg-neutral-600 text-black border lg:border-neutral-300 group-hover:border-amber-400 outline-0 placeholder:text-neutral-500 placeholder:italic w-full",
 								},
 								icon: (
-									<Search className="w-8 fill-black lg:fill-white group-hover:fill-neutral-800" />
+									<Search className="w-8 fill-black group-hover:fill-neutral-800" />
 								),
 								button: {
 									title: "Search",
 									ariaLabel: null,
 									className:
-										"bg-amber-400 lg:bg-neutral-800 group-hover:bg-amber-400 text-black text-sm min-h-[4em]",
+										"bg-neutral-400 group-hover:bg-amber-400 text-sm min-h-[4em]",
 								},
 							}}
 						/>

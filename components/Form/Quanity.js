@@ -8,7 +8,7 @@ export default function FormQuanity({ className, quantity }) {
 			</button>
 			<input
 				type="number"
-				id="Quantity"
+				//id="Quantity"
 				defaultValue={quantity}
 				className="h-12 w-10 border-gray-200 border text-center [-moz-appearance:_textfield] sm:text-sm [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none"
 			/>

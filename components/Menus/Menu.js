@@ -9,23 +9,33 @@ import ToggleMenu from "@/components/Functions/toggleMenu";
 export default function Menu({ className, menu }) {
 	const mainNavCSS = menu.componentType === "mainNav" && "lg:hidden";
 
+	let ulCSS, headerFooterCSS;
+	ulCSS =
+		menu.componentType === "mainNav" &&
+		"lg:h-auto lg:max-h-none lg:min-h-[auto] ";
+
+	let mainCSS = className;
+	mainCSS +=
+		menu.componentType === "mainNav"
+			? " lg:bg-transparent "
+			: " lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl ";
+	mainCSS += menu.left ? "left-0 " : " right-0 ";
+	mainCSS += !menu.fullscreen && "hidden ";
+
+	if (menu.componentType === "subNav") {
+		//mainCSS += " lg:relative";
+		//ulCSS += " lg:absolute lg:h-auto lg:min-h-[auto]";
+		//headerFooterCSS = "lg:hidden ";
+	}
+
 	return (
 		<div
 			id={menu.id}
-			className={`popup-item fixed z-40 top-0 w-full bg-white dark:bg-black ${
-				menu.componentType === "mainNav"
-					? "lg:bg-transparent"
-					: "lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl"
-			} ${menu.left ? "left-0" : "right-0"} ${
-				!menu.fullscreen && "hidden"
-			} ${className}`}>
+			className={`popup-item fixed z-40 top-0 w-full bg-white dark:bg-black ${mainCSS}`}>
 			<ul
-				className={`w-full flex flex-col h-[calc(100vh-114px)] max-h-screen min-h-[100dvh] ${
-					menu.componentType === "mainNav" &&
-					"lg:h-auto lg:max-h-none lg:min-h-[auto]"
-				}`}>
+				className={`w-full flex flex-col h-[calc(100vh-114px)] max-h-screen min-h-[100dvh]  ${ulCSS}`}>
 				<li
-					className={`border-b dark:border-neutral-700 ${mainNavCSS} ${
+					className={`border-b dark:border-neutral-700 ${headerFooterCSS} ${mainNavCSS} ${
 						menu.className ? menu.className : ""
 					}`}>
 					<MenuTitle
@@ -58,7 +68,8 @@ export default function Menu({ className, menu }) {
 					</li>
 				)}
 				{menu.ad && (
-					<li className={`mt-auto px-2 py-2 w-full bg-amber-400 ${mainNavCSS}`}>
+					<li
+						className={`mt-auto px-2 py-2 w-full bg-amber-400 ${headerFooterCSS} ${mainNavCSS}`}>
 						<ul>
 							<li className="relative h-24 tall:hidden">
 								<Image src={menu.ad.img} fill className="object-cover" alt="" />

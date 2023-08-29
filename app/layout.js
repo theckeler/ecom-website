@@ -1,10 +1,12 @@
+import settings from "@/data/settings.json";
+import "@/styles/globals.css";
+
 import Header from "@/header/Header";
 import Menu from "@/components/Menus/Menu";
 import Footer from "@/footer/Footer";
 import Cookie from "@/cookie/Cookie";
 import menuItems from "@/data/nav.json";
 
-import "@/styles/globals.css";
 import Screen from "@/components/Screen";
 
 import Cart from "@/cart/Cart";
@@ -35,7 +37,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className={theme}>
 			<body className="bg-white dark:bg-neutral-800">
-				<Header menuItems={menuItems} />
+				<Header menuItems={menuItems} settings={settings} />
 				<Menu
 					menu={{
 						title: "Cart",
@@ -112,12 +114,17 @@ export default function RootLayout({ children }) {
 						className: "bg-amber-400 font-black",
 					}}
 				/>
-				
+
 				<main>{children}</main>
 				<Footer />
 				<Screen />
 				<div className="fixed z-30 bottom-72 md:bottom-72 right-0 md:rotate-270 origin-top-left flex flex-col md:flex-row-reverse gap-1 md:-mr-[173px]">
-					<ButtonsCart className="" button={{ icon: { className: "" } }} />
+					<ButtonsCart
+						className=""
+						button={{
+							cartNum: { className: "bg-white text-black", cart: 3 },
+						}}
+					/>
 					<ButtonsChat />
 				</div>
 				<Cookie display={true} />

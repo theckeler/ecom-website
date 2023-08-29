@@ -1,0 +1,10 @@
+{
+	"header": {
+		"bgColor": {
+			"nav": "bg-neutral-100",
+			"buttons": "bg-neutral-800",
+			"input": "bg-neutral-700",
+			"promo": "bg-amber-400"
+		}
+	}
+}

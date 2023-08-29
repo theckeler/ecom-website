@@ -77,6 +77,93 @@ export default function Help() {
 					</li>
 				</ul>
 			</div>
+
+			{/* <div className="bg-neutral-800 text-white mt-2 px-6 py-4">
+				<h2 className="text-2xl text-center mb-1">
+					Don&apos;t have an account?
+				</h2>
+				<p className="text-center text-sm">
+					Find information related to your mower with ease when you{" "}
+					<a href="https://www.cubcadet.com/en_US/login" className="underline">
+						create an account
+					</a>{" "}
+					and{" "}
+					<a
+						href="https://www.cubcadet.com/en_US/content-asset-page-includes/registration.html"
+						className="underline">
+						register your mower
+					</a>
+					. Benefits include: Proof of purchase for insurance, find warranty
+					information, view safety information and get timely maintenance
+					reminders.
+				</p>
+			</div> */}
+
+			<LinksReveal
+				{...{
+					title: {
+						copy: "Don't have an account?",
+						className: titleCSS,
+					},
+					links: [
+						{
+							title: "Find Parts",
+							icon: <IconDeckBelt className={iconCSS} />,
+							className: linkTitleCSS,
+						},
+						{
+							title: "Find Manuals",
+							icon: <IconChangeBlades className={iconCSS} />,
+							className: linkTitleCSS,
+						},
+						{
+							title: "Find Service",
+							icon: <IconLevelDeck className={iconCSS} />,
+							className: linkTitleCSS,
+						},
+						{
+							title: "Find Warranty Information",
+							icon: <IconLevelDeck className={iconCSS} />,
+							className: linkTitleCSS,
+						},
+					],
+					//className: "mt-1",
+					row: false,
+				}}
+			/>
+
+			<LinksReveal
+				{...{
+					title: {
+						copy: "Popular Help Links",
+						className: titleCSS,
+					},
+					links: [
+						{
+							title: "Find Parts",
+							icon: <IconDeckBelt className={iconCSS} />,
+							className: linkTitleCSS,
+						},
+						{
+							title: "How to Change the Blades on a Riding Mower",
+							icon: <IconChangeBlades className={iconCSS} />,
+							className: linkTitleCSS,
+						},
+						{
+							title: "How to Level the Deck on a Riding Mower",
+							icon: <IconLevelDeck className={iconCSS} />,
+							className: linkTitleCSS,
+						},
+						,
+						{
+							title: "See all how-to content",
+							className: `bg-amber-400 text-center p-2 mt-4 uppercase font-bold ${linkTitleCSS}`,
+						},
+					],
+					//className: "mt-4",
+					row: false,
+				}}
+			/>
 		</div>
 	);
 }

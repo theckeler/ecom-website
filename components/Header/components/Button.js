@@ -18,7 +18,7 @@ export default function HeaderButton({
 			aria-label={ariaLabel}
 			onClick={onClick}>
 			{buttonIcon}
-			<span className="md:group-hover:text-amber-400 hidden xl:block whitespace-nowrap">
+			<span className="text-white md:group-hover:text-amber-400 hidden xl:block whitespace-nowrap">
 				{title}
 			</span>
 		</LinkType>

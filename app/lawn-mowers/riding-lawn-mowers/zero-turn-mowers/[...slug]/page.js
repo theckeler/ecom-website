@@ -17,6 +17,7 @@ import Desc from "@/components/Desc";
 import SEOLinks from "@/components/SEOLinks";
 import ProductBlock from "@/components/Product/Block";
 import Faqs from "@/components/Faqs";
+import Button from "@/components/Buttons/Main";
 
 import productsJSON from "@/data/pdp.json";
 import faqs from "@/data/faqs.json";
@@ -55,6 +56,13 @@ export default function Index({ params }) {
 						<H2 title={product.series} />
 						<Price price={product.price} msrp={product.msrp} />
 						<AddCart shippingButtons={product.shippingButtons} />
+						<div className="mt-1 sticky md:static bottom-0 bg-white/90 p-2 border-t">
+							<Button
+								title="Add to Cart"
+								aria-label="Add to Cart"
+								className="group flex items-center justify-center w-full p-3 uppercase font-bold bg-amber-400 lg:hover:bg-black lg:hover:text-white"
+							/>
+						</div>
 						<Desc blocks={product.desc} />
 					</div>
 				</li>

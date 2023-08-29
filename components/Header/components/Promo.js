@@ -1,8 +1,6 @@
 import ExpandMore from "@/icons/ExpandMore";
 import ToggleMenu from "@/components/Functions/toggleMenu";
 
-import Menu from "@/menus/Menu";
-
 export default function Promo() {
 	return (
 		<div className="text-sm">

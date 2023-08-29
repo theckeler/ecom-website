@@ -61,6 +61,7 @@ module.exports = {
 
 		"bg-neutral-700",
 		"lg:border-t-0",
+		"lg:bg-neutral-800",
 	],
 	theme: {
 		minHeight: {

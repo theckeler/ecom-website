@@ -119,6 +119,15 @@ export default function Header({
 					className={`${backgrounds.buttons} hidden lg:block col-start-1 row-start-2`}></li>
 				<li
 					className={`col-start-1 lg:col-start-2 row-start-3 lg:row-start-2 ${backgrounds.logo}`}>
+					{/* <button
+						className="lg:w-12 leading-none p-2"
+						onClick={() => {
+							ToggleMenu("main-nav");
+							document.querySelector("#sticky-nav").scrollIntoView();
+						}}
+						aria-label="Navigation">
+						<Hamburger className="w-12 fill-neutral-900 p-1 bg-amber-400 rounded" />
+					</button> */}
 					<Link
 						href="/"
 						className="flex content-center h-full p-2"

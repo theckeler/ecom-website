@@ -7,8 +7,8 @@ export default function Cart({ className }) {
 	let getTotal = 0;
 	const shippingCost = 129;
 	return (
-		<div>
-			<ul className="grid grid-flow-row gap-2">
+		<>
+			<ul className="grid grid-cols-[minmax(60px,140px)_1fr_minmax(100px,200px)] gap-2">
 				{jsonData.map(function (block, i) {
 					getTotal = getTotal + block.price * block.quantity;
 					return <CartBlock key={i} block={block} />;
@@ -30,6 +30,6 @@ export default function Cart({ className }) {
 				<li className="font-bold">Total (Excl. tax)</li>
 				<li className="text-right">{currency(getTotal + shippingCost)}</li>
 			</ul>
-		</div>
+		</>
 	);
 }

@@ -3,13 +3,14 @@ import Link from "next/link";
 import Button from "./Buttons/Main";
 
 export default function BreadCrumbs({
+	className,
 	crumbs,
 	stars = false,
 	cta = null,
 	starNum,
 }) {
 	return (
-		<ul className="flex w-full py-2">
+		<ul className={`flex w-full py-2 ${className}`}>
 			<li className="lg:basis-auto">
 				<ul className="grid grid-flow-col items-center text-xs">
 					{crumbs.map(function (crumb, i) {

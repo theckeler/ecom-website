@@ -1,6 +1,7 @@
+"use client";
 import H1 from "@/components/H1";
-import H2 from "@/components/H2";
-import CTAHero from "@/components/Hero";
+// import H2 from "@/components/H2";
+import CTAHero from "@/components/CTA/Hero";
 import ProductFinder from "@/components/Product/Finder";
 
 import homeJSON from "@/data/home.json";
@@ -9,6 +10,8 @@ import IconGridView from "@/icons/GridView";
 import FlexView from "@/icons/FlexView";
 import Articles from "@/components/Articles/Articles";
 import articlesData from "@/data/articles.json";
+import ButtonMain from "@/components/Buttons/Main";
+import CTAVideo from "@/components/CTA/Video";
 
 export default function Index() {
 	const buttons = [
@@ -30,11 +33,13 @@ export default function Index() {
 
 	return (
 		<>
-			<CTAHero
+			<CTAVideo className="max-w-screen-2xl mx-auto 2xl:px-2 mb-8" />
+
+			{/* <CTAHero
 				className="max-w-screen-2xl mx-auto 2xl:p-2 mb-8"
 				block={homeJSON.ctaHero[0]}
 				minHeight="xl"
-			/>
+			/> */}
 
 			<TitleFlexGridViews
 				card={{ className: "" }}

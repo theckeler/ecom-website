@@ -100,13 +100,13 @@
 	{
 		"title": "Snow Blowers",
 		"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dwb4f46384/menu-card-images/Cub-Cadet_ALL_NAV_200x200.png",
-		"url": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
+		"url": "/snow-blowers/",
 		"className": "text-base",
 		"slug": "snow-blowers",
 		"sub": [
 			{
 				"title": "Single-Stage Snow Blowers",
-				"url": "?oops=1#Click-the-Zero-Turn-Mowers-link-that-is-the-plp",
+				"url": "/snow-blowers/single-stage-snow-blowers/",
 				"img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-sales-catalog/default/dw15b02ae3/menu-card-images/31PM2T6C710_1X_21LHP_NavCard-200px.png"
 			},
 			{

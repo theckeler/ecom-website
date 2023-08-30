@@ -28,22 +28,20 @@ export default function Index() {
 	];
 
 	return (
-		<ul>
-			<li className="max-w-screen-2xl mx-auto p-2">
-				<BreadCrumbs
-					crumbs={[
-						{ title: "Home", url: "/" },
-						{ title: "Lawn Mowers", url: "/lawn-mowers" },
-						{ title: "Riding Lawn Mowers" },
-					]}
-					cta={{
-						title: "Buy Stuff",
-						url: "?oops=1",
-					}}
-				/>
-			</li>
-
-			<li className="max-w-screen-2xl mx-auto">
+		<>
+			<BreadCrumbs
+				crumbs={[
+					{ title: "Home", url: "/" },
+					{ title: "Lawn Mowers", url: "/lawn-mowers" },
+					{ title: "Riding Lawn Mowers" },
+				]}
+				cta={{
+					title: "Buy Stuff",
+					url: "?oops=1",
+				}}
+				className="max-w-screen-2xl mx-auto p-2"
+			/>
+			<div className="max-w-screen-2xl mx-auto">
 				<H1
 					title="Explore Riding Lawn Mowers"
 					srOnly="Cub Cadet"
@@ -61,22 +59,19 @@ export default function Index() {
 					gridCSS="lg:grid lg:grid-cols-3 gap-2 pb-6 lg:pb-0 overflow-x-auto overflow-scrollbar"
 					buttons={buttons}
 				/>
-			</li>
-
-			<li className="mt-4 bg-gray-300">
+			</div>
+			<div className="mt-4 bg-gray-300">
 				<div className="p-2 lg:py-8 max-w-screen-2xl mx-auto">
 					<ProductFinder />
 				</div>
-			</li>
-
-			<li className="max-w-screen-2xl mx-auto p-2 lg:mt-20 pt-8">
+			</div>
+			<div className="max-w-screen-2xl mx-auto p-2 lg:mt-20 pt-8">
 				<h2 className="text-3xl mb-8">Related Searches</h2>
 				<SEOLinks />
-			</li>
-
-			<li className="max-w-screen-2xl mx-auto p-2 mt-10">
+			</div>
+			<div className="max-w-screen-2xl mx-auto p-2 mt-10">
 				<SEOGreek />
-			</li>
-		</ul>
+			</div>
+		</>
 	);
 }

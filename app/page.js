@@ -32,14 +32,13 @@ export default function Index() {
 
 	return (
 		<>
-			<CTAVideo className="max-w-screen-2xl mx-auto 2xl:px-2 mb-8" />
 			{/* <CTAVideo className="max-w-screen-2xl mx-auto 2xl:px-2 mb-8" /> */}
 
-			{/* <CTAHero
+			<CTAHero
 				className="max-w-screen-2xl mx-auto 2xl:p-2 mb-8"
 				block={homeJSON.ctaHero[0]}
 				minHeight="xl"
-			/> */}
+			/>
 
 			<TitleFlexGridViews
 				card={{ className: "" }}

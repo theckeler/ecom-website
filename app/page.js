@@ -1,4 +1,3 @@
-"use client";
 import H1 from "@/components/H1";
 // import H2 from "@/components/H2";
 import CTAHero from "@/components/CTA/Hero";
@@ -35,11 +34,11 @@ export default function Index() {
 		<>
 			<CTAVideo className="max-w-screen-2xl mx-auto 2xl:px-2 mb-8" />
 
-			<CTAHero
+			{/* <CTAHero
 				className="max-w-screen-2xl mx-auto 2xl:p-2 mb-8"
 				block={homeJSON.ctaHero[0]}
 				minHeight="xl"
-			/>
+			/> */}
 
 			<TitleFlexGridViews
 				card={{ className: "" }}

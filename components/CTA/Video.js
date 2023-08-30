@@ -1,3 +1,5 @@
+"use client";
+
 import ButtonMain from "@/components/Buttons/Main";
 
 export default function CTAVideo({ className = null }) {

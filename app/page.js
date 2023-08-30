@@ -33,6 +33,7 @@ export default function Index() {
 	return (
 		<>
 			<CTAVideo className="max-w-screen-2xl mx-auto 2xl:px-2 mb-8" />
+			{/* <CTAVideo className="max-w-screen-2xl mx-auto 2xl:px-2 mb-8" /> */}
 
 			{/* <CTAHero
 				className="max-w-screen-2xl mx-auto 2xl:p-2 mb-8"

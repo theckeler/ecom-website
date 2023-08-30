@@ -8,9 +8,9 @@ import homeJSON from "@/data/home.json";
 import TitleFlexGridViews from "@/components/FlexGridViews/TitleFlexGridViews";
 import IconGridView from "@/icons/GridView";
 import FlexView from "@/icons/FlexView";
-import Articles from "@/components/Articles/Articles";
+// import Articles from "@/components/Articles/Articles";
 import articlesData from "@/data/articles.json";
-import ButtonMain from "@/components/Buttons/Main";
+// import ButtonMain from "@/components/Buttons/Main";
 import CTAVideo from "@/components/CTA/Video";
 
 export default function Index() {

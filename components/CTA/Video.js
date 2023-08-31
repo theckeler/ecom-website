@@ -21,7 +21,7 @@ export default function CTAVideo({ className = null }) {
 							muted=""
 							poster="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v4365e2b9a0bd8171c4e7b1cc5a7a2d050fe647e2/pro-2.0/home/hero.jpg">
 							<source
-								src="https://vod-progressive.akamaized.net/exp=1693495400~acl=%2Fvimeo-create-prod-files%2Fe%2Fa%2FLUYfKQdURj8zWRZiCzE~hmac=45704e7fd7b8b2eccd1b0968532ad424c98ac61b36b7206af7d658be00ffdef7/vimeo-create-prod-files/e/a/LUYfKQdURj8zWRZiCzE?filename=file.mp4&source=1"
+								src="https://vod-progressive.akamaized.net/exp=1693510598~acl=%2Fvimeo-create-prod-files%2Fe%2Fa%2FLUYfKQdURj8zWRZiCzE~hmac=256885ce8b46a4f470ad7ec2e3a210beefc04f401989ce8362ac63740e311776/vimeo-create-prod-files/e/a/LUYfKQdURj8zWRZiCzE?filename=file.mp4&source=1"
 								type="video/mp4"
 							/>
 						</video>

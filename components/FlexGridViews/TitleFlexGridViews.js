@@ -47,7 +47,6 @@ export default function TitleFlexGridViews({
 										<ProductCard
 											block={block}
 											className={`h-full ${card.className}`}
-											//style={{ backgroundColor: "#ecedee" }}
 											buttonWide={buttonWide}
 										/>
 									</li>

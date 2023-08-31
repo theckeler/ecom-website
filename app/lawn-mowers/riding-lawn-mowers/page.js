@@ -1,11 +1,12 @@
 import BreadCrumbs from "@/components/BreadCrumbs";
 import H1 from "@/components/H1";
-import SEOGreek from "@/components/SEOGreek";
-import SEOLinks from "@/components/SEOLinks";
+// import SEOGreek from "@/components/SEOGreek";
+// import SEOLinks from "@/components/SEOLinks";
 import ProductFinder from "@/components/Product/Finder";
 import TitleFlexGridViews from "@/components/FlexGridViews/TitleFlexGridViews";
 import IconGridView from "@/icons/GridView";
 import FlexView from "@/icons/FlexView";
+import CategoriesFooter from "@/components/Categories/Footer";
 
 import zeroTurnJSON from "@/data/riding-lawn-mowers.json";
 
@@ -60,18 +61,8 @@ export default function Index() {
 					buttons={buttons}
 				/>
 			</div>
-			<div className="mt-4 bg-gray-300">
-				<div className="p-2 lg:py-8 max-w-screen-2xl mx-auto">
-					<ProductFinder />
-				</div>
-			</div>
-			<div className="max-w-screen-2xl mx-auto p-2 lg:mt-20 pt-8">
-				<h2 className="text-3xl mb-8">Related Searches</h2>
-				<SEOLinks />
-			</div>
-			<div className="max-w-screen-2xl mx-auto p-2 mt-10">
-				<SEOGreek />
-			</div>
+
+			<CategoriesFooter />
 		</>
 	);
 }

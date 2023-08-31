@@ -1,10 +1,14 @@
+"use client";
 import IconText from "@/buttons/IconText";
 
 export default function ViewMore({ props, onClick }) {
 	return (
 		<div
-			className={`max-w-screen-2xl mx-auto pb-10 my-10 flex flex-col place-items-center ${props.className}`}>
-			<div className="text-xs text-center font-bold mb-4">Showing 8 of 32</div>
+			className={`pb-10 my-10 flex flex-col place-items-center ${props.className}`}
+			id={props.id}>
+			<div className="text-xs text-center font-bold mb-4">
+				Showing {props.showing.start} of {props.showing.end}
+			</div>
 
 			<IconText
 				className={`relative z-10 h-12 px-10 lg:hover:bg-amber-300 border-amber-300 border flex items-center ${props.button.className}`}

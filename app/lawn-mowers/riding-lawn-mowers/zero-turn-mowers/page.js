@@ -95,11 +95,12 @@ export default function Index() {
 
 			<ViewMore
 				props={{
+					showing: { start: 7, end: 32 },
 					title: "Show More Products",
 					button: {
 						className: "bg-amber-400 text-xs md:text-base",
 					},
-					className: "",
+					className: "max-w-screen-2xl mx-auto",
 				}}
 			/>
 

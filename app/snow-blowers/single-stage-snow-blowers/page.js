@@ -151,8 +151,15 @@ export default function Index() {
 					<div className="text-xs text-center">Showing 8 of 32</div>
 
 					<ViewMore
-						title="Show More Products"
-						className="bg-amber-400 absolute left-2/4 -translate-x-2/4 top-3/4 text-xs md:text-base"
+						props={{
+							showing: { start: 4, end: 8 },
+							title: "Show More Products",
+							button: {
+								className: "",
+							},
+							className:
+								"bg-amber-400 absolute left-2/4 -translate-x-2/4 top-3/4 text-xs md:text-base",
+						}}
 					/>
 				</div>
 			</li>

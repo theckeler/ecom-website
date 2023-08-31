@@ -9,29 +9,18 @@ export default function Compare({ className }) {
 			<div
 				className="max-w-screen-2xl mx-auto bg-white flex justify-center items-center w-full p-3"
 				style={{}}>
-				<ul className="grid grid-flow-dense grid-cols-12 grid-rows-3 w-full">
-					<li className="basis-auto">
-						<IconText
-							title="Product"
-							icon={<Check className="w-6 mr-1" />}
-							className={buttonCSS}
-						/>
-					</li>
-					<li className="basis-auto">
-						<IconText
-							title="Product"
-							icon={<Check className="w-6 mr-1" />}
-							className={buttonCSS}
-						/>
-					</li>
-					<li className="basis-auto">
-						<IconText
-							title="Product"
-							icon={<Check className="w-6 mr-1" />}
-							className={buttonCSS}
-						/>
-					</li>
-				</ul>
+				<div className="flex flex-wrap gap-1 w-full">
+					{[...Array(4)].map((star, i) => {
+						return (
+							<IconText
+								title="Product"
+								icon={<Check className="w-6 p-1" />}
+								className={buttonCSS}
+								key={i}
+							/>
+						);
+					})}
+				</div>
 			</div>
 		</div>
 	);

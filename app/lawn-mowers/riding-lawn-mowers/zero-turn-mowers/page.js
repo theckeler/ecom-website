@@ -106,7 +106,7 @@ export default function Index() {
 			<TitleFlexGridViews
 				className="max-w-screen-2xl mx-auto p-2 mt-8"
 				jsonData={articlesData}
-				card={{ className: "bg-gray-100" }}
+				card={{ className: "bg-gray-200" }}
 				limitNum={4}
 				breakpoint="md"
 				title={

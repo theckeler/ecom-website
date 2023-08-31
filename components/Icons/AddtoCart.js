@@ -1,5 +1,4 @@
 export default function IconAddtoCart({ className = null }) {
-	console.log(className);
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

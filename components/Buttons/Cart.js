@@ -3,8 +3,6 @@ import Icon from "@/icons/Cart";
 import ToggleMenu from "@/functions/toggleMenu";
 
 export default function ButtonsCart({ className, button }) {
-	// console.log(button);
-
 	return (
 		<button
 			className={`flex gap-1 items-center p-1 md:px-4 rounded-l sm:rounded-t bg-amber-400 dark:bg-neutral-800 dark:text-white dark:fill-white border border-r-0 dark:border-neutral-700 ${className}`}

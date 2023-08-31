@@ -92,14 +92,14 @@ export default function Card({
 					<li className="basis-full pr-2">
 						<IconText
 							title="Add to Cart"
-							Icon={() => <AddtoCart className="w-6 mr-1" />}
+							icon={<AddtoCart className="w-6 mr-1" />}
 							className="bg-amber-400 text-sm w-full p-3 font-bold"
 						/>
 					</li>
 					<li className="basis-2/4">
 						<IconText
 							title="Compare"
-							Icon={() => <Compare className="w-6 mr-1" />}
+							icon={<Compare className="w-6 mr-1" />}
 							className="bg-gray-200 text-xs w-full p-3"
 							onClick={(e) => {
 								superToggle(e, ["bg-gray-200", "bg-green-400"]);

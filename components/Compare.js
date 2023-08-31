@@ -13,21 +13,21 @@ export default function Compare({ className }) {
 					<li className="basis-auto">
 						<IconText
 							title="Product"
-							Icon={() => <Check className="w-6 mr-1" />}
+							icon={<Check className="w-6 mr-1" />}
 							className={buttonCSS}
 						/>
 					</li>
 					<li className="basis-auto">
 						<IconText
 							title="Product"
-							Icon={() => <Check className="w-6 mr-1" />}
+							icon={<Check className="w-6 mr-1" />}
 							className={buttonCSS}
 						/>
 					</li>
 					<li className="basis-auto">
 						<IconText
 							title="Product"
-							Icon={() => <Check className="w-6 mr-1" />}
+							icon={<Check className="w-6 mr-1" />}
 							className={buttonCSS}
 						/>
 					</li>

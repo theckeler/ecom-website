@@ -8,7 +8,7 @@ import Compare from "@/components/Compare";
 import ViewMore from "@/components/Buttons/ViewMore";
 import IconCompare from "@/components/Icons/Compare";
 import Filter from "@/components/Buttons/Filter";
-import CTAHero from "@/components/CTA/Hero";
+import CTAHero from "@/components/Heros/Img";
 import SEOLinks from "@/components/SEOLinks";
 import Article from "@/components/Product/Article";
 import Faqs from "@/components/Faqs";

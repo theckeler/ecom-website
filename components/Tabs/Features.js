@@ -1,4 +1,4 @@
-import ToggleButton from "../Buttons/Toggle";
+import ToggleButton from "@/buttons/Toggle";
 import Cards from "@/components/Cards/Features";
 
 export default function TabFeatures() {

@@ -8,7 +8,7 @@
 			"@/cards/*": ["components/Cards/*"],
 			"@/icons/*": ["components/Icons/*"],
 			"@/data/*": ["data/*"],
-			"@/cta/*": ["components/CTA/*"],
+			"@/cta/*": ["components/Heros/*"],
 			"@/product/*": ["components/Product/*"],
 			"@/addtocart/*": ["components/AddCart/*"],
 			"@/header/*": ["components/Header/*"],

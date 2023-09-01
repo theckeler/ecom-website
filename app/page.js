@@ -1,6 +1,6 @@
 import H1 from "@/components/H1";
 // import H2 from "@/components/H2";
-import CTAHero from "@/components/CTA/Hero";
+import CTAHero from "@/components/Heros/Img";
 import ProductFinder from "@/components/Product/Finder";
 
 import homeJSON from "@/data/home.json";
@@ -10,7 +10,7 @@ import FlexView from "@/icons/FlexView";
 // import Articles from "@/components/Articles/Articles";
 import articlesData from "@/data/articles.json";
 // import ButtonMain from "@/components/Buttons/Main";
-import CTAVideo from "@/components/CTA/Video";
+import CTAVideo from "@/components/Heros/Video";
 
 export default function Index() {
 	const buttons = [
